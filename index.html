@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Places Tracing Guide</title>
+
+  <!-- NPS Bootstrap CSS -->
+  <link href="http://www.nps.gov/lib/bootstrap/3.3.2/css/nps-bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="/css/style.css" rel="stylesheet">
+
+  <style>
+    .intro-header, .banner {
+       background: url("/img/carto_background.png") center center;
+    }
+  </style>
+
+  <!-- Custom Fonts -->
+  <link href="http://hotosm.github.io/tracing-guides/assets/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+</head>
+
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Places Tracing Guide</a>
+    </div>
+    <!-- /.navbar-header -->
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">About</a></li>
+        <li><a href="#poi">Points of Interest</a></li>
+        <li><a href="#buildings">Buildings</a></li>
+        <li><a href="#roads">Roads</a></li>
+        <li><a href="#trails">Trails</a></li>
+        <li><a href="#parking">Parking Lots</a></li>          
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container -->
+</nav>
+
+<!-- Header -->
+<div class="intro-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="intro-message">
+          <h1>Places Tracing Guide</h1>
+          <h3>National Park Service</h3>
+        </div>
+      </div>
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+</div>
+<!-- /.intro-header -->
+
+<div class="content-section-a">
+  <div class="container">
+    <a name="about"></a>
+    <div class="row">
+      <div class="col-lg-5 col-sm-6">
+        <hr class="section-heading-spacer">
+        <div class="clearfix"></div>
+        
+        <h2 class="section-heading">About Places</h2>
+
+        <p><a href="http://insidemaps.nps.gov/places/">Places</a> is an internal crowd-sourcing system for the National Park Service's "core" geospatial data. We built Places so that all National Park Service employees, both technical and non-technical, can contribute their knowledge to "the map".</p>
+
+        <p>Data from Places is fed directly into both <a href="http://www.nps.gov/npmap/tools/park-tiles/#4/39.06/-96.02">Park Tiles</a> and the larger National Park Service structured data initiative, which will be used to drive <a href="http://www.nps.gov/index.htm">NPS.gov</a> and a publicly available application programming interface (or API) starting in January of 2016.</p>
+
+        <p>The Places database currently contains the following <a href="http://www.nps.gov/npmap/tools/places/">datasets</a> (click each data type for a snapshot GeoJSON, updated from the database every five minutes):</p>
+
+        <ol>
+          <li>
+            <a href="https://nps.cartodb.com/api/v2/sql?format=geojson&q=SELECT+*+FROM+points_of_interest">Points of Interest</a>
+          </li>
+          <li>
+            <a href="https://nps.cartodb.com/api/v2/sql?format=geojson&q=SELECT+*+FROM+buildings">Buildings</a>
+          </li>
+          <li>
+            <a href="https://nps.cartodb.com/api/v2/sql?format=geojson&q=SELECT+*+FROM+roads">Roads</a>
+          </li>
+          <li>
+            <a href="https://nps.cartodb.com/api/v2/sql?format=geojson&q=SELECT+*+FROM+trails">Trails</a>
+          </li>
+          <li>
+            <a href="https://nps.cartodb.com/api/v2/sql?format=geojson&q=SELECT+*+FROM+parking_lots">Parking Lots</a>
+          </li>
+        </ol>
+
+        <p>These datasets were initially seeded from existing park, region, and program-level GIS datasets, but now anyone who is connected to the National Park Service network can edit them using the <a href="http://insidemaps.nps.gov/places/">Places Editor</a> (NPS-only). If your organization has more/better data available and you'd like to get it into Places, <a href="mailto:npmap@nps.gov">send us an email</a> or <a href="https://github.com/nationalparkservice/places-data/issues">create an issue on GitHub</a> and we will assist with the upload.</p>
+
+        <h3><a href="http://insidemaps.nps.gov/places/edit/#background=mapbox-satellite&map=4/-96.02/39.06&overlays=park-tiles-overlay">Start mapping now!</a></h3>
+
+        </div>
+
+        <div class="col-lg-5 col-lg-offset-2 col-sm-6 about">
+          <img class="img-responsive" src="/img/nat_cap_sq.jpg">
+        </div>
+
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container  -->
+</div>
+<!-- /.content-section-a -->
+
+<div class="content-section-b">
+  <div class="container">
+    <div class="row">
+      <a name="poi"></a>
+      <div class="col-lg-5 col-sm-6">
+        <hr class="section-heading-spacer">
+        <div class="clearfix"></div>
+
+        <h2 class="section-heading">Points of Interest</h2>                    
+        <h4>Point feature</h4>
+
+        <p>A point of interest or "POI" is represented by a point or <a href="http://wiki.openstreetmap.org/wiki/Node">"node"</a> on the map and has geographic coordinates (latitude and longitude). A POI can be a standalone node or it can be part of a <a href="http://wiki.openstreetmap.org/wiki/Way">"way"</a> (an ordered list of nodes representing a linear feature or area). Learn more about POIs from <a href="http://wiki.openstreetmap.org/wiki/Points_of_interest">OpenStreetMap's wiki</a>.</p>
+
+        <p>Places was originally named "Points of Interest" as POIs were the first (and only) feature type supported. Places supports a wide variety of POIs, a full list of which can be found in our <a href="https://docs.google.com/spreadsheets/d/1sQZRUZDe8vPu8PANxoIc5k0Pv85xNd5ae4uGJ0fwEt0/edit#gid=1063193272">data preset wiki</a>. Don't see the tag you're looking for? <a href="https://github.com/nationalparkservice/places-data/issues">Open an issue on GitHub</a>.</p>
+
+        <p>This guide is intended to serve as a starter kit for contributing to Places, so we are going to review some of the most common/basic tags to add to the map.</p>
+
+      </div>
+
+      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+
+        <p>Click title to jump to POI type:</p>
+
+        <ul>
+          <li><a href="#campground">Campground</a>: <code>tourism=camp_site</code></li>
+          <li><a href="#camp_site">Camp site</a>: <code>tourism=camp_site, camp_site=pitch</code></li>
+          <li><a href="#lodge">Lodge</a>: <code>tourism=alpine_hut</code></li>
+          <li><a href="#picnic_site">Picnic site</a>: <code>tourism=picnic_site</code></li>
+          <li><a href="#picnic_table">Picnic table</a>: <code>leisure=picnic_table</code></li>
+          <li><a href="#restroom">Restroom</a>: <code>amenity=toilets</code></li>
+          <li><a href="#waste_basket">Waste basket</a>: <code>amenity=waste_basket</code></li>
+          <li><a href="#trailhead">Trailhead</a>: <code>highway=trailhead</code></li>
+          <li><a href="#visitor_center">Visitor center</a>: <code>tourism=visitor_center</code></li>
+          <li><a href="#information">Information</a>: <code>tourism=information</code></li>
+          <li><a href="#ranger_station">Ranger station</a>: <code>amenity=ranger_station</code></li>
+          <li><a href="#entrance_station">Entrance station</a>: <code>barrier=entrance</code></li>
+          <li><a href="#telephone">Telephone</a>: <code>amenity=telephone</code></li>
+          <li><a href="#food_service">Food service</a>: <code>amenity=food_court</code></li>
+          <li><a href="#store">Store</a>: <code>shop=general</code></li>
+          <li><a href="#gas_station">Gas station</a>: <code>amenity=fuel</code></li>
+          <li><a href="#drinking_water">Drinking water</a>: <code>amenity=drinking_water</code></li>
+          <li><a href="#boat_launch">Boat launch</a>: <code>leisure=slipway</code></li>
+        </ul>
+
+      </div>
+    </div>
+    <!-- /.row -->
+
+    <div class="row">
+      <a name="campground"></a>
+      <div class="col-lg-5 col-sm-6">
+        <hr class="section-heading-spacer">
+        <div class="clearfix"></div>
+
+        <h4>Campground</h4>
+
+        <p>A campground is an area, usually divided into a number of pitches (or "campsites," see below), where people can camp overnight using tents or camper vans or caravans. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:tourism%3Dcamp_site">here</a>.</p>
+
+        <p>Tag a campground with a point in the middle of the area as <code>tourism=camp_site</code>. Feel free to add additional information using the following keys (click for link to OSM wiki):</p>
+
+        <ul>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:addr"><code>addr=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:opening_hours"><code>opening_hours=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:capacity"><code>capacity=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:fee"><code>fee=</code></a></li>
+        </ul>
+
+      </div>
+
+      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+        <img class="img-responsive" src="http://placehold.it/750">
+      </div>
+    </div>
+    <!-- /.row -->
+
+    <div class="row">
+      <a name="camp_site"></a>
+      <div class="col-lg-5 col-sm-6">
+        <hr class="section-heading-spacer">
+        <div class="clearfix"></div>
+
+        <h4>Campsite</h4>
+
+        <p>A campsite is an individual pitch within a campground where people can camp overnight using tents or camper vans or caravans. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:tourism%3Dcamp_site">here</a>.</p>
+
+        <p>Tag a campsite with a point in the middle of the pitch as <code>tourism=camp_site</code> and <code>camp_site=pitch</code>. Feel free to add additional information using the following keys (click for link to OSM wiki):</p>
+
+        <ul>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:addr"><code>addr=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:opening_hours"><code>opening_hours=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:capacity"><code>capacity=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:fee"><code>fee=</code></a></li>
+        </ul>
+
+      </div>
+
+      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+        <img class="img-responsive" src="http://placehold.it/750">
+      </div>
+    </div>
+    <!-- /.row -->
+
+    <div class="row">
+      <a name="lodge"></a>
+      <div class="col-lg-5 col-sm-6">
+        <hr class="section-heading-spacer">
+        <div class="clearfix"></div>
+
+        <h4>Lodge</h4>
+
+        <p>A lodge or "alpine hut" is a remote building located in the mountains intended to provide board and lodging. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:tourism%3Dalpine_hut">here</a>.</p>
+
+        <p>Tag a lodge with a point on top of the building as <code>tourism=alpine_hut</code> and <code>building=yes</code>. Feel free to add additional information using the following keys (click for link to OSM wiki):</p>
+
+        <ul>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:addr"><code>addr=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:opening_hours"><code>opening_hours=</code></a></li>
+        </ul>
+
+      </div>
+
+      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+        <img class="img-responsive" src="http://placehold.it/750">
+      </div>
+    </div>
+    <!-- /.row -->
+
+    <div class="row">
+      <a name="picnic_site"></a>
+      <div class="col-lg-5 col-sm-6">
+        <hr class="section-heading-spacer">
+        <div class="clearfix"></div>
+
+        <h4>Picnic Site</h4>
+
+        <p>A picnic site is an area that is suitable for outdoors eating and may have a number of facilities to aid a picnic: tables, benches, restrooms, grills, water taps, covered pavilions, etc. Or, it may just be a grassy area popular for picnics. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:tourism%3Dpicnic_site">here</a>.</p>
+
+        <p>Tag a picnic site with a point in the middle of the area as <code>tourism=picnic_site</code>. Picnic tables are to be tagged separately, see <a href="#picnic_table">below</a>. Feel free to add additional information using the following keys (click for link to OSM wiki):</p>
+
+        <ul>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:addr"><code>addr=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:opening_hours"><code>opening_hours=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:fee"><code>fee=</code></a></li>
+        </ul>
+
+      </div>
+
+      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+        <img class="img-responsive" src="http://placehold.it/750">
+      </div>
+    </div>
+    <!-- /.row -->
+
+    <div class="row">
+      <a name="picnic_table"></a>
+      <div class="col-lg-5 col-sm-6">
+        <hr class="section-heading-spacer">
+        <div class="clearfix"></div>
+
+        <h4>Picnic Table</h4>
+
+        <p>A picnic table is a modified table with benches, expressly for the purpose of eating a meal outdoors (picnicking). Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:tourism%3Dpicnic_table">here</a>.</p>
+
+        <p>Tag a picnic table with a point on top of the table as <code>tourism=picnic_table</code>. Feel free to add additional information using the following keys (click for link to OSM wiki):</p>
+
+        <ul>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:covered"><code>covered=</code></a></li>
+        </ul>
+
+      </div>
+
+      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+        <img class="img-responsive" src="http://placehold.it/750">
+      </div>
+    </div>
+    <!-- /.row -->
+
+    <div class="row">
+      <a name="restroom"></a>
+      <div class="col-lg-5 col-sm-6">
+        <hr class="section-heading-spacer">
+        <div class="clearfix"></div>
+
+        <h4>Restroom</h4>
+
+        <p>A restroom or "toilet" open to the public. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:amenity%3Dtoilets">here</a>.</p>
+
+        <p>Tag a restroom with a point on top of the toilet amenities as <code>amenity=toilets</code> and <code>building=yes</code>. Feel free to add additional information using the following keys (click for link to OSM wiki):</p>
+
+        <ul>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:addr"><code>addr=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:opening_hours"><code>opening_hours=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:toilets:disposal"><code>toilets:disposal=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Category:Gender"><code>gender</code></a> (<a href="http://wiki.openstreetmap.org/wiki/Key:male"><code>male=</code></a>, <a href="http://wiki.openstreetmap.org/wiki/Key:female"><code>female=</code></a>, or <a href="http://wiki.openstreetmap.org/wiki/Key:unisex"><code>unisex=</code></a>)</li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:indoor"><code>indoor=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:access"><code>access=</code></a></li>
+        </ul>
+
+      </div>
+
+      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+        <img class="img-responsive" src="http://placehold.it/750">
+      </div>
+    </div>
+    <!-- /.row -->
+
+    <div class="row">
+      <a name="waste_basket"></a>
+      <div class="col-lg-5 col-sm-6">
+        <hr class="section-heading-spacer">
+        <div class="clearfix"></div>
+
+        <h4>Waste Basket</h4>
+
+        <p>A waste basket is a single small container for depositing garbage that is easily accesible for pedestrians. Similar expressions: rubbish bin, litter bin, trash can, garbage can. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:amenity%3Dwaste_basket">here</a>.</p>
+
+        <p>Tag a waste basket with a point on top of the container as <code>amenity=waste_basket</code>. Feel free to add additional information using the following keys (click for link to OSM wiki):</p>
+
+        <ul>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:addr"><code>addr=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:waste"><code>waste=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:bin"><code>bin=</code></a></li>
+        </ul>
+
+      </div>
+
+      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+        <img class="img-responsive" src="http://placehold.it/750">
+      </div>
+    </div>
+    <!-- /.row -->
+
+    <div class="row">
+      <a name="trailhead"></a>
+      <div class="col-lg-5 col-sm-6">
+        <hr class="section-heading-spacer">
+        <div class="clearfix"></div>
+
+        <h4>Trailhead</h4>
+
+        <p>A trailhead is the point at which a trail begins, where the trail is often intended for hiking, biking, skiing, snowshoeing, snowmobiling, horseback riding, or off-road vehicles. <i>There is currently no OSM wiki for trailhead available.</i></p>
+
+        <p>Tag a trailhead with a point on the location of the start of the trail as <code>highway=trailhead</code>. Feel free to add additional information using the following keys (click for link to OSM wiki):</p>
+
+        <ul>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:tracktype"><code>tracktype</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:surface"><code>surface</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:width"><code>width</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:incline"><code>incline</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:mtb:scale"><code>mtb:scale</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:mtb:scale:uphill"><code>mtb:scale:uphill</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:mtb:scale:imba"><code>mtb:scale:imba</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:sac_scale"><code>sac_scale</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:trail_visibility"><code>trail_visibility</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:access"><code>access</code></a></li>
+        </ul>
+
+      </div>
+
+      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+        <img class="img-responsive" src="http://placehold.it/750">
+      </div>
+    </div>
+    <!-- /.row -->
+
+    <div class="row">
+      <a name="visitor_center"></a>
+      <div class="col-lg-5 col-sm-6">
+        <hr class="section-heading-spacer">
+        <div class="clearfix"></div>
+
+        <h4>Visitor Center</h4>
+
+        <p>A point of interest or "POI" is represented by a point or <a href="http://wiki.openstreetmap.org/wiki/Node">"node"</a> on the map and has geographic coordinates (latitude and longitude). A POI can be a standalone node or it can be part of a <a href="http://wiki.openstreetmap.org/wiki/Way">"way"</a> (an ordered list of nodes representing a linear feature or area). Learn more about POIs from <a href="http://wiki.openstreetmap.org/wiki/Points_of_interest">OpenStreetMap's wiki</a>.</p>
+
+      </div>
+
+      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+        <img class="img-responsive" src="http://placehold.it/750">
+      </div>
+    </div>
+    <!-- /.row -->
+
+    <div class="row">
+      <a name="information"></a>
+      <div class="col-lg-5 col-sm-6">
+        <hr class="section-heading-spacer">
+        <div class="clearfix"></div>
+
+        <h4>Information</h4>
+
+        <p>A point of interest or "POI" is represented by a point or <a href="http://wiki.openstreetmap.org/wiki/Node">"node"</a> on the map and has geographic coordinates (latitude and longitude). A POI can be a standalone node or it can be part of a <a href="http://wiki.openstreetmap.org/wiki/Way">"way"</a> (an ordered list of nodes representing a linear feature or area). Learn more about POIs from <a href="http://wiki.openstreetmap.org/wiki/Points_of_interest">OpenStreetMap's wiki</a>.</p>
+
+      </div>
+
+      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+        <img class="img-responsive" src="http://placehold.it/750">
+      </div>
+    </div>
+    <!-- /.row -->
+
+    <div class="row">
+      <a name="ranger_station"></a>
+      <div class="col-lg-5 col-sm-6">
+        <hr class="section-heading-spacer">
+        <div class="clearfix"></div>
+
+        <h4>Ranger station</h4>
+
+        <p>A point of interest or "POI" is represented by a point or <a href="http://wiki.openstreetmap.org/wiki/Node">"node"</a> on the map and has geographic coordinates (latitude and longitude). A POI can be a standalone node or it can be part of a <a href="http://wiki.openstreetmap.org/wiki/Way">"way"</a> (an ordered list of nodes representing a linear feature or area). Learn more about POIs from <a href="http://wiki.openstreetmap.org/wiki/Points_of_interest">OpenStreetMap's wiki</a>.</p>
+
+      </div>
+
+      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+        <img class="img-responsive" src="http://placehold.it/750">
+      </div>
+    </div>
+    <!-- /.row -->
+
+    <div class="row">
+      <a name="entrance_station"></a>
+      <div class="col-lg-5 col-sm-6">
+        <hr class="section-heading-spacer">
+        <div class="clearfix"></div>
+
+        <h4>Entrance station</h4>
+
+        <p>A point of interest or "POI" is represented by a point or <a href="http://wiki.openstreetmap.org/wiki/Node">"node"</a> on the map and has geographic coordinates (latitude and longitude). A POI can be a standalone node or it can be part of a <a href="http://wiki.openstreetmap.org/wiki/Way">"way"</a> (an ordered list of nodes representing a linear feature or area). Learn more about POIs from <a href="http://wiki.openstreetmap.org/wiki/Points_of_interest">OpenStreetMap's wiki</a>.</p>
+
+      </div>
+
+      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+        <img class="img-responsive" src="http://placehold.it/750">
+      </div>
+    </div>
+    <!-- /.row -->
+
+    <div class="row">
+      <a name="telephone"></a>
+      <div class="col-lg-5 col-sm-6">
+        <hr class="section-heading-spacer">
+        <div class="clearfix"></div>
+
+        <h4>Telephone</h4>
+
+        <p>A point of interest or "POI" is represented by a point or <a href="http://wiki.openstreetmap.org/wiki/Node">"node"</a> on the map and has geographic coordinates (latitude and longitude). A POI can be a standalone node or it can be part of a <a href="http://wiki.openstreetmap.org/wiki/Way">"way"</a> (an ordered list of nodes representing a linear feature or area). Learn more about POIs from <a href="http://wiki.openstreetmap.org/wiki/Points_of_interest">OpenStreetMap's wiki</a>.</p>
+
+      </div>
+
+      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+        <img class="img-responsive" src="http://placehold.it/750">
+      </div>
+    </div>
+    <!-- /.row -->
+
+    <div class="row">
+      <a name="food_service"></a>
+      <div class="col-lg-5 col-sm-6">
+        <hr class="section-heading-spacer">
+        <div class="clearfix"></div>
+
+        <h4>Food service</h4>
+
+        <p>A point of interest or "POI" is represented by a point or <a href="http://wiki.openstreetmap.org/wiki/Node">"node"</a> on the map and has geographic coordinates (latitude and longitude). A POI can be a standalone node or it can be part of a <a href="http://wiki.openstreetmap.org/wiki/Way">"way"</a> (an ordered list of nodes representing a linear feature or area). Learn more about POIs from <a href="http://wiki.openstreetmap.org/wiki/Points_of_interest">OpenStreetMap's wiki</a>.</p>
+
+      </div>
+
+      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+        <img class="img-responsive" src="http://placehold.it/750">
+      </div>
+    </div>
+    <!-- /.row -->
+
+    <div class="row">
+      <a name="store"></a>
+      <div class="col-lg-5 col-sm-6">
+        <hr class="section-heading-spacer">
+        <div class="clearfix"></div>
+
+        <h4>Store</h4>
+
+        <p>A point of interest or "POI" is represented by a point or <a href="http://wiki.openstreetmap.org/wiki/Node">"node"</a> on the map and has geographic coordinates (latitude and longitude). A POI can be a standalone node or it can be part of a <a href="http://wiki.openstreetmap.org/wiki/Way">"way"</a> (an ordered list of nodes representing a linear feature or area). Learn more about POIs from <a href="http://wiki.openstreetmap.org/wiki/Points_of_interest">OpenStreetMap's wiki</a>.</p>
+
+      </div>
+
+      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+        <img class="img-responsive" src="http://placehold.it/750">
+      </div>
+    </div>
+    <!-- /.row -->
+
+    <div class="row">
+      <a name="gas_station"></a>
+      <div class="col-lg-5 col-sm-6">
+        <hr class="section-heading-spacer">
+        <div class="clearfix"></div>
+
+        <h4>Gas station</h4>
+
+        <p>A point of interest or "POI" is represented by a point or <a href="http://wiki.openstreetmap.org/wiki/Node">"node"</a> on the map and has geographic coordinates (latitude and longitude). A POI can be a standalone node or it can be part of a <a href="http://wiki.openstreetmap.org/wiki/Way">"way"</a> (an ordered list of nodes representing a linear feature or area). Learn more about POIs from <a href="http://wiki.openstreetmap.org/wiki/Points_of_interest">OpenStreetMap's wiki</a>.</p>
+
+      </div>
+
+      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+        <img class="img-responsive" src="http://placehold.it/750">
+      </div>
+    </div>
+    <!-- /.row -->
+
+    <div class="row">
+      <a name="drinking_water"></a>
+      <div class="col-lg-5 col-sm-6">
+        <hr class="section-heading-spacer">
+        <div class="clearfix"></div>
+
+        <h4>Drinking water</h4>
+
+        <p>A point of interest or "POI" is represented by a point or <a href="http://wiki.openstreetmap.org/wiki/Node">"node"</a> on the map and has geographic coordinates (latitude and longitude). A POI can be a standalone node or it can be part of a <a href="http://wiki.openstreetmap.org/wiki/Way">"way"</a> (an ordered list of nodes representing a linear feature or area). Learn more about POIs from <a href="http://wiki.openstreetmap.org/wiki/Points_of_interest">OpenStreetMap's wiki</a>.</p>
+
+      </div>
+
+      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+        <img class="img-responsive" src="http://placehold.it/750">
+      </div>
+    </div>
+    <!-- /.row -->
+
+    <div class="row">
+      <a name="boat_launch"></a>
+      <div class="col-lg-5 col-sm-6">
+        <hr class="section-heading-spacer">
+        <div class="clearfix"></div>
+
+        <h4>Boat launch</h4>
+
+        <p>A point of interest or "POI" is represented by a point or <a href="http://wiki.openstreetmap.org/wiki/Node">"node"</a> on the map and has geographic coordinates (latitude and longitude). A POI can be a standalone node or it can be part of a <a href="http://wiki.openstreetmap.org/wiki/Way">"way"</a> (an ordered list of nodes representing a linear feature or area). Learn more about POIs from <a href="http://wiki.openstreetmap.org/wiki/Points_of_interest">OpenStreetMap's wiki</a>.</p>
+
+      </div>
+
+      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+        <img class="img-responsive" src="http://placehold.it/750">
+      </div>
+
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+</div>
+<!-- /.content-section-b -->
+
+<div class="content-section-a">
+  <div class="container">
+   <div class="row">
+      <a name="buildings"></a>
+      <div class="col-lg-5 col-sm-6">
+        <hr class="section-heading-spacer">
+        <div class="clearfix"></div>
+
+        <h2 class="section-heading">Buildings</h2>                    
+        <h4>Area feature</h4>
+
+        <p>A point of interest or "POI" is represented by a point or <a href="http://wiki.openstreetmap.org/wiki/Node">"node"</a> on the map and has geographic coordinates (latitude and longitude). A POI can be a standalone node or it can be part of a <a href="http://wiki.openstreetmap.org/wiki/Way">"way"</a> (an ordered list of nodes representing a linear feature or area). Learn more about POIs from <a href="http://wiki.openstreetmap.org/wiki/Points_of_interest">OpenStreetMap's wiki</a>.</p>
+
+      </div>
+
+      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+        <img class="img-responsive" src="http://placehold.it/750">
+      </div>
+      
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+</div>
+<!-- /.content-section-a -->
+
+<div class="content-section-b">
+  <div class="container">      
+   <div class="row">
+      <a name="roads"></a>
+      <div class="col-lg-5 col-sm-6">
+        <hr class="section-heading-spacer">
+        <div class="clearfix"></div>
+
+        <h2 class="section-heading">Roads</h2>                    
+        <h4>Linear feature</h4>
+
+        <p>A point of interest or "POI" is represented by a point or <a href="http://wiki.openstreetmap.org/wiki/Node">"node"</a> on the map and has geographic coordinates (latitude and longitude). A POI can be a standalone node or it can be part of a <a href="http://wiki.openstreetmap.org/wiki/Way">"way"</a> (an ordered list of nodes representing a linear feature or area). Learn more about POIs from <a href="http://wiki.openstreetmap.org/wiki/Points_of_interest">OpenStreetMap's wiki</a>.</p>
+
+      </div>
+
+      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+        <img class="img-responsive" src="http://placehold.it/750">
+      </div>
+      
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+</div>
+<!-- /.content-section-b -->
+
+<div class="content-section-a">
+  <div class="container">      
+   <div class="row">
+      <a name="trails"></a>
+      <div class="col-lg-5 col-sm-6">
+        <hr class="section-heading-spacer">
+        <div class="clearfix"></div>
+
+        <h2 class="section-heading">Trails</h2>                    
+        <h4>Linear feature</h4>
+
+        <p>A point of interest or "POI" is represented by a point or <a href="http://wiki.openstreetmap.org/wiki/Node">"node"</a> on the map and has geographic coordinates (latitude and longitude). A POI can be a standalone node or it can be part of a <a href="http://wiki.openstreetmap.org/wiki/Way">"way"</a> (an ordered list of nodes representing a linear feature or area). Learn more about POIs from <a href="http://wiki.openstreetmap.org/wiki/Points_of_interest">OpenStreetMap's wiki</a>.</p>
+
+      </div>
+
+      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+        <img class="img-responsive" src="http://placehold.it/750">
+      </div>
+      
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+</div>
+<!-- .content-section-a -->
+    
+<div class="content-section-b">
+  <div class="container">      
+   <div class="row">
+      <a name="parking"></a>
+      <div class="col-lg-5 col-sm-6">
+        <hr class="section-heading-spacer">
+        <div class="clearfix"></div>
+
+        <h2 class="section-heading">Parking lots</h2>                    
+        <h4>Area or point feature</h4>
+
+        <p>A point of interest or "POI" is represented by a point or <a href="http://wiki.openstreetmap.org/wiki/Node">"node"</a> on the map and has geographic coordinates (latitude and longitude). A POI can be a standalone node or it can be part of a <a href="http://wiki.openstreetmap.org/wiki/Way">"way"</a> (an ordered list of nodes representing a linear feature or area). Learn more about POIs from <a href="http://wiki.openstreetmap.org/wiki/Points_of_interest">OpenStreetMap's wiki</a>.</p>
+
+      </div>
+
+      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+        <img class="img-responsive" src="http://placehold.it/750">
+      </div>
+      
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+</div>
+<!-- /.content-section-b -->
+
+<div class="banner">
+  <div class="container">
+    <div class="row">
+        <img class="responsive" src="/img/nps_logo.png"></img>
+    </div>
+  </div>
+  <!-- /.container -->
+</div>
+<!-- /.banner -->
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <ul class="list-inline">
+          <li><a href="#">Places Tracing Guide</a></li>
+
+          <li class="footer-menu-divider">&sdot;</li>
+          
+          <li><a href="#about">About</a></li>
+          
+          <li class="footer-menu-divider">&sdot;</li>
+          
+          <li><a href="#poi">Points of Interest</a></li>
+
+          <li class="footer-menu-divider">&sdot;</li>
+
+          <li><a href="#buildings">Buildings</a></li>
+
+          <li class="footer-menu-divider">&sdot;</li>
+
+          <li><a href="#roads">Roads</a></li>
+
+          <li class="footer-menu-divider">&sdot;</li>
+
+          <li><a href="#trails">Trails</a></li>
+
+          <li class="footer-menu-divider">&sdot;</li>
+
+          <li><a href="#parking">Parking Lots</a></li>
+        </ul> 
+      </div>
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+</footer>
+
+<!-- jQuery Version 1.11.0 -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+<!-- NPS Bootstrap JavaScript -->
+<script src="http://www.nps.gov/lib/bootstrap/3.3.2/js/nps-bootstrap.min.js"></script>
+
+</body>
+</html>
