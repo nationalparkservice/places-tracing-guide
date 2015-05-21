@@ -2,7 +2,7 @@
 
 Currently in development.
 
-To-do:
+#### To-do:
 
 - [X] Build out skeleton structure
 - [X] Make responsive
@@ -10,7 +10,7 @@ To-do:
 - [ ] Add image/gif for each feature
 - [ ] Add NPMaki icon for each feature
 
-Under consideration:
+#### Under consideration:
 
 - [ ] Change hamburger menu interactivity (menu to disappear after selection on mobile) 
 - [ ] Nest POI types in collapsable menu?
