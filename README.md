@@ -12,6 +12,6 @@ To-do:
 
 Under consideration:
 
-- [ ] Change hamburger menu interactivity (menu to disappear after selection) 
-- [ ] Nest POI types in collapsable menu
+- [ ] Change hamburger menu interactivity (menu to disappear after selection on mobile) 
+- [ ] Nest POI types in collapsable menu?
 - [ ] Include GIS tags?
