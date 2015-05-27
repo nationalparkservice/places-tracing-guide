@@ -202,6 +202,10 @@
           <li><a href="http://wiki.openstreetmap.org/wiki/Key:fee"><code>fee=</code></a></li>
         </ul>
 
+        <p>Park Tiles rendering:</p>
+
+        <img src="https://raw.githubusercontent.com/nationalparkservice/npmaki/gh-pages/renders/campground-black-24%402x.png">
+
       </div>
 
       <div class="col-lg-5 col-lg-offset-2 col-sm-6">
@@ -231,6 +235,10 @@
           <li><a href="http://wiki.openstreetmap.org/wiki/Key:fee"><code>fee=</code></a></li>
         </ul>
 
+        <p>Park Tiles rendering:</p>
+
+        <img src="https://raw.githubusercontent.com/nationalparkservice/npmaki/gh-pages/renders/campsite-black-24%402x.png" alt="icon coming soon">
+
       </div>
 
       <div class="col-lg-5 col-lg-offset-2 col-sm-6">
@@ -249,7 +257,7 @@
 
         <p>A lodge or "alpine hut" is a remote building located in the mountains intended to provide board and lodging. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:tourism%3Dalpine_hut">here</a>.</p>
 
-        <p>Tag a lodge with a point on top of the building as <code>tourism=alpine_hut</code> and <code>building=yes</code>. Feel free to add additional information using the following keys (click for link to OSM wiki):</p>
+        <p>Tag a lodge with a point on top of the building as <code>tourism=alpine_hut</code> and <code>building=yes</code>. Additionally, trace the building footprint and tag as <code>building=yes</code> (see the <a href="#buildings">buildings</a> section to learn more about tracing building footprints). Feel free to add additional information using the following keys (click for link to OSM wiki):</p>
 
         <ul>
           <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
@@ -257,6 +265,10 @@
           <li><a href="http://wiki.openstreetmap.org/wiki/Key:addr"><code>addr=</code></a></li>
           <li><a href="http://wiki.openstreetmap.org/wiki/Key:opening_hours"><code>opening_hours=</code></a></li>
         </ul>
+
+        <p>Park Tiles rendering:</p>
+
+        <img src="https://raw.githubusercontent.com/nationalparkservice/npmaki/gh-pages/renders/lodging-black-24%402x.png">
 
       </div>
 
@@ -286,6 +298,10 @@
           <li><a href="http://wiki.openstreetmap.org/wiki/Key:fee"><code>fee=</code></a></li>
         </ul>
 
+        <p>Park Tiles rendering:</p>
+
+        <img src="https://raw.githubusercontent.com/nationalparkservice/npmaki/gh-pages/renders/picnic-area-black-24%402x.png">
+
       </div>
 
       <div class="col-lg-5 col-lg-offset-2 col-sm-6">
@@ -310,6 +326,10 @@
           <li><a href="http://wiki.openstreetmap.org/wiki/Key:covered"><code>covered=</code></a></li>
         </ul>
 
+        <p>Park Tiles rendering:</p>
+
+        <img src="https://raw.githubusercontent.com/nationalparkservice/npmaki/gh-pages/renders/picnic-area-black-24%402x.png">
+
       </div>
 
       <div class="col-lg-5 col-lg-offset-2 col-sm-6">
@@ -328,7 +348,7 @@
 
         <p>A restroom or "toilet" open to the public. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:amenity%3Dtoilets">here</a>.</p>
 
-        <p>Tag a restroom with a point on top of the toilet amenities as <code>amenity=toilets</code> and <code>building=yes</code>. Feel free to add additional information using the following keys (click for link to OSM wiki):</p>
+        <p>Tag a restroom with a point on top of the toilet amenities as <code>amenity=toilets</code> and <code>building=yes</code>. Additionally, trace the building footprint and tag as <code>building=yes</code> (see the <a href="#buildings">buildings</a> section to learn more about tracing building footprints). Feel free to add additional information using the following keys (click for link to OSM wiki):</p>
 
         <ul>
           <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
@@ -340,6 +360,10 @@
           <li><a href="http://wiki.openstreetmap.org/wiki/Key:indoor"><code>indoor=</code></a></li>
           <li><a href="http://wiki.openstreetmap.org/wiki/Key:access"><code>access=</code></a></li>
         </ul>
+
+        <p>Park Tiles rendering:</p>
+
+        <img src="https://raw.githubusercontent.com/nationalparkservice/npmaki/gh-pages/renders/restrooms-black-24%402x.png">
 
       </div>
 
@@ -368,6 +392,10 @@
           <li><a href="http://wiki.openstreetmap.org/wiki/Key:waste"><code>waste=</code></a></li>
           <li><a href="http://wiki.openstreetmap.org/wiki/Key:bin"><code>bin=</code></a></li>
         </ul>
+
+        <p>Park Tiles rendering:</p>
+
+        <img src="https://raw.githubusercontent.com/nationalparkservice/npmaki/gh-pages/renders/litter-receptacle-black-24%402x.png">
 
       </div>
 
@@ -404,6 +432,10 @@
           <li><a href="http://wiki.openstreetmap.org/wiki/Key:access"><code>access</code></a></li>
         </ul>
 
+        <p>Park Tiles rendering:</p>
+
+        <img src="https://raw.githubusercontent.com/nationalparkservice/npmaki/gh-pages/renders/trailhead-black-24%402x.png">
+
       </div>
 
       <div class="col-lg-5 col-lg-offset-2 col-sm-6">
@@ -420,7 +452,20 @@
 
         <h4>Visitor Center</h4>
 
-        <p>A point of interest or "POI" is represented by a point or <a href="http://wiki.openstreetmap.org/wiki/Node">"node"</a> on the map and has geographic coordinates (latitude and longitude). A POI can be a standalone node or it can be part of a <a href="http://wiki.openstreetmap.org/wiki/Way">"way"</a> (an ordered list of nodes representing a linear feature or area). Learn more about POIs from <a href="http://wiki.openstreetmap.org/wiki/Points_of_interest">OpenStreetMap's wiki</a>.</p>
+        <p>A visitor center is a building housing information for visitors, typically including some or all of the following: information resources, facilities (e.g. restrooms, drinking water), ranger staff, and exhibits. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:information%3Doffice">here</a>.</p>
+
+        <p>Tag a visitor center with a point on top of the building as <code>tourism=information</code>, <code>information=office</code>, and <code>building=yes</code>. Additionally, trace the building footprint and tag as <code>building=yes</code> (see the <a href="#buildings">buildings</a> section to learn more about tracing building footprints). Feel free to add additional information using the following keys (click for link to OSM wiki):</p>
+
+        <ul>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:addr"><code>addr=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:opening_hours"><code>opening_hours=</code></a></li>
+        </ul>
+
+        <p>Park Tiles rendering:</p>
+
+        <img src="https://raw.githubusercontent.com/nationalparkservice/npmaki/gh-pages/renders/visitor-center-black-24%402x.png">
 
       </div>
 
@@ -438,7 +483,20 @@
 
         <h4>Information</h4>
 
-        <p>A point of interest or "POI" is represented by a point or <a href="http://wiki.openstreetmap.org/wiki/Node">"node"</a> on the map and has geographic coordinates (latitude and longitude). A POI can be a standalone node or it can be part of a <a href="http://wiki.openstreetmap.org/wiki/Way">"way"</a> (an ordered list of nodes representing a linear feature or area). Learn more about POIs from <a href="http://wiki.openstreetmap.org/wiki/Points_of_interest">OpenStreetMap's wiki</a>.</p>
+        <p>Information is an information source for visitors, typically an informational board. This is the default and most basic information-related tag, which can be specified further by including other tags for visitor centers (<code>information=office</code>, <code>building=yes</code>) or information maps (<code>information=map</code>). Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:tourism%3Dinformation">here</a>.</p>
+
+        <p>Tag information with a point on top of the amenity as <code>tourism=information</code>. Feel free to add additional information using the following keys (click for link to OSM wiki):</p>
+
+        <ul>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:addr"><code>addr=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:opening_hours"><code>opening_hours=</code></a></li>
+        </ul>
+
+        <p>Park Tiles rendering:</p>
+
+        <img src="https://raw.githubusercontent.com/nationalparkservice/npmaki/gh-pages/renders/information-black-24%402x.png">
 
       </div>
 
@@ -456,7 +514,11 @@
 
         <h4>Ranger station</h4>
 
-        <p>A point of interest or "POI" is represented by a point or <a href="http://wiki.openstreetmap.org/wiki/Node">"node"</a> on the map and has geographic coordinates (latitude and longitude). A POI can be a standalone node or it can be part of a <a href="http://wiki.openstreetmap.org/wiki/Way">"way"</a> (an ordered list of nodes representing a linear feature or area). Learn more about POIs from <a href="http://wiki.openstreetmap.org/wiki/Points_of_interest">OpenStreetMap's wiki</a>.</p>
+        <p>A ranger station is...</p>
+
+        <p>Park Tiles rendering:</p>
+
+        <img src="https://raw.githubusercontent.com/nationalparkservice/npmaki/gh-pages/renders/ranger-station-black-24%402x.png">
 
       </div>
 
@@ -474,7 +536,11 @@
 
         <h4>Entrance station</h4>
 
-        <p>A point of interest or "POI" is represented by a point or <a href="http://wiki.openstreetmap.org/wiki/Node">"node"</a> on the map and has geographic coordinates (latitude and longitude). A POI can be a standalone node or it can be part of a <a href="http://wiki.openstreetmap.org/wiki/Way">"way"</a> (an ordered list of nodes representing a linear feature or area). Learn more about POIs from <a href="http://wiki.openstreetmap.org/wiki/Points_of_interest">OpenStreetMap's wiki</a>.</p>
+        <p>An entrance station is...</p>
+
+        <p>Park Tiles rendering:</p>
+
+        <img src="https://raw.githubusercontent.com/nationalparkservice/npmaki/gh-pages/renders/campsite-black-24%402x.png" alt="currently no icon">
 
       </div>
 
@@ -492,7 +558,11 @@
 
         <h4>Telephone</h4>
 
-        <p>A point of interest or "POI" is represented by a point or <a href="http://wiki.openstreetmap.org/wiki/Node">"node"</a> on the map and has geographic coordinates (latitude and longitude). A POI can be a standalone node or it can be part of a <a href="http://wiki.openstreetmap.org/wiki/Way">"way"</a> (an ordered list of nodes representing a linear feature or area). Learn more about POIs from <a href="http://wiki.openstreetmap.org/wiki/Points_of_interest">OpenStreetMap's wiki</a>.</p>
+        <p>A telephone is...</p>
+
+        <p>Park Tiles rendering:</p>
+
+        <img src="https://raw.githubusercontent.com/nationalparkservice/npmaki/gh-pages/renders/telephone-black-24%402x.png">
 
       </div>
 
@@ -510,7 +580,11 @@
 
         <h4>Food service</h4>
 
-        <p>A point of interest or "POI" is represented by a point or <a href="http://wiki.openstreetmap.org/wiki/Node">"node"</a> on the map and has geographic coordinates (latitude and longitude). A POI can be a standalone node or it can be part of a <a href="http://wiki.openstreetmap.org/wiki/Way">"way"</a> (an ordered list of nodes representing a linear feature or area). Learn more about POIs from <a href="http://wiki.openstreetmap.org/wiki/Points_of_interest">OpenStreetMap's wiki</a>.</p>
+        <p>Food service is...</p>
+
+        <p>Park Tiles rendering:</p>
+
+        <img src="https://raw.githubusercontent.com/nationalparkservice/npmaki/gh-pages/renders/food-service-black-24%402x.png">
 
       </div>
 
@@ -528,7 +602,11 @@
 
         <h4>Store</h4>
 
-        <p>A point of interest or "POI" is represented by a point or <a href="http://wiki.openstreetmap.org/wiki/Node">"node"</a> on the map and has geographic coordinates (latitude and longitude). A POI can be a standalone node or it can be part of a <a href="http://wiki.openstreetmap.org/wiki/Way">"way"</a> (an ordered list of nodes representing a linear feature or area). Learn more about POIs from <a href="http://wiki.openstreetmap.org/wiki/Points_of_interest">OpenStreetMap's wiki</a>.</p>
+        <p>A store is...</p>
+
+        <p>Park Tiles rendering:</p>
+
+        <img src="https://raw.githubusercontent.com/nationalparkservice/npmaki/gh-pages/renders/store-black-24%402x.png">
 
       </div>
 
@@ -546,7 +624,11 @@
 
         <h4>Gas station</h4>
 
-        <p>A point of interest or "POI" is represented by a point or <a href="http://wiki.openstreetmap.org/wiki/Node">"node"</a> on the map and has geographic coordinates (latitude and longitude). A POI can be a standalone node or it can be part of a <a href="http://wiki.openstreetmap.org/wiki/Way">"way"</a> (an ordered list of nodes representing a linear feature or area). Learn more about POIs from <a href="http://wiki.openstreetmap.org/wiki/Points_of_interest">OpenStreetMap's wiki</a>.</p>
+        <p>A gas station is...</p>
+
+        <p>Park Tiles rendering:</p>
+
+        <img src="https://raw.githubusercontent.com/nationalparkservice/npmaki/gh-pages/renders/gas-station-black-24%402x.png">
 
       </div>
 
@@ -564,7 +646,11 @@
 
         <h4>Drinking water</h4>
 
-        <p>A point of interest or "POI" is represented by a point or <a href="http://wiki.openstreetmap.org/wiki/Node">"node"</a> on the map and has geographic coordinates (latitude and longitude). A POI can be a standalone node or it can be part of a <a href="http://wiki.openstreetmap.org/wiki/Way">"way"</a> (an ordered list of nodes representing a linear feature or area). Learn more about POIs from <a href="http://wiki.openstreetmap.org/wiki/Points_of_interest">OpenStreetMap's wiki</a>.</p>
+        <p>Drinking water is...</p>
+
+        <p>Park Tiles rendering:</p>
+
+        <img src="https://raw.githubusercontent.com/nationalparkservice/npmaki/gh-pages/renders/drinking-water-black-24%402x.png">
 
       </div>
 
@@ -582,7 +668,11 @@
 
         <h4>Boat launch</h4>
 
-        <p>A point of interest or "POI" is represented by a point or <a href="http://wiki.openstreetmap.org/wiki/Node">"node"</a> on the map and has geographic coordinates (latitude and longitude). A POI can be a standalone node or it can be part of a <a href="http://wiki.openstreetmap.org/wiki/Way">"way"</a> (an ordered list of nodes representing a linear feature or area). Learn more about POIs from <a href="http://wiki.openstreetmap.org/wiki/Points_of_interest">OpenStreetMap's wiki</a>.</p>
+        <p>A boat launch is...</p>
+
+        <p>Park Tiles rendering:</p>
+
+        <img src="https://raw.githubusercontent.com/nationalparkservice/npmaki/gh-pages/renders/boat-launch-black-24%402x.png">
 
       </div>
 
