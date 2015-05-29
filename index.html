@@ -118,6 +118,8 @@
 
         <p>These datasets were initially seeded from existing park, region, and program-level GIS datasets, but now anyone who is connected to the National Park Service network can edit them using the <a href="http://insidemaps.nps.gov/places/">Places Editor</a> (NPS-only). If your organization has more/better data available and you'd like to get it into Places, <a href="mailto:npmap@nps.gov">send us an email</a> or <a href="https://github.com/nationalparkservice/places-data/issues">create an issue on GitHub</a> and we will assist with the upload.</p>
 
+        <p>The Places editor is built using OpenStreetMap's <a href="http://wiki.openstreetmap.org/wiki/ID">iD editor</a>. Check out learnOSM's <a href="http://learnosm.org/en/editing/id-editor/">iD editor walthrough</a> to familiarize yourself with the interface. It is intentionally simple, developed with a non-technical audience in mind. So, fear not! Let's jump in and get started.</p>
+
         <h3><a href="http://insidemaps.nps.gov/places/edit/#background=mapbox-satellite&map=4/-96.02/39.06&overlays=park-tiles-overlay">Start mapping now!</a></h3>
 
         </div>
@@ -148,7 +150,9 @@
 
         <p>Places was originally named "Points of Interest" as POIs were the first (and only) feature type supported. Places supports a wide variety of POIs, a full list of which can be found in our <a href="https://docs.google.com/spreadsheets/d/1sQZRUZDe8vPu8PANxoIc5k0Pv85xNd5ae4uGJ0fwEt0/edit#gid=1063193272">data preset wiki</a>. Don't see the tag you're looking for? <a href="https://github.com/nationalparkservice/places-data/issues">Open an issue on GitHub</a>.</p>
 
-        <p>This guide is intended to serve as a starter kit for contributing to Places, so we are going to review some of the most common/basic tags to add to the map.</p>
+        <p>This guide is intended to serve as a starter kit for contributing to Places, so we are going to review some of the most common/basic tags to add to the map. Use iD's <code>Point</code> tool to add a point to the map:</p>
+
+        <img class="img-responsive" src="img/id_point.jpg" style="box-shadow: 5px 5px 15px #888; margin: 20px 0 10px 0;">
 
       </div>
 
@@ -772,7 +776,13 @@
         <h2 class="section-heading">Buildings</h2>                    
         <h4>Area feature</h4>
 
-        <p>A point of interest or "POI" is represented by a point or <a href="http://wiki.openstreetmap.org/wiki/Node">"node"</a> on the map and has geographic coordinates (latitude and longitude). A POI can be a standalone node or it can be part of a <a href="http://wiki.openstreetmap.org/wiki/Way">"way"</a> (an ordered list of nodes representing a linear feature or area). Learn more about POIs from <a href="http://wiki.openstreetmap.org/wiki/Points_of_interest">OpenStreetMap's wiki</a>.</p>
+        <p>Buildings in Places are intentionally simple. We are only concerned with building footprints, while any additional building amenities are added as points of interest on top of the footprint. For example, add <code>shop=general</code> and <code>building=yes</code> as a point of interest on top of the building footprint instead of <code>building=retail</code> as a tag included in the building footprint polygon to represent a general store (see <a href="http://localhost:8888/places-tracing-guide/#store">store</a> above).</p>
+
+        <p>Trace a building by using the <code>Area</code> tool to trace the building footprint and tag as <code>building=yes</code>.</p>
+
+        <img class="img-responsive" src="img/id_area.jpg" style="box-shadow: 5px 5px 15px #888; margin: 20px 0 20px 0;">
+
+        <p>Don't get too carried away with nodes while tracing - keep it simple to conform to the general shape of the building visible from the imagery.</p>
 
       </div>
 

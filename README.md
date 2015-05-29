@@ -17,3 +17,4 @@ Currently in development.
 - [ ] Change hamburger menu interactivity (menu to disappear after selection on mobile) 
 - [ ] Nest POI types in collapsable menu?
 - [ ] Include GIS tags?
+- [ ] Add walkthrough of iD interface?
