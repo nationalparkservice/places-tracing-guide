@@ -9,6 +9,7 @@ Currently in development.
 - [ ] Add description for each feature
 - [ ] Add image/gif for each feature
 - [ ] Add NPMaki icon for each feature
+- [ ] Remove optional fields not currently supported
 - [ ] Add tags for each optional field
 
 #### Under consideration:
