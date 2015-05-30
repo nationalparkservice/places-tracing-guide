@@ -17,7 +17,7 @@
 
   <style>
     .intro-header, .banner {
-       background: url("http://nationalparkservice.github.io/places-tracing-guide/img/carto_background.png") center center;
+       background: url("img/carto_background.png") center center;
     }
   </style>
 
@@ -125,7 +125,7 @@
         </div>
 
         <div class="col-lg-5 col-lg-offset-2 col-sm-6 about">
-          <img class="img-responsive" src="http://nationalparkservice.github.io/places-tracing-guide/img/nat_cap_sq.jpg">
+          <img class="img-responsive" src="img/nat_cap_sq.jpg" style="box-shadow: 10px 10px 30px #888;">
         </div>
 
     </div>
@@ -152,7 +152,7 @@
 
         <p>This guide is intended to serve as a starter kit for contributing to Places, so we are going to review some of the most common/basic tags to add to the map. Use iD's <code>Point</code> tool to add a point to the map:</p>
 
-        <img class="img-responsive" src="img/id_point.jpg" style="box-shadow: 5px 5px 15px #888; margin: 20px 0 10px 0;">
+        <img src="img/id_point.jpg" style="box-shadow: 5px 5px 15px #888; margin: 20px 0 10px 0;">
 
       </div>
 
@@ -780,7 +780,7 @@
 
         <p>Trace a building by using the <code>Area</code> tool to trace the building footprint and tag as <code>building=yes</code>.</p>
 
-        <img class="img-responsive" src="img/id_area.jpg" style="box-shadow: 5px 5px 15px #888; margin: 20px 0 20px 0;">
+        <img src="img/id_area.jpg" style="box-shadow: 5px 5px 15px #888; margin: 10px 0 20px 0;">
 
         <p>Don't get too carried away with nodes while tracing - keep it simple to conform to the general shape of the building visible from the imagery.</p>
 
@@ -808,16 +808,179 @@
         <h2 class="section-heading">Roads</h2>                    
         <h4>Linear feature</h4>
 
-        <p>A point of interest or "POI" is represented by a point or <a href="http://wiki.openstreetmap.org/wiki/Node">"node"</a> on the map and has geographic coordinates (latitude and longitude). A POI can be a standalone node or it can be part of a <a href="http://wiki.openstreetmap.org/wiki/Way">"way"</a> (an ordered list of nodes representing a linear feature or area). Learn more about POIs from <a href="http://wiki.openstreetmap.org/wiki/Points_of_interest">OpenStreetMap's wiki</a>.</p>
+        <p>Roads and trails are identified primarily by the <a href="http://wiki.openstreetmap.org/wiki/Key:highway"><code>highway=</code></a> field (click for link to OSM wiki). Roads are distinct from trails in that they are generally intended for use by automobiles, while trails are generally intended for recreation such as hiking, biking, horseback riding, skiing, etc.</p>
+
+        <p>There are a few exceptions to this rule, including: sidewalks, all-terrain vehicle (ATV) trails, four-wheel drive (4wd) trails, motorized watercraft trails, and snowmobile trails. A sidewalk may not necessarily be considered a road or a trail, rather more of a road "appendage". ATV, 4wd, motorized watercraft, and snowmobile trails all allow their respective type of automobile access on the trail.</p>
+
+        <p>Trace a road by using the <code>Line</code> tool to trace the centerline of the from beginning to end:</p>
+
+        <img src="img/id_line.jpg" style="box-shadow: 5px 5px 15px #888; margin: 10px 0 20px 0;">
+
+        <p>The tags for different road types will vary, classified below.</p>
 
       </div>
 
       <div class="col-lg-5 col-lg-offset-2 col-sm-6">
         <img class="img-responsive" src="http://placehold.it/750">
       </div>
+
+      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+
+        <p>Click title to jump to road types:</p>
+
+        <ul>
+          <li><a href="#primary_road">Primary road</a>: <code>highway=primary</code></li>
+          <li><a href="#secondary_road">Secondary road</a>: <code>highway=secondary</code></li>
+          <li><a href="#tertiary_road">Tertiary road</a>: <code>highway=tertiary</code></li>
+        </ul>
+
+        <p>Click title to jump to road attributes:</p>
+
+        <ul>
+          <li><a href="#surface">Surface</a>: <code>surface=</code></li>
+          <li><a href="#oneway">Oneway</a>: <code>oneway=</code></li>
+          <li><a href="#lanes">Lanes</a>: <code>lanes=</code></li>
+          <li><a href="#maxspeed">Max speed</a>: <code>maxspeed=</code></li>
+        </ul>
+
+      </div>
       
     </div>
     <!-- /.row -->
+
+    <div class="row">
+      <a name="primary_road"></a>
+      <div class="col-lg-5 col-sm-6">
+        <hr class="section-heading-spacer">
+        <div class="clearfix"></div>
+
+        <h4>Primary road</h4>
+
+        <p>A primary road is...</p>
+
+      </div>
+
+      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+        <img class="img-responsive" src="http://placehold.it/750">
+      </div>
+
+    </div>
+    <!-- /.row -->
+
+    <div class="row">
+      <a name="secondary_road"></a>
+      <div class="col-lg-5 col-sm-6">
+        <hr class="section-heading-spacer">
+        <div class="clearfix"></div>
+
+        <h4>Secondary road</h4>
+
+        <p>A secondary road is...</p>
+
+      </div>
+
+      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+        <img class="img-responsive" src="http://placehold.it/750">
+      </div>
+
+    </div>
+    <!-- /.row -->
+
+    <div class="row">
+      <a name="tertiary_road"></a>
+      <div class="col-lg-5 col-sm-6">
+        <hr class="section-heading-spacer">
+        <div class="clearfix"></div>
+
+        <h4>Tertiary road</h4>
+
+        <p>A tertiary road is...</p>
+
+      </div>
+
+      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+        <img class="img-responsive" src="http://placehold.it/750">
+      </div>
+
+    </div>
+    <!-- /.row -->
+
+    <div class="row">
+      <a name="surface"></a>
+      <div class="col-lg-5 col-sm-6">
+        <hr class="section-heading-spacer">
+        <div class="clearfix"></div>
+
+        <h4>Surface</h4>
+
+        <p>The different surface types are...</p>
+
+      </div>
+
+      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+        <img class="img-responsive" src="http://placehold.it/750">
+      </div>
+
+    </div>
+    <!-- /.row -->
+
+    <div class="row">
+      <a name="oneway"></a>
+      <div class="col-lg-5 col-sm-6">
+        <hr class="section-heading-spacer">
+        <div class="clearfix"></div>
+
+        <h4>Oneway</h4>
+
+        <p>Oneway is...</p>
+
+      </div>
+
+      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+        <img class="img-responsive" src="http://placehold.it/750">
+      </div>
+
+    </div>
+    <!-- /.row -->
+
+    <div class="row">
+      <a name="lanes"></a>
+      <div class="col-lg-5 col-sm-6">
+        <hr class="section-heading-spacer">
+        <div class="clearfix"></div>
+
+        <h4>Lanes</h4>
+
+        <p>Lanes are...</p>
+
+      </div>
+
+      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+        <img class="img-responsive" src="http://placehold.it/750">
+      </div>
+
+    </div>
+    <!-- /.row -->
+
+    <div class="row">
+      <a name="maxspeed"></a>
+      <div class="col-lg-5 col-sm-6">
+        <hr class="section-heading-spacer">
+        <div class="clearfix"></div>
+
+        <h4>Max speed</h4>
+
+        <p>Max speed is...</p>
+
+      </div>
+
+      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+        <img class="img-responsive" src="http://placehold.it/750">
+      </div>
+
+    </div>
+    <!-- /.row -->
+
   </div>
   <!-- /.container -->
 </div>
@@ -834,7 +997,9 @@
         <h2 class="section-heading">Trails</h2>                    
         <h4>Linear feature</h4>
 
-        <p>A point of interest or "POI" is represented by a point or <a href="http://wiki.openstreetmap.org/wiki/Node">"node"</a> on the map and has geographic coordinates (latitude and longitude). A POI can be a standalone node or it can be part of a <a href="http://wiki.openstreetmap.org/wiki/Way">"way"</a> (an ordered list of nodes representing a linear feature or area). Learn more about POIs from <a href="http://wiki.openstreetmap.org/wiki/Points_of_interest">OpenStreetMap's wiki</a>.</p>
+        <p></p>
+
+        <img src="img/id_line.jpg" style="box-shadow: 5px 5px 15px #888;">
 
       </div>
 
@@ -860,7 +1025,7 @@
         <h2 class="section-heading">Parking lots</h2>                    
         <h4>Area or point feature</h4>
 
-        <p>A point of interest or "POI" is represented by a point or <a href="http://wiki.openstreetmap.org/wiki/Node">"node"</a> on the map and has geographic coordinates (latitude and longitude). A POI can be a standalone node or it can be part of a <a href="http://wiki.openstreetmap.org/wiki/Way">"way"</a> (an ordered list of nodes representing a linear feature or area). Learn more about POIs from <a href="http://wiki.openstreetmap.org/wiki/Points_of_interest">OpenStreetMap's wiki</a>.</p>
+        <p></p>
 
       </div>
 
@@ -878,7 +1043,7 @@
 <div class="banner">
   <div class="container">
     <div class="row">
-        <img class="responsive" src="http://nationalparkservice.github.io/places-tracing-guide/img/nps_logo.png">
+        <img class="responsive" src="img/nps_logo.png">
     </div>
   </div>
   <!-- /.container -->
