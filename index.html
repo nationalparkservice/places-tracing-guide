@@ -1097,7 +1097,21 @@
 
         <a href="#surface"><h4>Surface</h4></a>
 
-        <p>The different surface types are...</p>
+        <p>Surface describes the physical surface of a feature (in this case, a road or trail). Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Key:surface">here</a>.</p>
+
+        <p>Tag a feature's surface by adding the <code>surface=</code> tag to its associated way. The following surface types are mapped directly to the current EGIS standards (check out the <a href="http://wiki.openstreetmap.org/wiki/Key:surface">wiki</a> for other common tags):</p>
+
+        <ul>
+          <li><code>surface=asphalt</code></li>
+          <li><code>surface=concrete</code></li>
+          <li><code>surface=paving_stones</code></li>
+          <li><code>surface=cobblestone</code></li>
+          <li><code>surface=gravel</code></li>
+          <li><code>surface=sand</code></li>
+          <li><code>surface=ground</code></li>
+          <li><code>surface=paved</code></li>
+          <li><code>surface=unpaved</code></li>
+        </ul>
 
       </div>
 
@@ -1116,7 +1130,9 @@
 
         <a href="#oneway"><h4>Oneway</h4></a>
 
-        <p>Oneway is...</p>
+        <p>Oneway indicates the oneway access restriction on roads. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Key:oneway">here</a>.</p>
+
+        <p>Tag a road with oneway access as <code>oneway=yes</code> to its associated way. Note that ways have a directionality, so the direction in which you map the way determines its directionality. However, you can tag a way with <code>oneway=-1</code> to reverse its existing directionality (appropriate when a way's directionality already governs another attribute such as a bus route).</p>
 
       </div>
 
@@ -1135,7 +1151,9 @@
 
         <a href="#lanes"><h4>Lanes</h4></a>
 
-        <p>Lanes are...</p>
+        <p>Lanes indicate the number of traffic lanes on a highway that are available to motorised traffic (bicycle lanes are therefore excluded). Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Key:lanes">here</a>.</p>
+
+        <p>Tag a road with <code>lanes=</code> (e.g. <code>lanes=2</code>) to indicate how many lanes it has.</p>
 
       </div>
 
@@ -1154,7 +1172,9 @@
 
         <a href="#maxspeed"><h4>Max speed</h4></a>
 
-        <p>Max speed is...</p>
+        <p>Maxspeed indicates the maximum legal speed limit for general traffic on a road. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Key:maxspeed">here</a>.</p>
+
+        <p>Tag a road with <code>maxspeed=</code> (e.g. <code>maxspeed=45 mph</code>) to indicate the speed limit, including the unit of measure (<code>mph</code> for miles per hour). Places defaults to miles per hour, so <code>maxspeed=45</code> is effectively the same as <code>maxspeed=45 mph</code>. Best practice is to include units, however.</p>
 
       </div>
 
