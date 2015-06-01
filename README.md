@@ -2,13 +2,18 @@
 
 Currently in development.
 
-#### To-do:
+### To-do:
+
+#### Primary:
 
 - [X] Build out skeleton structure
 - [X] Make responsive
 - [ ] Add description for each feature
 - [ ] Add image/gif for each feature
-- [ ] Add NPMaki icon for each feature
+- [X] Add NPMaki icon for each feature
+
+#### Secondary
+
 - [ ] Remove optional fields not currently supported
 - [ ] Add tags for each optional field
 
