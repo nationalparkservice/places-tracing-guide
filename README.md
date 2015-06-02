@@ -11,7 +11,7 @@ Currently in development.
 - [ ] Add description for each feature
 - [ ] Add image/gif for each feature
 - [X] Add NPMaki icon for each POI
-- [ ] Add favicon
+- [X] Add favicon
 
 #### Secondary
 
