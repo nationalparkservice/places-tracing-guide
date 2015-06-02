@@ -1251,7 +1251,7 @@
         <ul>
           <li><a href="#path">Trail (footpath)</a>: <code>highway=path</code></li>
           <li><a href="#track">Multi-use trail</a>: <code>highway=track</code></li>
-          <li><a href="#water">Water trail</a>: <code>waterway=yes</code></li>
+          <li><a href="#water_trail">Water trail</a>: <code>waterway=yes</code></li>
         </ul>
 
       </div>
@@ -1267,7 +1267,7 @@
 
         <a href="#path"><h4>Trail (footpath)</h4></a>
 
-        <p>A trail, also commonly referred to as a footpath, is a trail limited solely to pedestrians (typically intended for hiking, in the park context). Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:highway%3Dpath">here</a>.</p>
+        <p>A trail, also commonly referred to as a footpath, is a trail limited solely to pedestrians (typically intended for hiking, in the NPS context). Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:highway%3Dpath">here</a>.</p>
 
         <p>Tag a trail by tracing its centerline from beginning to end as <code>highway=path</code>. Feel free to add additional information using the following keys:</p>
 
@@ -1277,11 +1277,97 @@
           <li><a href="http://wiki.openstreetmap.org/wiki/Key:tracktype"><code>tracktype=</code></a></li>
           <li><a href="http://wiki.openstreetmap.org/wiki/Key:surface"><code>surface=</code></a></li>
           <li><a href="http://wiki.openstreetmap.org/wiki/Key:width"><code>width=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:maxspeed"><code>maxspeed=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:oneway"><code>oneway=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:lanes"><code>lanes=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:incline"><code>incline=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:mtb:scale"><code>mtb:scale=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:mtb:scale:uphill"><code>mtb:scale:uphill=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:mtb:scale:imba"><code>mtb:scale:imba=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:sac_scale"><code>sac_scale=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:trail_visibility"><code>trail_visibility=</code></a></li>
           <li><a href="http://wiki.openstreetmap.org/wiki/Key:access"><code>access=</code></a></li>
-        </ul>  
+        </ul>
+
+      </div>
+
+      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+        <img class="img-responsive" src="http://placehold.it/750">
+      </div>
+
+    </div>
+    <!-- /.row -->
+
+    <div class="row">
+      <a name="track"></a>
+      <div class="col-lg-5 col-sm-6">
+        <hr class="section-heading-spacer">
+        <div class="clearfix"></div>
+
+        <a href="#track"><h4>Multi-use trail</h4></a>
+
+        <p>A "multi-use" trail is not a specific trail type, rather it is a generalized term used to group the variety of trail types accessible to more than just pedestrians. The default tag for a "multi-use" trail starts with <code>highway=track</code> and includes its access conditions (e.g. <code>horse=yes</code> for equestrian access, <code>bicycle=yes</code> for bicycle access, etc.). The various access conditions are as follows (click for link to OSM wiki):</p>
+
+        <ul>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:atv">ATV trail</a> (<code>atv=</code>)</li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:bicycle">Bicycle trail</a> (<code>bicycle=</code>)</li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:piste:type">Dog sled trail</a> (<code>piste:type=sleigh</code>)</li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:horse">Equestrian trail</a> (<code>horse=</code>)</li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:4wd_only">Four-wheel drive trail</a> (<code>4wd_only=</code>)</li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:motorcycle">Motorcycle trail</a> (<code>motorcycle=</code>)</li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:snowmobile">Snowmobile trail</a> (<code>snowmobile=</code>)</li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:piste:type">Downhill ski trail</a> (<code>piste:type=downhill</code>)</li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:piste:type">Cross-country ski trail</a> (<code>piste:type=nordic</code>)</li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:piste:type">Snowshoe trail</a> (<code>piste:type=hike</code>)</li>
+        </ul>
+
+        <p>Tag a trail by tracing its centerline from beginning to end as <code>highway=path</code>. Feel free to add additional information using the following keys:</p>
+
+        <ul>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:tracktype"><code>tracktype=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:surface"><code>surface=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:width"><code>width=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:incline"><code>incline=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:mtb:scale"><code>mtb:scale=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:mtb:scale:uphill"><code>mtb:scale:uphill=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:mtb:scale:imba"><code>mtb:scale:imba=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:sac_scale"><code>sac_scale=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:trail_visibility"><code>trail_visibility=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:access"><code>access=</code></a></li>
+        </ul>
+
+      </div>
+
+      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+        <img class="img-responsive" src="http://placehold.it/750">
+      </div>
+
+    </div>
+    <!-- /.row -->
+
+    <div class="row">
+      <a name="water_trail"></a>
+      <div class="col-lg-5 col-sm-6">
+        <hr class="section-heading-spacer">
+        <div class="clearfix"></div>
+
+        <a href="#water_trail"><h4>Water trail</h4></a>
+
+        <p>A "water" trail is not a specific trail type, rather it is a generalized term used to group the variety of water-based trail types. The default tag for a "water" trail starts with <code>waterway=yes</code> and includes its access conditions, depending on what type of watercraft is permissable. Places supports the following two water-based access conditions (click for link to OSM wiki):</p>
+
+        <ul>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:canoe">Non-motorized watercraft trail</a> (<code>canoe=</code>) for a route accessible to non-motorized watercraft such as a canoe or kayak.</li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:motorboat">Motorized watercraft trail</a> (<code>motorboat=</code>) for a route accessible to motorized watercraft such as a powerboat or motorized sailboat.</li>
+        </ul>
+
+        <p>Tag a water-based trail by tracing its centerline from beginning to end as <code>highway=path</code>. Feel free to add additional information using the following keys:</p>
+
+        <ul>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:whitewater"><code>whitewater=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:width"><code>width=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:section_grade"><code>section_grade=</code></a></li>
+        </ul>
 
       </div>
 
