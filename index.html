@@ -822,7 +822,7 @@
 
       <div class="col-lg-5 col-lg-offset-2 col-sm-6">
 
-        <p>Click title to jump to road types:</p>
+        <p>Click title to jump to road type:</p>
 
         <ul>
           <li><a href="#primary_road">Primary road</a>: <code>highway=primary</code></li>
@@ -832,11 +832,12 @@
           <li><a href="#unclassified_road">Unclassified road</a>: <code>highway=unclassified</code></li>
           <li><a href="#service_road">Service road</a>: <code>highway=service</code></li>
           <li><a href="#bridge">Bridge</a>: <code>bridge=yes</code></li>
+          <li><a href="#sidewalk">Sidewalk</a>: <code>highway=footway</code> and <code>footway=sidewalk</code></li>
         </ul>
 
         <p>Dealing with intersecting roads? Click <a href="#intersections">here</a> to make sure you are connecting them properly.</p>
 
-        <p>Click title to jump to road attributes:</p>
+        <p>Click title to jump to road attribute:</p>
 
         <ul>
           <li><a href="#surface">Surface</a>: <code>surface=</code></li>
@@ -1071,6 +1072,36 @@
     <!-- /.row -->
 
     <div class="row">
+      <a name="sidewalk"></a>
+      <div class="col-lg-5 col-sm-6">
+        <hr class="section-heading-spacer">
+        <div class="clearfix"></div>
+
+        <a href="#sidewalk"><h4>Sidewalk</h4></a>
+
+        <p>A sidewalk is a part of a road dedicated for pedestrian use, usually separated from the road by a curb. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Sidewalks">here</a>.</p>
+
+        <p>Tag a sidewalk road by tracing its centerline from beginning to end as <code>highway=footway</code> and <code>footway=sidewalk</code>. If the sidewalk crosses a road, tag the associated way with <code>footway=crossing</code>. Feel free to add additional information using the following keys:</p>
+
+        <ul>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:surface"><code>surface=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:lit"><code>lit=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:width"><code>width=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:access"><code>access=</code></a></li>
+        </ul>  
+
+      </div>
+
+      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+        <img class="img-responsive" src="http://placehold.it/750">
+      </div>
+
+    </div>
+    <!-- /.row -->
+
+    <div class="row">
       <a name="intersections"></a>
       <div class="col-lg-5 col-sm-6">
         <hr class="section-heading-spacer">
@@ -1201,9 +1232,27 @@
         <a href="#trails"><h2 class="section-heading">Trails</h2></a>
         <h4>Linear feature</h4>
 
-        <p></p>
+        <p>Like roads, trails are identified primarily by the <a href="http://wiki.openstreetmap.org/wiki/Key:highway"><code>highway=</code></a> field (click for link to OSM wiki). Trails are distinct from roads in that they are generally intended for recreation, while roads are generally intended for use by motor vehicles. As noted in the <a href="#roads">roads</a> section, the exceptions to this rule are: all-terrain vehicle (ATV) trails, four-wheel drive (4wd) trails, motorized watercraft trails, and snowmobile trails, which all allow their respective type of motor vehicle access.</p>
 
-        <img src="img/id_line.jpg" style="box-shadow: 5px 5px 15px #888;">
+        <p>Trace a trail by using the <code>Line</code> tool to trace its centerline from beginning to end:</p>
+
+        <img src="img/id_line.jpg" style="box-shadow: 5px 5px 15px #888; margin: 10px 0 20px 0;">
+
+        <p>The tags for different trail types will vary, classified below. <i>If the trail classification is unknown, or if it is only accessible on foot, default to the</i> <a href="#path"><code>highway=path</code></a> <i>tag (click to jump to description). If a trail is accessible to more than just walking/hiking (e.g.</i> <code>horse=yes</code> <i>for a trail accessible to equestrians), default to the</i> <a href="#track"><code>highway=track</code></a> <i>tag and include the associated accessibility.</i></p>
+
+        <p>Note: remember to tag the start of each trail with <a href="#trailhead"><code>highway=trailhead</code></a> (click to jump to feature description).</p>
+
+      </div>
+
+      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+
+        <p>Click title to jump to generalized trail type (multi-use and water trails require additional tags to classify properly):</p>
+
+        <ul>
+          <li><a href="#path">Footpath</a>: <code>highway=path</code></li>
+          <li><a href="#track">Multi-use trail</a>: <code>highway=track</code></li>
+          <li><a href="#water">Water trail</a>: <code>waterway=yes</code></li>
+        </ul>
 
       </div>
       
