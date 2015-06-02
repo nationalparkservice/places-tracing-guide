@@ -10,7 +10,7 @@ Currently in development.
 - [X] Make responsive
 - [ ] Add description for each feature
 - [ ] Add image/gif for each feature
-- [X] Add NPMaki icon for each feature
+- [X] Add NPMaki icon for each POI
 
 #### Secondary
 
