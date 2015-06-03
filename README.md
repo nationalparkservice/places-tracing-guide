@@ -18,11 +18,11 @@ Currently in development.
 #### Secondary
 
 - [ ] Remove optional fields not currently supported
-- [ ] Add tags for each optional field
 
 #### Under consideration:
 
 - [ ] Change hamburger menu interactivity (menu to disappear after selection on mobile) 
 - [ ] Nest POI types in collapsable menu?
+- [ ] Nest optional fields under each preset in collapsable menu?
 - [ ] Include GIS tags?
 - [ ] Add walkthrough of iD interface?
