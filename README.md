@@ -12,6 +12,8 @@ Currently in development.
 - [ ] Add image/gif for each feature
 - [X] Add NPMaki icon for each POI
 - [X] Add favicon
+- [ ] Figure out fix for raw gif auto download
+- [ ] Add names for optional fields as displayed in editor (preserve tag next to name as well)
 
 #### Secondary
 
