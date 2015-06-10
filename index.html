@@ -1262,7 +1262,7 @@
         <a href="#trails"><h2 class="section-heading">Trails</h2></a>
         <h4>Linear feature</h4>
 
-        <p>Trails are identified primarily by the <a href="http://wiki.openstreetmap.org/wiki/Key:highway"><code>highway=</code></a> field, along with the <a href="http://wiki.openstreetmap.org/wiki/Tag:route%3Dpiste"><code>route=piste</code></a> tag for certain classifications (click each for link to OSM wiki). <!-- Trails are distinct from roads in that they are generally intended for recreation, while roads are generally intended for use by motor vehicles. As noted in the <a href="#roads">roads</a> section, the exceptions to this rule are: all-terrain vehicle (ATV) trails, four-wheel drive (4wd) trails, motorized watercraft trails, and snowmobile trails, which all allow their respective type of motor vehicle access.</p>
+        <p>Trails are identified primarily by the <a href="http://wiki.openstreetmap.org/wiki/Key:highway"><code>highway=</code></a> field, along with the <a href="http://wiki.openstreetmap.org/wiki/Tag:route%3Dpiste"><code>route=piste</code></a> tag for specific winter sport classifications (click each for link to OSM wiki). <!-- Trails are distinct from roads in that they are generally intended for recreation, while roads are generally intended for use by motor vehicles. As noted in the <a href="#roads">roads</a> section, the exceptions to this rule are: all-terrain vehicle (ATV) trails, four-wheel drive (4wd) trails, motorized watercraft trails, and snowmobile trails, which all allow their respective type of motor vehicle access.</p>
 
         <p> -->Trace a trail by using the <code>Line</code> tool to trace its centerline from beginning to end:</p>
 
@@ -1303,8 +1303,8 @@
         <p>Tag a non-motorized trail by tracing its centerline from beginning to end as <code>highway=path</code> along with its access conditions, as appropriate (click for link to OSM wiki):</p>
 
         <ul>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:bicycle">Bicycle trail</a> (<code>bicycle=</code>)</li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:horse">Equestrian trail</a> (<code>horse=</code>)</li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:bicycle">Bicycle Trail</a> (<code>bicycle=</code>)</li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:horse">Equestrian Trail</a> (<code>horse=</code>)</li>
         </ul>
 
         <p>Feel free to add additional information using the following keys:</p>
@@ -1346,10 +1346,10 @@
         <p>Tag a motorized trail by tracing its centerline from beginning to end as <code>highway=track</code> along with its access conditions, as appropriate (click for link to OSM wiki):</p>
 
         <ul>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:atv">ATV trail</a> (<code>atv=</code>)</li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:4wd_only">Four-wheel drive trail</a> (<code>4wd_only=</code>)</li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:motorcycle">Motorcycle trail</a> (<code>motorcycle=</code>)</li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:snowmobile">Snowmobile trail</a> (<code>snowmobile=</code>)</li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:atv">ATV Trail</a> (<code>atv=</code>)</li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:4wd_only">Four-Wheel Drive Trail</a> (<code>4wd_only=</code>)</li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:motorcycle">Motorcycle Trail</a> (<code>motorcycle=</code>)</li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:snowmobile">Snowmobile Trail</a> (<code>snowmobile=</code>)</li>
         </ul>
 
         <p>Feel free to add additional information using the following keys:</p>
@@ -1386,21 +1386,36 @@
 
         <a href="#piste"><h4>Piste</h4></a>
 
-        <p>A "water" trail is not a specific trail type, rather it is a generalized term used to group the variety of water-based trail types. The default tag for a "water" trail starts with <code>waterway=yes</code> and includes its access conditions, depending on what type of watercraft is permissable. Places supports the following two water-based access conditions (click for link to OSM wiki):</p>
+        <p>A piste is a trail intended for winter sports such as downhill and cross-country skiing, dog sledding, and snowshoeing. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:route%3Dpiste">here</a>.</p>
+
+        <p>Tag a piste by tracing its centerline from beginning to end as <code>route=piste</code> along with its access conditions, as appropriate (click for link to OSM wiki):</p>
 
         <ul>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:canoe">Non-motorized watercraft trail</a> (<code>canoe=</code>) for a route accessible to non-motorized watercraft such as a canoe or kayak.</li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:motorboat">Motorized watercraft trail</a> (<code>motorboat=</code>) for a route accessible to motorized watercraft such as a powerboat or motorized sailboat.</li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:piste:type">Dog Sled Trail</a> (<code>piste:type=sleigh</code>)</li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:piste:type">Downhill Ski Trail</a> (<code>piste:type=downhill</code>)</li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:piste:type">Cross-Country Ski Trail</a> (<code>piste:type=nordic</code>)</li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:piste:type">Backcountry Ski Trail</a> (<code>piste:type=skitour</code>)</li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:piste:type">Sledding</a> (<code>piste:type=sled</code>)</li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:piste:type">Snowshoe Trail</a> (<code>piste:type=hike</code>)</li>
         </ul>
 
-        <p>Tag a water-based trail by tracing its centerline from beginning to end as <code>highway=path</code>. Feel free to add additional information using the following keys:</p>
+        <p>In the event a piste and a generic trail (motorized or non-motorized) are co-located, tag both classifications as they would be tagged individually. For example, if a trail is both a generic footpath (intended for hiking) and a downhill ski trail tag the associated way <code>highway=path</code>, <code>route=piste</code>, and <code>piste:type=downhill</code>.</p>
+
+        <p>Feel free to add additional information using the following keys:</p>
 
         <ul>
           <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
           <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:whitewater"><code>whitewater=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:tracktype"><code>tracktype=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:surface"><code>surface=</code></a></li>
           <li><a href="http://wiki.openstreetmap.org/wiki/Key:width"><code>width=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:section_grade"><code>section_grade=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:incline"><code>incline=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:mtb:scale"><code>mtb:scale=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:mtb:scale:uphill"><code>mtb:scale:uphill=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:mtb:scale:imba"><code>mtb:scale:imba=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:sac_scale"><code>sac_scale=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:trail_visibility"><code>trail_visibility=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:access"><code>access=</code></a></li>
         </ul>
 
       </div>
@@ -1420,14 +1435,14 @@
 
         <a href="#water_trail"><h4>Water Trail</h4></a>
 
-        <p>A "water" trail is not a specific trail type, rather it is a generalized term used to group the variety of water-based trail types. The default tag for a "water" trail starts with <code>waterway=yes</code> and includes its access conditions, depending on what type of watercraft is permissable. Places supports the following two water-based access conditions (click for link to OSM wiki):</p>
+        <p>A water trail is a trail running through a waterway, intended for canoes, kayaks, motorboats, etc. Tag a water trail by tracing its centerline from beginning to end as <code>waterway=yes</code> along with its access conditions, as appropriate (click for link to OSM wiki):</p>
 
         <ul>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:canoe">Non-motorized watercraft trail</a> (<code>canoe=</code>) for a route accessible to non-motorized watercraft such as a canoe or kayak.</li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:motorboat">Motorized watercraft trail</a> (<code>motorboat=</code>) for a route accessible to motorized watercraft such as a powerboat or motorized sailboat.</li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:canoe">Non-Motorized Watercraft Trail</a> (<code>canoe=</code>) for a route accessible to non-motorized watercraft such as a canoe or kayak.</li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:motorboat">Motorized Watercraft Trail</a> (<code>motorboat=</code>) for a route accessible to motorized watercraft such as a powerboat or motorized sailboat.</li>
         </ul>
 
-        <p>Tag a water-based trail by tracing its centerline from beginning to end as <code>highway=path</code>. Feel free to add additional information using the following keys:</p>
+        <p>Feel free to add additional information using the following keys:</p>
 
         <ul>
           <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
