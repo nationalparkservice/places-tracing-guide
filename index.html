@@ -1056,7 +1056,7 @@
 
         <p>A bridge is a structure used to carry a road, railway, or similar feature over another feature. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Key:bridge">here</a>.</p>
 
-        <p>Tag a bridge by splitting the upper way at each end of the bridge (where it joins solid ground) and tag as <code>bridge=yes</code>. Also, add <code>layer=1</code>, which will create the hierarchy indicating the upper way is above the lower.</p>
+        <p>Tag a bridge by splitting the upper way at each end of the bridge (where it joins solid ground) and add the tag <code>bridge=yes</code> (remember to maintain the road's existing classification, e.g. <code>highway=primary</code>). Also, add <code>layer=1</code>, which will create the hierarchy indicating the upper way is above the lower.</p>
 
         <ul>
           <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
@@ -1081,9 +1081,9 @@
 
         <a href="#tunnel"><h4>Tunnel</h4></a>
 
-        <p>A tunnel is... Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Key:tunnel">here</a>.</p>
+        <p>A tunnel is an underground or underwater passageway enclosed except for its entrance and exit at each end. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Key:tunnel">here</a>.</p>
 
-        <p>Tag a tunnel by... Also, add <code>layer=-1</code>, which will create the hierarchy indicating the tunnel is underneath the feature it intersects.</p>
+        <p>Tag a tunnel by splitting the enclosed section of the way and adding the tag <code>tunnel=yes</code> (remember to maintain the road's existing classification, e.g. <code>highway=primary</code>). Also, add <code>layer=-1</code>, which will create the hierarchy indicating the tunnel is underneath the feature it intersects.</p>
 
         <ul>
           <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
@@ -1095,7 +1095,7 @@
       </div>
 
       <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/bridge.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/bridge.gif" style="box-shadow: 5px 5px 15px #888";></a>
+        <img class="img-responsive" src="http://placehold.it/750">
       </div>
 
     </div>
