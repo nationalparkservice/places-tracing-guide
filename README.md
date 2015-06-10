@@ -8,7 +8,7 @@ Currently in development.
 
 - [X] Build out skeleton structure
 - [X] Make responsive
-- [ ] Add description for each feature
+- [X] Add description for each feature
 - [ ] Add image/gif for each feature
 - [X] Add NPMaki icon for each POI
 - [X] Add favicon
