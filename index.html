@@ -1475,11 +1475,11 @@
         <div class="clearfix"></div>
 
         <a href="#parking"><h2 class="section-heading">Parking</h2></a>
-        <h4>Area and point feature</h4>
+        <h4>Area, point, and line feature</h4>
 
-        <p>Parking takes two primary forms in Places: <a href="#parking_lot">parking lots</a> and <a href="#parking_aisle">parking aisles</a> (click each to jump to description). Learn more from the <a href="http://wiki.openstreetmap.org/wiki/Tag:amenity%3Dparking"><code>amenity=parking</code></a> and <a href="http://wiki.openstreetmap.org/wiki/Tag:service%3Dparking_aisle"><code>service=parking_aisle</code></a> OSM wikis.</p>
+        <p>Parking takes two primary forms in Places: <a href="#parking_amenity">parking</a> (a generic term, indicating parking is available as an amenity, typically in the form of a parking lot or garage) and <a href="#parking_aisle">parking aisles</a> (click each to jump to description). Learn more from the <a href="http://wiki.openstreetmap.org/wiki/Tag:amenity%3Dparking"><code>amenity=parking</code></a> and <a href="http://wiki.openstreetmap.org/wiki/Tag:service%3Dparking_aisle"><code>service=parking_aisle</code></a> OSM wikis.</p>
 
-        <p>Best practice is to trace a parking lot's footprint with the <code>Area</code> tool and add a node in the center of the area with the <code>Point</code> tool and tag both as <code>amenity=parking</code>.</p>
+        <p>Best practice is to trace a parking lot's footprint with the <code>Area</code> tool and add a node in the center of the area with the <code>Point</code> tool and tag both as <code>amenity=parking</code>. If it is a parking garage, add <code>building=yes</code> to the polygon.</p>
 
         <img src="img/id_point.jpg" style="box-shadow: 5px 5px 15px #888; margin: 10px 5px 20px 0;">
 
@@ -1492,7 +1492,7 @@
         <p>More on each feature type below (click title to jump to type):</p>
 
         <ul>
-          <li><a href="#parking_lot">Parking</a>: <code>amenity=parking</code></li>
+          <li><a href="#parking_amenity">Parking</a>: <code>amenity=parking</code></li>
           <li><a href="#parking_aisle">Parking Aisle</a>: <code>highway=service</code> and <code>service=parking_aisle</code></li>
         </ul>
 
@@ -1500,6 +1500,66 @@
       
     </div>
     <!-- /.row -->
+
+    <div class="row">
+      <a name="parking_amenity"></a>
+      <div class="col-lg-5 col-sm-6">
+        <hr class="section-heading-spacer">
+        <div class="clearfix"></div>
+
+        <a href="#parking_amenity"><h4>Parking</h4></a>
+
+        <p>Parking is...</p>
+
+        <p>Feel free to add additional information using the following keys:</p>
+
+        <ul>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:address"><code>addr=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:capacity"><code>capacity=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:maxstay"><code>maxstay=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:fee"><code>fee=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:access"><code>access=</code></a></li>
+        </ul>
+
+      </div>
+
+      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+        <img class="img-responsive" src="http://placehold.it/750">
+      </div>
+
+    </div>
+    <!-- /.row -->
+
+    <div class="row">
+      <a name="parking_aisle"></a>
+      <div class="col-lg-5 col-sm-6">
+        <hr class="section-heading-spacer">
+        <div class="clearfix"></div>
+
+        <a href="#parking_aisle"><h4>Parking Aisle</h4></a>
+
+        <p>A parking aisle is...</p>
+
+        <p>Feel free to add additional information using the following keys:</p>
+
+        <ul>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:surface"><code>surface=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:oneway"><code>oneway=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:access"><code>access=</code></a></li>
+        </ul>
+
+      </div>
+
+      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+        <img class="img-responsive" src="http://placehold.it/750">
+      </div>
+
+    </div>
+    <!-- /.row -->
+
   </div>
   <!-- /.container -->
 </div>
