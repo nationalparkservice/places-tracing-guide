@@ -809,11 +809,11 @@
         <a href="#roads"><h2 class="section-heading">Roads</h2></a>
         <h4>Linear feature</h4>
 
-        <p>Roads and trails are identified primarily by the <a href="http://wiki.openstreetmap.org/wiki/Key:highway"><code>highway=</code></a> field (click for link to OSM wiki). Roads are distinct from trails in that they are generally intended for use by motor vehicles, while trails are generally intended for recreation such as hiking, biking, horseback riding, skiing, etc.</p>
+        <p>Roads are identified primarily by the <a href="http://wiki.openstreetmap.org/wiki/Key:highway"><code>highway=</code></a> field (click for link to OSM wiki). <!-- Roads are distinct from trails in that they are generally intended for use by motor vehicles, while trails are generally intended for recreation such as hiking, biking, horseback riding, skiing, etc.</p>
 
-        <p>There are a few exceptions to this rule, including all-terrain vehicle (ATV) trails, four-wheel drive (4wd) trails, motorized watercraft trails, and snowmobile trails, which all allow their respective type of motor vehicle access.</p>
+        <p>There are a few exceptions to this rule, including all-terrain vehicle (ATV) trails, four-wheel drive (4wd) trails, motorized watercraft trails, and snowmobile trails, which all allow their respective type of motor vehicle access. --><!-- </p> -->
 
-        <p>Trace a road by using the <code>Line</code> tool to trace its centerline from beginning to end:</p>
+        <!-- <p> -->Trace a road by using the <code>Line</code> tool to trace its centerline from beginning to end:</p>
 
         <img src="img/id_line.jpg" style="box-shadow: 5px 5px 15px #888; margin: 10px 0 20px 0;">
 
@@ -823,7 +823,7 @@
 
       <div class="col-lg-5 col-lg-offset-2 col-sm-6">
 
-        <p>Click title to jump to road type:</p>
+        <p>Road types (click title to jump to type):</p>
 
         <ul>
           <li><a href="#primary_road">Primary Road</a>: <code>highway=primary</code></li>
@@ -833,12 +833,13 @@
           <li><a href="#unclassified_road">Unclassified Road</a>: <code>highway=unclassified</code></li>
           <li><a href="#service_road">Service Road</a>: <code>highway=service</code></li>
           <li><a href="#bridge">Bridge</a>: <code>bridge=yes</code></li>
+          <li><a href="#tunnel">Tunnel</a>: <code>tunnel=yes</code></li>
           <li><a href="#sidewalk">Sidewalk</a>: <code>highway=footway</code> and <code>footway=sidewalk</code></li>
         </ul>
 
         <p>Dealing with intersecting roads? Click <a href="#intersections">here</a> to make sure you are connecting them properly.</p>
 
-        <p>Click title to jump to road attribute:</p>
+        <p>Road attributes (click title to jump to attribute):</p>
 
         <ul>
           <li><a href="#surface">Surface</a>: <code>surface=</code></li>
@@ -1073,6 +1074,34 @@
     <!-- /.row -->
 
     <div class="row">
+      <a name="tunnel"></a>
+      <div class="col-lg-5 col-sm-6">
+        <hr class="section-heading-spacer">
+        <div class="clearfix"></div>
+
+        <a href="#tunnel"><h4>Tunnel</h4></a>
+
+        <p>A tunnel is... Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Key:tunnel">here</a>.</p>
+
+        <p>Tag a tunnel by... Also, add <code>layer=-1</code>, which will create the hierarchy indicating the tunnel is underneath the feature it intersects.</p>
+
+        <ul>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:address"><code>addr=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:opening_hours"><code>opening_hours=</code></a></li>
+        </ul>  
+
+      </div>
+
+      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/bridge.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/bridge.gif" style="box-shadow: 5px 5px 15px #888";></a>
+      </div>
+
+    </div>
+    <!-- /.row -->
+
+    <div class="row">
       <a name="sidewalk"></a>
       <div class="col-lg-5 col-sm-6">
         <hr class="section-heading-spacer">
@@ -1233,26 +1262,27 @@
         <a href="#trails"><h2 class="section-heading">Trails</h2></a>
         <h4>Linear feature</h4>
 
-        <p>Like roads, trails are identified primarily by the <a href="http://wiki.openstreetmap.org/wiki/Key:highway"><code>highway=</code></a> field (click for link to OSM wiki). Trails are distinct from roads in that they are generally intended for recreation, while roads are generally intended for use by motor vehicles. As noted in the <a href="#roads">roads</a> section, the exceptions to this rule are: all-terrain vehicle (ATV) trails, four-wheel drive (4wd) trails, motorized watercraft trails, and snowmobile trails, which all allow their respective type of motor vehicle access.</p>
+        <p>Trails are identified primarily by the <a href="http://wiki.openstreetmap.org/wiki/Key:highway"><code>highway=</code></a> field, along with the <a href="http://wiki.openstreetmap.org/wiki/Tag:route%3Dpiste"><code>route=piste</code></a> tag for certain classifications (click each for link to OSM wiki). <!-- Trails are distinct from roads in that they are generally intended for recreation, while roads are generally intended for use by motor vehicles. As noted in the <a href="#roads">roads</a> section, the exceptions to this rule are: all-terrain vehicle (ATV) trails, four-wheel drive (4wd) trails, motorized watercraft trails, and snowmobile trails, which all allow their respective type of motor vehicle access.</p>
 
-        <p>Trace a trail by using the <code>Line</code> tool to trace its centerline from beginning to end:</p>
+        <p> -->Trace a trail by using the <code>Line</code> tool to trace its centerline from beginning to end:</p>
 
         <img src="img/id_line.jpg" style="box-shadow: 5px 5px 15px #888; margin: 10px 0 20px 0;">
 
-        <p>The tags for different trail types will vary, classified below. <i>If the trail classification is unknown, or if it is only accessible on foot, default to the</i> <a href="#path"><code>highway=path</code></a> <i>tag (click to jump to description). If a trail is accessible to more than just walking/hiking (e.g.</i> <code>horse=yes</code> <i>for a trail accessible to equestrians), default to the</i> <a href="#track"><code>highway=track</code></a> <i>tag and include the associated accessibility.</i></p>
+        <p>The tags for different trail types will vary, classified below. <i>If the trail classification is unknown, default to the</i> <a href="#path"><code>highway=path</code></a> <i>tag (click to jump to description). If the trail classification is unknown but it is accessible to motorized vehicles, default to the</i> <a href="#track"><code>highway=track</code></a> <i>tag (click to jump to description).</i></p>
 
-        <p>Note: remember to tag the start of each trail with <a href="#trailhead"><code>highway=trailhead</code></a> (click to jump to feature description).</p>
+        <p>Note: remember to tag the start of each trail with <a href="#trailhead"><code>highway=trailhead</code></a> (click to jump to description).</p>
 
       </div>
 
       <div class="col-lg-5 col-lg-offset-2 col-sm-6">
 
-        <p>Click title to jump to generalized trail type (multi-use and water trails require additional tags to classify properly):</p>
+        <p>Trail types (click title to jump to type):</p>
 
         <ul>
-          <li><a href="#path">Trail (footpath)</a>: <code>highway=path</code></li>
-          <li><a href="#track">Multi-use trail</a>: <code>highway=track</code></li>
-          <li><a href="#water_trail">Water trail</a>: <code>waterway=yes</code></li>
+          <li><a href="#path">Trail (non-motorized)</a>: <code>highway=path</code></li>
+          <li><a href="#track">Trail (motorized)</a>: <code>highway=track</code></li>
+          <li><a href="#piste">Piste</a>: <code>route=piste</code></li>
+          <li><a href="#water_trail">Water Trail</a>: <code>waterway=yes</code></li>
         </ul>
 
       </div>
@@ -1266,11 +1296,18 @@
         <hr class="section-heading-spacer">
         <div class="clearfix"></div>
 
-        <a href="#path"><h4>Trail (footpath)</h4></a>
+        <a href="#path"><h4>Trail (non-motorized)</h4></a>
 
-        <p>A trail, also commonly referred to as a footpath, is a trail intended for pedestrian use or "foot traffic" (typically intended for hiking, in the NPS context). Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:highway%3Dpath">here</a>.</p>
+        <p>A non-motorized trail is intended for non-motorized traffic including pedestrian use ("foot traffic"), biking, or horseback riding. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:highway%3Dpath">here</a>.</p>
 
-        <p>Tag a trail by tracing its centerline from beginning to end as <code>highway=path</code>. Feel free to add additional information using the following keys:</p>
+        <p>Tag a non-motorized trail by tracing its centerline from beginning to end as <code>highway=path</code> along with its access conditions, as appropriate (click for link to OSM wiki):</p>
+
+        <ul>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:bicycle">Bicycle trail</a> (<code>bicycle=</code>)</li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:horse">Equestrian trail</a> (<code>horse=</code>)</li>
+        </ul>
+
+        <p>Feel free to add additional information using the following keys:</p>
 
         <ul>
           <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
@@ -1302,24 +1339,20 @@
         <hr class="section-heading-spacer">
         <div class="clearfix"></div>
 
-        <a href="#track"><h4>Multi-use trail</h4></a>
+        <a href="#track"><h4>Trail (motorized)</h4></a>
 
-        <p>A "multi-use" trail is not a specific trail type, rather it is a generalized term used to group the variety of trail types accessible to more than just pedestrians. The default tag for a "multi-use" trail starts with <code>highway=track</code> and includes its access conditions (e.g. <code>horse=yes</code> for equestrian access, <code>bicycle=yes</code> for bicycle access, etc.). The various access conditions are as follows (click for link to OSM wiki):</p>
+        <p>A motorized trail is permissive to motorized traffic, such as all-terrain vehicles (ATVs), four-wheel drive (4wd) vehicles, motorcycles, and snowmobiles. A motorized trail can be permissive to non-motorized traffic as well, but it must be permissive to motorized traffic to warrant this classification.</p>
+
+        <p>Tag a motorized trail by tracing its centerline from beginning to end as <code>highway=track</code> along with its access conditions, as appropriate (click for link to OSM wiki):</p>
 
         <ul>
           <li><a href="http://wiki.openstreetmap.org/wiki/Key:atv">ATV trail</a> (<code>atv=</code>)</li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:bicycle">Bicycle trail</a> (<code>bicycle=</code>)</li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:piste:type">Dog sled trail</a> (<code>piste:type=sleigh</code>)</li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:horse">Equestrian trail</a> (<code>horse=</code>)</li>
           <li><a href="http://wiki.openstreetmap.org/wiki/Key:4wd_only">Four-wheel drive trail</a> (<code>4wd_only=</code>)</li>
           <li><a href="http://wiki.openstreetmap.org/wiki/Key:motorcycle">Motorcycle trail</a> (<code>motorcycle=</code>)</li>
           <li><a href="http://wiki.openstreetmap.org/wiki/Key:snowmobile">Snowmobile trail</a> (<code>snowmobile=</code>)</li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:piste:type">Downhill ski trail</a> (<code>piste:type=downhill</code>)</li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:piste:type">Cross-country ski trail</a> (<code>piste:type=nordic</code>)</li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:piste:type">Snowshoe trail</a> (<code>piste:type=hike</code>)</li>
         </ul>
 
-        <p>Tag a trail by tracing its centerline from beginning to end as <code>highway=path</code>. Feel free to add additional information using the following keys:</p>
+        <p>Feel free to add additional information using the following keys:</p>
 
         <ul>
           <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
@@ -1346,12 +1379,46 @@
     <!-- /.row -->
 
     <div class="row">
+      <a name="piste"></a>
+      <div class="col-lg-5 col-sm-6">
+        <hr class="section-heading-spacer">
+        <div class="clearfix"></div>
+
+        <a href="#piste"><h4>Piste</h4></a>
+
+        <p>A "water" trail is not a specific trail type, rather it is a generalized term used to group the variety of water-based trail types. The default tag for a "water" trail starts with <code>waterway=yes</code> and includes its access conditions, depending on what type of watercraft is permissable. Places supports the following two water-based access conditions (click for link to OSM wiki):</p>
+
+        <ul>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:canoe">Non-motorized watercraft trail</a> (<code>canoe=</code>) for a route accessible to non-motorized watercraft such as a canoe or kayak.</li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:motorboat">Motorized watercraft trail</a> (<code>motorboat=</code>) for a route accessible to motorized watercraft such as a powerboat or motorized sailboat.</li>
+        </ul>
+
+        <p>Tag a water-based trail by tracing its centerline from beginning to end as <code>highway=path</code>. Feel free to add additional information using the following keys:</p>
+
+        <ul>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:whitewater"><code>whitewater=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:width"><code>width=</code></a></li>
+          <li><a href="http://wiki.openstreetmap.org/wiki/Key:section_grade"><code>section_grade=</code></a></li>
+        </ul>
+
+      </div>
+
+      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+        <img class="img-responsive" src="http://placehold.it/750">
+      </div>
+
+    </div>
+    <!-- /.row -->
+
+    <div class="row">
       <a name="water_trail"></a>
       <div class="col-lg-5 col-sm-6">
         <hr class="section-heading-spacer">
         <div class="clearfix"></div>
 
-        <a href="#water_trail"><h4>Water trail</h4></a>
+        <a href="#water_trail"><h4>Water Trail</h4></a>
 
         <p>A "water" trail is not a specific trail type, rather it is a generalized term used to group the variety of water-based trail types. The default tag for a "water" trail starts with <code>waterway=yes</code> and includes its access conditions, depending on what type of watercraft is permissable. Places supports the following two water-based access conditions (click for link to OSM wiki):</p>
 
@@ -1393,11 +1460,13 @@
         <div class="clearfix"></div>
 
         <a href="#parking"><h2 class="section-heading">Parking lots</h2></a>
-        <h4>Area or point feature</h4>
+        <h4>Area and point feature</h4>
 
-        <p></p>
+        <p>Parking takes two primary forms in Places: parking lots and parking aisles. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Parking">here</a>. 
 
-        <img src="img/id_line.jpg" style="box-shadow: 5px 5px 15px #888;">
+        a variety of forms. Best practice is to trace a parking lot's footprint with the <code>Area</code> tool and add a node in the center of the area with the <code>Point</code> tool and tag both as <code>amenity=parking</code>.   </p>
+
+        <img src="img/id_point.jpg" style="box-shadow: 5px 5px 15px #888; margin-right: 5px;">
 
         <img src="img/id_area.jpg" style="box-shadow: 5px 5px 15px #888;">
 
