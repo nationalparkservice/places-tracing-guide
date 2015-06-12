@@ -12,10 +12,12 @@ Currently in development.
 - [ ] Add image/gif for each feature
 - [X] Add NPMaki icon for each POI
 - [X] Add favicon
+- [ ] Remove footer links
+- [ ] Implement either [lazy load](http://www.appelsiini.net/projects/lazyload) or GIF preview to enhance load time
+- [ ] Deploy to [www.nps.gov/npmap/tools/places/](www.nps.gov/npmap/tools/places/)
 
 #### Secondary
 
-- [ ] Implement [lazy load](http://www.appelsiini.net/projects/lazyload)
 - [ ] Figure out fix for raw gif auto download
 - [ ] Add names for optional fields as displayed in editor (preserve tag next to name as well)
 - [ ] Remove optional fields not currently supported
@@ -26,4 +28,3 @@ Currently in development.
 - [ ] Nest POI types in collapsable menu?
 - [ ] Nest optional fields under each preset in collapsable menu?
 - [ ] Include GIS tags?
-- [ ] Add walkthrough of iD interface?
