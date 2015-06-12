@@ -1529,19 +1529,9 @@
         <a href="#parking"><h2 class="section-heading">Parking</h2></a>
         <h4>Area, point, and line feature</h4>
 
-        <p>Parking takes two primary forms in Places: <a href="#parking_amenity">parking</a> (a generic term, indicating parking is available as an amenity, typically in the form of a parking lot or garage) and <a href="#parking_aisle">parking aisles</a> (click each to jump to description). Learn more from the <a href="http://wiki.openstreetmap.org/wiki/Tag:amenity%3Dparking"><code>amenity=parking</code></a> and <a href="http://wiki.openstreetmap.org/wiki/Tag:service%3Dparking_aisle"><code>service=parking_aisle</code></a> OSM wikis.</p>
+        <p>Parking takes two primary forms in Places: <a href="#parking_amenity">parking</a> (a generic term, indicating parking is available as an amenity, typically in the form of a parking lot or garage) and <a href="#parking_aisle">parking aisles</a>. Learn more from the <a href="http://wiki.openstreetmap.org/wiki/Tag:amenity%3Dparking"><code>amenity=parking</code></a> and <a href="http://wiki.openstreetmap.org/wiki/Tag:service%3Dparking_aisle"><code>service=parking_aisle</code></a> OSM wikis.</p>
 
-        <p>Best practice is to trace a parking lot's footprint with the <code>Area</code> tool and add a node in the center of the area with the <code>Point</code> tool and tag both as <code>amenity=parking</code>. If it is a parking garage, add <code>building=yes</code> to the polygon.</p>
-
-        <img src="img/id_point.jpg" style="box-shadow: 5px 5px 15px #888; margin: 10px 5px 20px 0;">
-
-        <img src="img/id_area.jpg" style="box-shadow: 5px 5px 15px #888; margin: 10px 0px 20px 0;">
-
-        <p>If the parking lot includes parking aisles, trace these as you would a service road using the <code>Line</code> tool and tag as <code>highway=service</code> and <code>service=parking_aisle</code>.</p>
-
-        <img src="img/id_line.jpg" style="box-shadow: 5px 5px 15px #888; margin: 10px 0 20px 0;">
-
-        <p>More on each feature type below (click title to jump to type):</p>
+        <p>Parking types (click title to jump to type):</p>
 
         <ul>
           <li><a href="#parking_amenity">Parking</a>: <code>amenity=parking</code></li>
@@ -1559,11 +1549,17 @@
         <hr class="section-heading-spacer">
         <div class="clearfix"></div>
 
-        <a href="#parking_amenity"><h4>Parking</h4></a>
+        <a href="#parking_amenity"><h4>Parking (amenity)</h4></a>
 
-        <p>Parking is a facility for use by the public, customers, or other authorized users for the parking of motor vehicles (cars, trucks, motorcycles, etc). This can come in various forms, including a parking lot or garage, among others. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:amenity%3Dparking">here</a>.</p>
+        <p>Parking is a facility available for use by the public, customers, or other authorized users for the parking of motor vehicles (cars, trucks, motorcycles, etc). This can come in various forms, including a parking lot or garage, among others. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:amenity%3Dparking">here</a>.</p>
 
-        <p>Tag parking by tracing the associated area and tag as <code>amenity=parking</code>. Add a point in the middle of the area and tag as <code>amenity=parking</code> as well. If the parking area is undefined simply add the point without defining an area. If the feature is a parking garage or building, add the tag <code>building=yes</code> to the polygon.</p>
+        <p>Best practice is to trace a parking lot's footprint with the <code>Area</code> tool and add a node in the center of the area with the <code>Point</code> tool and tag both as <code>amenity=parking</code>.</p>
+
+        <img src="img/id_area.jpg" style="box-shadow: 5px 5px 15px #888; margin: 10px 0px 20px 0;">
+
+        <img src="img/id_point.jpg" style="box-shadow: 5px 5px 15px #888; margin: 10px 5px 20px 0;">
+
+        <p>If the parking area is undefined simply add the point without defining an area. If the feature is a parking garage or building, add the tag <code>building=yes</code> to the polygon.</p>
 
         <p>Feel free to add additional information using the following keys:</p>
 
@@ -1596,7 +1592,11 @@
 
         <p>A parking aisle is a subordinated way in a parking lot between rows of parking spaces that vehicles use to drive into and out of the spaces. Learn more from OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:service%3Dparking_aisle">here</a>.</p>
 
-        <p>Tag a parking aisle by tracing it as you would a service road and tag as <code>highway=service</code> and <code>service=parking_aisle</code>. The main way(s) in the parking lot, for entering and connecting multiple parking aisles, should be tagged <code>highway=service</code> only.</p>
+        <p>Tag a parking aisle by tracing it as you would a service road using the <code>Line</code> tool and tag as <code>highway=service</code> and <code>service=parking_aisle</code>.</p>
+
+        <img src="img/id_line.jpg" style="box-shadow: 5px 5px 15px #888; margin: 10px 0 20px 0;">
+
+        <p>The main way(s) in the parking lot, for entering and connecting multiple parking aisles, should be tagged <code>highway=service</code> only.</p>
 
         <p>Feel free to add additional information using the following keys:</p>
 
