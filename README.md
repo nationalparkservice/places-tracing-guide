@@ -15,6 +15,7 @@ Currently in development.
 
 #### Secondary
 
+- [ ] Implement [lazy load](http://www.appelsiini.net/projects/lazyload)
 - [ ] Figure out fix for raw gif auto download
 - [ ] Add names for optional fields as displayed in editor (preserve tag next to name as well)
 - [ ] Remove optional fields not currently supported
