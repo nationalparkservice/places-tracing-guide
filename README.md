@@ -12,7 +12,7 @@ Currently in development.
 - [ ] Add image/gif for each feature
 - [X] Add NPMaki icon for each POI
 - [X] Add favicon
-- [ ] Remove footer links
+- [X] Remove footer links
 - [ ] Implement either [lazy load](http://www.appelsiini.net/projects/lazyload) or GIF preview to enhance load time
 - [ ] Deploy to [www.nps.gov/npmap/tools/places/](www.nps.gov/npmap/tools/places/)
 
