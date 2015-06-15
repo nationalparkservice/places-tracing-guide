@@ -10,17 +10,6 @@ html {
     height: 100%;
 }
 
-/*body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
-}*/
-
 h4 {
     margin-bottom: 20px;
 }
@@ -67,10 +56,6 @@ h4 {
 
 .intro-message > h3 {
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-}
-
-.intro-message img {
-    /*margin-top: 10px;*/
 }
 
 @media(max-width:767px) {
