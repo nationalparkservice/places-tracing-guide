@@ -22,17 +22,6 @@
     }
   </style>
 
-  <!-- Custom Fonts -->
-<!--   <link href="http://hotosm.github.io/tracing-guides/assets/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-  <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css"> -->
-
-  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-  <![endif]-->
-
 </head>
 
 <body>
@@ -123,7 +112,7 @@
         <p>The Places editor is built using OpenStreetMap's <a href="http://wiki.openstreetmap.org/wiki/ID">iD editor</a>. Check out learnOSM's <a href="http://learnosm.org/en/editing/id-editor/">iD editor walthrough</a> to familiarize yourself with the interface. It is intentionally simple, developed with a non-technical audience in mind. So, fear not! Let's jump in and get started.</p>
 
         <form action="http://insidemaps.nps.gov/places/edit/#background=mapbox-satellite&map=4/-96.02/39.06&overlays=park-tiles-overlay">
-          <button type="submit" class="btn btn-primary">Start Mapping Now!</button>
+          <button type="submit" class="btn btn-lg btn-primary">Start Mapping Now!</button>
         </form>
 
         <p><small>Note: must be logged into NPS network </small></p>
@@ -221,7 +210,10 @@
       </div>
 
       <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/campground.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/campground.gif" style="box-shadow: 5px 5px 15px #888"></a>
+
+        <button type="button" id="image-popover" class="btn btn-lg btn-primary" data-toggle="popover" data-placement="bottom" data-container="body" data-html="true" data-title="<strong>Campground:</strong> <code>tourism=camp_site</code>" data-content="<img src='https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/campground.gif'>">Click to toggle popover</button>
+
+        <!-- <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/campground.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/campground.gif" style="box-shadow: 5px 5px 15px #888"></a> -->
       </div>
     </div>
     <!-- /.row -->
@@ -1676,11 +1668,17 @@
   <!-- /.container -->
 <!-- </footer> -->
 
-<!-- jQuery Version 1.11.0 -->
+<!-- jQuery Version 2.1.4 -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
 <!-- NPS Bootstrap JavaScript -->
 <script src="http://www.nps.gov/lib/bootstrap/3.3.2/js/nps-bootstrap.min.js"></script>
+
+<script type="text/javascript">
+
+$('#image-popover').popover()
+
+</script>
 
 </body>
 </html>
