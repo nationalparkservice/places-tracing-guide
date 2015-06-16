@@ -14,8 +14,8 @@ Currently in development.
 - [X] Add favicon
 - [X] Remove footer links
 - [ ] Implement either [lazy load](http://www.appelsiini.net/projects/lazyload) or GIF preview to enhance load time
-- [ ] Add [disclaimer re: park boundary](https://github.com/nationalparkservice/places-tracing-guide/issues/5)
-- [ ] Add [disclaimer re: public-facing data](https://github.com/nationalparkservice/places-tracing-guide/issues/6)
+- [X] Add [disclaimer re: park boundary](https://github.com/nationalparkservice/places-tracing-guide/issues/5)
+- [X] Add [disclaimer re: public-facing data](https://github.com/nationalparkservice/places-tracing-guide/issues/6)
 - [ ] Deploy to [www.nps.gov/npmap/tools/places/](www.nps.gov/npmap/tools/places/)
 
 #### Secondary

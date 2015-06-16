@@ -83,9 +83,9 @@
         
         <a href="#about"><h2 class="section-heading">About Places</h2></a>
 
-        <p><a href="http://insidemaps.nps.gov/places/">Places</a> is an internal data collection system for the National Park Service's "core" geospatial data. We built Places so that all National Park Service employees, both technical and non-technical, can contribute their knowledge to "the map".</p>
+        <p><a href="http://insidemaps.nps.gov/places/">Places</a> is an internal data collection system for the National Park Service's "core" geospatial data. We built Places so that all National Park Service employees, both technical and non-technical, can contribute their knowledge to the map.</p>
 
-        <p>Data from Places is fed directly into both <a href="http://www.nps.gov/npmap/tools/park-tiles/#4/39.06/-96.02">Park Tiles</a> and the larger National Park Service structured data initiative, which will be used to drive <a href="http://www.nps.gov/index.htm">NPS.gov</a> and a publicly available application programming interface (or API) starting in January of 2016.</p>
+        <p>Data from Places is fed directly into both <a href="http://www.nps.gov/npmap/tools/park-tiles/#4/39.06/-96.02">Park Tiles</a> and the larger National Park Service structured data initiative, which will be used to drive <a href="http://www.nps.gov/index.htm">NPS.gov</a> and a publicly available application programming interface (API) starting in January of 2016.</p>
 
         <p>The Places database currently contains the following <a href="http://www.nps.gov/npmap/tools/places/">datasets</a> (click each data type for a snapshot GeoJSON, updated from the database every five minutes):</p>
 
@@ -109,13 +109,15 @@
 
         <p>These datasets were initially seeded from existing park, region, and program-level GIS datasets, but now anyone who is connected to the National Park Service network can edit them using the <a href="http://insidemaps.nps.gov/places/">Places Editor</a> (NPS-only). If your organization has more/better data available and you'd like to get it into Places, <a href="mailto:npmap@nps.gov">send us an email</a> or <a href="https://github.com/nationalparkservice/places-data/issues">create an issue on GitHub</a> and we will assist with the upload.</p>
 
+        <p><mark><strong>Disclaimer: all data contributed to Places is public facing. Do not add any sensitive information unfit for public consumption. Only add data inside park boundaries!</strong></mark></p>
+
         <p>The Places editor is built using OpenStreetMap's <a href="http://wiki.openstreetmap.org/wiki/ID">iD editor</a>. Check out learnOSM's <a href="http://learnosm.org/en/editing/id-editor/">iD editor walthrough</a> to familiarize yourself with the interface. It is intentionally simple, developed with a non-technical audience in mind. So, fear not! Let's jump in and get started.</p>
 
         <form action="http://insidemaps.nps.gov/places/edit/#background=mapbox-satellite&map=4/-96.02/39.06&overlays=park-tiles-overlay">
           <button type="submit" class="btn btn-lg btn-primary">Start Mapping Now!</button>
         </form>
 
-        <p><small>Note: must be logged into NPS network </small></p>
+        <p><small>Note: must be logged into NPS network.</small></p>
 
       </div>
 
@@ -211,7 +213,7 @@
 
       <div class="col-lg-5 col-lg-offset-2 col-sm-6">
 
-        <button type="button" id="image-popover" class="btn btn-lg btn-primary" data-toggle="popover" data-placement="bottom" data-container="body" data-html="true" data-title="<strong>Campground:</strong> <code>tourism=camp_site</code>" data-content="<img src='https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/campground.gif'>">Click to toggle popover</button>
+        <button type="button" id="image-popover" class="btn btn-lg btn-primary" data-toggle="popover" data-placement="bottom" data-container="body" data-html="true" data-title="<strong>Campground:</strong> <code>tourism=camp_site</code>" data-content="<img src='https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/campground.gif'>">View Places Editor preview</button>
 
         <!-- <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/campground.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/campground.gif" style="box-shadow: 5px 5px 15px #888"></a> -->
       </div>
