@@ -816,13 +816,15 @@
         <a href="#buildings"><h2 class="section-heading">Buildings</h2></a>
         <h4>Area feature</h4>
 
-        <p>Buildings in Places are intentionally simple. We are only concerned with building footprints, while any additional building amenities are added as points of interest on top of the footprint. For example, add <code>shop=general</code> as a point of interest on top of the building footprint instead of <code>building=retail</code> as a tag included in the building footprint polygon to represent a general store (see <a href="http://localhost:8888/places-tracing-guide/#store">store</a> above).</p>
+        <p>Buildings in Places are intentionally simple. We are primarily concerned with building footprints, while any additional building amenities are added as points of interest on top of the footprint. For example, add <code>shop=general</code> as a point of interest on top of the building footprint instead of <code>building=retail</code> as a tag included in the building footprint polygon to represent a general store (see <a href="http://localhost:8888/places-tracing-guide/#store">store</a> above).</p>
 
         <p>Trace a building by using the <code>Area</code> tool to trace the building footprint and tag as <code>building=yes</code>.</p>
 
         <img src="img/id_area.jpg" style="box-shadow: 5px 5px 15px #888; margin: 10px 0 20px 0;">
 
-        <p>Don't get too carried away with nodes while tracing - keep it simple to conform to the general shape of the building visible from the imagery. More nodes mean more data, which can ultimately slow the database.</p>
+        <p><small>Note: Don't get too carried away with nodes while tracing - keep it simple to conform to the general shape of the building visible from the imagery. More nodes mean more data, which can ultimately slow the database.</small></p>
+
+        <p>Additionally, if you know the location of the building's entrance or exit you can add it as a vertex on the building footprint polygon in the appropriate location. Tag a building entrance/exit as <code>building=entrance</code>. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:building%3Dentrance">here</a>.</p>
 
       </div>
       
