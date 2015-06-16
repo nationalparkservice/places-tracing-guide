@@ -21,6 +21,7 @@ Currently in development.
 - [ ] Figure out fix for raw gif auto download
 - [ ] Add names for optional fields as displayed in editor (preserve tag next to name as well)
 - [ ] Remove optional fields not currently supported
+- [ ] Add road styles as Places rendering (pull from iD)
 
 #### Under consideration:
 
