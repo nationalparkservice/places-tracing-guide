@@ -14,11 +14,11 @@ Currently in development.
 - [X] Add favicon
 - [X] Remove footer links
 - [ ] Implement either [lazy load](http://www.appelsiini.net/projects/lazyload) or GIF preview to enhance load time
+- [ ] Add [disclaimer re: park boundary](https://github.com/nationalparkservice/places-tracing-guide/issues/5)
+- [ ] Add [disclaimer re: public-facing data](https://github.com/nationalparkservice/places-tracing-guide/issues/6)
 - [ ] Deploy to [www.nps.gov/npmap/tools/places/](www.nps.gov/npmap/tools/places/)
 
 #### Secondary
 
-- [ ] Figure out fix for raw gif auto download
-- [ ] Add names for optional fields as displayed in editor (preserve tag next to name as well)
 - [ ] Remove optional fields not currently supported
 - [ ] Add road styles as Places rendering (pull from iD)
