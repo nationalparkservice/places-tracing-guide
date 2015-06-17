@@ -109,7 +109,7 @@
 
         <p>These datasets were initially seeded from existing park, region, and program-level GIS datasets, but now anyone who is connected to the National Park Service network can edit them using the <a href="http://insidemaps.nps.gov/places/">Places Editor</a> (NPS-only). If your organization has more/better data available and you'd like to get it into Places, <a href="mailto:npmap@nps.gov">send us an email</a> or <a href="https://github.com/nationalparkservice/places-data/issues">create an issue on GitHub</a> and we will assist with the upload.</p>
 
-        <p><mark><strong>Disclaimer: all data contributed to Places is public facing. Do not add any sensitive information unfit for public consumption. Only add data inside park boundaries!</strong></mark></p>
+        <p><strong>Disclaimer: all data contributed to Places is public facing. Do not add any sensitive information unfit for public consumption. Only add data inside park boundaries!</strong></p>
 
         <p>The Places editor is built using OpenStreetMap's <a href="http://wiki.openstreetmap.org/wiki/ID">iD editor</a>. Check out learnOSM's <a href="http://learnosm.org/en/editing/id-editor/">iD editor walthrough</a> to familiarize yourself with the interface. It is intentionally simple, developed with a non-technical audience in mind. So, fear not! Let's jump in and get started.</p>
 
@@ -431,7 +431,23 @@
 
         <p>A trailhead is the point at which a trail begins, where the trail is often intended for hiking, biking, skiing, snowshoeing, snowmobiling, horseback riding, or off-road vehicles. <em>There is currently no OSM wiki for trailhead available.</em></p>
 
-        <p>Tag a trailhead with a point on the location of the start of the trail as <code>highway=trailhead</code>.</p>
+        <p>Tag a trailhead with a point on the location of the start of the trail as <code>highway=trailhead</code>. If the trail is intended for specific uses, e.g. biking, add the appropriate "Approved Use" (in this example <code>bicycle=yes</code>).</p>
+
+        <p>Places supports the following "Approved Use" types:</p>
+
+        <ul>
+          <li><code>bicycle=</code></li>
+          <li><code>atv=</code></li>
+          <li><code>4wd_only=</code></li>
+          <li><code>motorcycle=</code></li>
+          <li><code>snowmobile=</code></li>
+          <li><code>horse=</code></li>
+          <li><code>foot=</code></li>
+          <li><code>motor_vehicle=</code></li>
+          <li><code>canoe=</code></li>
+          <li><code>motorcycle=</code></li>
+          <li><code>motorboat=</code></li>
+        </ul>
 
         <p>Feel free to add additional information using the following keys (click for link to OSM wiki):</p>
 
