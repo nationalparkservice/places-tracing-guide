@@ -20,6 +20,14 @@
     .intro-header, .banner {
        background: url("img/carto_background.png") center center;
     }
+
+
+    @media (max-width: 414px) {
+      .row .col-sm-6:last-child {
+        margin-top: 30px;
+      }
+    }
+
   </style>
 
 </head>
@@ -183,11 +191,8 @@
     <!-- /.row -->
 
     <div class="row">
-      <a name="campground"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
+      <hr class="col-lg-12 col-sm-12 section-heading-spacer" style="width:100%;">
+      <div class="col-lg-6 col-sm-6">
         <a href="#campground"><h4>Campground</h4></a>
 
         <p>A campground is an area, usually divided into a number of pitches (or "campsites," see below), where people can camp overnight using tents or camper vans or caravans. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:tourism%3Dcamp_site">here</a>.</p>
@@ -211,9 +216,12 @@
 
       </div>
 
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+      <div class="col-lg-6 col-sm-6">
 
-        <button type="button" id="image-popover" class="btn btn-lg btn-primary" data-toggle="popover" data-placement="bottom" data-container="body" data-html="true" data-title="<strong>Campground:</strong> <code>tourism=camp_site</code>" data-content="<img src='https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/campground.gif'>">View Places Editor preview</button>
+        <button class="btn btn-primary gif-collapse">Test</button>
+        <div class="collapse" data-gif="img/campground.gif"></div>
+
+        <!--<button type="button" id="image-popover" class="btn btn-lg btn-primary" data-toggle="popover" data-placement="bottom" data-container="body" data-html="true" data-title="<strong>Campground:</strong> <code>tourism=camp_site</code>" data-content="<img src='https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/campground.gif'>">View Places Editor preview</button>-->
 
         <!-- <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/campground.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/campground.gif" style="box-shadow: 5px 5px 15px #888"></a> -->
       </div>
@@ -1691,6 +1699,23 @@
 
 <!-- NPS Bootstrap JavaScript -->
 <script src="http://www.nps.gov/lib/bootstrap/3.3.2/js/nps-bootstrap.min.js"></script>
+<script>
+  $('.gif-collapse').click(function() {
+    var $this = $(this),
+      $next = $this.next();
+
+    if ($next.is(':visible')) {
+      $next.hide();
+    } else {
+      if (!$next.html()) {
+        $next.html('<img class="img img-responsive img-thumbnail" src="' + $next.attr('data-gif') + '">');
+      }
+
+      $next.show();
+    }
+  });
+</script>
+
 
 <script type="text/javascript">
 
