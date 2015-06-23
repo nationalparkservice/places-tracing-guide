@@ -13,7 +13,7 @@ Currently in development.
 - [X] Add NPMaki icon for each POI
 - [X] Add favicon
 - [X] Remove footer links
-- [ ] Implement either [lazy load](http://www.appelsiini.net/projects/lazyload) or GIF preview to enhance load time
+- [ ] Implement lazy load + show/hide GIF to enhance load time
 - [X] Add [disclaimer re: park boundary](https://github.com/nationalparkservice/places-tracing-guide/issues/5)
 - [X] Add [disclaimer re: public-facing data](https://github.com/nationalparkservice/places-tracing-guide/issues/6)
 - [ ] Deploy to [www.nps.gov/npmap/tools/places/](www.nps.gov/npmap/tools/places/)
