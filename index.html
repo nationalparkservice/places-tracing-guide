@@ -126,7 +126,7 @@
       </div>
 
       <div class="col-lg-6 col-sm-6">
-        <img class="img-responsive" src="img/nat_cap_sq.jpg" style="box-shadow: 10px 10px 30px #888;">
+        <img class="img-responsive border" src="img/nat_cap_sq.jpg">
       </div>
 
     </div>
@@ -150,7 +150,7 @@
 
         <p>This guide is intended to serve as a starter kit for contributing to Places, so we are going to review some of the most common/basic tags to add to the map. Use iD's <code>Point</code> tool to add a point to the map:</p>
 
-        <img src="img/id_point.jpg" style="box-shadow: 5px 5px 15px #888; margin: 10px 0 10px 0;">
+        <p><img class="border" src="img/id_point.jpg"></p>
 
       </div>
 
@@ -793,7 +793,7 @@
 
         <p>Trace a building by using the <code>Area</code> tool to trace the building footprint and tag as <code>building=yes</code>.</p>
 
-        <img src="img/id_area.jpg" style="box-shadow: 5px 5px 15px #888; margin: 10px 0 20px 0;">
+        <p><img class="border" src="img/id_area.jpg"></p>
 
         <p><small>Note: Don't get too carried away with nodes while tracing - keep it simple to conform to the general shape of the building visible from the imagery. More nodes mean more data, which can ultimately slow the database.</small></p>
 
@@ -823,7 +823,7 @@
 
         <p>Roads are identified primarily by the <a href="http://wiki.openstreetmap.org/wiki/Key:highway"><code>highway=</code></a> field (click for link to OSM wiki). Trace a road by using the <code>Line</code> tool to trace its centerline from beginning to end:</p>
 
-        <img src="img/id_line.jpg" style="box-shadow: 5px 5px 15px #888; margin: 10px 0 20px 0;">
+        <p><img class="border" src="img/id_line.jpg"></p>
 
         <p>The tags for different road types will vary, classified below. <em>If the road classification is unknown, default to the</em> <a href="#unclassified_road"><code>highway=unclassified</code></a> <em>tag (click to jump to description)</em>.</p>
 
@@ -1239,7 +1239,7 @@
 
         <p>Trails are identified primarily by the <a href="http://wiki.openstreetmap.org/wiki/Key:highway"><code>highway=</code></a> field, along with the <a href="http://wiki.openstreetmap.org/wiki/Key:piste:type"><code>piste:type=</code></a> field for specific winter sport classifications (click each for link to OSM wiki). Trace a trail by using the <code>Line</code> tool to trace its centerline from beginning to end:</p>
 
-        <img src="img/id_line.jpg" style="box-shadow: 5px 5px 15px #888; margin: 10px 0 20px 0;">
+        <p><img class="border" src="img/id_line.jpg"></p>
 
         <p>The tags for different trail types will vary, classified below. <em>If the trail classification is unknown, default to the</em> <a href="#path"><code>highway=path</code></a> <em>tag (click to jump to description). If the trail classification is unknown but it is accessible to motorized vehicles, default to the</em> <a href="#track"><code>highway=track</code></a> <em>tag (click to jump to description).</em></p>
 
@@ -1470,9 +1470,10 @@
 
         <p>Best practice is to trace a parking lot's footprint with the <code>Area</code> tool and add a node in the center of the area with the <code>Point</code> tool and tag both as <code>amenity=parking</code>.</p>
 
-        <img src="img/id_area.jpg" style="box-shadow: 5px 5px 15px #888; margin: 10px 0px 20px 0;">
-
-        <img src="img/id_point.jpg" style="box-shadow: 5px 5px 15px #888; margin: 10px 5px 20px 0;">
+        <p>
+          <img class="border" src="img/id_area.jpg">
+          <img class="border" src="img/id_point.jpg">
+        </p>
 
         <p>If the parking area is undefined simply add the point without defining an area. If the feature is a parking garage or building, add the tag <code>building=yes</code> to the polygon.</p>
 
@@ -1508,7 +1509,7 @@
 
         <p>Tag a parking aisle by tracing it as you would a service road using the <code>Line</code> tool and tag as <code>highway=service</code> and <code>service=parking_aisle</code>.</p>
 
-        <img src="img/id_line.jpg" style="box-shadow: 5px 5px 15px #888; margin: 10px 0 20px 0;">
+        <p><img class="border" src="img/id_line.jpg"></p>
 
         <p>The main way(s) in the parking lot, for entering and connecting multiple parking aisles, should be tagged <code>highway=service</code> only.</p>
 

@@ -13,9 +13,10 @@ html {
     margin-top: 53px;
 }
 
-.lead {
-    font-size: 18px;
-    font-weight: 400;
+img.border {
+    padding: 4px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
 }
 
 .intro-header {
@@ -47,6 +48,11 @@ html {
 
 .intro-message > h3 {
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+.lead {
+    font-size: 18px;
+    font-weight: 400;
 }
 
 @media(max-width:767px) {
