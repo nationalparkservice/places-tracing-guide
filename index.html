@@ -21,12 +21,11 @@
        background: url("img/carto_background.png") center center;
     }
 
-
-    @media (max-width: 414px) {
+/*    @media (max-width: 414px) {
       .row .col-sm-6:last-child {
         margin-top: 30px;
       }
-    }
+    }*/
 
   </style>
 
@@ -81,14 +80,11 @@
 </div>
 <!-- /.intro-header -->
 
+<a name="about"></a>
 <div class="content-section-a">
   <div class="container">
-    <a name="about"></a>
     <div class="row">
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-        
+      <div class="col-lg-6 col-sm-6">
         <a href="#about"><h2 class="section-heading">About Places</h2></a>
 
         <p><a href="http://insidemaps.nps.gov/places/">Places</a> is an internal data collection system for the National Park Service's "core" geospatial data. We built Places so that all National Park Service employees, both technical and non-technical, can contribute their knowledge to the map.</p>
@@ -129,7 +125,7 @@
 
       </div>
 
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6 about">
+      <div class="col-lg-6 col-sm-6">
         <img class="img-responsive" src="img/nat_cap_sq.jpg" style="box-shadow: 10px 10px 30px #888;">
       </div>
 
@@ -140,14 +136,11 @@
 </div>
 <!-- /.content-section-a -->
 
+<a name="poi"></a>
 <div class="content-section-b">
   <div class="container">
     <div class="row">
-      <a name="poi"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
+      <div class="col-lg-6 col-sm-6">
         <a href="#poi"><h2 class="section-heading">Points of Interest</h2></a>
         <h4>Point feature</h4>
 
@@ -157,11 +150,11 @@
 
         <p>This guide is intended to serve as a starter kit for contributing to Places, so we are going to review some of the most common/basic tags to add to the map. Use iD's <code>Point</code> tool to add a point to the map:</p>
 
-        <img src="img/id_point.jpg" style="box-shadow: 5px 5px 15px #888; margin: 20px 0 10px 0;">
+        <img src="img/id_point.jpg" style="box-shadow: 5px 5px 15px #888; margin: 10px 0 10px 0;">
 
       </div>
 
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+      <div class="col-lg-6 col-sm-6">
 
         <p>Click title to jump to POI type:</p>
 
@@ -170,7 +163,6 @@
           <li><a href="#campsite">Campsite</a>: <code>tourism=camp_site, camp_site=pitch</code></li>
           <li><a href="#lodge">Lodge</a>: <code>tourism=alpine_hut</code></li>
           <li><a href="#picnic_site">Picnic Area</a>: <code>tourism=picnic_site</code></li>
-          <!-- <li><a href="#picnic_table">Picnic table</a>: <code>leisure=picnic_table</code></li> -->
           <li><a href="#restroom">Restroom</a>: <code>amenity=toilets</code></li>
           <li><a href="#waste_basket">Waste Basket</a>: <code>amenity=waste_basket</code></li>
           <li><a href="#trailhead">Trailhead</a>: <code>highway=trailhead</code></li>
@@ -190,8 +182,9 @@
     </div>
     <!-- /.row -->
 
+    <a name="campground"></a>
     <div class="row">
-      <hr class="col-lg-12 col-sm-12 section-heading-spacer" style="width:100%;">
+      <hr class="col-lg-12 col-sm-12 section-heading-spacer">
       <div class="col-lg-6 col-sm-6">
         <a href="#campground"><h4>Campground</h4></a>
 
@@ -212,28 +205,22 @@
 
         <p><b>Places rendering:</b></p>
 
-        <img src="https://raw.githubusercontent.com/nationalparkservice/symbol-library/master/pngs/campground-black-32.png">
+        <img src="https://raw.githubusercontent.com/nationalparkservice/npmap-symbol-library/gh-pages/pngs/campground-black-32.png">
 
       </div>
 
       <div class="col-lg-6 col-sm-6">
-
-        <button class="btn btn-primary gif-collapse">Test</button>
+        <button class="btn btn-primary gif-collapse">View Places Editor preview</button>
         <div class="collapse" data-gif="img/campground.gif"></div>
-
-        <!--<button type="button" id="image-popover" class="btn btn-lg btn-primary" data-toggle="popover" data-placement="bottom" data-container="body" data-html="true" data-title="<strong>Campground:</strong> <code>tourism=camp_site</code>" data-content="<img src='https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/campground.gif'>">View Places Editor preview</button>-->
-
-        <!-- <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/campground.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/campground.gif" style="box-shadow: 5px 5px 15px #888"></a> -->
       </div>
+
     </div>
     <!-- /.row -->
 
+    <a name="campsite"></a>
     <div class="row">
-      <a name="campsite"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
+      <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+      <div class="col-lg-6 col-sm-6">
         <a href="#campsite"><h4>Campsite</h4></a>
 
         <p>A campsite is an individual pitch within a campground where people can camp overnight using tents or camper vans or caravans. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:tourism%3Dcamp_site">here</a>.</p>
@@ -253,22 +240,22 @@
 
         <p><b>Places rendering:</b></p>
 
-        <img src="https://raw.githubusercontent.com/nationalparkservice/symbol-library/master/pngs/campsite-black-32.png">
+        <img src="https://raw.githubusercontent.com/nationalparkservice/npmap-symbol-library/gh-pages/pngs/campsite-black-32.png">
 
       </div>
 
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/campsite.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/campsite.gif" style="box-shadow: 5px 5px 15px #888"></a>
+      <div class="col-lg-6 col-sm-6">
+        <button class="btn btn-primary gif-collapse">View Places Editor preview</button>
+        <div class="collapse" data-gif="img/campsite.gif"></div>
       </div>
+
     </div>
     <!-- /.row -->
 
+    <a name="lodge"></a>
     <div class="row">
-      <a name="lodge"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
+      <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+      <div class="col-lg-6 col-sm-6">
         <a href="#lodge"><h4>Lodge</h4></a>
 
         <p>A lodge or "alpine hut" is a remote building located in the mountains intended to provide board and lodging. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:tourism%3Dalpine_hut">here</a>.</p>
@@ -286,22 +273,22 @@
 
         <p><b>Places rendering:</b></p>
 
-        <img src="https://raw.githubusercontent.com/nationalparkservice/symbol-library/master/pngs/lodging-black-32.png">
+        <img src="https://raw.githubusercontent.com/nationalparkservice/npmap-symbol-library/gh-pages/pngs/lodging-black-32.png">
 
       </div>
 
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/lodge.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/lodge.gif" style="box-shadow: 5px 5px 15px #888"></a>
+      <div class="col-lg-6 col-sm-6">
+        <button class="btn btn-primary gif-collapse">View Places Editor preview</button>
+        <div class="collapse" data-gif="img/lodge.gif"></div>
       </div>
+
     </div>
     <!-- /.row -->
 
+    <a name="picnic_site"></a>
     <div class="row">
-      <a name="picnic_site"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
+      <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+      <div class="col-lg-6 col-sm-6">
         <a href="#picnic_site"><h4>Picnic Area</h4></a>
 
         <p>A picnic area is an area that is suitable for outdoors eating and may have a number of facilities to aid a picnic: tables, benches, restrooms, grills, water taps, covered pavilions, etc. Or, it may just be a grassy area popular for picnics. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:tourism%3Dpicnic_site">here</a>.</p>
@@ -320,50 +307,22 @@
 
         <p><b>Places rendering:</b></p>
 
-        <img src="https://raw.githubusercontent.com/nationalparkservice/symbol-library/master/pngs/picnic-area-black-32.png">
+        <img src="https://raw.githubusercontent.com/nationalparkservice/npmap-symbol-library/gh-pages/pngs/picnic-area-black-32.png">
 
       </div>
 
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/picnic_site.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/picnic_site.gif" style="box-shadow: 5px 5px 15px #888"></a>
+      <div class="col-lg-6 col-sm-6">
+        <button class="btn btn-primary gif-collapse">View Places Editor preview</button>
+        <div class="collapse" data-gif="img/picnic_site.gif"></div>
       </div>
+
     </div>
     <!-- /.row -->
 
-<!--     <div class="row">
-      <a name="picnic_table"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
-        <a href="#picnic_table"><h4>Picnic Table</h4></a>
-
-        <p>A picnic table is a modified table with benches, expressly for the purpose of eating a meal outdoors (picnicking). Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:tourism%3Dpicnic_table">here</a>.</p>
-
-        <p>Tag a picnic table with a point on top of the table as <code>tourism=picnic_table</code>. Feel free to add additional information using the following keys (click for link to OSM wiki):</p>
-
-        <ul>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:covered"><code>covered=</code></a></li>
-        </ul>
-
-        <p><b>Places rendering:</b></p>
-
-        <img src="https://raw.githubusercontent.com/nationalparkservice/npmaki/gh-pages/renders/picnic-area-black-32.png">
-
-      </div>
-
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <img class="img-responsive" src="http://placehold.it/750">
-      </div>
-    </div> -->
-    <!-- /.row -->
-
+    <a name="restroom"></a>
     <div class="row">
-      <a name="restroom"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
+      <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+      <div class="col-lg-6 col-sm-6">
         <a href="#restroom"><h4>Restroom</h4></a>
 
         <p>A restroom or "toilet" open to the public. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:amenity%3Dtoilets">here</a>.</p>
@@ -385,22 +344,22 @@
 
         <p><b>Places rendering:</b></p>
 
-        <img src="https://raw.githubusercontent.com/nationalparkservice/symbol-library/master/pngs/restrooms-black-32.png">
+        <img src="https://raw.githubusercontent.com/nationalparkservice/npmap-symbol-library/gh-pages/pngs/restrooms-black-32.png">
 
       </div>
 
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/restroom.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/restroom.gif" style="box-shadow: 5px 5px 15px #888"></a>
+      <div class="col-lg-6 col-sm-6">
+        <button class="btn btn-primary gif-collapse">View Places Editor preview</button>
+        <div class="collapse" data-gif="img/restroom.gif"></div>
       </div>
+
     </div>
     <!-- /.row -->
 
+    <a name="waste_basket"></a>
     <div class="row">
-      <a name="waste_basket"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
+      <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+      <div class="col-lg-6 col-sm-6">
         <a href="#waste_basket"><h4>Waste Basket</h4></a>
 
         <p>A waste basket is a single small container for depositing garbage that is easily accesible for pedestrians. Similar expressions: rubbish bin, litter bin, trash can, garbage can. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:amenity%3Dwaste_basket">here</a>.</p>
@@ -419,22 +378,22 @@
 
         <p><b>Places rendering:</b></p>
 
-        <img src="https://raw.githubusercontent.com/nationalparkservice/symbol-library/master/pngs/litter-receptacle-black-32.png">
+        <img src="https://raw.githubusercontent.com/nationalparkservice/npmap-symbol-library/gh-pages/pngs/litter-receptacle-black-32.png">
 
       </div>
 
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/waste_basket.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/waste_basket.gif" style="box-shadow: 5px 5px 15px #888"></a>
+      <div class="col-lg-6 col-sm-6">
+        <button class="btn btn-primary gif-collapse">View Places Editor preview</button>
+        <div class="collapse" data-gif="img/waste_basket.gif"></div>
       </div>
+
     </div>
     <!-- /.row -->
 
+    <a name="trailhead"></a>
     <div class="row">
-      <a name="trailhead"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
+      <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+      <div class="col-lg-6 col-sm-6">
         <a href="#trailhead"><h4>Trailhead</h4></a>
 
         <p>A trailhead is the point at which a trail begins, where the trail is often intended for hiking, biking, skiing, snowshoeing, snowmobiling, horseback riding, or off-road vehicles. <em>There is currently no OSM wiki for trailhead available.</em></p>
@@ -474,22 +433,22 @@
 
         <p><b>Places rendering:</b></p>
 
-        <img src="https://raw.githubusercontent.com/nationalparkservice/symbol-library/master/pngs/trailhead-black-32.png">
+        <img src="https://raw.githubusercontent.com/nationalparkservice/npmap-symbol-library/gh-pages/pngs/trailhead-black-32.png">
 
       </div>
 
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/trailhead.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/trailhead.gif" style="box-shadow: 5px 5px 15px #888"></a>
+      <div class="col-lg-6 col-sm-6">
+        <button class="btn btn-primary gif-collapse">View Places Editor preview</button>
+        <div class="collapse" data-gif="img/trailhead.gif"></div>
       </div>
+
     </div>
     <!-- /.row -->
 
+    <a name="visitor_center"></a>
     <div class="row">
-      <a name="visitor_center"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
+      <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+      <div class="col-lg-6 col-sm-6">
         <a href="#visitor_center"><h4>Visitor Center</h4></a>
 
         <p>A visitor center is a building housing information for visitors, typically including some or all of the following: information resources, facilities (e.g. restrooms, drinking water), ranger staff, and exhibits. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:information%3Doffice">here</a>.</p>
@@ -507,22 +466,22 @@
 
         <p><b>Places rendering:</b></p>
 
-        <img src="https://raw.githubusercontent.com/nationalparkservice/symbol-library/master/pngs/visitor-center-black-32.png">
+        <img src="https://raw.githubusercontent.com/nationalparkservice/npmap-symbol-library/gh-pages/pngs/visitor-center-black-32.png">
 
       </div>
 
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/visitor_center.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/visitor_center.gif" style="box-shadow: 5px 5px 15px #888"></a>
+      <div class="col-lg-6 col-sm-6">
+        <button class="btn btn-primary gif-collapse">View Places Editor preview</button>
+        <div class="collapse" data-gif="img/visitor_center.gif"></div>
       </div>
+
     </div>
     <!-- /.row -->
 
+    <a name="information"></a>
     <div class="row">
-      <a name="information"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
+      <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+      <div class="col-lg-6 col-sm-6">
         <a href="#information"><h4>Information</h4></a>
 
         <p>Information is an information source for visitors, typically an informational board. This is the default and most basic information-related tag, which can be specified further by including other tags for visitor centers (<code>information=office</code>) or information maps (<code>information=map</code>). Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:tourism%3Dinformation">here</a>.</p>
@@ -540,22 +499,22 @@
 
         <p><b>Places rendering:</b></p>
 
-        <img src="https://raw.githubusercontent.com/nationalparkservice/symbol-library/master/pngs/information-black-32.png">
+        <img src="https://raw.githubusercontent.com/nationalparkservice/npmap-symbol-library/gh-pages/pngs/information-black-32.png">
 
       </div>
 
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/information.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/information.gif" style="box-shadow: 5px 5px 15px #888"></a>
+      <div class="col-lg-6 col-sm-6">
+        <button class="btn btn-primary gif-collapse">View Places Editor preview</button>
+        <div class="collapse" data-gif="img/information.gif"></div>
       </div>
+
     </div>
     <!-- /.row -->
 
+    <a name="ranger_station"></a>
     <div class="row">
-      <a name="ranger_station"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
+      <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+      <div class="col-lg-6 col-sm-6">
         <a href="#ranger_station"><h4>Ranger Station</h4></a>
 
         <p>A ranger station is a building or facility primarily intended to house park law enforcement and rescue staff, and is typically not open to the public. It can also be as simple as a ranger sitting at a campground kiosk. Ranger stations can be seasonal, and they are commonly confused with visitor centers as both can be located in the same building. In the event the two are co-located, the best practice is to create two coincident points - one for the ranger station and another for the visitor center. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:amenity%3Dranger_station">here</a>, but keep in mind that definitions can vary between the Park Service and Forest Service, and between parks.</p>
@@ -573,22 +532,22 @@
 
         <p><b>Places rendering:</b></p>
 
-        <img src="https://raw.githubusercontent.com/nationalparkservice/symbol-library/master/pngs/ranger-station-black-32.png">
+        <img src="https://raw.githubusercontent.com/nationalparkservice/npmap-symbol-library/gh-pages/pngs/ranger-station-black-32.png">
 
       </div>
 
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/ranger_station.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/ranger_station.gif" style="box-shadow: 5px 5px 15px #888"></a>
+      <div class="col-lg-6 col-sm-6">
+        <button class="btn btn-primary gif-collapse">View Places Editor preview</button>
+        <div class="collapse" data-gif="img/ranger_station.gif"></div>
       </div>
+
     </div>
     <!-- /.row -->
 
+    <a name="entrance_station"></a>
     <div class="row">
-      <a name="entrance_station"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
+      <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+      <div class="col-lg-6 col-sm-6">
         <a href="#entrance_station"><h4>Entrance Station</h4></a>
 
         <p>An entrance station is an official entry point into a park. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:barrier%3Dentrance">here</a>, but keep in mind that the wiki describes a generalized take while we are targeting official park entrances.</p>
@@ -610,18 +569,18 @@
 
       </div>
 
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/entrance_station.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/entrance_station.gif" style="box-shadow: 5px 5px 15px #888"></a>
+      <div class="col-lg-6 col-sm-6">
+        <button class="btn btn-primary gif-collapse">View Places Editor preview</button>
+        <div class="collapse" data-gif="img/entrance_station.gif"></div>
       </div>
+
     </div>
     <!-- /.row -->
 
+    <a name="telephone"></a>
     <div class="row">
-      <a name="telephone"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
+      <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+      <div class="col-lg-6 col-sm-6">
         <a href="#telephone"><h4>Telephone</h4></a>
 
         <p>A telephone is a phone available for public use, typically a pay phone on a stand or wall. It may be indoors or outdoors. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:amenity%3Dtelephone">here</a>.</p>
@@ -639,22 +598,22 @@
 
         <p><b>Places rendering:</b></p>
 
-        <img src="https://raw.githubusercontent.com/nationalparkservice/symbol-library/master/pngs/telephone-black-32.png">
+        <img src="https://raw.githubusercontent.com/nationalparkservice/npmap-symbol-library/gh-pages/pngs/telephone-black-32.png">
 
       </div>
 
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/telephone.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/telephone.gif" style="box-shadow: 5px 5px 15px #888"></a>
+      <div class="col-lg-6 col-sm-6">
+        <button class="btn btn-primary gif-collapse">View Places Editor preview</button>
+        <div class="collapse" data-gif="img/telephone.gif"></div>
       </div>
+
     </div>
     <!-- /.row -->
 
+    <a name="food_service"></a>
     <div class="row">
-      <a name="food_service"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
+      <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+      <div class="col-lg-6 col-sm-6">
         <a href="#food_service"><h4>Food Service</h4></a>
 
         <p>Food service is also commonly referred to as a food court. It is typically an indoor area within a facility that houses multiple food vendors and provides a common area for dining. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:amenity%3Dfood_court">here</a>.</p>
@@ -672,22 +631,22 @@
 
         <p><b>Places rendering:</b></p>
 
-        <img src="https://raw.githubusercontent.com/nationalparkservice/symbol-library/master/pngs/food-service-black-32.png">
+        <img src="https://raw.githubusercontent.com/nationalparkservice/npmap-symbol-library/gh-pages/pngs/food-service-black-32.png">
 
       </div>
 
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/food_service.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/food_service.gif" style="box-shadow: 5px 5px 15px #888"></a>
+      <div class="col-lg-6 col-sm-6">
+        <button class="btn btn-primary gif-collapse">View Places Editor preview</button>
+        <div class="collapse" data-gif="img/food_service.gif"></div>
       </div>
+
     </div>
     <!-- /.row -->
 
+    <a name="store"></a>
     <div class="row">
-      <a name="store"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
+      <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+      <div class="col-lg-6 col-sm-6">
         <a href="#store"><h4>Store</h4></a>
 
         <p>A store is a general store, typically selling things like tools, building supplies, clothes, food, and similar items. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:shop%3Dgeneral">here</a>.</p>
@@ -705,22 +664,22 @@
 
         <p><b>Places rendering:</b></p>
 
-        <img src="https://raw.githubusercontent.com/nationalparkservice/symbol-library/master/pngs/store-black-32.png">
+        <img src="https://raw.githubusercontent.com/nationalparkservice/npmap-symbol-library/gh-pages/pngs/store-black-32.png">
 
       </div>
 
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/store.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/store.gif" style="box-shadow: 5px 5px 15px #888"></a>
+      <div class="col-lg-6 col-sm-6">
+        <button class="btn btn-primary gif-collapse">View Places Editor preview</button>
+        <div class="collapse" data-gif="img/store.gif"></div>
       </div>
+
     </div>
     <!-- /.row -->
 
+    <a name="gas_station"></a>
     <div class="row">
-      <a name="gas_station"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
+      <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+      <div class="col-lg-6 col-sm-6">
         <a href="#gas_station"><h4>Gas Station</h4></a>
 
         <p>A gas station is a facility where vehicles can be refueled. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:amenity%3Dfuel">here</a>.</p>
@@ -738,22 +697,22 @@
 
         <p><b>Places rendering:</b></p>
 
-        <img src="https://raw.githubusercontent.com/nationalparkservice/symbol-library/master/pngs/gas-station-black-32.png">
+        <img src="https://raw.githubusercontent.com/nationalparkservice/npmap-symbol-library/gh-pages/pngs/gas-station-black-32.png">
 
       </div>
 
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/gas_station.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/gas_station.gif" style="box-shadow: 5px 5px 15px #888"></a>
+      <div class="col-lg-6 col-sm-6">
+        <button class="btn btn-primary gif-collapse">View Places Editor preview</button>
+        <div class="collapse" data-gif="img/gas_station.gif"></div>
       </div>
+
     </div>
     <!-- /.row -->
 
+    <a name="drinking_water"></a>
     <div class="row">
-      <a name="drinking_water"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
+      <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+      <div class="col-lg-6 col-sm-6">
         <a href="#drinking_water"><h4>Drinking Water</h4></a>
 
         <p>Drinking water is a location at which potable water is available for consumption. Typically this comes in the form of a water fountain. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:amenity%3Ddrinking_water">here</a>.</p>
@@ -772,22 +731,22 @@
 
         <p><b>Places rendering:</b></p>
 
-        <img src="https://raw.githubusercontent.com/nationalparkservice/symbol-library/master/pngs/drinking-water-black-32.png">
+        <img src="https://raw.githubusercontent.com/nationalparkservice/npmap-symbol-library/gh-pages/pngs/drinking-water-black-32.png">
 
       </div>
 
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/drinking_water.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/drinking_water.gif" style="box-shadow: 5px 5px 15px #888"></a>
+      <div class="col-lg-6 col-sm-6">
+        <button class="btn btn-primary gif-collapse">View Places Editor preview</button>
+        <div class="collapse" data-gif="img/drinking_water.gif"></div>
       </div>
+
     </div>
     <!-- /.row -->
 
+    <a name="boat_launch"></a>
     <div class="row">
-      <a name="boat_launch"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
+      <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+      <div class="col-lg-6 col-sm-6">
         <a href="#boat_launch"><h4>Boat Launch</h4></a>
 
         <p>A boat launch is a ramp into the water used to launch a boat, also referred to as a slipway, boat ramp, or boat landing. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:leisure%3Dslipway">here</a>.</p>
@@ -806,12 +765,13 @@
 
         <p><b>Places rendering:</b></p>
 
-        <img src="https://raw.githubusercontent.com/nationalparkservice/symbol-library/master/pngs/boat-launch-black-32.png">
+        <img src="https://raw.githubusercontent.com/nationalparkservice/npmap-symbol-library/gh-pages/pngs/boat-launch-black-32.png">
 
       </div>
 
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/boat_launch.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/boat_launch.gif" style="box-shadow: 5px 5px 15px #888"></a>
+      <div class="col-lg-6 col-sm-6">
+        <button class="btn btn-primary gif-collapse">View Places Editor preview</button>
+        <div class="collapse" data-gif="img/boat_launch.gif"></div>
       </div>
 
     </div>
@@ -821,14 +781,11 @@
 </div>
 <!-- /.content-section-b -->
 
+<a name="buildings"></a>
 <div class="content-section-a">
   <div class="container">
-   <div class="row">
-      <a name="buildings"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
+    <div class="row">
+      <div class="col-lg-6 col-sm-6">
         <a href="#buildings"><h2 class="section-heading">Buildings</h2></a>
         <h4>Area feature</h4>
 
@@ -844,8 +801,9 @@
 
       </div>
       
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/buildings.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/buildings.gif" style="box-shadow: 5px 5px 15px #888";></a>
+      <div class="col-lg-6 col-sm-6">
+        <button class="btn btn-primary gif-collapse">View Places Editor preview</button>
+        <div class="collapse" data-gif="img/buildings.gif"></div>
       </div>
 
     </div>
@@ -855,22 +813,15 @@
 </div>
 <!-- /.content-section-a -->
 
+<a name="roads"></a>
 <div class="content-section-b">
-  <div class="container">      
-   <div class="row">
-      <a name="roads"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-sm-6">
         <a href="#roads"><h2 class="section-heading">Roads</h2></a>
         <h4>Linear feature</h4>
 
-        <p>Roads are identified primarily by the <a href="http://wiki.openstreetmap.org/wiki/Key:highway"><code>highway=</code></a> field (click for link to OSM wiki). <!-- Roads are distinct from trails in that they are generally intended for use by motor vehicles, while trails are generally intended for recreation such as hiking, biking, horseback riding, skiing, etc.</p>
-
-        <p>There are a few exceptions to this rule, including all-terrain vehicle (ATV) trails, four-wheel drive (4wd) trails, motorized watercraft trails, and snowmobile trails, which all allow their respective type of motor vehicle access. --><!-- </p> -->
-
-        <!-- <p> -->Trace a road by using the <code>Line</code> tool to trace its centerline from beginning to end:</p>
+        <p>Roads are identified primarily by the <a href="http://wiki.openstreetmap.org/wiki/Key:highway"><code>highway=</code></a> field (click for link to OSM wiki). Trace a road by using the <code>Line</code> tool to trace its centerline from beginning to end:</p>
 
         <img src="img/id_line.jpg" style="box-shadow: 5px 5px 15px #888; margin: 10px 0 20px 0;">
 
@@ -878,14 +829,13 @@
 
       </div>
 
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+      <div class="col-lg-6 col-sm-6">
 
         <p>Road types (click title to jump to type):</p>
 
         <ul>
           <li><a href="#primary_road">Primary Road</a>: <code>highway=primary</code></li>
           <li><a href="#secondary_road">Secondary Road</a>: <code>highway=secondary</code></li>
-          <!-- <li><a href="#tertiary_road">Tertiary Road</a>: <code>highway=tertiary</code></li> -->
           <li><a href="#residential_road">Residential Road</a>: <code>highway=residential</code></li>
           <li><a href="#unclassified_road">Unclassified Road</a>: <code>highway=unclassified</code></li>
           <li><a href="#service_road">Service Road</a>: <code>highway=service</code></li>
@@ -910,12 +860,10 @@
     </div>
     <!-- /.row -->
 
+    <a name="primary_road"></a>
     <div class="row">
-      <a name="primary_road"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
+      <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+      <div class="col-lg-6 col-sm-6">
         <a href="#primary_road"><h4>Primary Road</h4></a>
 
         <p>A primary road is a major highway, normally with two lanes. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:highway%3Dprimary">here</a>.</p>
@@ -937,19 +885,18 @@
 
       </div>
 
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/primary_road.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/primary_road.gif" style="box-shadow: 5px 5px 15px #888";></a>
+      <div class="col-lg-6 col-sm-6">
+        <button class="btn btn-primary gif-collapse">View Places Editor preview</button>
+        <div class="collapse" data-gif="img/primary_road.gif"></div>
       </div>
 
     </div>
     <!-- /.row -->
 
+    <a name="secondary_road"></a>
     <div class="row">
-      <a name="secondary_road"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
+      <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+      <div class="col-lg-6 col-sm-6">
         <a href="#secondary_road"><h4>Secondary Road</h4></a>
 
         <p>A secondary road is a highway that is not part of a major route but forms a link in the national route network. It usually has two lanes, separated by a centerline. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:highway%3Dsecondary">here</a>.</p>
@@ -971,51 +918,18 @@
 
       </div>
 
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/secondary_road.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/secondary_road.gif" style="box-shadow: 5px 5px 15px #888";></a>
+      <div class="col-lg-6 col-sm-6">
+        <button class="btn btn-primary gif-collapse">View Places Editor preview</button>
+        <div class="collapse" data-gif="img/secondary_road.gif"></div>
       </div>
 
     </div>
     <!-- /.row -->
 
-<!--     <div class="row">
-      <a name="tertiary_road"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
-        <a href="#tertiary_road"><h4>Tertiary Road</h4></a>
-
-        <p>A tertiary road is a road that connects smaller settlements, local centers within larger settlements, or minor streets to major roads. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:highway%3Dtertiary">here</a>.</p>
-
-        <p>Tag a tertiary road by tracing its centerline from beginning to end as <code>highway=tertiary</code>. Feel free to add additional information using the following keys:</p>
-
-        <ul>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:surface"><code>surface=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:width"><code>width=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:maxspeed"><code>maxspeed=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:oneway"><code>oneway=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:lanes"><code>lanes=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:access"><code>access=</code></a></li>
-        </ul>  
-
-      </div>
-
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <img class="img-responsive" src="http://placehold.it/750">
-      </div>
-
-    </div> -->
-    <!-- /.row -->
-
+    <a name="residential_road"></a>
     <div class="row">
-      <a name="residential_road"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
+      <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+      <div class="col-lg-6 col-sm-6">
         <a href="#residential_road"><h4>Residential Road</h4></a>
 
         <p>A residential road is a road that accesses residential areas but is not a classified or unclassified highway. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:highway%3Dresidential">here</a>.</p>
@@ -1037,19 +951,18 @@
 
       </div>
 
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/residential_road.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/residential_road.gif" style="box-shadow: 5px 5px 15px #888";></a>
+      <div class="col-lg-6 col-sm-6">
+        <button class="btn btn-primary gif-collapse">View Places Editor preview</button>
+        <div class="collapse" data-gif="img/residential_road.gif"></div>
       </div>
 
     </div>
     <!-- /.row -->
 
+    <a name="unclassified_road"></a>
     <div class="row">
-      <a name="unclassified_road"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
+      <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+      <div class="col-lg-6 col-sm-6">
         <a href="#unclassified_road"><h4>Unclassified Road</h4></a>
 
         <p>An unclassified road is a minor public road, typically at the lowest level of the interconnecting network. It is of lower importance than a secondary road and is not a residential street or agricultural track. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:highway%3Dunclassified">here</a>.</p>
@@ -1071,19 +984,18 @@
 
       </div>
 
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/unclassified_road.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/unclassified_road.gif" style="box-shadow: 5px 5px 15px #888";></a>
+      <div class="col-lg-6 col-sm-6">
+        <button class="btn btn-primary gif-collapse">View Places Editor preview</button>
+        <div class="collapse" data-gif="img/unclassified_road.gif"></div>
       </div>
 
     </div>
     <!-- /.row -->
 
+    <a name="service_road"></a>
     <div class="row">
-      <a name="service_road"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
+      <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+      <div class="col-lg-6 col-sm-6">
         <a href="#service_road"><h4>Service Road</h4></a>
 
         <p>A service road is a road accessing a building, service station, beach, campsite, business park, parking lot, driveway, etc. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:highway%3Dservice">here</a>.</p>
@@ -1106,19 +1018,18 @@
 
       </div>
 
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/service_road.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/service_road.gif" style="box-shadow: 5px 5px 15px #888";></a>
+      <div class="col-lg-6 col-sm-6">
+        <button class="btn btn-primary gif-collapse">View Places Editor preview</button>
+        <div class="collapse" data-gif="img/service_road.gif"></div>
       </div>
 
     </div>
     <!-- /.row -->
 
+    <a name="bridge"></a>
     <div class="row">
-      <a name="bridge"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
+      <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+      <div class="col-lg-6 col-sm-6">
         <a href="#bridge"><h4>Bridge</h4></a>
 
         <p>A bridge is a structure used to carry a road, railway, or similar feature over another feature. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Key:bridge">here</a>.</p>
@@ -1135,19 +1046,18 @@
 
       </div>
 
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/bridge.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/bridge.gif" style="box-shadow: 5px 5px 15px #888";></a>
+      <div class="col-lg-6 col-sm-6">
+        <button class="btn btn-primary gif-collapse">View Places Editor preview</button>
+        <div class="collapse" data-gif="img/bridge.gif"></div>
       </div>
 
     </div>
     <!-- /.row -->
 
+    <a name="tunnel"></a>
     <div class="row">
-      <a name="tunnel"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
+      <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+      <div class="col-lg-6 col-sm-6">
         <a href="#tunnel"><h4>Tunnel</h4></a>
 
         <p>A tunnel is an underground or underwater passageway enclosed except for its entrance and exit at each end. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Key:tunnel">here</a>.</p>
@@ -1165,19 +1075,18 @@
 
       </div>
 
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/tunnel.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/tunnel.gif" style="box-shadow: 5px 5px 15px #888";></a>
+      <div class="col-lg-6 col-sm-6">
+        <button class="btn btn-primary gif-collapse">View Places Editor preview</button>
+        <div class="collapse" data-gif="img/tunnel.gif"></div>
       </div>
 
     </div>
     <!-- /.row -->
 
+    <a name="sidewalk"></a>
     <div class="row">
-      <a name="sidewalk"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
+      <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+      <div class="col-lg-6 col-sm-6">
         <a href="#sidewalk"><h4>Sidewalk</h4></a>
 
         <p>A sidewalk is a part of a road dedicated for pedestrian use, usually separated from the road by a curb. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Sidewalks">here</a>.</p>
@@ -1197,38 +1106,36 @@
 
       </div>
 
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/sidewalk.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/sidewalk.gif" style="box-shadow: 5px 5px 15px #888";></a>
+      <div class="col-lg-6 col-sm-6">
+        <button class="btn btn-primary gif-collapse">View Places Editor preview</button>
+        <div class="collapse" data-gif="img/sidewalk.gif"></div>
       </div>
 
     </div>
     <!-- /.row -->
 
+    <a name="intersections"></a>
     <div class="row">
-      <a name="intersections"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
+      <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+      <div class="col-lg-6 col-sm-6">
         <a href="#intersections"><h4>Intersections</h4></a>
 
         <p>An intersection occurs where two or more roads meet. To create a simple intersection between two roads, remember to connect them with a node at the point of intersection.</p>
 
       </div>
 
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/intersection.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/intersection.gif" style="box-shadow: 5px 5px 15px #888";></a>
+      <div class="col-lg-6 col-sm-6">
+        <button class="btn btn-primary gif-collapse">View Places Editor preview</button>
+        <div class="collapse" data-gif="img/intersection.gif"></div>
       </div>
 
     </div>
     <!-- /.row -->
 
+    <a name="surface"></a>
     <div class="row">
-      <a name="surface"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
+      <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+      <div class="col-lg-6 col-sm-6">
         <a href="#surface"><h4>Surface</h4></a>
 
         <p>Surface describes the physical surface of a feature (in this case, a road or trail). Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Key:surface">here</a>.</p>
@@ -1249,19 +1156,18 @@
 
       </div>
 
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/surface.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/surface.gif" style="box-shadow: 5px 5px 15px #888";></a>
+      <div class="col-lg-6 col-sm-6">
+        <button class="btn btn-primary gif-collapse">View Places Editor preview</button>
+        <div class="collapse" data-gif="img/surface.gif"></div>
       </div>
 
     </div>
     <!-- /.row -->
 
+    <a name="oneway"></a>
     <div class="row">
-      <a name="oneway"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
+      <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+      <div class="col-lg-6 col-sm-6">
         <a href="#oneway"><h4>Oneway</h4></a>
 
         <p>Oneway indicates the oneway access restriction on roads. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Key:oneway">here</a>.</p>
@@ -1270,19 +1176,18 @@
 
       </div>
 
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/oneway.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/oneway.gif" style="box-shadow: 5px 5px 15px #888";></a>
+      <div class="col-lg-6 col-sm-6">
+        <button class="btn btn-primary gif-collapse">View Places Editor preview</button>
+        <div class="collapse" data-gif="img/oneway.gif"></div>
       </div>
 
     </div>
     <!-- /.row -->
 
+    <a name="lanes"></a>
     <div class="row">
-      <a name="lanes"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
+      <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+      <div class="col-lg-6 col-sm-6">
         <a href="#lanes"><h4>Lanes</h4></a>
 
         <p>Lanes indicate the number of traffic lanes on a highway that are available to motorised traffic (bicycle lanes are therefore excluded). Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Key:lanes">here</a>.</p>
@@ -1291,19 +1196,18 @@
 
       </div>
 
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/lanes.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/lanes.gif" style="box-shadow: 5px 5px 15px #888";></a>
+      <div class="col-lg-6 col-sm-6">
+        <button class="btn btn-primary gif-collapse">View Places Editor preview</button>
+        <div class="collapse" data-gif="img/lanes.gif"></div>
       </div>
 
     </div>
     <!-- /.row -->
 
+    <a name="maxspeed"></a>
     <div class="row">
-      <a name="maxspeed"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
+      <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+      <div class="col-lg-6 col-sm-6">
         <a href="#maxspeed"><h4>Maxspeed</h4></a>
 
         <p>Maxspeed indicates the maximum legal speed limit for general traffic on a road. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Key:maxspeed">here</a>.</p>
@@ -1312,8 +1216,9 @@
 
       </div>
 
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/maxspeed.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/maxspeed.gif" style="box-shadow: 5px 5px 15px #888";></a>
+      <div class="col-lg-6 col-sm-6">
+        <button class="btn btn-primary gif-collapse">View Places Editor preview</button>
+        <div class="collapse" data-gif="img/maxspeed.gif"></div>
       </div>
 
     </div>
@@ -1324,20 +1229,15 @@
 </div>
 <!-- /.content-section-b -->
 
+<a name="trails"></a>
 <div class="content-section-a">
-  <div class="container">      
-   <div class="row">
-      <a name="trails"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-sm-6">
         <a href="#trails"><h2 class="section-heading">Trails</h2></a>
         <h4>Linear feature</h4>
 
-        <p>Trails are identified primarily by the <a href="http://wiki.openstreetmap.org/wiki/Key:highway"><code>highway=</code></a> field, along with the <a href="http://wiki.openstreetmap.org/wiki/Key:piste:type"><code>piste:type=</code></a> field for specific winter sport classifications (click each for link to OSM wiki). <!-- Trails are distinct from roads in that they are generally intended for recreation, while roads are generally intended for use by motor vehicles. As noted in the <a href="#roads">roads</a> section, the exceptions to this rule are: all-terrain vehicle (ATV) trails, four-wheel drive (4wd) trails, motorized watercraft trails, and snowmobile trails, which all allow their respective type of motor vehicle access.</p>
-
-        <p> -->Trace a trail by using the <code>Line</code> tool to trace its centerline from beginning to end:</p>
+        <p>Trails are identified primarily by the <a href="http://wiki.openstreetmap.org/wiki/Key:highway"><code>highway=</code></a> field, along with the <a href="http://wiki.openstreetmap.org/wiki/Key:piste:type"><code>piste:type=</code></a> field for specific winter sport classifications (click each for link to OSM wiki). Trace a trail by using the <code>Line</code> tool to trace its centerline from beginning to end:</p>
 
         <img src="img/id_line.jpg" style="box-shadow: 5px 5px 15px #888; margin: 10px 0 20px 0;">
 
@@ -1347,7 +1247,7 @@
 
       </div>
 
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+      <div class="col-lg-6 col-sm-6">
 
         <p>Trail types (click title to jump to type):</p>
 
@@ -1363,12 +1263,10 @@
     </div>
     <!-- /.row -->
 
+    <a name="path"></a>
     <div class="row">
-      <a name="path"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
+      <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+      <div class="col-lg-6 col-sm-6">
         <a href="#path"><h4>Trail (non-motorized)</h4></a>
 
         <p>A non-motorized trail is intended for non-motorized traffic including pedestrian use ("foot traffic"), biking, or horseback riding. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:highway%3Dpath">here</a>.</p>
@@ -1399,19 +1297,18 @@
 
       </div>
 
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/path.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/path.gif" style="box-shadow: 5px 5px 15px #888";></a>
+      <div class="col-lg-6 col-sm-6">
+        <button class="btn btn-primary gif-collapse">View Places Editor preview</button>
+        <div class="collapse" data-gif="img/path.gif"></div>
       </div>
 
     </div>
     <!-- /.row -->
 
+    <a name="track"></a>
     <div class="row">
-      <a name="track"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
+      <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+      <div class="col-lg-6 col-sm-6">
         <a href="#track"><h4>Trail (motorized)</h4></a>
 
         <p>A motorized trail is permissive to motorized traffic, such as all-terrain vehicles (ATVs), four-wheel drive (4wd) vehicles, motorcycles, and snowmobiles. A motorized trail can be permissive to non-motorized traffic as well, but it must be permissive to motorized traffic to warrant this classification.</p>
@@ -1444,19 +1341,18 @@
 
       </div>
 
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/track.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/track.gif" style="box-shadow: 5px 5px 15px #888";></a>
+      <div class="col-lg-6 col-sm-6">
+        <button class="btn btn-primary gif-collapse">View Places Editor preview</button>
+        <div class="collapse" data-gif="img/track.gif"></div>
       </div>
 
     </div>
     <!-- /.row -->
 
+    <a name="piste"></a>
     <div class="row">
-      <a name="piste"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
+      <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+      <div class="col-lg-6 col-sm-6">
         <a href="#piste"><h4>Piste</h4></a>
 
         <p>A piste is a trail intended for winter sports such as downhill and cross-country skiing, dog sledding, and snowshoeing. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Key:piste:type">here</a>.</p>
@@ -1494,19 +1390,18 @@
 
       </div>
 
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/downhill_ski_trail.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/downhill_ski_trail.gif" style="box-shadow: 5px 5px 15px #888";></a>
+      <div class="col-lg-6 col-sm-6">
+        <button class="btn btn-primary gif-collapse">View Places Editor preview</button>
+        <div class="collapse" data-gif="img/downhill_ski_trail.gif"></div>
       </div>
 
     </div>
     <!-- /.row -->
 
+    <a name="water_trail"></a>
     <div class="row">
-      <a name="water_trail"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
+      <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+      <div class="col-lg-6 col-sm-6">
         <a href="#water_trail"><h4>Water Trail</h4></a>
 
         <p>A water trail is a trail running through a waterway, intended for canoes, kayaks, motorboats, etc. Tag a water trail by tracing its centerline from beginning to end as <code>waterway=yes</code> along with its access conditions, as appropriate (click for link to OSM wiki):</p>
@@ -1530,8 +1425,9 @@
 
       </div>
 
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/motorized_watercraft_trail.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/motorized_watercraft_trail.gif" style="box-shadow: 5px 5px 15px #888";></a>
+      <div class="col-lg-6 col-sm-6">
+        <button class="btn btn-primary gif-collapse">View Places Editor preview</button>
+        <div class="collapse" data-gif="img/motorized_watercraft_trail.gif"></div>
       </div>
 
     </div>
@@ -1542,14 +1438,11 @@
 </div>
 <!-- .content-section-a -->
     
+<a name="parking"></a>
 <div class="content-section-b">
-  <div class="container">      
-   <div class="row">
-      <a name="parking"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-sm-6">
         <a href="#parking"><h2 class="section-heading">Parking</h2></a>
         <h4>Area, point, and line feature</h4>
 
@@ -1567,12 +1460,10 @@
     </div>
     <!-- /.row -->
 
+    <a name="parking_amenity"></a>
     <div class="row">
-      <a name="parking_amenity"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
+      <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+      <div class="col-lg-6 col-sm-6">
         <a href="#parking_amenity"><h4>Parking (amenity)</h4></a>
 
         <p>Parking is a facility available for use by the public, customers, or other authorized users for the parking of motor vehicles (cars, trucks, motorcycles, etc). This can come in various forms, including a parking lot or garage, among others. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:amenity%3Dparking">here</a>.</p>
@@ -1599,19 +1490,18 @@
 
       </div>
 
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/parking_amenity.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/parking_amenity.gif" style="box-shadow: 5px 5px 15px #888";></a>
+      <div class="col-lg-6 col-sm-6">
+        <button class="btn btn-primary gif-collapse">View Places Editor preview</button>
+        <div class="collapse" data-gif="img/parking_amenity.gif"></div>
       </div>
 
     </div>
     <!-- /.row -->
 
+    <a name="parking_aisle"></a>
     <div class="row">
-      <a name="parking_aisle"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
+      <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+      <div class="col-lg-6 col-sm-6">
         <a href="#parking_aisle"><h4>Parking Aisle</h4></a>
 
         <p>A parking aisle is a subordinated way in a parking lot between rows of parking spaces that vehicles use to drive into and out of the spaces. Learn more from OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:service%3Dparking_aisle">here</a>.</p>
@@ -1633,8 +1523,9 @@
 
       </div>
 
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/parking_aisle.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/parking_aisle.gif" style="box-shadow: 5px 5px 15px #888";></a>
+      <div class="col-lg-6 col-sm-6">
+        <button class="btn btn-primary gif-collapse">View Places Editor preview</button>
+        <div class="collapse" data-gif="img/parking_aisle.gif"></div>
       </div>
 
     </div>
@@ -1654,45 +1545,6 @@
   <!-- /.container -->
 </div>
 <!-- /.banner -->
-
-<!-- Footer -->
-<!-- <footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <ul class="list-inline">
-          <li><a href="#">Places Tracing Guide</a></li>
-
-          <li class="footer-menu-divider">&sdot;</li>
-          
-          <li><a href="#about">About</a></li>
-          
-          <li class="footer-menu-divider">&sdot;</li>
-          
-          <li><a href="#poi">Points of Interest</a></li>
-
-          <li class="footer-menu-divider">&sdot;</li>
-
-          <li><a href="#buildings">Buildings</a></li>
-
-          <li class="footer-menu-divider">&sdot;</li>
-
-          <li><a href="#roads">Roads</a></li>
-
-          <li class="footer-menu-divider">&sdot;</li>
-
-          <li><a href="#trails">Trails</a></li>
-
-          <li class="footer-menu-divider">&sdot;</li>
-
-          <li><a href="#parking">Parking</a></li>
-        </ul> 
-      </div>
-    </div> -->
-    <!-- /.row -->
-  <!-- </div> -->
-  <!-- /.container -->
-<!-- </footer> -->
 
 <!-- jQuery Version 2.1.4 -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -1714,13 +1566,6 @@
       $next.show();
     }
   });
-</script>
-
-
-<script type="text/javascript">
-
-$('#image-popover').popover()
-
 </script>
 
 </body>
