@@ -12,7 +12,6 @@ Currently in development.
 
 #### Secondary
 
-- [ ] Replace "About" section image
-- [ ] Consider implementing sections as collapsable
 - [ ] Remove optional fields not currently supported
 - [ ] Add road styles as Places rendering (pull from iD)
+- [ ] Consider implementing sections as collapsable
