@@ -12,1705 +12,1581 @@
     <meta name="msapplication-TileImage" content="http://www.nps.gov/lib/assets/img/windows-8-tile.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="http://www.nps.gov/lib/bootstrap/3.3.2/css/nps-bootstrap.min.css" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="http://www.nps.gov/feed.xml" rel="alternate" title="NPMap blog posts" type="application/atom+xml">
+    <link href="assets/css/base.css" rel="stylesheet">
+    <link href="http://www.nps.gov/npmap/feed.xml" rel="alternate" title="NPMap blog posts" type="application/atom+xml">
     <link href="http://www.nps.gov/lib/assets/img/favicon.ico" rel="shortcut icon">
     <link href="http://www.nps.gov/lib/assets/img/apple-touch-icon-144x144-precomposed.png" rel="apple-touch-icon-precomposed" sizes="144x144">
     <link href="http://www.nps.gov/lib/assets/img/apple-touch-icon-114x114-precomposed.png" rel="apple-touch-icon-precomposed" sizes="114x114">
     <link href="http://www.nps.gov/lib/assets/img/apple-touch-icon-72x72-precomposed.png" rel="apple-touch-icon-precomposed" sizes="72x72">
     <link href="http://www.nps.gov/lib/assets/img/apple-touch-icon-57x57-precomposed.png" rel="apple-touch-icon-precomposed">
   </head>
-<body>
-<!-- Navigation -->
-<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-  <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Places Tracing Guide</a>
-    </div>
-    <!-- /.navbar-header -->
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#about">About</a></li>
-        <li><a href="#poi">Points of Interest</a></li>
-        <li><a href="#buildings">Buildings</a></li>
-        <li><a href="#roads">Roads</a></li>
-        <li><a href="#trails">Trails</a></li>
-        <li><a href="#parking">Parking</a></li>          
-      </ul>
-    </div>
-    <!-- /.navbar-collapse -->
-  </div>
-  <!-- /.container -->
-</nav>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#npmap-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Places Tracing Guide</a>
+        </div>
+        <!-- /.navbar-header -->
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="npmap-navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#about">About</a></li>
+            <li><a href="#poi">Points of Interest</a></li>
+            <li><a href="#buildings">Buildings</a></li>
+            <li><a href="#roads">Roads</a></li>
+            <li><a href="#trails">Trails</a></li>
+            <li><a href="#parking">Parking</a></li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container -->
+    </nav>
 
-<!-- Header -->
-<div class="intro-header">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="intro-message">
-          <h1>Places Tracing Guide</h1>
-          <h3>National Park Service</h3>
-          <a href="http://www.nps.gov/npmap/"><img src="img/npmap_logo.png" width="150px"></a>
+    <!-- Header -->
+    <div class="intro-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="intro-message">
+              <h1>Places Tracing Guide</h1>
+              <h3>National Park Service</h3>
+            </div>
+          </div>
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.intro-header -->
+
+    <a name="about"></a>
+    <div class="content-section-a">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-sm-6">
+            <a href="#about">
+              <h2 class="section-heading">About Places</h2>
+            </a>
+
+            <p><a href="http://insidemaps.nps.gov/places/">Places</a> is an internal data collection system for the National Park Service's "core" geospatial data. We built Places so that all National Park Service employees, both technical and non-technical, can contribute their knowledge to the map.</p>
+
+            <p>Data from Places is fed directly into both <a href="http://www.nps.gov/npmap/tools/park-tiles/">Park Tiles</a> and the larger National Park Service structured data initiative, which will be used to drive <a href="http://www.nps.gov/">NPS.gov</a> and a publicly-available application programming interface (API) starting in January of 2016.</p>
+
+            <p>The Places database currently contains the following datasets (a near real-time copy of each can be downloaded from the <a href="http://www.nps.gov/npmap/tools/places/">Places information page</a>):</p>
+
+            <ul>
+              <li>Points of Interest</li>
+              <li>Buildings</li>
+              <li>Roads</li>
+              <li>Trails</li>
+              <li>Parking Lots</li>
+            </ul>
+
+            <p>These datasets were initially seeded from existing park, region, and program-level GIS datasets, but now anyone who is connected to the National Park Service network can edit them using the <a href="http://insidemaps.nps.gov/places/view/">Places Editor</a> <span class="nps-only">(NPS-only)</span>. If you have more/better data available and you'd like to get it into Places, <a href="mailto:npmap@nps.gov">send us an email</a> or <a href="https://github.com/nationalparkservice/places-data/issues/new">create an issue on GitHub</a> and we will be happy to assist with the upload.</p>
+
+            <p>
+              <strong>Disclaimer: All data contributed to Places is public-facing. Do not add any sensitive information unfit for public consumption. Only add data inside park boundaries!</strong>
+            </p>
+
+            <p>The Places editor is built on top of OpenStreetMap's <a href="http://wiki.openstreetmap.org/wiki/ID">iD editor</a>. Check out learnOSM's <a href="http://learnosm.org/en/editing/id-editor/">iD editor walkthrough</a> to familiarize yourself with the interface. It is intentionally simple, developed with a non-technical audience in mind. So, fear not!</p>
+
+            <p>
+              <strong>Note: Because Places utilizes the OpenStreetMap tagging scheme internally, you will see many references and links to OpenStreetMap documentation below. Rest assured that edits made in the Places Editor, however, go directly into the internal National Park Service Places database and not into the larger OpenStreetMap database.</strong>
+            </p>
+
+            <div>
+              <a class="btn btn-lg btn-primary" href="http://insidemaps.nps.gov/places/edit/#background=mapbox-satellite&map=4/-96.02/39.06&overlays=park-tiles-overlay">Start Mapping Now!</a>
+              <p class="nps-only"><small>Must be on the NPS network.</small></p>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6 col-sm-6">
+            <img class="img-responsive border" src="assets/img/nat_cap_sq.jpg">
+          </div>
+
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container  -->
+    </div>
+    <!-- /.content-section-a -->
+
+    <a name="poi"></a>
+    <div class="content-section-b">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-sm-6">
+            <a href="#poi"><h2 class="section-heading">Points of Interest</h2></a>
+            <h4>Point feature</h4>
+
+            <p>A point of interest or "POI" is represented by a point or <a href="http://wiki.openstreetmap.org/wiki/Node">"node"</a> on the map and has geographic coordinates (latitude and longitude). A POI can be a standalone node or it can be part of a <a href="http://wiki.openstreetmap.org/wiki/Way">"way"</a> (an ordered list of nodes representing a linear feature or area). Learn more about POIs from <a href="http://wiki.openstreetmap.org/wiki/Points_of_interest">OpenStreetMap's wiki</a>.</p>
+
+            <p>Places supports a wide variety of POIs, a full list of which can be found in our <a href="https://docs.google.com/spreadsheets/d/1sQZRUZDe8vPu8PANxoIc5k0Pv85xNd5ae4uGJ0fwEt0/edit#gid=1063193272">data preset wiki</a> <span class="nps-only">(NPS-only)</span>. Don't see the tag you're looking for? <a href="https://github.com/nationalparkservice/places-data/issues/new">Open an issue on GitHub</a>.</p>
+
+            <p>This guide is intended to serve as a starter kit for contributing to Places, so we are going to review some of the most common/basic tags to add to the map. Use Places Editor's <code>Point</code> tool to add a point to the map:</p>
+
+            <p><img class="img-thumbnail" src="assets/img/id_point.jpg"></p>
+
+          </div>
+
+          <div class="col-lg-6 col-sm-6">
+
+            <p>Click title to jump to POI type:</p>
+
+            <ul>
+              <li><a href="#campground">Campground</a>: <code>tourism=camp_site</code></li>
+              <li><a href="#campsite">Campsite</a>: <code>tourism=camp_site, camp_site=pitch</code></li>
+              <li><a href="#lodge">Lodge</a>: <code>tourism=alpine_hut</code></li>
+              <li><a href="#picnic_site">Picnic Area</a>: <code>tourism=picnic_site</code></li>
+              <li><a href="#restroom">Restroom</a>: <code>amenity=toilets</code></li>
+              <li><a href="#waste_basket">Waste Basket</a>: <code>amenity=waste_basket</code></li>
+              <li><a href="#trailhead">Trailhead</a>: <code>highway=trailhead</code></li>
+              <li><a href="#visitor_center">Visitor Center</a>: <code>tourism=visitor_center</code></li>
+              <li><a href="#information">Information</a>: <code>tourism=information</code></li>
+              <li><a href="#ranger_station">Ranger Station</a>: <code>amenity=ranger_station</code></li>
+              <li><a href="#entrance_station">Entrance Station</a>: <code>barrier=entrance</code></li>
+              <li><a href="#telephone">Telephone</a>: <code>amenity=telephone</code></li>
+              <li><a href="#food_service">Food Service</a>: <code>amenity=food_court</code></li>
+              <li><a href="#store">Store</a>: <code>shop=general</code></li>
+              <li><a href="#gas_station">Gas Station</a>: <code>amenity=fuel</code></li>
+              <li><a href="#drinking_water">Drinking Water</a>: <code>amenity=drinking_water</code></li>
+              <li><a href="#boat_launch">Boat Launch</a>: <code>leisure=slipway</code></li>
+              <li><a href="#park_district">Park District</a>: <code>place=locality</code></li>
+            </ul>
+
+          </div>
+        </div>
+        <!-- /.row -->
+
+        <a name="campground"></a>
+        <div class="row">
+          <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+          <div class="col-lg-6 col-sm-6">
+            <a href="#campground"><h4>Campground</h4></a>
+
+            <p>A campground is an area, usually divided into a number of pitches (or "campsites," see below), where people can camp overnight using tents or camper vans or caravans. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:tourism%3Dcamp_site">here</a>.</p>
+
+            <p>Tag a campground with a point in the middle of the area as <code>tourism=camp_site</code>.</p>
+
+            <p>Feel free to add additional information using the following keys (click for link to OSM wiki):</p>
+
+            <ul>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:addr"><code>addr=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:opening_hours"><code>opening_hours=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:capacity"><code>capacity=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:fee"><code>fee=</code></a></li>
+            </ul>
+
+            <p><b>Places rendering:</b></p>
+
+            <img src="https://raw.githubusercontent.com/nationalparkservice/npmap-symbol-library/gh-pages/pngs/campground-black-32.png">
+
+          </div>
+
+          <div class="col-lg-6 col-sm-6">
+            <button class="btn btn-primary gif-collapse">Show Places Editor Preview</button>
+            <div class="collapse" data-gif="assets/img/campground.gif"></div>
+          </div>
+
+        </div>
+        <!-- /.row -->
+
+        <a name="campsite"></a>
+        <div class="row">
+          <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+          <div class="col-lg-6 col-sm-6">
+            <a href="#campsite"><h4>Campsite</h4></a>
+
+            <p>A campsite is an individual pitch within a campground where people can camp overnight using tents or camper vans or caravans. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:tourism%3Dcamp_site">here</a>.</p>
+
+            <p>Tag a campsite with a point in the middle of the pitch as <code>tourism=camp_site</code> and <code>camp_site=pitch</code>.</p>
+
+            <p>Feel free to add additional information using the following keys (click for link to OSM wiki):</p>
+
+            <ul>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:addr"><code>addr=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:opening_hours"><code>opening_hours=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:capacity"><code>capacity=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:fee"><code>fee=</code></a></li>
+            </ul>
+
+            <p><b>Places rendering:</b></p>
+
+            <img src="https://raw.githubusercontent.com/nationalparkservice/npmap-symbol-library/gh-pages/pngs/campsite-black-32.png">
+
+          </div>
+
+          <div class="col-lg-6 col-sm-6">
+            <button class="btn btn-primary gif-collapse">Show Places Editor Preview</button>
+            <div class="collapse" data-gif="assets/img/campsite.gif"></div>
+          </div>
+
+        </div>
+        <!-- /.row -->
+
+        <a name="lodge"></a>
+        <div class="row">
+          <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+          <div class="col-lg-6 col-sm-6">
+            <a href="#lodge"><h4>Lodge</h4></a>
+
+            <p>A lodge or "alpine hut" is a remote building located in the mountains intended to provide board and lodging. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:tourism%3Dalpine_hut">here</a>.</p>
+
+            <p>Tag a lodge with a point on top of the building as <code>tourism=alpine_hut</code>. Additionally, trace the building footprint and tag as <code>building=yes</code> (see the <a href="#buildings">buildings</a> section to learn more about tracing building footprints).</p>
+
+            <p>Feel free to add additional information using the following keys (click for link to OSM wiki):</p>
+
+            <ul>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:addr"><code>addr=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:opening_hours"><code>opening_hours=</code></a></li>
+            </ul>
+
+            <p><b>Places rendering:</b></p>
+
+            <img src="https://raw.githubusercontent.com/nationalparkservice/npmap-symbol-library/gh-pages/pngs/lodging-black-32.png">
+
+          </div>
+
+          <div class="col-lg-6 col-sm-6">
+            <button class="btn btn-primary gif-collapse">Show Places Editor Preview</button>
+            <div class="collapse" data-gif="assets/img/lodge.gif"></div>
+          </div>
+
+        </div>
+        <!-- /.row -->
+
+        <a name="picnic_site"></a>
+        <div class="row">
+          <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+          <div class="col-lg-6 col-sm-6">
+            <a href="#picnic_site"><h4>Picnic Area</h4></a>
+
+            <p>A picnic area is an area that is suitable for outdoors eating and may have a number of facilities to aid a picnic: tables, benches, restrooms, grills, water taps, covered pavilions, etc. Or, it may just be a grassy area popular for picnics. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:tourism%3Dpicnic_site">here</a>.</p>
+
+            <p>Tag a picnic area with a point in the middle of the area as <code>tourism=picnic_site</code>. <!-- Picnic tables are to be tagged separately, see <a href="#picnic_table">below</a>. --></p>
+
+            <p>Feel free to add additional information using the following keys (click for link to OSM wiki):</p>
+
+            <ul>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:addr"><code>addr=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:opening_hours"><code>opening_hours=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:fee"><code>fee=</code></a></li>
+            </ul>
+
+            <p><b>Places rendering:</b></p>
+
+            <img src="https://raw.githubusercontent.com/nationalparkservice/npmap-symbol-library/gh-pages/pngs/picnic-area-black-32.png">
+
+          </div>
+
+          <div class="col-lg-6 col-sm-6">
+            <button class="btn btn-primary gif-collapse">Show Places Editor Preview</button>
+            <div class="collapse" data-gif="assets/img/picnic_site.gif"></div>
+          </div>
+
+        </div>
+        <!-- /.row -->
+
+        <a name="restroom"></a>
+        <div class="row">
+          <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+          <div class="col-lg-6 col-sm-6">
+            <a href="#restroom"><h4>Restroom</h4></a>
+
+            <p>A restroom or "toilet" open to the public. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:amenity%3Dtoilets">here</a>.</p>
+
+            <p>Tag a restroom with a point on top of the toilet amenities as <code>amenity=toilets</code>. Additionally, trace the building footprint and tag as <code>building=yes</code> (see the <a href="#buildings">buildings</a> section to learn more about tracing building footprints).</p>
+
+            <p>Feel free to add additional information using the following keys (click for link to OSM wiki):</p>
+
+            <ul>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:addr"><code>addr=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:opening_hours"><code>opening_hours=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:toilets:disposal"><code>toilets:disposal=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Category:Gender"><code>gender</code></a> (<a href="http://wiki.openstreetmap.org/wiki/Key:male"><code>male=</code></a>, <a href="http://wiki.openstreetmap.org/wiki/Key:female"><code>female=</code></a>, or <a href="http://wiki.openstreetmap.org/wiki/Key:unisex"><code>unisex=</code></a>)</li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:indoor"><code>indoor=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:access"><code>access=</code></a></li>
+            </ul>
+
+            <p><b>Places rendering:</b></p>
+
+            <img src="https://raw.githubusercontent.com/nationalparkservice/npmap-symbol-library/gh-pages/pngs/restrooms-black-32.png">
+
+          </div>
+
+          <div class="col-lg-6 col-sm-6">
+            <button class="btn btn-primary gif-collapse">Show Places Editor Preview</button>
+            <div class="collapse" data-gif="assets/img/restroom.gif"></div>
+          </div>
+
+        </div>
+        <!-- /.row -->
+
+        <a name="waste_basket"></a>
+        <div class="row">
+          <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+          <div class="col-lg-6 col-sm-6">
+            <a href="#waste_basket"><h4>Waste Basket</h4></a>
+
+            <p>A waste basket is a single small container for depositing garbage that is easily accesible for pedestrians. Similar expressions: rubbish bin, litter bin, trash can, garbage can. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:amenity%3Dwaste_basket">here</a>.</p>
+
+            <p>Tag a waste basket with a point on top of the container as <code>amenity=waste_basket</code>.</p>
+
+            <p>Feel free to add additional information using the following keys (click for link to OSM wiki):</p>
+
+            <ul>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:addr"><code>addr=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:waste"><code>waste=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:bin"><code>bin=</code></a></li>
+            </ul>
+
+            <p><b>Places rendering:</b></p>
+
+            <img src="https://raw.githubusercontent.com/nationalparkservice/npmap-symbol-library/gh-pages/pngs/litter-receptacle-black-32.png">
+
+          </div>
+
+          <div class="col-lg-6 col-sm-6">
+            <button class="btn btn-primary gif-collapse">Show Places Editor Preview</button>
+            <div class="collapse" data-gif="assets/img/waste_basket.gif"></div>
+          </div>
+
+        </div>
+        <!-- /.row -->
+
+        <a name="trailhead"></a>
+        <div class="row">
+          <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+          <div class="col-lg-6 col-sm-6">
+            <a href="#trailhead"><h4>Trailhead</h4></a>
+
+            <p>A trailhead is the point at which a trail begins, where the trail is often intended for hiking, biking, skiing, snowshoeing, snowmobiling, horseback riding, or off-road vehicles. <em>There is currently no OSM wiki for trailhead available.</em></p>
+
+            <p>Tag a trailhead with a point on the location of the start of the trail as <code>highway=trailhead</code>. If the trail is intended for specific uses, e.g. biking, add the appropriate "Approved Use" (in this example <code>bicycle=yes</code>).</p>
+
+            <p>Places supports the following "Approved Use" types:</p>
+
+            <ul>
+              <li><code>bicycle=</code></li>
+              <li><code>atv=</code></li>
+              <li><code>4wd_only=</code></li>
+              <li><code>motorcycle=</code></li>
+              <li><code>snowmobile=</code></li>
+              <li><code>horse=</code></li>
+              <li><code>foot=</code></li>
+              <li><code>motor_vehicle=</code></li>
+              <li><code>motorcycle=</code></li>
+            </ul>
+
+            <p>Feel free to add additional information using the following keys (click for link to OSM wiki):</p>
+
+            <ul>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:tracktype"><code>tracktype=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:surface"><code>surface=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:width"><code>width=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:incline"><code>incline=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:mtb:scale"><code>mtb:scale=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:mtb:scale:uphill"><code>mtb:scale:uphill=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:mtb:scale:imba"><code>mtb:scale:imba=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:sac_scale"><code>sac_scale=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:trail_visibility"><code>trail_visibility=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:access"><code>access=</code></a></li>
+            </ul>
+
+            <p><b>Places rendering:</b></p>
+
+            <img src="https://raw.githubusercontent.com/nationalparkservice/npmap-symbol-library/gh-pages/pngs/trailhead-black-32.png">
+
+          </div>
+
+          <div class="col-lg-6 col-sm-6">
+            <button class="btn btn-primary gif-collapse">Show Places Editor Preview</button>
+            <div class="collapse" data-gif="assets/img/trailhead.gif"></div>
+          </div>
+
+        </div>
+        <!-- /.row -->
+
+        <a name="visitor_center"></a>
+        <div class="row">
+          <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+          <div class="col-lg-6 col-sm-6">
+            <a href="#visitor_center"><h4>Visitor Center</h4></a>
+
+            <p>A visitor center is a building housing information for visitors, typically including some or all of the following: information resources, facilities (e.g. restrooms, drinking water), ranger staff, and exhibits. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:information%3Doffice">here</a>.</p>
+
+            <p>Tag a visitor center with a point on top of the building as <code>tourism=information</code> and <code>information=office</code>. Additionally, trace the building footprint and tag as <code>building=yes</code> (see the <a href="#buildings">buildings</a> section to learn more about tracing building footprints).</p>
+
+            <p>Feel free to add additional information using the following keys (click for link to OSM wiki):</p>
+
+            <ul>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:addr"><code>addr=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:opening_hours"><code>opening_hours=</code></a></li>
+            </ul>
+
+            <p><b>Places rendering:</b></p>
+
+            <img src="https://raw.githubusercontent.com/nationalparkservice/npmap-symbol-library/gh-pages/pngs/visitor-center-black-32.png">
+
+          </div>
+
+          <div class="col-lg-6 col-sm-6">
+            <button class="btn btn-primary gif-collapse">Show Places Editor Preview</button>
+            <div class="collapse" data-gif="assets/img/visitor_center.gif"></div>
+          </div>
+
+        </div>
+        <!-- /.row -->
+
+        <a name="information"></a>
+        <div class="row">
+          <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+          <div class="col-lg-6 col-sm-6">
+            <a href="#information"><h4>Information</h4></a>
+
+            <p>Information is an information source for visitors, typically an informational board. This is the default and most basic information-related tag, which can be specified further by including other tags for visitor centers (<code>information=office</code>) or information maps (<code>information=map</code>). Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:tourism%3Dinformation">here</a>.</p>
+
+            <p>Tag information with a point on top of the amenity as <code>tourism=information</code>.</p>
+
+            <p>Feel free to add additional information using the following keys (click for link to OSM wiki):</p>
+
+            <ul>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:addr"><code>addr=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:opening_hours"><code>opening_hours=</code></a></li>
+            </ul>
+
+            <p><b>Places rendering:</b></p>
+
+            <img src="https://raw.githubusercontent.com/nationalparkservice/npmap-symbol-library/gh-pages/pngs/information-black-32.png">
+
+          </div>
+
+          <div class="col-lg-6 col-sm-6">
+            <button class="btn btn-primary gif-collapse">Show Places Editor Preview</button>
+            <div class="collapse" data-gif="assets/img/information.gif"></div>
+          </div>
+
+        </div>
+        <!-- /.row -->
+
+        <a name="ranger_station"></a>
+        <div class="row">
+          <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+          <div class="col-lg-6 col-sm-6">
+            <a href="#ranger_station"><h4>Ranger Station</h4></a>
+
+            <p>A ranger station is a building or facility primarily intended to house park law enforcement and rescue staff, and is typically not open to the public. It can also be as simple as a ranger sitting at a campground kiosk. Ranger stations can be seasonal, and they are commonly confused with visitor centers as both can be located in the same building. In the event the two are co-located, the best practice is to create two coincident points - one for the ranger station and another for the visitor center. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:amenity%3Dranger_station">here</a>, but keep in mind that definitions can vary between the Park Service and Forest Service, and between parks.</p>
+
+            <p>Tag a ranger station with a point on top of the building as <code>amenity=ranger_station</code>. Additionally, trace the building footprint and tag as <code>building=yes</code> (see the <a href="#buildings">buildings</a> section to learn more about tracing building footprints).</p>
+
+            <p>Feel free to add additional information using the following keys (click for link to OSM wiki):</p>
+
+            <ul>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:addr"><code>addr=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:opening_hours"><code>opening_hours=</code></a></li>
+            </ul>
+
+            <p><b>Places rendering:</b></p>
+
+            <img src="https://raw.githubusercontent.com/nationalparkservice/npmap-symbol-library/gh-pages/pngs/ranger-station-black-32.png">
+
+          </div>
+
+          <div class="col-lg-6 col-sm-6">
+            <button class="btn btn-primary gif-collapse">Show Places Editor Preview</button>
+            <div class="collapse" data-gif="assets/img/ranger_station.gif"></div>
+          </div>
+
+        </div>
+        <!-- /.row -->
+
+        <a name="entrance_station"></a>
+        <div class="row">
+          <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+          <div class="col-lg-6 col-sm-6">
+            <a href="#entrance_station"><h4>Entrance Station</h4></a>
+
+            <p>An entrance station is an official entry point into a park. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:barrier%3Dentrance">here</a>, but keep in mind that the wiki describes a generalized take while we are targeting official park entrances.</p>
+
+            <p>Tag an entrance station with a point on top of the entrance as <code>barrier=entrance</code>.</p>
+
+            <p>Feel free to add additional information using the following keys (click for link to OSM wiki):</p>
+
+            <ul>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:addr"><code>addr=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:opening_hours"><code>opening_hours=</code></a></li>
+            </ul>
+
+            <p><b>Places rendering:</b></p>
+
+            <img src="" alt="currently no icon">
+
+          </div>
+
+          <div class="col-lg-6 col-sm-6">
+            <button class="btn btn-primary gif-collapse">Show Places Editor Preview</button>
+            <div class="collapse" data-gif="assets/img/entrance_station.gif"></div>
+          </div>
+
+        </div>
+        <!-- /.row -->
+
+        <a name="telephone"></a>
+        <div class="row">
+          <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+          <div class="col-lg-6 col-sm-6">
+            <a href="#telephone"><h4>Telephone</h4></a>
+
+            <p>A telephone is a phone available for public use, typically a pay phone on a stand or wall. It may be indoors or outdoors. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:amenity%3Dtelephone">here</a>.</p>
+
+            <p>Tag a telephone with a point on top of the telephone as <code>amenity=telephone</code>. Where several telephones are arranged side by side, arrange several similar points side by side.</p>
+
+            <p>Feel free to add additional information using the following keys (click for link to OSM wiki):</p>
+
+            <ul>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:addr"><code>addr=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:indoor"><code>indoor=</code></a></li>
+            </ul>
+
+            <p><b>Places rendering:</b></p>
+
+            <img src="https://raw.githubusercontent.com/nationalparkservice/npmap-symbol-library/gh-pages/pngs/telephone-black-32.png">
+
+          </div>
+
+          <div class="col-lg-6 col-sm-6">
+            <button class="btn btn-primary gif-collapse">Show Places Editor Preview</button>
+            <div class="collapse" data-gif="assets/img/telephone.gif"></div>
+          </div>
+
+        </div>
+        <!-- /.row -->
+
+        <a name="food_service"></a>
+        <div class="row">
+          <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+          <div class="col-lg-6 col-sm-6">
+            <a href="#food_service"><h4>Food Service</h4></a>
+
+            <p>Food service is also commonly referred to as a food court. It is typically an indoor area within a facility that houses multiple food vendors and provides a common area for dining. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:amenity%3Dfood_court">here</a>.</p>
+
+            <p>Tag food service with a point on top of the building housing the amenity as <code>amenity=food_court</code>. Additionally, trace the building footprint and tag as <code>building=yes</code> (see the <a href="#buildings">buildings</a> section to learn more about tracing building footprints).</p>
+
+            <p>Feel free to add additional information using the following keys (click for link to OSM wiki):</p>
+
+            <ul>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:addr"><code>addr=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:opening_hours"><code>opening_hours=</code></a></li>
+            </ul>
+
+            <p><b>Places rendering:</b></p>
+
+            <img src="https://raw.githubusercontent.com/nationalparkservice/npmap-symbol-library/gh-pages/pngs/food-service-black-32.png">
+
+          </div>
+
+          <div class="col-lg-6 col-sm-6">
+            <button class="btn btn-primary gif-collapse">Show Places Editor Preview</button>
+            <div class="collapse" data-gif="assets/img/food_service.gif"></div>
+          </div>
+
+        </div>
+        <!-- /.row -->
+
+        <a name="store"></a>
+        <div class="row">
+          <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+          <div class="col-lg-6 col-sm-6">
+            <a href="#store"><h4>Store</h4></a>
+
+            <p>A store is a general store, typically selling things like tools, building supplies, clothes, food, and similar items. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:shop%3Dgeneral">here</a>.</p>
+
+            <p>Tag a store with a point on top of the building as <code>shop=general</code>. Additionally, trace the building footprint and tag as <code>building=yes</code> (see the <a href="#buildings">buildings</a> section to learn more about tracing building footprints).</p>
+
+            <p>Feel free to add additional information using the following keys (click for link to OSM wiki):</p>
+
+            <ul>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:addr"><code>addr=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:opening_hours"><code>opening_hours=</code></a></li>
+            </ul>
+
+            <p><b>Places rendering:</b></p>
+
+            <img src="https://raw.githubusercontent.com/nationalparkservice/npmap-symbol-library/gh-pages/pngs/store-black-32.png">
+
+          </div>
+
+          <div class="col-lg-6 col-sm-6">
+            <button class="btn btn-primary gif-collapse">Show Places Editor Preview</button>
+            <div class="collapse" data-gif="assets/img/store.gif"></div>
+          </div>
+
+        </div>
+        <!-- /.row -->
+
+        <a name="gas_station"></a>
+        <div class="row">
+          <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+          <div class="col-lg-6 col-sm-6">
+            <a href="#gas_station"><h4>Gas Station</h4></a>
+
+            <p>A gas station is a facility where vehicles can be refueled. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:amenity%3Dfuel">here</a>.</p>
+
+            <p>Tag a gas station with a point on top of it as <code>amenity=fuel</code>. If the gas station includes a building housing a store, tag it with a point on top of the building as <code>shop=general</code>. Additionally, trace the building footprint and tag as <code>building=yes</code> (see the <a href="#buildings">buildings</a> section to learn more about tracing building footprints).</p>
+
+            <p>Feel free to add additional information using the following keys (click for link to OSM wiki):</p>
+
+            <ul>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:addr"><code>addr=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:opening_hours"><code>opening_hours=</code></a></li>
+            </ul>        
+
+            <p><b>Places rendering:</b></p>
+
+            <img src="https://raw.githubusercontent.com/nationalparkservice/npmap-symbol-library/gh-pages/pngs/gas-station-black-32.png">
+
+          </div>
+
+          <div class="col-lg-6 col-sm-6">
+            <button class="btn btn-primary gif-collapse">Show Places Editor Preview</button>
+            <div class="collapse" data-gif="assets/img/gas_station.gif"></div>
+          </div>
+
+        </div>
+        <!-- /.row -->
+
+        <a name="drinking_water"></a>
+        <div class="row">
+          <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+          <div class="col-lg-6 col-sm-6">
+            <a href="#drinking_water"><h4>Drinking Water</h4></a>
+
+            <p>Drinking water is a location at which potable water is available for consumption. Typically this comes in the form of a water fountain. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:amenity%3Ddrinking_water">here</a>.</p>
+
+            <p>Tag drinking water with a point on top of the amenity as <code>amenity=drinking_water</code>.</p>
+
+            <p>Feel free to add additional information using the following keys (click for link to OSM wiki):</p>
+
+            <ul>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:description"><code>description=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:indoor"><code>indoor=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:access"><code>access=</code></a></li>
+            </ul>  
+
+            <p><b>Places rendering:</b></p>
+
+            <img src="https://raw.githubusercontent.com/nationalparkservice/npmap-symbol-library/gh-pages/pngs/drinking-water-black-32.png">
+
+          </div>
+
+          <div class="col-lg-6 col-sm-6">
+            <button class="btn btn-primary gif-collapse">Show Places Editor Preview</button>
+            <div class="collapse" data-gif="assets/img/drinking_water.gif"></div>
+          </div>
+
+        </div>
+        <!-- /.row -->
+
+        <a name="boat_launch"></a>
+        <div class="row">
+          <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+          <div class="col-lg-6 col-sm-6">
+            <a href="#boat_launch"><h4>Boat Launch</h4></a>
+
+            <p>A boat launch is a ramp into the water used to launch a boat, also referred to as a slipway, boat ramp, or boat landing. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:leisure%3Dslipway">here</a>.</p>
+
+            <p>Tag a boat launch with a point in the middle of the ramp as <code>leisure=slipway</code> along with the associated approved use(s), if applicable: <a href="http://wiki.openstreetmap.org/wiki/Key:motorboat"><code>motorboat=</code></a> for motorized watercraft access and/or <a href="http://wiki.openstreetmap.org/wiki/Key:canoe"><code>canoe=</code></a> for non-motorized watercraft access (click each for link to OSM wiki). Click <a href="http://nationalparkservice.github.io/places-tracing-guide/#water_trail">here</a> to learn more about tagging water trails in Places.</p>
+
+            <p>Feel free to add additional information using the following keys (click for link to OSM wiki):</p>
+
+            <ul>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:whitewater"><code>whitewater=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:width"><code>width=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:section_grade"><code>section_grade=</code></a></li>
+            </ul>  
+
+            <p><b>Places rendering:</b></p>
+
+            <img src="https://raw.githubusercontent.com/nationalparkservice/npmap-symbol-library/gh-pages/pngs/boat-launch-black-32.png">
+
+          </div>
+
+          <div class="col-lg-6 col-sm-6">
+            <button class="btn btn-primary gif-collapse">Show Places Editor Preview</button>
+            <div class="collapse" data-gif="assets/img/boat_launch.gif"></div>
+          </div>
+
+        </div>
+        <!-- /.row -->
+
+        <a name="park_district"></a>
+        <div class="row">
+          <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+          <div class="col-lg-6 col-sm-6">
+            <a href="#park_district"><h4>Park District</h4></a>
+
+            <p>A park district or "locality" is, generally speaking, a region of a park that has a name. This can come in a variety of forms including an official park administrative unit, a named region of a park, or a city/town neighborhood. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:place%3Dlocality">here</a>, but keep in mind that the wiki describes the OSM-specific context, while we have our own adoption of this for NPS.</p>
+
+            <p>Tag a park district with a point in the middle of the associated area as <code>place=locality</code>.</p>
+
+            <p>Feel free to add additional information using the following keys (click for link to OSM wiki):</p>
+
+            <ul>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:population"><code>population=</code></a></li>
+            </ul>  
+
+            <p><b>Places rendering:</b></p>
+
+            <img src="https://raw.githubusercontent.com/mapbox/maki/mb-pages/renders/marker-18%402x.png">
+
+          </div>
+
+          <div class="col-lg-6 col-sm-6">
+            <button class="btn btn-primary gif-collapse">Show Places Editor Preview</button>
+            <div class="collapse" data-gif="assets/img/locality.gif"></div>
+          </div>
+
+        </div>
+        <!-- /.row -->
+
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.content-section-b -->
+
+    <a name="buildings"></a>
+    <div class="content-section-a">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-sm-6">
+            <a href="#buildings"><h2 class="section-heading">Buildings</h2></a>
+            <h4>Area feature</h4>
+
+            <p>Buildings in Places are intentionally simple. We are primarily concerned with building footprints, while any additional building amenities are added as points of interest on top of the footprint. For example, add <code>shop=general</code> as a point of interest on top of the building footprint instead of <code>building=retail</code> as a tag included in the building footprint polygon to represent a general store (see <a href="http://localhost:8888/places-tracing-guide/#store">store</a> above).</p>
+
+            <p>Trace a building by using the <code>Area</code> tool to trace the building footprint and tag as <code>building=yes</code>.</p>
+
+            <p><img class="img-thumbnail" src="assets/img/id_area.jpg"></p>
+
+            <p>Note: Don't get too carried away with nodes while tracing - keep it simple to conform to the general shape of the building visible from the imagery. More nodes mean more data, which can ultimately slow the database.</p>
+
+            <p>Additionally, if you know the location of the building's entrance or exit you can add it as a vertex on the building footprint polygon in the appropriate location. Tag a building entrance/exit as <code>building=entrance</code>. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:building%3Dentrance">here</a>.</p>
+
+          </div>
+          
+          <div class="col-lg-6 col-sm-6">
+            <button class="btn btn-primary gif-collapse">Show Places Editor Preview</button>
+            <div class="collapse" data-gif="assets/img/buildings.gif"></div>
+          </div>
+
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.content-section-a -->
+
+    <a name="roads"></a>
+    <div class="content-section-b">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-sm-6">
+            <a href="#roads"><h2 class="section-heading">Roads</h2></a>
+            <h4>Linear feature</h4>
+
+            <p>Roads are identified primarily by the <a href="http://wiki.openstreetmap.org/wiki/Key:highway"><code>highway=</code></a> field (click for link to OSM wiki). Trace a road by using the <code>Line</code> tool to trace its centerline from beginning to end:</p>
+
+            <p><img class="img-thumbnail" src="assets/img/id_line.jpg"></p>
+
+            <p>The tags for different road types will vary, classified below. <em>If the road classification is unknown, default to the</em> <a href="#unclassified_road"><code>highway=unclassified</code></a> <em>tag (click to jump to description)</em>.</p>
+
+          </div>
+
+          <div class="col-lg-6 col-sm-6">
+
+            <p>Road types (click title to jump to type):</p>
+
+            <ul>
+              <li><a href="#primary_road">Primary Road</a>: <code>highway=primary</code></li>
+              <li><a href="#secondary_road">Secondary Road</a>: <code>highway=secondary</code></li>
+              <li><a href="#residential_road">Residential Road</a>: <code>highway=residential</code></li>
+              <li><a href="#unclassified_road">Unclassified Road</a>: <code>highway=unclassified</code></li>
+              <li><a href="#service_road">Service Road</a>: <code>highway=service</code></li>
+              <li><a href="#bridge">Bridge</a>: <code>bridge=yes</code></li>
+              <li><a href="#tunnel">Tunnel</a>: <code>tunnel=yes</code></li>
+              <li><a href="#sidewalk">Sidewalk</a>: <code>highway=footway</code> and <code>footway=sidewalk</code></li>
+            </ul>
+
+            <p>Dealing with intersecting roads? Click <a href="#intersections">here</a> to make sure you are connecting them properly.</p>
+
+            <p>Road attributes (click title to jump to attribute):</p>
+
+            <ul>
+              <li><a href="#surface">Surface</a>: <code>surface=</code></li>
+              <li><a href="#oneway">Oneway</a>: <code>oneway=</code></li>
+              <li><a href="#lanes">Lanes</a>: <code>lanes=</code></li>
+              <li><a href="#maxspeed">Max speed</a>: <code>maxspeed=</code></li>
+            </ul>
+
+          </div>
+          
+        </div>
+        <!-- /.row -->
+
+        <a name="primary_road"></a>
+        <div class="row">
+          <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+          <div class="col-lg-6 col-sm-6">
+            <a href="#primary_road"><h4>Primary Road</h4></a>
+
+            <p>A primary road is a major highway, normally with two lanes. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:highway%3Dprimary">here</a>.</p>
+
+            <p>Tag a primary road by tracing its centerline from beginning to end as <code>highway=primary</code>.</p>
+
+            <p>Feel free to add additional information using the following keys:</p>
+
+            <ul>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:surface"><code>surface=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:width"><code>width=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:maxspeed"><code>maxspeed=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:oneway"><code>oneway=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:lanes"><code>lanes=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:access"><code>access=</code></a></li>
+            </ul>  
+
+          </div>
+
+          <div class="col-lg-6 col-sm-6">
+            <button class="btn btn-primary gif-collapse">Show Places Editor Preview</button>
+            <div class="collapse" data-gif="assets/img/primary_road.gif"></div>
+          </div>
+
+        </div>
+        <!-- /.row -->
+
+        <a name="secondary_road"></a>
+        <div class="row">
+          <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+          <div class="col-lg-6 col-sm-6">
+            <a href="#secondary_road"><h4>Secondary Road</h4></a>
+
+            <p>A secondary road is a highway that is not part of a major route but forms a link in the national route network. It usually has two lanes, separated by a centerline. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:highway%3Dsecondary">here</a>.</p>
+
+            <p>Tag a secondary road by tracing its centerline from beginning to end as <code>highway=secondary</code>.</p>
+
+            <p>Feel free to add additional information using the following keys:</p>
+
+            <ul>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:surface"><code>surface=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:width"><code>width=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:maxspeed"><code>maxspeed=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:oneway"><code>oneway=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:lanes"><code>lanes=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:access"><code>access=</code></a></li>
+            </ul>  
+
+          </div>
+
+          <div class="col-lg-6 col-sm-6">
+            <button class="btn btn-primary gif-collapse">Show Places Editor Preview</button>
+            <div class="collapse" data-gif="assets/img/secondary_road.gif"></div>
+          </div>
+
+        </div>
+        <!-- /.row -->
+
+        <a name="residential_road"></a>
+        <div class="row">
+          <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+          <div class="col-lg-6 col-sm-6">
+            <a href="#residential_road"><h4>Residential Road</h4></a>
+
+            <p>A residential road is a road that accesses residential areas but is not a classified or unclassified highway. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:highway%3Dresidential">here</a>.</p>
+
+            <p>Tag a residential road by tracing its centerline from beginning to end as <code>highway=residential</code>.</p>
+
+            <p>Feel free to add additional information using the following keys:</p>
+
+            <ul>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:surface"><code>surface=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:width"><code>width=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:maxspeed"><code>maxspeed=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:oneway"><code>oneway=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:lanes"><code>lanes=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:access"><code>access=</code></a></li>
+            </ul>  
+
+          </div>
+
+          <div class="col-lg-6 col-sm-6">
+            <button class="btn btn-primary gif-collapse">Show Places Editor Preview</button>
+            <div class="collapse" data-gif="assets/img/residential_road.gif"></div>
+          </div>
+
+        </div>
+        <!-- /.row -->
+
+        <a name="unclassified_road"></a>
+        <div class="row">
+          <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+          <div class="col-lg-6 col-sm-6">
+            <a href="#unclassified_road"><h4>Unclassified Road</h4></a>
+
+            <p>An unclassified road is a minor public road, typically at the lowest level of the interconnecting network. It is of lower importance than a secondary road and is not a residential street. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:highway%3Dunclassified">here</a>.</p>
+
+            <p>Tag an unclassified road by tracing its centerline from beginning to end as <code>highway=unclassified</code>. <em>If a road classification is unknown, default to the</em> <code>highway=unclassified</code> <em>tag.</em></p>
+
+            <p>Feel free to add additional information using the following keys:</p>
+
+            <ul>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:surface"><code>surface=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:width"><code>width=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:maxspeed"><code>maxspeed=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:oneway"><code>oneway=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:lanes"><code>lanes=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:access"><code>access=</code></a></li>
+            </ul>  
+
+          </div>
+
+          <div class="col-lg-6 col-sm-6">
+            <button class="btn btn-primary gif-collapse">Show Places Editor Preview</button>
+            <div class="collapse" data-gif="assets/img/unclassified_road.gif"></div>
+          </div>
+
+        </div>
+        <!-- /.row -->
+
+        <a name="service_road"></a>
+        <div class="row">
+          <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+          <div class="col-lg-6 col-sm-6">
+            <a href="#service_road"><h4>Service Road</h4></a>
+
+            <p>A service road is a road accessing a building, service station, beach, campsite, business park, parking lot, driveway, etc. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:highway%3Dservice">here</a>.</p>
+
+            <p>Tag a service road by tracing its centerline from beginning to end as <code>highway=service</code>.</p>
+
+            <p>Feel free to add additional information using the following keys:</p>
+
+            <ul>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:surface"><code>surface=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:width"><code>width=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:maxspeed"><code>maxspeed=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:oneway"><code>oneway=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:lanes"><code>lanes=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:access"><code>access=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:service"><code>service=</code></a></li>
+            </ul>  
+
+          </div>
+
+          <div class="col-lg-6 col-sm-6">
+            <button class="btn btn-primary gif-collapse">Show Places Editor Preview</button>
+            <div class="collapse" data-gif="assets/img/service_road.gif"></div>
+          </div>
+
+        </div>
+        <!-- /.row -->
+
+        <a name="bridge"></a>
+        <div class="row">
+          <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+          <div class="col-lg-6 col-sm-6">
+            <a href="#bridge"><h4>Bridge</h4></a>
+
+            <p>A bridge is a structure used to carry a road, railway, or similar feature over another feature. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Key:bridge">here</a>.</p>
+
+            <p>Tag a bridge by splitting the upper way at each end of the bridge (where it joins solid ground) and use the "Structure" form in the "Edit feature" menu to add the associated way as a "Bridge" (which will add the <code>bridge=yes</code> tag). Remember to maintain the road's existing classification, e.g. <code>highway=primary</code>. Also, add <code>layer=1</code>, which will create the hierarchy indicating the upper way is above the lower.</p>
+
+            <p>Feel free to add additional information using the following keys:</p>
+
+            <ul>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:address"><code>addr=</code></a></li>
+            </ul>  
+
+          </div>
+
+          <div class="col-lg-6 col-sm-6">
+            <button class="btn btn-primary gif-collapse">Show Places Editor Preview</button>
+            <div class="collapse" data-gif="assets/img/bridge.gif"></div>
+          </div>
+
+        </div>
+        <!-- /.row -->
+
+        <a name="tunnel"></a>
+        <div class="row">
+          <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+          <div class="col-lg-6 col-sm-6">
+            <a href="#tunnel"><h4>Tunnel</h4></a>
+
+            <p>A tunnel is an underground or underwater passageway enclosed except for its entrance and exit at each end. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Key:tunnel">here</a>.</p>
+
+            <p>Tag a tunnel by splitting the enclosed section of the way and use the "Structure" form in the "Edit feature" menu to add the associated way as a "Tunnel" (which will add the <code>tunnel=yes</code> tag). Remember to maintain the road's existing classification, e.g. <code>highway=primary</code>. Also, add <code>layer=-1</code>, which will create the hierarchy indicating the tunnel is underneath the feature it intersects.</p>
+
+            <p>Feel free to add additional information using the following keys:</p>
+
+            <ul>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:address"><code>addr=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:opening_hours"><code>opening_hours=</code></a></li>
+            </ul>  
+
+          </div>
+
+          <div class="col-lg-6 col-sm-6">
+            <button class="btn btn-primary gif-collapse">Show Places Editor Preview</button>
+            <div class="collapse" data-gif="assets/img/tunnel.gif"></div>
+          </div>
+
+        </div>
+        <!-- /.row -->
+
+        <a name="sidewalk"></a>
+        <div class="row">
+          <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+          <div class="col-lg-6 col-sm-6">
+            <a href="#sidewalk"><h4>Sidewalk</h4></a>
+
+            <p>A sidewalk is a part of a road dedicated for pedestrian use, usually separated from the road by a curb. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Sidewalks">here</a>.</p>
+
+            <p>Tag a sidewalk road by tracing its centerline from beginning to end as <code>highway=footway</code> and <code>footway=sidewalk</code>. If the sidewalk crosses a road, forming a crosswalk, use the "Structure" form in the "Edit feature" menu to add the associated way as a "Crosswalk" (which will add the <code>crossing=yes</code> tag).</p>
+
+            <p>Feel free to add additional information using the following keys:</p>
+
+            <ul>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:surface"><code>surface=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:lit"><code>lit=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:width"><code>width=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:access"><code>access=</code></a></li>
+            </ul>  
+
+          </div>
+
+          <div class="col-lg-6 col-sm-6">
+            <button class="btn btn-primary gif-collapse">Show Places Editor Preview</button>
+            <div class="collapse" data-gif="assets/img/sidewalk.gif"></div>
+          </div>
+
+        </div>
+        <!-- /.row -->
+
+        <a name="intersections"></a>
+        <div class="row">
+          <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+          <div class="col-lg-6 col-sm-6">
+            <a href="#intersections"><h4>Intersections</h4></a>
+
+            <p>An intersection occurs where two or more roads meet. To create a simple intersection between two roads, remember to connect them with a node at the point of intersection.</p>
+
+          </div>
+
+          <div class="col-lg-6 col-sm-6">
+            <button class="btn btn-primary gif-collapse">Show Places Editor Preview</button>
+            <div class="collapse" data-gif="assets/img/intersection.gif"></div>
+          </div>
+
+        </div>
+        <!-- /.row -->
+
+        <a name="surface"></a>
+        <div class="row">
+          <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+          <div class="col-lg-6 col-sm-6">
+            <a href="#surface"><h4>Surface</h4></a>
+
+            <p>Surface describes the physical surface of a feature (in this case, a road or trail). Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Key:surface">here</a>.</p>
+
+            <p>Tag a feature's surface by adding the <code>surface=</code> tag to its associated way. The following surface types are mapped directly to the current EGIS standards (click each for the wiki, which includes other surface types as well):</p>
+
+            <ul>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:surface"><code>surface=asphalt</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:surface"><code>surface=concrete</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:surface"><code>surface=paving_stones</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:surface"><code>surface=cobblestone</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:surface"><code>surface=gravel</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:surface"><code>surface=sand</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:surface"><code>surface=ground</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:surface"><code>surface=paved</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:surface"><code>surface=unpaved</code></a></li>
+            </ul>
+
+          </div>
+
+          <div class="col-lg-6 col-sm-6">
+            <button class="btn btn-primary gif-collapse">Show Places Editor Preview</button>
+            <div class="collapse" data-gif="assets/img/surface.gif"></div>
+          </div>
+
+        </div>
+        <!-- /.row -->
+
+        <a name="oneway"></a>
+        <div class="row">
+          <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+          <div class="col-lg-6 col-sm-6">
+            <a href="#oneway"><h4>Oneway</h4></a>
+
+            <p>Oneway indicates the oneway access restriction on roads. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Key:oneway">here</a>.</p>
+
+            <p>Tag a road with oneway access as <code>oneway=yes</code> to its associated way. Note that ways have a directionality, so the direction in which you map the way determines its directionality. However, you can tag a way with <code>oneway=-1</code> to reverse its existing directionality (appropriate when a way's directionality already governs another attribute such as a bus route).</p>
+
+          </div>
+
+          <div class="col-lg-6 col-sm-6">
+            <button class="btn btn-primary gif-collapse">Show Places Editor Preview</button>
+            <div class="collapse" data-gif="assets/img/oneway.gif"></div>
+          </div>
+
+        </div>
+        <!-- /.row -->
+
+        <a name="lanes"></a>
+        <div class="row">
+          <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+          <div class="col-lg-6 col-sm-6">
+            <a href="#lanes"><h4>Lanes</h4></a>
+
+            <p>Lanes indicate the number of traffic lanes on a highway that are available to motorised traffic (bicycle lanes are therefore excluded). Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Key:lanes">here</a>.</p>
+
+            <p>Tag a road with <code>lanes=</code> (e.g. <code>lanes=2</code>) to indicate how many lanes it has.</p>
+
+          </div>
+
+          <div class="col-lg-6 col-sm-6">
+            <button class="btn btn-primary gif-collapse">Show Places Editor Preview</button>
+            <div class="collapse" data-gif="assets/img/lanes.gif"></div>
+          </div>
+
+        </div>
+        <!-- /.row -->
+
+        <a name="maxspeed"></a>
+        <div class="row">
+          <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+          <div class="col-lg-6 col-sm-6">
+            <a href="#maxspeed"><h4>Maxspeed</h4></a>
+
+            <p>Maxspeed indicates the maximum legal speed limit for general traffic on a road. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Key:maxspeed">here</a>.</p>
+
+            <p>Tag a road with <code>maxspeed=</code> (e.g. <code>maxspeed=45 mph</code>) to indicate the speed limit, including the unit of measure (<code>mph</code> for miles per hour). Places defaults to miles per hour, so <code>maxspeed=45</code> is effectively the same as <code>maxspeed=45 mph</code>. Best practice is to include units, however.</p>
+
+          </div>
+
+          <div class="col-lg-6 col-sm-6">
+            <button class="btn btn-primary gif-collapse">Show Places Editor Preview</button>
+            <div class="collapse" data-gif="assets/img/maxspeed.gif"></div>
+          </div>
+
+        </div>
+        <!-- /.row -->
+
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.content-section-b -->
+
+    <a name="trails"></a>
+    <div class="content-section-a">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-sm-6">
+            <a href="#trails"><h2 class="section-heading">Trails</h2></a>
+            <h4>Linear feature</h4>
+
+            <p>Trails are identified primarily by the <a href="http://wiki.openstreetmap.org/wiki/Key:highway"><code>highway=</code></a> field, along with the <a href="http://wiki.openstreetmap.org/wiki/Key:piste:type"><code>piste:type=</code></a> field for specific winter sport classifications (click each for link to OSM wiki). Trace a trail by using the <code>Line</code> tool to trace its centerline from beginning to end:</p>
+
+            <p><img class="img-thumbnail" src="assets/img/id_line.jpg"></p>
+
+            <p>The tags for different trail types will vary, classified below. <em>If the trail classification is unknown, default to the</em> <a href="#path"><code>highway=path</code></a> <em>tag (click to jump to description). If the trail classification is unknown but it is accessible to motorized vehicles, default to the</em> <a href="#track"><code>highway=track</code></a> <em>tag (click to jump to description).</em></p>
+
+            <p>Note: remember to tag the start of each trail with <a href="#trailhead"><code>highway=trailhead</code></a>, along with the associated approved uses (click to jump to description). If a trail crosses a road, forming a crosswalk, use the "Structure" form in the "Edit feature" menu to add the associated way as a "Crosswalk" (which will add the <code>crossing=yes</code> tag).</p>
+
+          </div>
+
+          <div class="col-lg-6 col-sm-6">
+
+            <p>Trail types (click title to jump to type):</p>
+
+            <ul>
+              <li><a href="#path">Trail (non-motorized)</a>: <code>highway=path</code></li>
+              <li><a href="#track">Trail (motorized)</a>: <code>highway=track</code></li>
+              <li><a href="#piste">Piste</a>: <code>piste:type=</code></li>
+              <li><a href="#water_trail">Water Trail</a>: <code>waterway=yes</code></li>
+            </ul>
+
+          </div>
+          
+        </div>
+        <!-- /.row -->
+
+        <a name="path"></a>
+        <div class="row">
+          <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+          <div class="col-lg-6 col-sm-6">
+            <a href="#path"><h4>Trail (non-motorized)</h4></a>
+
+            <p>A non-motorized trail is intended for non-motorized traffic including pedestrian use ("foot traffic"), biking, or horseback riding. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:highway%3Dpath">here</a>.</p>
+
+            <p>Tag a non-motorized trail by tracing its centerline from beginning to end as <code>highway=path</code> along with its access conditions, as appropriate (click for link to OSM wiki):</p>
+
+            <ul>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:bicycle">Bicycle Trail</a> (<code>bicycle=</code>)</li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:horse">Equestrian Trail</a> (<code>horse=</code>)</li>
+            </ul>
+
+            <p>Feel free to add additional information using the following keys:</p>
+
+            <ul>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:tracktype"><code>tracktype=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:surface"><code>surface=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:width"><code>width=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:incline"><code>incline=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:mtb:scale"><code>mtb:scale=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:mtb:scale:uphill"><code>mtb:scale:uphill=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:mtb:scale:imba"><code>mtb:scale:imba=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:sac_scale"><code>sac_scale=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:trail_visibility"><code>trail_visibility=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:access"><code>access=</code></a></li>
+            </ul>
+
+          </div>
+
+          <div class="col-lg-6 col-sm-6">
+            <button class="btn btn-primary gif-collapse">Show Places Editor Preview</button>
+            <div class="collapse" data-gif="assets/img/path.gif"></div>
+          </div>
+
+        </div>
+        <!-- /.row -->
+
+        <a name="track"></a>
+        <div class="row">
+          <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+          <div class="col-lg-6 col-sm-6">
+            <a href="#track"><h4>Trail (motorized)</h4></a>
+
+            <p>A motorized trail is permissive to motorized traffic, such as all-terrain vehicles (ATVs), four-wheel drive (4wd) vehicles, motorcycles, and snowmobiles. A motorized trail can be permissive to non-motorized traffic as well, but it must be permissive to motorized traffic to warrant this classification.</p>
+
+            <p>Tag a motorized trail by tracing its centerline from beginning to end as <code>highway=track</code> along with its access conditions, as appropriate (click for link to OSM wiki):</p>
+
+            <ul>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:atv">ATV Trail</a> (<code>atv=</code>)</li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:4wd_only">Four-Wheel Drive Trail</a> (<code>4wd_only=</code>)</li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:motorcycle">Motorcycle Trail</a> (<code>motorcycle=</code>)</li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:snowmobile">Snowmobile Trail</a> (<code>snowmobile=</code>)</li>
+            </ul>
+
+            <p>Feel free to add additional information using the following keys:</p>
+
+            <ul>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:tracktype"><code>tracktype=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:surface"><code>surface=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:width"><code>width=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:incline"><code>incline=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:mtb:scale"><code>mtb:scale=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:mtb:scale:uphill"><code>mtb:scale:uphill=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:mtb:scale:imba"><code>mtb:scale:imba=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:sac_scale"><code>sac_scale=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:trail_visibility"><code>trail_visibility=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:access"><code>access=</code></a></li>
+            </ul>
+
+          </div>
+
+          <div class="col-lg-6 col-sm-6">
+            <button class="btn btn-primary gif-collapse">Show Places Editor Preview</button>
+            <div class="collapse" data-gif="assets/img/track.gif"></div>
+          </div>
+
+        </div>
+        <!-- /.row -->
+
+        <a name="piste"></a>
+        <div class="row">
+          <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+          <div class="col-lg-6 col-sm-6">
+            <a href="#piste"><h4>Piste</h4></a>
+
+            <p>A piste is a trail intended for winter sports such as downhill and cross-country skiing, dog sledding, and snowshoeing. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Key:piste:type">here</a>.</p>
+
+            <p>Tag a piste by tracing its centerline from beginning to end using the <code>piste:type=</code> key along with its appropriate value (click for link to OSM wiki):</p>
+
+            <ul>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:piste:type">Dog Sled Trail</a> (<code>piste:type=sleigh</code>)</li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:piste:type">Downhill Ski Trail</a> (<code>piste:type=downhill</code>)</li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:piste:type">Cross-Country Ski Trail</a> (<code>piste:type=nordic</code>)</li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:piste:type">Backcountry Ski Trail</a> (<code>piste:type=skitour</code>)</li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:piste:type">Sledding</a> (<code>piste:type=sled</code>)</li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:piste:type">Snowshoe Trail</a> (<code>piste:type=hike</code>)</li>
+            </ul>
+
+            <p>A piste can also be added as a point of interest, using the <code>Point</code> tool to create a node with the appropriate tag to indicate the trail access. In the event a piste and a generic trail (motorized or non-motorized) are co-located, tag both classifications as they would be tagged individually. For example, if a trail is both a generic footpath (intended for hiking) and a downhill ski trail tag the associated way <code>highway=path</code> and <code>piste:type=downhill</code>.</p>
+
+            <p>Feel free to add additional information using the following keys:</p>
+
+            <ul>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:piste:difficulty"><code>piste:difficulty=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:tracktype"><code>tracktype=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:surface"><code>surface=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:width"><code>width=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:incline"><code>incline=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:mtb:scale"><code>mtb:scale=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:mtb:scale:uphill"><code>mtb:scale:uphill=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:mtb:scale:imba"><code>mtb:scale:imba=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:sac_scale"><code>sac_scale=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:trail_visibility"><code>trail_visibility=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:access"><code>access=</code></a></li>
+            </ul>
+
+          </div>
+
+          <div class="col-lg-6 col-sm-6">
+            <button class="btn btn-primary gif-collapse">Show Places Editor Preview</button>
+            <div class="collapse" data-gif="assets/img/downhill_ski_trail.gif"></div>
+          </div>
+
+        </div>
+        <!-- /.row -->
+
+        <a name="water_trail"></a>
+        <div class="row">
+          <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+          <div class="col-lg-6 col-sm-6">
+            <a href="#water_trail"><h4>Water Trail</h4></a>
+
+            <p>A water trail is a trail running through a waterway, intended for canoes, kayaks, motorboats, etc. Tag a water trail by tracing its centerline from beginning to end as <code>waterway=yes</code> along with its access conditions, as appropriate (click for link to OSM wiki):</p>
+
+            <ul>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:canoe">Non-Motorized Watercraft Trail</a> (<code>canoe=</code>) for a route accessible to non-motorized watercraft such as a canoe or kayak.</li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:motorboat">Motorized Watercraft Trail</a> (<code>motorboat=</code>) for a route accessible to motorized watercraft such as a powerboat or motorized sailboat.</li>
+            </ul>
+
+            <p>The start and end of a water trail is often a boat launch, which is added as a point of interest. Click <a href="http://nationalparkservice.github.io/places-tracing-guide/#boat_launch">here</a> to learn more about tagging boat launches in Places.</p>
+
+            <p>Feel free to add additional information using the following keys:</p>
+
+            <ul>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:whitewater"><code>whitewater=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:width"><code>width=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:section_grade"><code>section_grade=</code></a></li>
+            </ul>
+
+          </div>
+
+          <div class="col-lg-6 col-sm-6">
+            <button class="btn btn-primary gif-collapse">Show Places Editor Preview</button>
+            <div class="collapse" data-gif="assets/img/motorized_watercraft_trail.gif"></div>
+          </div>
+
+        </div>
+        <!-- /.row -->
+
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- .content-section-a -->
+        
+    <a name="parking"></a>
+    <div class="content-section-b">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-sm-6">
+            <a href="#parking"><h2 class="section-heading">Parking</h2></a>
+            <h4>Area, point, and line feature</h4>
+
+            <p>Parking takes two primary forms in Places: <a href="#parking_amenity">parking</a> (a generic term, indicating parking is available as an amenity, typically in the form of a parking lot or garage) and <a href="#parking_aisle">parking aisles</a>. Learn more from the <a href="http://wiki.openstreetmap.org/wiki/Tag:amenity%3Dparking"><code>amenity=parking</code></a> and <a href="http://wiki.openstreetmap.org/wiki/Tag:service%3Dparking_aisle"><code>service=parking_aisle</code></a> OSM wikis.</p>
+
+            <p>Parking types (click title to jump to type):</p>
+
+            <ul>
+              <li><a href="#parking_amenity">Parking</a>: <code>amenity=parking</code></li>
+              <li><a href="#parking_aisle">Parking Aisle</a>: <code>highway=service</code> and <code>service=parking_aisle</code></li>
+            </ul>
+
+          </div>
+          
+        </div>
+        <!-- /.row -->
+
+        <a name="parking_amenity"></a>
+        <div class="row">
+          <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+          <div class="col-lg-6 col-sm-6">
+            <a href="#parking_amenity"><h4>Parking (amenity)</h4></a>
+
+            <p>Parking is a facility available for use by the public, customers, or other authorized users for the parking of motor vehicles (cars, trucks, motorcycles, etc). This can come in various forms, including a parking lot or garage, among others. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:amenity%3Dparking">here</a>.</p>
+
+            <p>Best practice is to trace a parking lot's footprint with the <code>Area</code> tool and add a node in the center of the area with the <code>Point</code> tool and tag both as <code>amenity=parking</code>.</p>
+
+            <p>
+              <img class="img-thumbnail" src="assets/img/id_area.jpg">
+              <img class="img-thumbnail" src="assets/img/id_point.jpg">
+            </p>
+
+            <p>If the parking area is undefined simply add the point without defining an area. If the feature is a parking garage or building, add the tag <code>building=yes</code> to the polygon.</p>
+
+            <p>Feel free to add additional information using the following keys:</p>
+
+            <ul>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:address"><code>addr=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:capacity"><code>capacity=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:maxstay"><code>maxstay=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:fee"><code>fee=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:access"><code>access=</code></a></li>
+            </ul>
+
+          </div>
+
+          <div class="col-lg-6 col-sm-6">
+            <button class="btn btn-primary gif-collapse">Show Places Editor Preview</button>
+            <div class="collapse" data-gif="assets/img/parking_amenity.gif"></div>
+          </div>
+
+        </div>
+        <!-- /.row -->
+
+        <a name="parking_aisle"></a>
+        <div class="row">
+          <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+          <div class="col-lg-6 col-sm-6">
+            <a href="#parking_aisle"><h4>Parking Aisle</h4></a>
+
+            <p>A parking aisle is a subordinated way in a parking lot between rows of parking spaces that vehicles use to drive into and out of the spaces. Learn more from OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:service%3Dparking_aisle">here</a>.</p>
+
+            <p>Tag a parking aisle by tracing it as you would a service road using the <code>Line</code> tool and tag as <code>highway=service</code> and <code>service=parking_aisle</code>.</p>
+
+            <p><img class="img-thumbnail" src="assets/img/id_line.jpg"></p>
+
+            <p>The main way(s) in the parking lot, for entering and connecting multiple parking aisles, should be tagged <code>highway=service</code> only.</p>
+
+            <p>Feel free to add additional information using the following keys:</p>
+
+            <ul>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:surface"><code>surface=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:oneway"><code>oneway=</code></a></li>
+              <li><a href="http://wiki.openstreetmap.org/wiki/Key:access"><code>access=</code></a></li>
+            </ul>
+
+          </div>
+
+          <div class="col-lg-6 col-sm-6">
+            <button class="btn btn-primary gif-collapse">Show Places Editor Preview</button>
+            <div class="collapse" data-gif="assets/img/parking_aisle.gif"></div>
+          </div>
+
+        </div>
+        <!-- /.row -->
+
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.content-section-b -->
+
+    <div class="banner">
+      <div class="container">
+        <div class="row">
+          <img class="responsive" src="assets/img/nps_logo.png">
         </div>
       </div>
+      <!-- /.container -->
     </div>
-    <!-- /.row -->
-  </div>
-  <!-- /.container -->
-</div>
-<!-- /.intro-header -->
-
-<div class="content-section-a">
-  <div class="container">
-    <a name="about"></a>
-    <div class="row">
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-        
-        <a href="#about"><h2 class="section-heading">About Places</h2></a>
-
-        <p><a href="http://insidemaps.nps.gov/places/">Places</a> is an internal data collection system for the National Park Service's "core" geospatial data. We built Places so that all National Park Service employees, both technical and non-technical, can contribute their knowledge to the map.</p>
-
-        <p>Data from Places is fed directly into both <a href="http://www.nps.gov/npmap/tools/park-tiles/#4/39.06/-96.02">Park Tiles</a> and the larger National Park Service structured data initiative, which will be used to drive <a href="http://www.nps.gov/index.htm">NPS.gov</a> and a publicly available application programming interface (API) starting in January of 2016.</p>
-
-        <p>The Places database currently contains the following <a href="http://www.nps.gov/npmap/tools/places/">datasets</a> (click each data type for a snapshot GeoJSON, updated from the database every five minutes):</p>
-
-        <ol>
-          <li>
-            <a href="https://nps.cartodb.com/api/v2/sql?format=geojson&q=SELECT+*+FROM+points_of_interest">Points of Interest</a>
-          </li>
-          <li>
-            <a href="https://nps.cartodb.com/api/v2/sql?format=geojson&q=SELECT+*+FROM+buildings">Buildings</a>
-          </li>
-          <li>
-            <a href="https://nps.cartodb.com/api/v2/sql?format=geojson&q=SELECT+*+FROM+roads">Roads</a>
-          </li>
-          <li>
-            <a href="https://nps.cartodb.com/api/v2/sql?format=geojson&q=SELECT+*+FROM+trails">Trails</a>
-          </li>
-          <li>
-            <a href="https://nps.cartodb.com/api/v2/sql?format=geojson&q=SELECT+*+FROM+parking_lots">Parking Lots</a>
-          </li>
-        </ol>
-
-        <p>These datasets were initially seeded from existing park, region, and program-level GIS datasets, but now anyone who is connected to the National Park Service network can edit them using the <a href="http://insidemaps.nps.gov/places/">Places Editor</a> (NPS-only). If your organization has more/better data available and you'd like to get it into Places, <a href="mailto:npmap@nps.gov">send us an email</a> or <a href="https://github.com/nationalparkservice/places-data/issues">create an issue on GitHub</a> and we will assist with the upload.</p>
-
-        <p><strong>Disclaimer: all data contributed to Places is public facing. Do not add any sensitive information unfit for public consumption. Only add data inside park boundaries!</strong></p>
-
-        <p>The Places editor is built using OpenStreetMap's <a href="http://wiki.openstreetmap.org/wiki/ID">iD editor</a>. Check out learnOSM's <a href="http://learnosm.org/en/editing/id-editor/">iD editor walkthrough</a> to familiarize yourself with the interface. It is intentionally simple, developed with a non-technical audience in mind. So, fear not! Let's jump in and get started.</p>
-
-        <form action="http://insidemaps.nps.gov/places/edit/#background=mapbox-satellite&map=4/-96.02/39.06&overlays=park-tiles-overlay">
-          <button type="submit" class="btn btn-lg btn-primary">Start Mapping Now!</button>
-        </form>
-
-        <p><small>Note: must be logged into NPS network.</small></p>
-
-      </div>
-
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6 about">
-        <img class="img-responsive" src="img/nat_cap_sq.jpg" style="box-shadow: 10px 10px 30px #888;">
-      </div>
-
-    </div>
-    <!-- /.row -->
-  </div>
-  <!-- /.container  -->
-</div>
-<!-- /.content-section-a -->
-
-<div class="content-section-b">
-  <div class="container">
-    <div class="row">
-      <a name="poi"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
-        <a href="#poi"><h2 class="section-heading">Points of Interest</h2></a>
-        <h4>Point feature</h4>
-
-        <p>A point of interest or "POI" is represented by a point or <a href="http://wiki.openstreetmap.org/wiki/Node">"node"</a> on the map and has geographic coordinates (latitude and longitude). A POI can be a standalone node or it can be part of a <a href="http://wiki.openstreetmap.org/wiki/Way">"way"</a> (an ordered list of nodes representing a linear feature or area). Learn more about POIs from <a href="http://wiki.openstreetmap.org/wiki/Points_of_interest">OpenStreetMap's wiki</a>.</p>
-
-        <p>Places was originally named "Points of Interest" as POIs were the first (and only) feature type supported. Places supports a wide variety of POIs, a full list of which can be found in our <a href="https://docs.google.com/spreadsheets/d/1sQZRUZDe8vPu8PANxoIc5k0Pv85xNd5ae4uGJ0fwEt0/edit#gid=1063193272">data preset wiki</a>. Don't see the tag you're looking for? <a href="https://github.com/nationalparkservice/places-data/issues">Open an issue on GitHub</a>.</p>
-
-        <p>This guide is intended to serve as a starter kit for contributing to Places, so we are going to review some of the most common/basic tags to add to the map. Use iD's <code>Point</code> tool to add a point to the map:</p>
-
-        <img src="img/id_point.jpg" style="box-shadow: 5px 5px 15px #888; margin: 20px 0 10px 0;">
-
-      </div>
-
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-
-        <p>Click title to jump to POI type:</p>
-
-        <ul>
-          <li><a href="#campground">Campground</a>: <code>tourism=camp_site</code></li>
-          <li><a href="#campsite">Campsite</a>: <code>tourism=camp_site, camp_site=pitch</code></li>
-          <li><a href="#lodge">Lodge</a>: <code>tourism=alpine_hut</code></li>
-          <li><a href="#picnic_site">Picnic Area</a>: <code>tourism=picnic_site</code></li>
-          <!-- <li><a href="#picnic_table">Picnic table</a>: <code>leisure=picnic_table</code></li> -->
-          <li><a href="#restroom">Restroom</a>: <code>amenity=toilets</code></li>
-          <li><a href="#waste_basket">Waste Basket</a>: <code>amenity=waste_basket</code></li>
-          <li><a href="#trailhead">Trailhead</a>: <code>highway=trailhead</code></li>
-          <li><a href="#visitor_center">Visitor Center</a>: <code>tourism=visitor_center</code></li>
-          <li><a href="#information">Information</a>: <code>tourism=information</code></li>
-          <li><a href="#ranger_station">Ranger Station</a>: <code>amenity=ranger_station</code></li>
-          <li><a href="#entrance_station">Entrance Station</a>: <code>barrier=entrance</code></li>
-          <li><a href="#telephone">Telephone</a>: <code>amenity=telephone</code></li>
-          <li><a href="#food_service">Food Service</a>: <code>amenity=food_court</code></li>
-          <li><a href="#store">Store</a>: <code>shop=general</code></li>
-          <li><a href="#gas_station">Gas Station</a>: <code>amenity=fuel</code></li>
-          <li><a href="#drinking_water">Drinking Water</a>: <code>amenity=drinking_water</code></li>
-          <li><a href="#boat_launch">Boat Launch</a>: <code>leisure=slipway</code></li>
-        </ul>
-
-      </div>
-    </div>
-    <!-- /.row -->
-
-    <div class="row">
-      <hr class="col-lg-12 col-sm-12 section-heading-spacer" style="width:100%;">
-      <div class="col-lg-6 col-sm-6">
-        <a href="#campground"><h4>Campground</h4></a>
-
-        <p>A campground is an area, usually divided into a number of pitches (or "campsites," see below), where people can camp overnight using tents or camper vans or caravans. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:tourism%3Dcamp_site">here</a>.</p>
-
-        <p>Tag a campground with a point in the middle of the area as <code>tourism=camp_site</code>.</p>
-
-        <p>Feel free to add additional information using the following keys (click for link to OSM wiki):</p>
-
-        <ul>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:addr"><code>addr=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:opening_hours"><code>opening_hours=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:capacity"><code>capacity=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:fee"><code>fee=</code></a></li>
-        </ul>
-
-        <p><b>Places rendering:</b></p>
-
-        <img src="https://raw.githubusercontent.com/nationalparkservice/symbol-library/master/pngs/campground-black-32.png">
-
-      </div>
-
-      <div class="col-lg-6 col-sm-6">
-
-        <button class="btn btn-primary gif-collapse">Test</button>
-        <div class="collapse" data-gif="img/campground.gif"></div>
-
-        <!--<button type="button" id="image-popover" class="btn btn-lg btn-primary" data-toggle="popover" data-placement="bottom" data-container="body" data-html="true" data-title="<strong>Campground:</strong> <code>tourism=camp_site</code>" data-content="<img src='https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/campground.gif'>">View Places Editor preview</button>-->
-
-        <!-- <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/campground.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/campground.gif" style="box-shadow: 5px 5px 15px #888"></a> -->
-      </div>
-    </div>
-    <!-- /.row -->
-
-    <div class="row">
-      <a name="campsite"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
-        <a href="#campsite"><h4>Campsite</h4></a>
-
-        <p>A campsite is an individual pitch within a campground where people can camp overnight using tents or camper vans or caravans. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:tourism%3Dcamp_site">here</a>.</p>
-
-        <p>Tag a campsite with a point in the middle of the pitch as <code>tourism=camp_site</code> and <code>camp_site=pitch</code>.</p>
-
-        <p>Feel free to add additional information using the following keys (click for link to OSM wiki):</p>
-
-        <ul>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:addr"><code>addr=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:opening_hours"><code>opening_hours=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:capacity"><code>capacity=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:fee"><code>fee=</code></a></li>
-        </ul>
-
-        <p><b>Places rendering:</b></p>
-
-        <img src="https://raw.githubusercontent.com/nationalparkservice/symbol-library/master/pngs/campsite-black-32.png">
-
-      </div>
-
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/campsite.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/campsite.gif" style="box-shadow: 5px 5px 15px #888"></a>
-      </div>
-    </div>
-    <!-- /.row -->
-
-    <div class="row">
-      <a name="lodge"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
-        <a href="#lodge"><h4>Lodge</h4></a>
-
-        <p>A lodge or "alpine hut" is a remote building located in the mountains intended to provide board and lodging. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:tourism%3Dalpine_hut">here</a>.</p>
-
-        <p>Tag a lodge with a point on top of the building as <code>tourism=alpine_hut</code>. Additionally, trace the building footprint and tag as <code>building=yes</code> (see the <a href="#buildings">buildings</a> section to learn more about tracing building footprints).</p>
-
-        <p>Feel free to add additional information using the following keys (click for link to OSM wiki):</p>
-
-        <ul>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:addr"><code>addr=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:opening_hours"><code>opening_hours=</code></a></li>
-        </ul>
-
-        <p><b>Places rendering:</b></p>
-
-        <img src="https://raw.githubusercontent.com/nationalparkservice/symbol-library/master/pngs/lodging-black-32.png">
-
-      </div>
-
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/lodge.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/lodge.gif" style="box-shadow: 5px 5px 15px #888"></a>
-      </div>
-    </div>
-    <!-- /.row -->
-
-    <div class="row">
-      <a name="picnic_site"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
-        <a href="#picnic_site"><h4>Picnic Area</h4></a>
-
-        <p>A picnic area is an area that is suitable for outdoors eating and may have a number of facilities to aid a picnic: tables, benches, restrooms, grills, water taps, covered pavilions, etc. Or, it may just be a grassy area popular for picnics. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:tourism%3Dpicnic_site">here</a>.</p>
-
-        <p>Tag a picnic area with a point in the middle of the area as <code>tourism=picnic_site</code>. <!-- Picnic tables are to be tagged separately, see <a href="#picnic_table">below</a>. --></p>
-
-        <p>Feel free to add additional information using the following keys (click for link to OSM wiki):</p>
-
-        <ul>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:addr"><code>addr=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:opening_hours"><code>opening_hours=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:fee"><code>fee=</code></a></li>
-        </ul>
-
-        <p><b>Places rendering:</b></p>
-
-        <img src="https://raw.githubusercontent.com/nationalparkservice/symbol-library/master/pngs/picnic-area-black-32.png">
-
-      </div>
-
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/picnic_site.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/picnic_site.gif" style="box-shadow: 5px 5px 15px #888"></a>
-      </div>
-    </div>
-    <!-- /.row -->
-
-<!--     <div class="row">
-      <a name="picnic_table"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
-        <a href="#picnic_table"><h4>Picnic Table</h4></a>
-
-        <p>A picnic table is a modified table with benches, expressly for the purpose of eating a meal outdoors (picnicking). Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:tourism%3Dpicnic_table">here</a>.</p>
-
-        <p>Tag a picnic table with a point on top of the table as <code>tourism=picnic_table</code>. Feel free to add additional information using the following keys (click for link to OSM wiki):</p>
-
-        <ul>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:covered"><code>covered=</code></a></li>
-        </ul>
-
-        <p><b>Places rendering:</b></p>
-
-        <img src="https://raw.githubusercontent.com/nationalparkservice/npmaki/gh-pages/renders/picnic-area-black-32.png">
-
-      </div>
-
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <img class="img-responsive" src="http://placehold.it/750">
-      </div>
-    </div> -->
-    <!-- /.row -->
-
-    <div class="row">
-      <a name="restroom"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
-        <a href="#restroom"><h4>Restroom</h4></a>
-
-        <p>A restroom or "toilet" open to the public. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:amenity%3Dtoilets">here</a>.</p>
-
-        <p>Tag a restroom with a point on top of the toilet amenities as <code>amenity=toilets</code>. Additionally, trace the building footprint and tag as <code>building=yes</code> (see the <a href="#buildings">buildings</a> section to learn more about tracing building footprints).</p>
-
-        <p>Feel free to add additional information using the following keys (click for link to OSM wiki):</p>
-
-        <ul>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:addr"><code>addr=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:opening_hours"><code>opening_hours=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:toilets:disposal"><code>toilets:disposal=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Category:Gender"><code>gender</code></a> (<a href="http://wiki.openstreetmap.org/wiki/Key:male"><code>male=</code></a>, <a href="http://wiki.openstreetmap.org/wiki/Key:female"><code>female=</code></a>, or <a href="http://wiki.openstreetmap.org/wiki/Key:unisex"><code>unisex=</code></a>)</li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:indoor"><code>indoor=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:access"><code>access=</code></a></li>
-        </ul>
-
-        <p><b>Places rendering:</b></p>
-
-        <img src="https://raw.githubusercontent.com/nationalparkservice/symbol-library/master/pngs/restrooms-black-32.png">
-
-      </div>
-
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/restroom.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/restroom.gif" style="box-shadow: 5px 5px 15px #888"></a>
-      </div>
-    </div>
-    <!-- /.row -->
-
-    <div class="row">
-      <a name="waste_basket"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
-        <a href="#waste_basket"><h4>Waste Basket</h4></a>
-
-        <p>A waste basket is a single small container for depositing garbage that is easily accesible for pedestrians. Similar expressions: rubbish bin, litter bin, trash can, garbage can. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:amenity%3Dwaste_basket">here</a>.</p>
-
-        <p>Tag a waste basket with a point on top of the container as <code>amenity=waste_basket</code>.</p>
-
-        <p>Feel free to add additional information using the following keys (click for link to OSM wiki):</p>
-
-        <ul>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:addr"><code>addr=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:waste"><code>waste=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:bin"><code>bin=</code></a></li>
-        </ul>
-
-        <p><b>Places rendering:</b></p>
-
-        <img src="https://raw.githubusercontent.com/nationalparkservice/symbol-library/master/pngs/litter-receptacle-black-32.png">
-
-      </div>
-
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/waste_basket.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/waste_basket.gif" style="box-shadow: 5px 5px 15px #888"></a>
-      </div>
-    </div>
-    <!-- /.row -->
-
-    <div class="row">
-      <a name="trailhead"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
-        <a href="#trailhead"><h4>Trailhead</h4></a>
-
-        <p>A trailhead is the point at which a trail begins, where the trail is often intended for hiking, biking, skiing, snowshoeing, snowmobiling, horseback riding, or off-road vehicles. <em>There is currently no OSM wiki for trailhead available.</em></p>
-
-        <p>Tag a trailhead with a point on the location of the start of the trail as <code>highway=trailhead</code>. If the trail is intended for specific uses, e.g. biking, add the appropriate "Approved Use" (in this example <code>bicycle=yes</code>).</p>
-
-        <p>Places supports the following "Approved Use" types:</p>
-
-        <ul>
-          <li><code>bicycle=</code></li>
-          <li><code>atv=</code></li>
-          <li><code>4wd_only=</code></li>
-          <li><code>motorcycle=</code></li>
-          <li><code>snowmobile=</code></li>
-          <li><code>horse=</code></li>
-          <li><code>foot=</code></li>
-          <li><code>motor_vehicle=</code></li>
-          <li><code>motorcycle=</code></li>
-        </ul>
-
-        <p>Feel free to add additional information using the following keys (click for link to OSM wiki):</p>
-
-        <ul>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:tracktype"><code>tracktype=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:surface"><code>surface=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:width"><code>width=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:incline"><code>incline=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:mtb:scale"><code>mtb:scale=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:mtb:scale:uphill"><code>mtb:scale:uphill=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:mtb:scale:imba"><code>mtb:scale:imba=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:sac_scale"><code>sac_scale=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:trail_visibility"><code>trail_visibility=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:access"><code>access=</code></a></li>
-        </ul>
-
-        <p><b>Places rendering:</b></p>
-
-        <img src="https://raw.githubusercontent.com/nationalparkservice/symbol-library/master/pngs/trailhead-black-32.png">
-
-      </div>
-
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/trailhead.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/trailhead.gif" style="box-shadow: 5px 5px 15px #888"></a>
-      </div>
-    </div>
-    <!-- /.row -->
-
-    <div class="row">
-      <a name="visitor_center"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
-        <a href="#visitor_center"><h4>Visitor Center</h4></a>
-
-        <p>A visitor center is a building housing information for visitors, typically including some or all of the following: information resources, facilities (e.g. restrooms, drinking water), ranger staff, and exhibits. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:information%3Doffice">here</a>.</p>
-
-        <p>Tag a visitor center with a point on top of the building as <code>tourism=information</code> and <code>information=office</code>. Additionally, trace the building footprint and tag as <code>building=yes</code> (see the <a href="#buildings">buildings</a> section to learn more about tracing building footprints).</p>
-
-        <p>Feel free to add additional information using the following keys (click for link to OSM wiki):</p>
-
-        <ul>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:addr"><code>addr=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:opening_hours"><code>opening_hours=</code></a></li>
-        </ul>
-
-        <p><b>Places rendering:</b></p>
-
-        <img src="https://raw.githubusercontent.com/nationalparkservice/symbol-library/master/pngs/visitor-center-black-32.png">
-
-      </div>
-
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/visitor_center.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/visitor_center.gif" style="box-shadow: 5px 5px 15px #888"></a>
-      </div>
-    </div>
-    <!-- /.row -->
-
-    <div class="row">
-      <a name="information"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
-        <a href="#information"><h4>Information</h4></a>
-
-        <p>Information is an information source for visitors, typically an informational board. This is the default and most basic information-related tag, which can be specified further by including other tags for visitor centers (<code>information=office</code>) or information maps (<code>information=map</code>). Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:tourism%3Dinformation">here</a>.</p>
-
-        <p>Tag information with a point on top of the amenity as <code>tourism=information</code>.</p>
-
-        <p>Feel free to add additional information using the following keys (click for link to OSM wiki):</p>
-
-        <ul>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:addr"><code>addr=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:opening_hours"><code>opening_hours=</code></a></li>
-        </ul>
-
-        <p><b>Places rendering:</b></p>
-
-        <img src="https://raw.githubusercontent.com/nationalparkservice/symbol-library/master/pngs/information-black-32.png">
-
-      </div>
-
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/information.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/information.gif" style="box-shadow: 5px 5px 15px #888"></a>
-      </div>
-    </div>
-    <!-- /.row -->
-
-    <div class="row">
-      <a name="ranger_station"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
-        <a href="#ranger_station"><h4>Ranger Station</h4></a>
-
-        <p>A ranger station is a building or facility primarily intended to house park law enforcement and rescue staff, and is typically not open to the public. It can also be as simple as a ranger sitting at a campground kiosk. Ranger stations can be seasonal, and they are commonly confused with visitor centers as both can be located in the same building. In the event the two are co-located, the best practice is to create two coincident points - one for the ranger station and another for the visitor center. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:amenity%3Dranger_station">here</a>, but keep in mind that definitions can vary between the Park Service and Forest Service, and between parks.</p>
-
-        <p>Tag a ranger station with a point on top of the building as <code>amenity=ranger_station</code>. Additionally, trace the building footprint and tag as <code>building=yes</code> (see the <a href="#buildings">buildings</a> section to learn more about tracing building footprints).</p>
-
-        <p>Feel free to add additional information using the following keys (click for link to OSM wiki):</p>
-
-        <ul>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:addr"><code>addr=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:opening_hours"><code>opening_hours=</code></a></li>
-        </ul>
-
-        <p><b>Places rendering:</b></p>
-
-        <img src="https://raw.githubusercontent.com/nationalparkservice/symbol-library/master/pngs/ranger-station-black-32.png">
-
-      </div>
-
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/ranger_station.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/ranger_station.gif" style="box-shadow: 5px 5px 15px #888"></a>
-      </div>
-    </div>
-    <!-- /.row -->
-
-    <div class="row">
-      <a name="entrance_station"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
-        <a href="#entrance_station"><h4>Entrance Station</h4></a>
-
-        <p>An entrance station is an official entry point into a park. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:barrier%3Dentrance">here</a>, but keep in mind that the wiki describes a generalized take while we are targeting official park entrances.</p>
-
-        <p>Tag an entrance station with a point on top of the entrance as <code>barrier=entrance</code>.</p>
-
-        <p>Feel free to add additional information using the following keys (click for link to OSM wiki):</p>
-
-        <ul>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:addr"><code>addr=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:opening_hours"><code>opening_hours=</code></a></li>
-        </ul>
-
-        <p><b>Places rendering:</b></p>
-
-        <img src="" alt="currently no icon">
-
-      </div>
-
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/entrance_station.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/entrance_station.gif" style="box-shadow: 5px 5px 15px #888"></a>
-      </div>
-    </div>
-    <!-- /.row -->
-
-    <div class="row">
-      <a name="telephone"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
-        <a href="#telephone"><h4>Telephone</h4></a>
-
-        <p>A telephone is a phone available for public use, typically a pay phone on a stand or wall. It may be indoors or outdoors. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:amenity%3Dtelephone">here</a>.</p>
-
-        <p>Tag a telephone with a point on top of the telephone as <code>amenity=telephone</code>. Where several telephones are arranged side by side, arrange several similar points side by side.</p>
-
-        <p>Feel free to add additional information using the following keys (click for link to OSM wiki):</p>
-
-        <ul>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:addr"><code>addr=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:indoor"><code>indoor=</code></a></li>
-        </ul>
-
-        <p><b>Places rendering:</b></p>
-
-        <img src="https://raw.githubusercontent.com/nationalparkservice/symbol-library/master/pngs/telephone-black-32.png">
-
-      </div>
-
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/telephone.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/telephone.gif" style="box-shadow: 5px 5px 15px #888"></a>
-      </div>
-    </div>
-    <!-- /.row -->
-
-    <div class="row">
-      <a name="food_service"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
-        <a href="#food_service"><h4>Food Service</h4></a>
-
-        <p>Food service is also commonly referred to as a food court. It is typically an indoor area within a facility that houses multiple food vendors and provides a common area for dining. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:amenity%3Dfood_court">here</a>.</p>
-
-        <p>Tag food service with a point on top of the building housing the amenity as <code>amenity=food_court</code>. Additionally, trace the building footprint and tag as <code>building=yes</code> (see the <a href="#buildings">buildings</a> section to learn more about tracing building footprints).</p>
-
-        <p>Feel free to add additional information using the following keys (click for link to OSM wiki):</p>
-
-        <ul>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:addr"><code>addr=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:opening_hours"><code>opening_hours=</code></a></li>
-        </ul>
-
-        <p><b>Places rendering:</b></p>
-
-        <img src="https://raw.githubusercontent.com/nationalparkservice/symbol-library/master/pngs/food-service-black-32.png">
-
-      </div>
-
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/food_service.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/food_service.gif" style="box-shadow: 5px 5px 15px #888"></a>
-      </div>
-    </div>
-    <!-- /.row -->
-
-    <div class="row">
-      <a name="store"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
-        <a href="#store"><h4>Store</h4></a>
-
-        <p>A store is a general store, typically selling things like tools, building supplies, clothes, food, and similar items. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:shop%3Dgeneral">here</a>.</p>
-
-        <p>Tag a store with a point on top of the building as <code>shop=general</code>. Additionally, trace the building footprint and tag as <code>building=yes</code> (see the <a href="#buildings">buildings</a> section to learn more about tracing building footprints).</p>
-
-        <p>Feel free to add additional information using the following keys (click for link to OSM wiki):</p>
-
-        <ul>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:addr"><code>addr=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:opening_hours"><code>opening_hours=</code></a></li>
-        </ul>
-
-        <p><b>Places rendering:</b></p>
-
-        <img src="https://raw.githubusercontent.com/nationalparkservice/symbol-library/master/pngs/store-black-32.png">
-
-      </div>
-
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/store.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/store.gif" style="box-shadow: 5px 5px 15px #888"></a>
-      </div>
-    </div>
-    <!-- /.row -->
-
-    <div class="row">
-      <a name="gas_station"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
-        <a href="#gas_station"><h4>Gas Station</h4></a>
-
-        <p>A gas station is a facility where vehicles can be refueled. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:amenity%3Dfuel">here</a>.</p>
-
-        <p>Tag a gas station with a point on top of it as <code>amenity=fuel</code>. If the gas station includes a building housing a store, tag it with a point on top of the building as <code>shop=general</code>. Additionally, trace the building footprint and tag as <code>building=yes</code> (see the <a href="#buildings">buildings</a> section to learn more about tracing building footprints).</p>
-
-        <p>Feel free to add additional information using the following keys (click for link to OSM wiki):</p>
-
-        <ul>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:addr"><code>addr=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:opening_hours"><code>opening_hours=</code></a></li>
-        </ul>        
-
-        <p><b>Places rendering:</b></p>
-
-        <img src="https://raw.githubusercontent.com/nationalparkservice/symbol-library/master/pngs/gas-station-black-32.png">
-
-      </div>
-
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/gas_station.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/gas_station.gif" style="box-shadow: 5px 5px 15px #888"></a>
-      </div>
-    </div>
-    <!-- /.row -->
-
-    <div class="row">
-      <a name="drinking_water"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
-        <a href="#drinking_water"><h4>Drinking Water</h4></a>
-
-        <p>Drinking water is a location at which potable water is available for consumption. Typically this comes in the form of a water fountain. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:amenity%3Ddrinking_water">here</a>.</p>
-
-        <p>Tag drinking water with a point on top of the amenity as <code>amenity=drinking_water</code>.</p>
-
-        <p>Feel free to add additional information using the following keys (click for link to OSM wiki):</p>
-
-        <ul>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:description"><code>description=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:indoor"><code>indoor=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:access"><code>access=</code></a></li>
-        </ul>  
-
-        <p><b>Places rendering:</b></p>
-
-        <img src="https://raw.githubusercontent.com/nationalparkservice/symbol-library/master/pngs/drinking-water-black-32.png">
-
-      </div>
-
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/drinking_water.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/drinking_water.gif" style="box-shadow: 5px 5px 15px #888"></a>
-      </div>
-    </div>
-    <!-- /.row -->
-
-    <div class="row">
-      <a name="boat_launch"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
-        <a href="#boat_launch"><h4>Boat Launch</h4></a>
-
-        <p>A boat launch is a ramp into the water used to launch a boat, also referred to as a slipway, boat ramp, or boat landing. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:leisure%3Dslipway">here</a>.</p>
-
-        <p>Tag a boat launch with a point in the middle of the ramp as <code>leisure=slipway</code> along with the associated approved use(s), if applicable: <a href="http://wiki.openstreetmap.org/wiki/Key:motorboat"><code>motorboat=</code></a> for motorized watercraft access and/or <a href="http://wiki.openstreetmap.org/wiki/Key:canoe"><code>canoe=</code></a> for non-motorized watercraft access (click each for link to OSM wiki). Click <a href="http://nationalparkservice.github.io/places-tracing-guide/#water_trail">here</a> to learn more about tagging water trails in Places.</p>
-
-        <p>Feel free to add additional information using the following keys (click for link to OSM wiki):</p></p>
-
-        <ul>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:whitewater"><code>whitewater=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:width"><code>width=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:section_grade"><code>section_grade=</code></a></li>
-        </ul>  
-
-        <p><b>Places rendering:</b></p>
-
-        <img src="https://raw.githubusercontent.com/nationalparkservice/symbol-library/master/pngs/boat-launch-black-32.png">
-
-      </div>
-
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/boat_launch.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/boat_launch.gif" style="box-shadow: 5px 5px 15px #888"></a>
-      </div>
-
-    </div>
-    <!-- /.row -->
-  </div>
-  <!-- /.container -->
-</div>
-<!-- /.content-section-b -->
-
-<div class="content-section-a">
-  <div class="container">
-   <div class="row">
-      <a name="buildings"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
-        <a href="#buildings"><h2 class="section-heading">Buildings</h2></a>
-        <h4>Area feature</h4>
-
-        <p>Buildings in Places are intentionally simple. We are primarily concerned with building footprints, while any additional building amenities are added as points of interest on top of the footprint. For example, add <code>shop=general</code> as a point of interest on top of the building footprint instead of <code>building=retail</code> as a tag included in the building footprint polygon to represent a general store (see <a href="http://localhost:8888/places-tracing-guide/#store">store</a> above).</p>
-
-        <p>Trace a building by using the <code>Area</code> tool to trace the building footprint and tag as <code>building=yes</code>.</p>
-
-        <img src="img/id_area.jpg" style="box-shadow: 5px 5px 15px #888; margin: 10px 0 20px 0;">
-
-        <p><small>Note: Don't get too carried away with nodes while tracing - keep it simple to conform to the general shape of the building visible from the imagery. More nodes mean more data, which can ultimately slow the database.</small></p>
-
-        <p>Additionally, if you know the location of the building's entrance or exit you can add it as a vertex on the building footprint polygon in the appropriate location. Tag a building entrance/exit as <code>building=entrance</code>. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:building%3Dentrance">here</a>.</p>
-
-      </div>
-      
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/buildings.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/buildings.gif" style="box-shadow: 5px 5px 15px #888";></a>
-      </div>
-
-    </div>
-    <!-- /.row -->
-  </div>
-  <!-- /.container -->
-</div>
-<!-- /.content-section-a -->
-
-<div class="content-section-b">
-  <div class="container">      
-   <div class="row">
-      <a name="roads"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
-        <a href="#roads"><h2 class="section-heading">Roads</h2></a>
-        <h4>Linear feature</h4>
-
-        <p>Roads are identified primarily by the <a href="http://wiki.openstreetmap.org/wiki/Key:highway"><code>highway=</code></a> field (click for link to OSM wiki). <!-- Roads are distinct from trails in that they are generally intended for use by motor vehicles, while trails are generally intended for recreation such as hiking, biking, horseback riding, skiing, etc.</p>
-
-        <p>There are a few exceptions to this rule, including all-terrain vehicle (ATV) trails, four-wheel drive (4wd) trails, motorized watercraft trails, and snowmobile trails, which all allow their respective type of motor vehicle access. --><!-- </p> -->
-
-        <!-- <p> -->Trace a road by using the <code>Line</code> tool to trace its centerline from beginning to end:</p>
-
-        <img src="img/id_line.jpg" style="box-shadow: 5px 5px 15px #888; margin: 10px 0 20px 0;">
-
-        <p>The tags for different road types will vary, classified below. <em>If the road classification is unknown, default to the</em> <a href="#unclassified_road"><code>highway=unclassified</code></a> <em>tag (click to jump to description)</em>.</p>
-
-      </div>
-
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-
-        <p>Road types (click title to jump to type):</p>
-
-        <ul>
-          <li><a href="#primary_road">Primary Road</a>: <code>highway=primary</code></li>
-          <li><a href="#secondary_road">Secondary Road</a>: <code>highway=secondary</code></li>
-          <!-- <li><a href="#tertiary_road">Tertiary Road</a>: <code>highway=tertiary</code></li> -->
-          <li><a href="#residential_road">Residential Road</a>: <code>highway=residential</code></li>
-          <li><a href="#unclassified_road">Unclassified Road</a>: <code>highway=unclassified</code></li>
-          <li><a href="#service_road">Service Road</a>: <code>highway=service</code></li>
-          <li><a href="#bridge">Bridge</a>: <code>bridge=yes</code></li>
-          <li><a href="#tunnel">Tunnel</a>: <code>tunnel=yes</code></li>
-          <li><a href="#sidewalk">Sidewalk</a>: <code>highway=footway</code> and <code>footway=sidewalk</code></li>
-        </ul>
-
-        <p>Dealing with intersecting roads? Click <a href="#intersections">here</a> to make sure you are connecting them properly.</p>
-
-        <p>Road attributes (click title to jump to attribute):</p>
-
-        <ul>
-          <li><a href="#surface">Surface</a>: <code>surface=</code></li>
-          <li><a href="#oneway">Oneway</a>: <code>oneway=</code></li>
-          <li><a href="#lanes">Lanes</a>: <code>lanes=</code></li>
-          <li><a href="#maxspeed">Max speed</a>: <code>maxspeed=</code></li>
-        </ul>
-
-      </div>
-      
-    </div>
-    <!-- /.row -->
-
-    <div class="row">
-      <a name="primary_road"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
-        <a href="#primary_road"><h4>Primary Road</h4></a>
-
-        <p>A primary road is a major highway, normally with two lanes. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:highway%3Dprimary">here</a>.</p>
-
-        <p>Tag a primary road by tracing its centerline from beginning to end as <code>highway=primary</code>.</p>
-
-        <p>Feel free to add additional information using the following keys:</p>
-
-        <ul>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:surface"><code>surface=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:width"><code>width=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:maxspeed"><code>maxspeed=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:oneway"><code>oneway=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:lanes"><code>lanes=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:access"><code>access=</code></a></li>
-        </ul>  
-
-      </div>
-
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/primary_road.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/primary_road.gif" style="box-shadow: 5px 5px 15px #888";></a>
-      </div>
-
-    </div>
-    <!-- /.row -->
-
-    <div class="row">
-      <a name="secondary_road"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
-        <a href="#secondary_road"><h4>Secondary Road</h4></a>
-
-        <p>A secondary road is a highway that is not part of a major route but forms a link in the national route network. It usually has two lanes, separated by a centerline. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:highway%3Dsecondary">here</a>.</p>
-
-        <p>Tag a secondary road by tracing its centerline from beginning to end as <code>highway=secondary</code>.</p>
-
-        <p>Feel free to add additional information using the following keys:</p>
-
-        <ul>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:surface"><code>surface=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:width"><code>width=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:maxspeed"><code>maxspeed=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:oneway"><code>oneway=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:lanes"><code>lanes=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:access"><code>access=</code></a></li>
-        </ul>  
-
-      </div>
-
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/secondary_road.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/secondary_road.gif" style="box-shadow: 5px 5px 15px #888";></a>
-      </div>
-
-    </div>
-    <!-- /.row -->
-
-<!--     <div class="row">
-      <a name="tertiary_road"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
-        <a href="#tertiary_road"><h4>Tertiary Road</h4></a>
-
-        <p>A tertiary road is a road that connects smaller settlements, local centers within larger settlements, or minor streets to major roads. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:highway%3Dtertiary">here</a>.</p>
-
-        <p>Tag a tertiary road by tracing its centerline from beginning to end as <code>highway=tertiary</code>. Feel free to add additional information using the following keys:</p>
-
-        <ul>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:surface"><code>surface=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:width"><code>width=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:maxspeed"><code>maxspeed=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:oneway"><code>oneway=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:lanes"><code>lanes=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:access"><code>access=</code></a></li>
-        </ul>  
-
-      </div>
-
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <img class="img-responsive" src="http://placehold.it/750">
-      </div>
-
-    </div> -->
-    <!-- /.row -->
-
-    <div class="row">
-      <a name="residential_road"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
-        <a href="#residential_road"><h4>Residential Road</h4></a>
-
-        <p>A residential road is a road that accesses residential areas but is not a classified or unclassified highway. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:highway%3Dresidential">here</a>.</p>
-
-        <p>Tag a residential road by tracing its centerline from beginning to end as <code>highway=residential</code>.</p>
-
-        <p>Feel free to add additional information using the following keys:</p>
-
-        <ul>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:surface"><code>surface=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:width"><code>width=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:maxspeed"><code>maxspeed=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:oneway"><code>oneway=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:lanes"><code>lanes=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:access"><code>access=</code></a></li>
-        </ul>  
-
-      </div>
-
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/residential_road.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/residential_road.gif" style="box-shadow: 5px 5px 15px #888";></a>
-      </div>
-
-    </div>
-    <!-- /.row -->
-
-    <div class="row">
-      <a name="unclassified_road"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
-        <a href="#unclassified_road"><h4>Unclassified Road</h4></a>
-
-        <p>An unclassified road is a minor public road, typically at the lowest level of the interconnecting network. It is of lower importance than a secondary road and is not a residential street or agricultural track. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:highway%3Dunclassified">here</a>.</p>
-
-        <p>Tag an unclassified road by tracing its centerline from beginning to end as <code>highway=unclassified</code>. <em>If a road classification is unknown, default to the</em> <code>highway=unclassified</code> <em>tag.</em></p>
-
-        <p>Feel free to add additional information using the following keys:</p>
-
-        <ul>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:surface"><code>surface=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:width"><code>width=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:maxspeed"><code>maxspeed=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:oneway"><code>oneway=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:lanes"><code>lanes=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:access"><code>access=</code></a></li>
-        </ul>  
-
-      </div>
-
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/unclassified_road.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/unclassified_road.gif" style="box-shadow: 5px 5px 15px #888";></a>
-      </div>
-
-    </div>
-    <!-- /.row -->
-
-    <div class="row">
-      <a name="service_road"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
-        <a href="#service_road"><h4>Service Road</h4></a>
-
-        <p>A service road is a road accessing a building, service station, beach, campsite, business park, parking lot, driveway, etc. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:highway%3Dservice">here</a>.</p>
-
-        <p>Tag a service road by tracing its centerline from beginning to end as <code>highway=service</code>.</p>
-
-        <p>Feel free to add additional information using the following keys:</p>
-
-        <ul>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:surface"><code>surface=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:width"><code>width=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:maxspeed"><code>maxspeed=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:oneway"><code>oneway=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:lanes"><code>lanes=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:access"><code>access=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:service"><code>service=</code></a></li>
-        </ul>  
-
-      </div>
-
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/service_road.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/service_road.gif" style="box-shadow: 5px 5px 15px #888";></a>
-      </div>
-
-    </div>
-    <!-- /.row -->
-
-    <div class="row">
-      <a name="bridge"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
-        <a href="#bridge"><h4>Bridge</h4></a>
-
-        <p>A bridge is a structure used to carry a road, railway, or similar feature over another feature. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Key:bridge">here</a>.</p>
-
-        <p>Tag a bridge by splitting the upper way at each end of the bridge (where it joins solid ground) and add the tag <code>bridge=yes</code> (remember to maintain the road's existing classification, e.g. <code>highway=primary</code>). Also, add <code>layer=1</code>, which will create the hierarchy indicating the upper way is above the lower.</p>
-
-        <p>Feel free to add additional information using the following keys:</p>
-
-        <ul>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:address"><code>addr=</code></a></li>
-        </ul>  
-
-      </div>
-
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/bridge.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/bridge.gif" style="box-shadow: 5px 5px 15px #888";></a>
-      </div>
-
-    </div>
-    <!-- /.row -->
-
-    <div class="row">
-      <a name="tunnel"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
-        <a href="#tunnel"><h4>Tunnel</h4></a>
-
-        <p>A tunnel is an underground or underwater passageway enclosed except for its entrance and exit at each end. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Key:tunnel">here</a>.</p>
-
-        <p>Tag a tunnel by splitting the enclosed section of the way and adding the tag <code>tunnel=yes</code> (remember to maintain the road's existing classification, e.g. <code>highway=primary</code>). Also, add <code>layer=-1</code>, which will create the hierarchy indicating the tunnel is underneath the feature it intersects.</p>
-
-        <p>Feel free to add additional information using the following keys:</p>
-
-        <ul>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:address"><code>addr=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:opening_hours"><code>opening_hours=</code></a></li>
-        </ul>  
-
-      </div>
-
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/tunnel.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/tunnel.gif" style="box-shadow: 5px 5px 15px #888";></a>
-      </div>
-
-    </div>
-    <!-- /.row -->
-
-    <div class="row">
-      <a name="sidewalk"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
-        <a href="#sidewalk"><h4>Sidewalk</h4></a>
-
-        <p>A sidewalk is a part of a road dedicated for pedestrian use, usually separated from the road by a curb. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Sidewalks">here</a>.</p>
-
-        <p>Tag a sidewalk road by tracing its centerline from beginning to end as <code>highway=footway</code> and <code>footway=sidewalk</code>. If the sidewalk crosses a road, tag the associated way with <code>footway=crossing</code>.</p>
-
-        <p>Feel free to add additional information using the following keys:</p>
-
-        <ul>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:surface"><code>surface=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:lit"><code>lit=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:width"><code>width=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:access"><code>access=</code></a></li>
-        </ul>  
-
-      </div>
-
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/sidewalk.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/sidewalk.gif" style="box-shadow: 5px 5px 15px #888";></a>
-      </div>
-
-    </div>
-    <!-- /.row -->
-
-    <div class="row">
-      <a name="intersections"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
-        <a href="#intersections"><h4>Intersections</h4></a>
-
-        <p>An intersection occurs where two or more roads meet. To create a simple intersection between two roads, remember to connect them with a node at the point of intersection.</p>
-
-      </div>
-
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/intersection.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/intersection.gif" style="box-shadow: 5px 5px 15px #888";></a>
-      </div>
-
-    </div>
-    <!-- /.row -->
-
-    <div class="row">
-      <a name="surface"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
-        <a href="#surface"><h4>Surface</h4></a>
-
-        <p>Surface describes the physical surface of a feature (in this case, a road or trail). Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Key:surface">here</a>.</p>
-
-        <p>Tag a feature's surface by adding the <code>surface=</code> tag to its associated way. The following surface types are mapped directly to the current EGIS standards (click each for the wiki, which includes other surface types as well):</p>
-
-        <ul>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:surface"><code>surface=asphalt</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:surface"><code>surface=concrete</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:surface"><code>surface=paving_stones</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:surface"><code>surface=cobblestone</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:surface"><code>surface=gravel</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:surface"><code>surface=sand</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:surface"><code>surface=ground</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:surface"><code>surface=paved</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:surface"><code>surface=unpaved</code></a></li>
-        </ul>
-
-      </div>
-
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/surface.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/surface.gif" style="box-shadow: 5px 5px 15px #888";></a>
-      </div>
-
-    </div>
-    <!-- /.row -->
-
-    <div class="row">
-      <a name="oneway"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
-        <a href="#oneway"><h4>Oneway</h4></a>
-
-        <p>Oneway indicates the oneway access restriction on roads. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Key:oneway">here</a>.</p>
-
-        <p>Tag a road with oneway access as <code>oneway=yes</code> to its associated way. Note that ways have a directionality, so the direction in which you map the way determines its directionality. However, you can tag a way with <code>oneway=-1</code> to reverse its existing directionality (appropriate when a way's directionality already governs another attribute such as a bus route).</p>
-
-      </div>
-
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/oneway.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/oneway.gif" style="box-shadow: 5px 5px 15px #888";></a>
-      </div>
-
-    </div>
-    <!-- /.row -->
-
-    <div class="row">
-      <a name="lanes"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
-        <a href="#lanes"><h4>Lanes</h4></a>
-
-        <p>Lanes indicate the number of traffic lanes on a highway that are available to motorised traffic (bicycle lanes are therefore excluded). Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Key:lanes">here</a>.</p>
-
-        <p>Tag a road with <code>lanes=</code> (e.g. <code>lanes=2</code>) to indicate how many lanes it has.</p>
-
-      </div>
-
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/lanes.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/lanes.gif" style="box-shadow: 5px 5px 15px #888";></a>
-      </div>
-
-    </div>
-    <!-- /.row -->
-
-    <div class="row">
-      <a name="maxspeed"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
-        <a href="#maxspeed"><h4>Maxspeed</h4></a>
-
-        <p>Maxspeed indicates the maximum legal speed limit for general traffic on a road. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Key:maxspeed">here</a>.</p>
-
-        <p>Tag a road with <code>maxspeed=</code> (e.g. <code>maxspeed=45 mph</code>) to indicate the speed limit, including the unit of measure (<code>mph</code> for miles per hour). Places defaults to miles per hour, so <code>maxspeed=45</code> is effectively the same as <code>maxspeed=45 mph</code>. Best practice is to include units, however.</p>
-
-      </div>
-
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/maxspeed.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/maxspeed.gif" style="box-shadow: 5px 5px 15px #888";></a>
-      </div>
-
-    </div>
-    <!-- /.row -->
-
-  </div>
-  <!-- /.container -->
-</div>
-<!-- /.content-section-b -->
-
-<div class="content-section-a">
-  <div class="container">      
-   <div class="row">
-      <a name="trails"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
-        <a href="#trails"><h2 class="section-heading">Trails</h2></a>
-        <h4>Linear feature</h4>
-
-        <p>Trails are identified primarily by the <a href="http://wiki.openstreetmap.org/wiki/Key:highway"><code>highway=</code></a> field, along with the <a href="http://wiki.openstreetmap.org/wiki/Key:piste:type"><code>piste:type=</code></a> field for specific winter sport classifications (click each for link to OSM wiki). <!-- Trails are distinct from roads in that they are generally intended for recreation, while roads are generally intended for use by motor vehicles. As noted in the <a href="#roads">roads</a> section, the exceptions to this rule are: all-terrain vehicle (ATV) trails, four-wheel drive (4wd) trails, motorized watercraft trails, and snowmobile trails, which all allow their respective type of motor vehicle access.</p>
-
-        <p> -->Trace a trail by using the <code>Line</code> tool to trace its centerline from beginning to end:</p>
-
-        <img src="img/id_line.jpg" style="box-shadow: 5px 5px 15px #888; margin: 10px 0 20px 0;">
-
-        <p>The tags for different trail types will vary, classified below. <em>If the trail classification is unknown, default to the</em> <a href="#path"><code>highway=path</code></a> <em>tag (click to jump to description). If the trail classification is unknown but it is accessible to motorized vehicles, default to the</em> <a href="#track"><code>highway=track</code></a> <em>tag (click to jump to description).</em></p>
-
-        <p>Note: remember to tag the start of each trail with <a href="#trailhead"><code>highway=trailhead</code></a>, along with the associated approved uses (click to jump to description).</p>
-
-      </div>
-
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-
-        <p>Trail types (click title to jump to type):</p>
-
-        <ul>
-          <li><a href="#path">Trail (non-motorized)</a>: <code>highway=path</code></li>
-          <li><a href="#track">Trail (motorized)</a>: <code>highway=track</code></li>
-          <li><a href="#piste">Piste</a>: <code>piste:type=</code></li>
-          <li><a href="#water_trail">Water Trail</a>: <code>waterway=yes</code></li>
-        </ul>
-
-      </div>
-      
-    </div>
-    <!-- /.row -->
-
-    <div class="row">
-      <a name="path"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
-        <a href="#path"><h4>Trail (non-motorized)</h4></a>
-
-        <p>A non-motorized trail is intended for non-motorized traffic including pedestrian use ("foot traffic"), biking, or horseback riding. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:highway%3Dpath">here</a>.</p>
-
-        <p>Tag a non-motorized trail by tracing its centerline from beginning to end as <code>highway=path</code> along with its access conditions, as appropriate (click for link to OSM wiki):</p>
-
-        <ul>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:bicycle">Bicycle Trail</a> (<code>bicycle=</code>)</li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:horse">Equestrian Trail</a> (<code>horse=</code>)</li>
-        </ul>
-
-        <p>Feel free to add additional information using the following keys:</p>
-
-        <ul>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:tracktype"><code>tracktype=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:surface"><code>surface=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:width"><code>width=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:incline"><code>incline=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:mtb:scale"><code>mtb:scale=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:mtb:scale:uphill"><code>mtb:scale:uphill=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:mtb:scale:imba"><code>mtb:scale:imba=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:sac_scale"><code>sac_scale=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:trail_visibility"><code>trail_visibility=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:access"><code>access=</code></a></li>
-        </ul>
-
-      </div>
-
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/path.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/path.gif" style="box-shadow: 5px 5px 15px #888";></a>
-      </div>
-
-    </div>
-    <!-- /.row -->
-
-    <div class="row">
-      <a name="track"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
-        <a href="#track"><h4>Trail (motorized)</h4></a>
-
-        <p>A motorized trail is permissive to motorized traffic, such as all-terrain vehicles (ATVs), four-wheel drive (4wd) vehicles, motorcycles, and snowmobiles. A motorized trail can be permissive to non-motorized traffic as well, but it must be permissive to motorized traffic to warrant this classification.</p>
-
-        <p>Tag a motorized trail by tracing its centerline from beginning to end as <code>highway=track</code> along with its access conditions, as appropriate (click for link to OSM wiki):</p>
-
-        <ul>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:atv">ATV Trail</a> (<code>atv=</code>)</li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:4wd_only">Four-Wheel Drive Trail</a> (<code>4wd_only=</code>)</li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:motorcycle">Motorcycle Trail</a> (<code>motorcycle=</code>)</li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:snowmobile">Snowmobile Trail</a> (<code>snowmobile=</code>)</li>
-        </ul>
-
-        <p>Feel free to add additional information using the following keys:</p>
-
-        <ul>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:tracktype"><code>tracktype=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:surface"><code>surface=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:width"><code>width=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:incline"><code>incline=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:mtb:scale"><code>mtb:scale=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:mtb:scale:uphill"><code>mtb:scale:uphill=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:mtb:scale:imba"><code>mtb:scale:imba=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:sac_scale"><code>sac_scale=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:trail_visibility"><code>trail_visibility=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:access"><code>access=</code></a></li>
-        </ul>
-
-      </div>
-
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/track.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/track.gif" style="box-shadow: 5px 5px 15px #888";></a>
-      </div>
-
-    </div>
-    <!-- /.row -->
-
-    <div class="row">
-      <a name="piste"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
-        <a href="#piste"><h4>Piste</h4></a>
-
-        <p>A piste is a trail intended for winter sports such as downhill and cross-country skiing, dog sledding, and snowshoeing. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Key:piste:type">here</a>.</p>
-
-        <p>Tag a piste by tracing its centerline from beginning to end using the <code>piste:type=</code> key along with its appropriate value (click for link to OSM wiki):</p>
-
-        <ul>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:piste:type">Dog Sled Trail</a> (<code>piste:type=sleigh</code>)</li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:piste:type">Downhill Ski Trail</a> (<code>piste:type=downhill</code>)</li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:piste:type">Cross-Country Ski Trail</a> (<code>piste:type=nordic</code>)</li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:piste:type">Backcountry Ski Trail</a> (<code>piste:type=skitour</code>)</li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:piste:type">Sledding</a> (<code>piste:type=sled</code>)</li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:piste:type">Snowshoe Trail</a> (<code>piste:type=hike</code>)</li>
-        </ul>
-
-        <p>A piste can also be added as a point of interest, using the <code>Point</code> tool to create a node with the appropriate tag to indicate the trail access. In the event a piste and a generic trail (motorized or non-motorized) are co-located, tag both classifications as they would be tagged individually. For example, if a trail is both a generic footpath (intended for hiking) and a downhill ski trail tag the associated way <code>highway=path</code> and <code>piste:type=downhill</code>.</p>
-
-        <p>Feel free to add additional information using the following keys:</p>
-
-        <ul>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:piste:difficulty"><code>piste:difficulty=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:tracktype"><code>tracktype=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:surface"><code>surface=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:width"><code>width=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:incline"><code>incline=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:mtb:scale"><code>mtb:scale=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:mtb:scale:uphill"><code>mtb:scale:uphill=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:mtb:scale:imba"><code>mtb:scale:imba=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:sac_scale"><code>sac_scale=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:trail_visibility"><code>trail_visibility=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:access"><code>access=</code></a></li>
-        </ul>
-
-      </div>
-
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/downhill_ski_trail.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/downhill_ski_trail.gif" style="box-shadow: 5px 5px 15px #888";></a>
-      </div>
-
-    </div>
-    <!-- /.row -->
-
-    <div class="row">
-      <a name="water_trail"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
-        <a href="#water_trail"><h4>Water Trail</h4></a>
-
-        <p>A water trail is a trail running through a waterway, intended for canoes, kayaks, motorboats, etc. Tag a water trail by tracing its centerline from beginning to end as <code>waterway=yes</code> along with its access conditions, as appropriate (click for link to OSM wiki):</p>
-
-        <ul>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:canoe">Non-Motorized Watercraft Trail</a> (<code>canoe=</code>) for a route accessible to non-motorized watercraft such as a canoe or kayak.</li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:motorboat">Motorized Watercraft Trail</a> (<code>motorboat=</code>) for a route accessible to motorized watercraft such as a powerboat or motorized sailboat.</li>
-        </ul>
-
-        <p>The start and end of a water trail is often a boat launch, which is added as a point of interest. Click <a href="http://nationalparkservice.github.io/places-tracing-guide/#boat_launch">here</a> to learn more about tagging boat launches in Places.</p>
-
-        <p>Feel free to add additional information using the following keys:</p>
-
-        <ul>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:whitewater"><code>whitewater=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:width"><code>width=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:section_grade"><code>section_grade=</code></a></li>
-        </ul>
-
-      </div>
-
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/motorized_watercraft_trail.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/motorized_watercraft_trail.gif" style="box-shadow: 5px 5px 15px #888";></a>
-      </div>
-
-    </div>
-    <!-- /.row -->
-
-  </div>
-  <!-- /.container -->
-</div>
-<!-- .content-section-a -->
-    
-<div class="content-section-b">
-  <div class="container">      
-   <div class="row">
-      <a name="parking"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
-        <a href="#parking"><h2 class="section-heading">Parking</h2></a>
-        <h4>Area, point, and line feature</h4>
-
-        <p>Parking takes two primary forms in Places: <a href="#parking_amenity">parking</a> (a generic term, indicating parking is available as an amenity, typically in the form of a parking lot or garage) and <a href="#parking_aisle">parking aisles</a>. Learn more from the <a href="http://wiki.openstreetmap.org/wiki/Tag:amenity%3Dparking"><code>amenity=parking</code></a> and <a href="http://wiki.openstreetmap.org/wiki/Tag:service%3Dparking_aisle"><code>service=parking_aisle</code></a> OSM wikis.</p>
-
-        <p>Parking types (click title to jump to type):</p>
-
-        <ul>
-          <li><a href="#parking_amenity">Parking</a>: <code>amenity=parking</code></li>
-          <li><a href="#parking_aisle">Parking Aisle</a>: <code>highway=service</code> and <code>service=parking_aisle</code></li>
-        </ul>
-
-      </div>
-      
-    </div>
-    <!-- /.row -->
-
-    <div class="row">
-      <a name="parking_amenity"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
-        <a href="#parking_amenity"><h4>Parking (amenity)</h4></a>
-
-        <p>Parking is a facility available for use by the public, customers, or other authorized users for the parking of motor vehicles (cars, trucks, motorcycles, etc). This can come in various forms, including a parking lot or garage, among others. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:amenity%3Dparking">here</a>.</p>
-
-        <p>Best practice is to trace a parking lot's footprint with the <code>Area</code> tool and add a node in the center of the area with the <code>Point</code> tool and tag both as <code>amenity=parking</code>.</p>
-
-        <img src="img/id_area.jpg" style="box-shadow: 5px 5px 15px #888; margin: 10px 0px 20px 0;">
-
-        <img src="img/id_point.jpg" style="box-shadow: 5px 5px 15px #888; margin: 10px 5px 20px 0;">
-
-        <p>If the parking area is undefined simply add the point without defining an area. If the feature is a parking garage or building, add the tag <code>building=yes</code> to the polygon.</p>
-
-        <p>Feel free to add additional information using the following keys:</p>
-
-        <ul>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:operator"><code>operator=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:address"><code>addr=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:capacity"><code>capacity=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:maxstay"><code>maxstay=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:fee"><code>fee=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:access"><code>access=</code></a></li>
-        </ul>
-
-      </div>
-
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/parking_amenity.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/parking_amenity.gif" style="box-shadow: 5px 5px 15px #888";></a>
-      </div>
-
-    </div>
-    <!-- /.row -->
-
-    <div class="row">
-      <a name="parking_aisle"></a>
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-
-        <a href="#parking_aisle"><h4>Parking Aisle</h4></a>
-
-        <p>A parking aisle is a subordinated way in a parking lot between rows of parking spaces that vehicles use to drive into and out of the spaces. Learn more from OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:service%3Dparking_aisle">here</a>.</p>
-
-        <p>Tag a parking aisle by tracing it as you would a service road using the <code>Line</code> tool and tag as <code>highway=service</code> and <code>service=parking_aisle</code>.</p>
-
-        <img src="img/id_line.jpg" style="box-shadow: 5px 5px 15px #888; margin: 10px 0 20px 0;">
-
-        <p>The main way(s) in the parking lot, for entering and connecting multiple parking aisles, should be tagged <code>highway=service</code> only.</p>
-
-        <p>Feel free to add additional information using the following keys:</p>
-
-        <ul>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:name"><code>name=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:surface"><code>surface=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:oneway"><code>oneway=</code></a></li>
-          <li><a href="http://wiki.openstreetmap.org/wiki/Key:access"><code>access=</code></a></li>
-        </ul>
-
-      </div>
-
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <a href="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/parking_aisle.gif"><img class="img-responsive" src="https://raw.githubusercontent.com/nationalparkservice/places-tracing-guide/gh-pages/img/parking_aisle.gif" style="box-shadow: 5px 5px 15px #888";></a>
-      </div>
-
-    </div>
-    <!-- /.row -->
-
-  </div>
-  <!-- /.container -->
-</div>
-<!-- /.content-section-b -->
-
-<div class="banner">
-  <div class="container">
-    <div class="row">
-        <img class="responsive" src="img/nps_logo.png">
-    </div>
-  </div>
-  <!-- /.container -->
-</div>
-<!-- /.banner -->
-
-<!-- Footer -->
-<!-- <footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <ul class="list-inline">
-          <li><a href="#">Places Tracing Guide</a></li>
-
-          <li class="footer-menu-divider">&sdot;</li>
-          
-          <li><a href="#about">About</a></li>
-          
-          <li class="footer-menu-divider">&sdot;</li>
-          
-          <li><a href="#poi">Points of Interest</a></li>
-
-          <li class="footer-menu-divider">&sdot;</li>
-
-          <li><a href="#buildings">Buildings</a></li>
-
-          <li class="footer-menu-divider">&sdot;</li>
-
-          <li><a href="#roads">Roads</a></li>
-
-          <li class="footer-menu-divider">&sdot;</li>
-
-          <li><a href="#trails">Trails</a></li>
-
-          <li class="footer-menu-divider">&sdot;</li>
-
-          <li><a href="#parking">Parking</a></li>
-        </ul> 
-      </div>
-    </div> -->
-    <!-- /.row -->
-  <!-- </div> -->
-  <!-- /.container -->
-<!-- </footer> -->
-
-<!-- jQuery Version 2.1.4 -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-
-<!-- NPS Bootstrap JavaScript -->
-<script src="http://www.nps.gov/lib/bootstrap/3.3.2/js/nps-bootstrap.min.js"></script>
-<script>
-  $('.gif-collapse').click(function() {
-    var $this = $(this),
-      $next = $this.next();
-
-    if ($next.is(':visible')) {
-      $next.hide();
-    } else {
-      if (!$next.html()) {
-        $next.html('<img class="img img-responsive img-thumbnail" src="' + $next.attr('data-gif') + '">');
-      }
-
-      $next.show();
-    }
-  });
-</script>
-
-
-<script type="text/javascript">
-
-$('#image-popover').popover()
-
-</script>
-
-</body>
+    <!-- /.banner -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="http://www.nps.gov/lib/bootstrap/3.3.2/js/nps-bootstrap.min.js"></script>
+    <script>
+      $('.gif-collapse').click(function() {
+        var $this = $(this),
+          $next = $this.next();
+
+        if ($next.is(':visible')) {
+          $this
+            .removeClass('active')
+            .text('Show Places Editor Preview');
+          $next.hide();
+        } else {
+          if (!$next.html()) {
+            $next.html('<img class="img img-responsive img-thumbnail" src="' + $next.attr('data-gif') + '">');
+          }
+
+          $this
+            .addClass('active')
+            .text('Hide Places Editor Preview');
+          $next.show();
+        }
+      });
+    </script>
+  </body>
 </html>
