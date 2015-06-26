@@ -8,7 +8,7 @@ Currently in development.
 
 - [ ] Fix nav bar on mobile
 - [X] Review CSS to ensure consistent spacing between elements
-- [ ] Deploy to [www.nps.gov/npmap/tools/places/](www.nps.gov/npmap/tools/places/)
+- [X] Deploy to [www.nps.gov/npmap/tools/places/](www.nps.gov/npmap/tools/places/)
 
 #### Secondary
 
