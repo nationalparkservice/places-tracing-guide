@@ -9,6 +9,9 @@ html {
 .col-lg-offset-2 {
   margin-top: 53px;
 }
+.img-preset {
+  margin-bottom: 20px;
+}
 .intro-header {
   background: url(http://placehold.it/1587x853) no-repeat center center;
   background-size: cover;
