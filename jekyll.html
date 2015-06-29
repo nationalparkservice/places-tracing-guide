@@ -1,0 +1,234 @@
+---
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Tracing Guide | Places | Tools | NPMap</title>
+    <meta name="apple-mobile-web-app-title" content="NPMap">
+    <meta name="application-name" content="NPMap">
+    <meta name="author" content="NPMap">
+    <meta name="description" content="The Places Tracing Guide outlines digitizing techniques and tags used by the National Park Service's Places system.">
+    <meta name="keywords" content="NPMap, National Park Service, US Government, Department of Interior, Web Maps, GIS, Digital Maps, Mobile Maps, Data">
+    <meta name="msapplication-TileColor" content="#222222">
+    <meta name="msapplication-TileImage" content="http://www.nps.gov/lib/assets/img/windows-8-tile.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://www.nps.gov/lib/bootstrap/3.3.2/css/nps-bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/base.css" rel="stylesheet">
+    <link href="http://www.nps.gov/npmap/feed.xml" rel="alternate" title="NPMap blog posts" type="application/atom+xml">
+    <link href="http://www.nps.gov/lib/assets/img/favicon.ico" rel="shortcut icon">
+    <link href="http://www.nps.gov/lib/assets/img/apple-touch-icon-144x144-precomposed.png" rel="apple-touch-icon-precomposed" sizes="144x144">
+    <link href="http://www.nps.gov/lib/assets/img/apple-touch-icon-114x114-precomposed.png" rel="apple-touch-icon-precomposed" sizes="114x114">
+    <link href="http://www.nps.gov/lib/assets/img/apple-touch-icon-72x72-precomposed.png" rel="apple-touch-icon-precomposed" sizes="72x72">
+    <link href="http://www.nps.gov/lib/assets/img/apple-touch-icon-57x57-precomposed.png" rel="apple-touch-icon-precomposed">
+  </head>
+  <body>
+
+    <!--
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#npmap-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Places Tracing Guide</a>
+        </div>
+        <div class="collapse navbar-collapse" id="npmap-navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#about">About</a></li>
+            <li><a href="#poi">Points of Interest</a></li>
+            <li><a href="#buildings">Buildings</a></li>
+            <li><a href="#roads">Roads</a></li>
+            <li><a href="#trails">Trails</a></li>
+            <li><a href="#parking">Parking</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="intro-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="intro-message">
+              <h1>Places Tracing Guide</h1>
+              <h3>National Park Service</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a name="about"></a>
+    <div class="content-section-a">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-sm-6">
+            <a href="#about">
+              <h2 class="section-heading">About Places</h2>
+            </a>
+
+            <p><a href="http://insidemaps.nps.gov/places/">Places</a> is an internal data collection system for the National Park Service's "core" geospatial data. We built Places so that all National Park Service employees, both technical and non-technical, can contribute their knowledge to the map.</p>
+
+            <p>Data from Places is fed directly into both <a href="http://www.nps.gov/npmap/tools/park-tiles/">Park Tiles</a> and the larger National Park Service structured data initiative, which will be used to drive <a href="http://www.nps.gov/">NPS.gov</a> and a publicly-available application programming interface (API) starting in January of 2016.</p>
+
+            <p>The Places database currently contains the following datasets (a near real-time copy of each can be downloaded from the <a href="http://www.nps.gov/npmap/tools/places/">Places information page</a>):</p>
+
+            <ul>
+              <li>Points of Interest</li>
+              <li>Buildings</li>
+              <li>Roads</li>
+              <li>Trails</li>
+              <li>Parking Lots</li>
+            </ul>
+
+            <p>These datasets were initially seeded from existing park, region, and program-level GIS datasets, but now anyone who is connected to the National Park Service network can edit them using the <a href="http://insidemaps.nps.gov/places/view/">Places Editor</a> <span class="nps-only">(NPS-only)</span>. If you have more/better data available and you'd like to get it into Places, <a href="mailto:npmap@nps.gov">send us an email</a> or <a href="https://github.com/nationalparkservice/places-data/issues/new">create an issue on GitHub</a> and we will be happy to assist with the upload.</p>
+
+            <p>
+              <strong>Disclaimer: All data contributed to Places is public-facing. Do not add any sensitive information unfit for public consumption. Only add data inside park boundaries.</strong>
+            </p>
+
+            <p>The Places editor is built on top of OpenStreetMap's <a href="http://wiki.openstreetmap.org/wiki/ID">iD editor</a>. Check out learnOSM's <a href="http://learnosm.org/en/editing/id-editor/">iD editor walkthrough</a> to familiarize yourself with the interface. It is intentionally simple, developed with a non-technical audience in mind.</p>
+
+            <p>
+              <strong>Note: Because Places utilizes the OpenStreetMap tagging scheme internally, you will see many references and links to OpenStreetMap documentation below. Rest assured that edits made in the Places Editor, however, go directly into the internal National Park Service Places database and not into the larger OpenStreetMap database.</strong>
+            </p>
+
+            <div>
+              <a class="btn btn-lg btn-primary" href="http://insidemaps.nps.gov/places/edit/#background=mapbox-satellite&map=4/-96.02/39.06&overlays=park-tiles-overlay">Start Mapping Now!</a>
+              <p class="nps-only"><small>Must be on the NPS network.</small></p>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6 col-sm-6">
+            <img class="img-responsive img-rounded" src="assets/img/nat_cap_sq.jpg">
+          </div>
+
+        </div>
+      </div>
+    </div>
+    -->
+
+    {% for dataset in site.data.datasets %}
+    <a name="{{ dataset.id }}"></a>
+    <div class="content-section-b">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-sm-6">
+            <a href="#{{ dataset.id }}"></a>
+            <h2 class="section-heading">{{ dataset.name }}</h2>
+            <h4>{{ dataset.types }}</h4>
+            {{ dataset.description }}
+          </div>
+          <div class="col-lg-6 col-sm-6">
+            <p>Click title to jump to POI type:</p>
+            <p>
+              {% for subtype in dataset.subtypes %}
+              <a class="btn btn-primary btn-sm" href="#{{ subtype.id }}">{{ subtype.name }}</a>
+              {% endfor %}
+            </p>
+          </div>
+        </div>
+        {% for subtype in dataset.subtypes %}
+        <a name="{{ subtype.id }}"></a>
+        <div class="row">
+          <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+          <div class="col-lg-6 col-sm-6">
+            <a href="#{{ subtype.id }}">
+              <h4>{{ subtype.name }}</h4>
+            </a>
+            <dl>
+              <dt>Description</dt>
+              <dd>{{ subtype.description }}</dd>
+              <dt>How to map</dt>
+              <dd>{{ subtype.howToMap }}</dd>
+            </dl>
+            <img class="img-preset img-responsive img-thumbnail" src="assets/img/{{ subtype.presetImage }}">
+            <div class="btn-group" role="group">
+
+
+              <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                  Tag
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                  <li class="dropdown-header" role="presentation">The underlying preset tag:</li>
+                  {% for tag in subtype.tags %}
+                  <li>
+                    <a href="http://wiki.openstreetmap.org/wiki/Key:{{ tag }}">
+                      <code>{{ tag }}</code>
+                    </a>
+                  </li>
+                  {% endfor %}
+                </ul>
+              </div>
+              <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                  Optional fields
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu3">
+                  <li role="presentation" class="dropdown-header">Add additional information using these optional fields:</li>
+                  {% for tag in subtype.optionalTags %}
+                  <li>
+                    <a href="http://wiki.openstreetmap.org/wiki/Key:{{ tag }}">
+                      <code>{{ tag }}=</code>
+                    </a>
+                  </li>
+                  {% endfor %}
+                </ul>
+              </div>
+            </div>
+
+
+          </div>
+          <div class="col-lg-6 col-sm-6">
+            <button class="btn btn-primary gif-collapse">Show Places Editor Preview</button>
+            <div class="collapse" data-gif="assets/img/campground.gif"></div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+
+    <!--
+    <div class="banner">
+      <div class="container">
+        <div class="row">
+          <img class="responsive" src="assets/img/nps_logo.png">
+        </div>
+      </div>
+    </div>
+    -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="http://www.nps.gov/lib/bootstrap/3.3.2/js/nps-bootstrap.min.js"></script>
+    <script>
+      $('.gif-collapse').click(function() {
+        var $this = $(this),
+          $next = $this.next();
+
+        if ($next.is(':visible')) {
+          $this
+            .removeClass('active')
+            .text('Show Places Editor Preview');
+          $next.hide();
+        } else {
+          if (!$next.html()) {
+            $next.html('<img class="img img-responsive img-thumbnail" src="' + $next.attr('data-gif') + '">');
+          }
+
+          $this
+            .addClass('active')
+            .text('Hide Places Editor Preview');
+          $next.show();
+        }
+      });
+    </script>
+  </body>
+</html>
