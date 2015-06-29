@@ -154,9 +154,6 @@ p.copyright {
 .buffer-top {
   margin-top: 20px;
 }
-.row {
-  position: relative;
-}
 .row .col-sm-6:last-child {
   margin-top: 10px;
 }
