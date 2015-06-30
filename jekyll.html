@@ -119,12 +119,25 @@
         <div class="row">
           <div class="col-lg-6 col-sm-6">
             <a href="#{{ dataset.id }}"></a>
-            <h2 class="section-heading">{{ dataset.name }}</h2>
+            <a href="#{{ dataset.id }}"><h2 class="section-heading">{{ dataset.name }}</h2></a>
             <h4>{{ dataset.types }}</h4>
-            {{ dataset.description }}
+            {% for idToolType in dataset.idToolTypes %}
+            <img class="img-id-tool img-thumbnail" src="assets/img/id_{{ idToolType }}.jpg">
+            {% endfor %}
+            <dl>
+              <dt>Description</dt>
+              <dd>{{ dataset.description }}</dd>
+              <dt>How to Map</dt>
+              <dd>{{ dataset.howToMap }}</dd>
+            </dl>
           </div>
           <div class="col-lg-6 col-sm-6">
-            <p>Click title to jump to POI type:</p>
+            {% if dataset.featureTypes %}
+            <dl>
+              <dt>Feature Types</dt>
+              <dd>{{ dataset.featureTypes }}</dd>
+            </dl>
+            {% endif %}
             <p>
               {% for subtype in dataset.subtypes %}
               <a class="btn btn-primary btn-sm" href="#{{ subtype.id }}">{{ subtype.name }}</a>
@@ -164,7 +177,7 @@
                   <li class="dropdown-header" role="presentation">The underlying preset tag(s):</li>
                   {% for tag in subtype.tags %}
                   <li>
-                    <a href="http://wiki.openstreetmap.org/wiki/Key:{{ tag }}">
+                    <a href="http://wiki.openstreetmap.org/wiki/Tag:{{ tag }}">
                       <code>{{ tag }}</code>
                     </a>
                   </li>
