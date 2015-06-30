@@ -126,6 +126,10 @@
               
               <a class="btn btn-primary btn-sm" href="#campground">Campground</a>
               
+              <a class="btn btn-primary btn-sm" href="#campsite">Campsite</a>
+              
+              <a class="btn btn-primary btn-sm" href="#lodge">Lodge</a>
+              
             </p>
           </div>
         </div>
@@ -139,7 +143,7 @@
             </a>
             <dl>
               <dt>Description</dt>
-              <dd>A campground is an area, usually divided into a number of pitches (or <a href="#campsite">"campsites"</a>), where people can camp overnight using tents or camper vans or caravans. Learn more from the OSM wiki <a href="http://wiki.openstreetmap.org/wiki/Tag:tourism%3Dcamp_site">here</a>.</dd>
+              <dd>A campground is an area, usually divided into a number of pitches (or <a href="#campsite">"campsites"</a>), where people can camp overnight using tents or camper vans or caravans. Learn more from the <a href="http://wiki.openstreetmap.org/wiki/Tag:tourism%3Dcamp_site">OSM wiki</a>.</dd>
               <dt>How to map</dt>
               <dd>Add a campground by creating a point in the middle of the area and select "Campground" from the "Select feature type" menu:</dd>
             </dl>
@@ -153,7 +157,7 @@
                   <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu" role="menu">
-                  <li class="dropdown-header" role="presentation">The underlying preset tag:</li>
+                  <li class="dropdown-header" role="presentation">The underlying preset tag(s):</li>
                   
                   <li>
                     <a href="http://wiki.openstreetmap.org/wiki/Key:tourism=camp_site">
@@ -216,6 +220,178 @@
           <div class="col-lg-6 col-sm-6">
             <button class="btn btn-primary gif-collapse">Show Places Editor Preview</button>
             <div class="collapse" data-gif="assets/img/campground.gif"></div>
+          </div>
+        </div>
+        
+        <a name="campsite"></a>
+        <div class="row">
+          <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+          <div class="col-lg-6 col-sm-6">
+            <a href="#campsite">
+              <h4>Campsite</h4>
+            </a>
+            <dl>
+              <dt>Description</dt>
+              <dd>A campsite is an individual pitch within a campground where people can camp overnight using tents or camper vans or caravans. Learn more from the <a href="http://wiki.openstreetmap.org/wiki/Tag:tourism%3Dcamp_site">OSM wiki</a>.</dd>
+              <dt>How to map</dt>
+              <dd>Add a campsite by creating a point in the middle of the pitch and selecting "Campsite" from the "Select feature type" menu:</dd>
+            </dl>
+            <img class="img-preset img-responsive img-thumbnail" src="assets/img/preset_campsite.jpg">
+            <div class="btn-group" role="group">
+
+
+              <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                  Tag
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                  <li class="dropdown-header" role="presentation">The underlying preset tag(s):</li>
+                  
+                  <li>
+                    <a href="http://wiki.openstreetmap.org/wiki/Key:tourism=camp_site">
+                      <code>tourism=camp_site</code>
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a href="http://wiki.openstreetmap.org/wiki/Key:camp_site=pitch">
+                      <code>camp_site=pitch</code>
+                    </a>
+                  </li>
+                  
+                </ul>
+              </div>
+              <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                  Optional fields
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu3">
+                  <li role="presentation" class="dropdown-header">Add additional information using these optional fields:</li>
+                  
+                  <li>
+                    <a href="http://wiki.openstreetmap.org/wiki/Key:name">
+                      <code>name=</code>
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a href="http://wiki.openstreetmap.org/wiki/Key:operator">
+                      <code>operator=</code>
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a href="http://wiki.openstreetmap.org/wiki/Key:addr">
+                      <code>addr=</code>
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a href="http://wiki.openstreetmap.org/wiki/Key:opening_hours">
+                      <code>opening_hours=</code>
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a href="http://wiki.openstreetmap.org/wiki/Key:capacity">
+                      <code>capacity=</code>
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a href="http://wiki.openstreetmap.org/wiki/Key:fee">
+                      <code>fee=</code>
+                    </a>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+
+
+          </div>
+          <div class="col-lg-6 col-sm-6">
+            <button class="btn btn-primary gif-collapse">Show Places Editor Preview</button>
+            <div class="collapse" data-gif="assets/img/campsite.gif"></div>
+          </div>
+        </div>
+        
+        <a name="lodge"></a>
+        <div class="row">
+          <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+          <div class="col-lg-6 col-sm-6">
+            <a href="#lodge">
+              <h4>Lodge</h4>
+            </a>
+            <dl>
+              <dt>Description</dt>
+              <dd>A lodge or "alpine hut" is a remote building located in the mountains intended to provide board and lodging. Learn more from the <a href="http://wiki.openstreetmap.org/wiki/Tag:tourism%3Dalpine_hut">OSM wiki</a>.</dd>
+              <dt>How to map</dt>
+              <dd>Add a lodge by creating a point on top of the associated building and selecting "Lodge" from the "Select feature type" menu. Additionally, trace the building footprint if it has not been added (see the <a href="#buildings">buildings</a> section to learn more about tracing building footprints).</dd>
+            </dl>
+            <img class="img-preset img-responsive img-thumbnail" src="assets/img/preset_lodge.jpg">
+            <div class="btn-group" role="group">
+
+
+              <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                  Tag
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                  <li class="dropdown-header" role="presentation">The underlying preset tag(s):</li>
+                  
+                  <li>
+                    <a href="http://wiki.openstreetmap.org/wiki/Key:tourism=alpine_hut">
+                      <code>tourism=alpine_hut</code>
+                    </a>
+                  </li>
+                  
+                </ul>
+              </div>
+              <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                  Optional fields
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu3">
+                  <li role="presentation" class="dropdown-header">Add additional information using these optional fields:</li>
+                  
+                  <li>
+                    <a href="http://wiki.openstreetmap.org/wiki/Key:name">
+                      <code>name=</code>
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a href="http://wiki.openstreetmap.org/wiki/Key:operator">
+                      <code>operator=</code>
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a href="http://wiki.openstreetmap.org/wiki/Key:addr">
+                      <code>addr=</code>
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a href="http://wiki.openstreetmap.org/wiki/Key:opening_hours">
+                      <code>opening_hours=</code>
+                    </a>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+
+
+          </div>
+          <div class="col-lg-6 col-sm-6">
+            <button class="btn btn-primary gif-collapse">Show Places Editor Preview</button>
+            <div class="collapse" data-gif="assets/img/lodge.gif"></div>
           </div>
         </div>
         

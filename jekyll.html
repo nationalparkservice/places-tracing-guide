@@ -156,7 +156,7 @@
                   <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu" role="menu">
-                  <li class="dropdown-header" role="presentation">The underlying preset tag:</li>
+                  <li class="dropdown-header" role="presentation">The underlying preset tag(s):</li>
                   {% for tag in subtype.tags %}
                   <li>
                     <a href="http://wiki.openstreetmap.org/wiki/Key:{{ tag }}">
@@ -188,7 +188,7 @@
           </div>
           <div class="col-lg-6 col-sm-6">
             <button class="btn btn-primary gif-collapse">Show Places Editor Preview</button>
-            <div class="collapse" data-gif="assets/img/campground.gif"></div>
+            <div class="collapse" data-gif="assets/img/{{ subtype.id }}.gif"></div>
           </div>
         </div>
         {% endfor %}

@@ -3,7 +3,7 @@
   "id": "poi",
   "name": "Points of Interest",
   "subtypes": [{
-    "description": "A campground is an area, usually divided into a number of pitches (or <a href=\"#campsite\">\"campsites\"</a>), where people can camp overnight using tents or camper vans or caravans. Learn more from the OSM wiki <a href=\"http://wiki.openstreetmap.org/wiki/Tag:tourism%3Dcamp_site\">here</a>.",
+    "description": "A campground is an area, usually divided into a number of pitches (or <a href=\"#campsite\">\"campsites\"</a>), where people can camp overnight using tents or camper vans or caravans. Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Tag:tourism%3Dcamp_site\">OSM wiki</a>.",
     "howToMap": "Add a campground by creating a point in the middle of the area and select \"Campground\" from the \"Select feature type\" menu:",
     "id": "campground",
     "name": "Campground",
@@ -19,7 +19,44 @@
     "tags": [
       "tourism=camp_site"
     ]
-  }],
+  },
+  {
+    "description": "A campsite is an individual pitch within a campground where people can camp overnight using tents or camper vans or caravans. Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Tag:tourism%3Dcamp_site\">OSM wiki</a>.",
+    "howToMap": "Add a campsite by creating a point in the middle of the pitch and selecting \"Campsite\" from the \"Select feature type\" menu:",
+    "id": "campsite",
+    "name": "Campsite",
+    "optionalTags": [
+      "name",
+      "operator",
+      "addr",
+      "opening_hours",
+      "capacity",
+      "fee"
+    ],
+    "presetImage": "preset_campsite.jpg",
+    "tags": [
+      "tourism=camp_site",
+      "camp_site=pitch"
+    ]
+  },
+  {
+    "description": "A lodge or \"alpine hut\" is a remote building located in the mountains intended to provide board and lodging. Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Tag:tourism%3Dalpine_hut\">OSM wiki</a>.",
+    "howToMap": "Add a lodge by creating a point on top of the associated building and selecting \"Lodge\" from the \"Select feature type\" menu. Additionally, trace the building footprint if it has not been added (see the <a href=\"#buildings\">buildings</a> section to learn more about tracing building footprints).",
+    "id": "lodge",
+    "name": "Lodge",
+    "optionalTags": [
+      "name",
+      "operator",
+      "addr",
+      "opening_hours"
+    ],
+    "presetImage": "preset_lodge.jpg",
+    "tags": [
+      "tourism=alpine_hut"
+    ]
+  },
+
+],
   "types": "Point feature"
 },{
   "description": "<p>Buildings in Places are intentionally simple. We are primarily concerned with building footprints, while any additional building amenities are added as points of interest on top of the footprint. For example, add <code>shop=general</code> as a point of interest on top of the building footprint instead of <code>building=retail</code> as a tag included in the building footprint polygon to represent a general store (see <a href=\"http://localhost:8888/places-tracing-guide/#store\">store</a> above).</p><p>Trace a building by using the <code>Area</code> tool to trace the building footprint and tag as <code>building=yes</code>.</p><p><img class=\"img-thumbnail\" src=\"assets/img/id_area.jpg\"></p><p>Note: Don't get too carried away with nodes while tracing - keep it simple to conform to the general shape of the building visible from the imagery. More nodes mean more data, which can ultimately slow the database.</p><p>Additionally, if you know the location of the building's entrance or exit you can add it as a vertex on the building footprint polygon in the appropriate location. Tag a building entrance/exit as <code>building=entrance</code>. Learn more from the OSM wiki <a href=\"http://wiki.openstreetmap.org/wiki/Tag:building%3Dentrance\">here</a>.</p>",
