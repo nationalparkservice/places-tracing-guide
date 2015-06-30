@@ -143,13 +143,18 @@
             <dl>
               <dt>Description</dt>
               <dd>{{ subtype.description }}</dd>
-              <dt>How to map</dt>
+              <dt>How to Map</dt>
               <dd>{{ subtype.howToMap }}</dd>
             </dl>
-            <img class="img-preset img-responsive img-thumbnail" src="assets/img/{{ subtype.presetImage }}">
+            <img class="img-preset img-responsive img-thumbnail" src="assets/img/preset_{{ subtype.id }}.jpg">
+            {% if subtype.approvedUses %}
+            <dl>
+              <dt>Approved Uses</dt>
+              <dd>{{ subtype.approvedUses }}</dd>
+            </dl>
+            <img class="img-preset img-responsive img-thumbnail" src="assets/img/preset_{{ subtype.id }}_approved_use.jpg">
+            {% endif %} 
             <div class="btn-group" role="group">
-
-
               <div class="btn-group" role="group">
                 <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                   Tag
