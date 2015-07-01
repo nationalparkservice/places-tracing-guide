@@ -130,6 +130,9 @@
               <dt>How to Map</dt>
               <dd>{{ dataset.howToMap }}</dd>
             </dl>
+            {% if dataset.furtherDescription %}
+            {{ dataset.furtherDescription }}  
+            {% endif %}
           </div>
           <div class="col-lg-6 col-sm-6">
             {% if dataset.featureTypes %}
@@ -137,6 +140,10 @@
               <dt>Feature Types</dt>
               <dd>{{ dataset.featureTypes }}</dd>
             </dl>
+            {% endif %}
+            {% if dataset.gif == 'yes' %}
+            <button class="btn btn-primary gif-collapse">Show Places Editor Preview</button>
+            <div class="collapse" data-gif="assets/img/{{ dataset.id }}.gif"></div>
             {% endif %}
             <p>
               {% for subtype in dataset.subtypes %}
@@ -189,7 +196,7 @@
                   Optional fields
                   <span class="caret"></span>
                 </button>
-                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu3">
+                <ul class="dropdown-menu" role="menu">
                   <li role="presentation" class="dropdown-header">Add additional information using these optional fields:</li>
                   {% for tag in subtype.optionalTags %}
                   <li>
