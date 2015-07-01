@@ -167,13 +167,6 @@
               <dd>{{ subtype.howToMap }}</dd>
             </dl>
             <img class="img-preset img-responsive img-thumbnail" src="assets/img/preset_{{ subtype.id }}.jpg">
-            {% if subtype.approvedUses %}
-            <dl>
-              <dt>Approved Uses</dt>
-              <dd>{{ subtype.approvedUses }}</dd>
-            </dl>
-            <img class="img-preset img-responsive img-thumbnail" src="assets/img/preset_{{ subtype.id }}_approved_use.jpg">
-            {% endif %} 
             <div class="btn-group" role="group">
               <div class="btn-group" role="group">
                 <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
@@ -208,7 +201,60 @@
                 </ul>
               </div>
             </div>
-
+            {% if subtype.approvedUsesDescription %}
+            <dl class="list-top-margin">
+              <dt>{{ subtype.approvedUsesId }}</dt>
+              <dd>{{ subtype.approvedUsesDescription }}</dd>
+            </dl>
+            <img class="img-preset-margin-b10 img-responsive img-thumbnail" src="assets/img/preset_{{ subtype.id }}_approved_uses.jpg">
+            <p>
+              <div class="btn-group" role="group">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    Tag
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" role="menu">
+                    <li class="dropdown-header" role="presentation">The underlying preset tag(s):</li>
+                    {% for tag in subtype.approvedUsesTags %}
+                    <li>
+                      <a href="http://wiki.openstreetmap.org/wiki/Key:{{ tag }}">
+                        <code>{{ tag }}=*</code>
+                      </a>
+                    </li>
+                    {% endfor %}
+                  </ul>
+                </div>
+              </div>
+            </p>
+            {% endif %}
+            {% if subtype.additionalInfo %}
+            <dl class="list-top-margin">
+              <dt>{{ subtype.additionalInfoId }}</dt>
+              <dd>{{ subtype.additionalInfo }}</dd>
+            </dl>
+            <img class="img-preset-margin-b10 img-responsive img-thumbnail" src="assets/img/preset_{{ subtype.id }}_additional_info.jpg">
+            <p>
+              <div class="btn-group" role="group">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    Tag
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" role="menu">
+                    <li class="dropdown-header" role="presentation">The underlying preset tag(s):</li>
+                    {% for tag in subtype.additionalInfoTag %}
+                    <li>
+                      <a href="http://wiki.openstreetmap.org/wiki/Tag:{{ tag }}">
+                        <code>{{ tag }}</code>
+                      </a>
+                    </li>
+                    {% endfor %}
+                  </ul>
+                </div>
+              </div>
+            </p>
+            {% endif %} 
 
           </div>
           <div class="col-lg-6 col-sm-6">

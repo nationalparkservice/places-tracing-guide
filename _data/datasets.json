@@ -10,7 +10,7 @@
   ],
   "subtypes": [{
     "description": "A campground is an area, usually divided into a number of pitches (or <a href=\"#campsite\">\"campsites\"</a>), where people can camp overnight using tents or camper vans or caravans. Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Tag:tourism%3Dcamp_site\">OSM wiki</a>.",
-    "howToMap": "Add a campground by creating a point in the middle of the area and select \"Campground\" from the \"Select feature type\" menu:",
+    "howToMap": "Add a campground by creating a point in the middle of the area and selecting \"Campground\" from the \"Select feature type\" menu:",
     "id": "campground",
     "name": "Campground",
     "optionalTags": [
@@ -60,7 +60,7 @@
   },
   {
     "description": "A picnic area is an area that is suitable for outdoors eating and may have a number of facilities to aid a picnic: tables, benches, restrooms, grills, water taps, covered pavilions, etc. Or, it may just be a grassy area popular for picnics. Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Tag:tourism%3Dpicnic_site\">OSM wiki</a>.",
-    "howToMap": "Add a picnic area by creating a point in the middle of the area and select \"Picnic Area\" from the \"Select feature type\" menu:",
+    "howToMap": "Add a picnic area by creating a point in the middle of the area and selecting \"Picnic Area\" from the \"Select feature type\" menu:",
     "id": "picnic_site",
     "name": "Picnic Area",
     "optionalTags": [
@@ -114,7 +114,18 @@
   {
     "description": "A trailhead is the point at which a trail begins, where the trail is often intended for hiking, biking, skiing, snowshoeing, snowmobiling, horseback riding, or off-road vehicles. It is currently a <a href=\"http://wiki.openstreetmap.org/wiki/Proposed_features/trailhead\">proposed feature</a>, with no official OSM wiki available.",
     "howToMap": "Add a trailhead by creating a point at the start of the trail and selecting \"Trailhead\" from the \"Select feature type\" menu:",
-    "approvedUses": "If the trail is intended for specific uses, add the appropriate \"Approved Use\" using the \"Approved Uses\" form in the \"Edit feature\" menu:",
+    "approvedUsesDescription": "If the trail is intended for specific uses, add the appropriate \"Approved Use\" using the \"Approved Uses\" form in the \"Edit feature\" menu:",
+    "approvedUsesId": "Approved Uses",
+    "approvedUsesTags": [
+      "motor_vehicle",
+      "motorcycle",
+      "foot",
+      "bicycle",
+      "atv",
+      "4wd_only",
+      "snowmobile",
+      "horse"
+    ],
     "id": "trailhead",
     "name": "Trailhead",
     "optionalTags": [
@@ -275,7 +286,12 @@
   {
     "description": "A boat launch is a ramp into the water used to launch a boat, also referred to as a slipway, boat ramp, or boat landing. Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Tag:leisure%3Dslipway\">OSM wiki</a>.",
     "howToMap": "Add a boat launch by creating a point in the middle of the ramp and selecting \"Boat Launch\" from the \"Select feature type\" menu.",
-    "approvedUses": "If the boat launch is intended for specific uses, add the appropriate \"Approved Use\" using the \"Approved Water Uses\" form in the \"Edit feature\" menu. Use \"Canoe\" for non-motorized watercraft and \"Motorboat\" for motorized watercraft. Learn more about water trails in the trail section <a href=\"#water_trails\">here</a>.",
+    "approvedUsesDescription": "If the boat launch is intended for specific uses, add the appropriate \"Approved Use\" using the \"Approved Water Uses\" form in the \"Edit feature\" menu. Use \"Canoe\" for non-motorized watercraft and \"Motorboat\" for motorized watercraft. Learn more about water trails in the trail section <a href=\"#water_trails\">here</a>.",
+    "approvedUsesId": "Approved Water Uses",
+    "approvedUsesTags": [
+      "canoe",
+      "motorboat"
+    ],
     "id": "boat_launch",
     "name": "Boat Launch",
     "optionalTags": [
@@ -306,7 +322,7 @@
 },{
   "description": "Buildings in Places are intentionally simple. We are primarily concerned with building footprints, while any additional building amenities are added as points of interest on top of the footprint (see the <a href=\"#poi\">points of interest</a> section to learn more).",
   "howToMap": "Add a building footprint by using the \"Area\" tool to trace the building footprint and select \"Building\" from the \"Select feature type\" menu:",
-  "furtherDescription": "<img class=\"img-preset img-responsive img-thumbnail\" src=\"assets/img/preset_building.jpg\"><div class=\"btn-group building-dropdown role=\"group\"><div class=\"btn-group\" role=\"group\"><button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-expanded=\"false\">Tag<span class=\"caret\"></span></button><ul class=\"dropdown-menu\" role=\"menu\"><li class=\"dropdown-header\" role=\"presentation\">The underlying preset tag(s):</li><li><a href=\"http://wiki.openstreetmap.org/wiki/Tag:building=yes\"><code>building=yes</code></a></li></ul></div><div class=\"btn-group\" role=\"group\"><button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-expanded=\"false\">Optional fields<span class=\"caret\"></span></button><ul class=\"dropdown-menu\" role=\"menu\"><li role=\"presentation\" class=\"dropdown-header\">Add additional information using these optional fields:</li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:name\"><code>name=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:addr\"><code>addr=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:building:levels\"><code>building:levels=</code></a></li></ul></div></div><p>Note: Don't get too carried away with nodes while tracing - keep it simple to conform to the general shape of the building visible from the imagery. More nodes mean more data, which can ultimately slow the database.</p><p>Additionally, if you know the location of the building's entrance or exit you can add it as a vertex on the building footprint polygon. Add a building entrance/exit by creating a point at the appropriate location and selecting \"Entrance/Exit\" from the \"Select feature type\" menu. Learn more from the OSM wiki <a href=\"http://wiki.openstreetmap.org/wiki/Tag:building%3Dentrance\">here</a>.</p><img class=\"img-preset img-responsive img-thumbnail\" src=\"assets/img/preset_building_entrance.jpg\"><div class=\"btn-group\" role=\"group\"><div class=\"btn-group\" role=\"group\"><button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-expanded=\"false\">Tag<span class=\"caret\"></span></button><ul class=\"dropdown-menu\" role=\"menu\"><li class=\"dropdown-header\" role=\"presentation\">The underlying preset tag(s):</li><li><a href=\"http://wiki.openstreetmap.org/wiki/Tag:building=yes\"><code>building=entrance</code></a></li></ul></div><div class=\"btn-group\" role=\"group\"><button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-expanded=\"false\">Optional fields<span class=\"caret\"></span></button><ul class=\"dropdown-menu\" role=\"menu\"><li role=\"presentation\" class=\"dropdown-header\">Add additional information using these optional fields:</li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:name\"><code>name=</code></a></li></ul></div></div>",
+  "furtherDescription": "<img class=\"img-preset img-responsive img-thumbnail\" src=\"assets/img/preset_building.jpg\"><div class=\"btn-group dropdown-margin role=\"group\"><div class=\"btn-group\" role=\"group\"><button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-expanded=\"false\">Tag<span class=\"caret\"></span></button><ul class=\"dropdown-menu\" role=\"menu\"><li class=\"dropdown-header\" role=\"presentation\">The underlying preset tag(s):</li><li><a href=\"http://wiki.openstreetmap.org/wiki/Tag:building=yes\"><code>building=yes</code></a></li></ul></div><div class=\"btn-group\" role=\"group\"><button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-expanded=\"false\">Optional fields<span class=\"caret\"></span></button><ul class=\"dropdown-menu\" role=\"menu\"><li role=\"presentation\" class=\"dropdown-header\">Add additional information using these optional fields:</li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:name\"><code>name=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:addr\"><code>addr=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:building:levels\"><code>building:levels=</code></a></li></ul></div></div><p>Note: Don't get too carried away with nodes while tracing - keep it simple to conform to the general shape of the building visible from the imagery. More nodes mean more data, which can ultimately slow the database.</p><p>Additionally, if you know the location of the building's entrance or exit you can add it as a vertex on the building footprint polygon. Add a building entrance/exit by creating a point at the appropriate location and selecting \"Entrance/Exit\" from the \"Select feature type\" menu. Learn more from the OSM wiki <a href=\"http://wiki.openstreetmap.org/wiki/Tag:building%3Dentrance\">here</a>.</p><img class=\"img-preset img-responsive img-thumbnail\" src=\"assets/img/preset_building_entrance.jpg\"><div class=\"btn-group\" role=\"group\"><div class=\"btn-group\" role=\"group\"><button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-expanded=\"false\">Tag<span class=\"caret\"></span></button><ul class=\"dropdown-menu\" role=\"menu\"><li class=\"dropdown-header\" role=\"presentation\">The underlying preset tag(s):</li><li><a href=\"http://wiki.openstreetmap.org/wiki/Tag:building=yes\"><code>building=entrance</code></a></li></ul></div><div class=\"btn-group\" role=\"group\"><button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-expanded=\"false\">Optional fields<span class=\"caret\"></span></button><ul class=\"dropdown-menu\" role=\"menu\"><li role=\"presentation\" class=\"dropdown-header\">Add additional information using these optional fields:</li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:name\"><code>name=</code></a></li></ul></div></div>",
   "id": "buildings",
   "name": "Buildings",
   "types": "Area feature",
@@ -314,5 +330,164 @@
     "area"
   ],
   "gif": "yes"
+},{
+  "description": "Generally speaking, a road is intended primarily for use by motorized vehicles. Sidewalks are also included in this section, which of course are an exception to this rule. Learn more about roads from the <a href=\"http://wiki.openstreetmap.org/wiki/Key:highway\">OSM wiki</a>.",
+  "howToMap": "Add a road by using the \"Line\" tool to trace its centerline from beginning to end and selecting the appropriate preset from the \"Select feature type\" menu. <em>If a road's classification is unknown, default to the <a href=\"#unclassified_road\">\"Unclassified Road\"</a> preset.</em>",
+  "featureTypes": "Places supports a variety of road classifications, outlined below. Basic road attributes are also outlined here including surface type, directionality, lanes, and speed limit along with how to handle intersections.",
+  "id": "roads",
+  "name": "Roads",
+  "types": "Line feature",
+  "idToolTypes": [
+    "line"
+  ],
+  "subtypes": [{
+    "description": "A primary road is a major highway, normally with two lanes. Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Tag:highway%3Dprimary\">OSM wiki</a>.",
+    "howToMap": "Add a primary road by tracing its centerline from beginning to end and selecting \"Primary Road\" from the \"Select feature type\" menu:",
+    "id": "primary_road",
+    "name": "Primary Road",
+    "optionalTags": [
+      "name",
+      "operator",
+      "surface",
+      "width",
+      "maxspeed",
+      "oneway",
+      "lanes",
+      "access"
+    ],
+    "tags": [
+      "highway=primary"
+    ]
+  },
+  {
+    "description": "A secondary road is a highway that is not part of a major route but forms a link in the national route network. It usually has two lanes, separated by a centerline. Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Tag:highway%3Dsecondary\">OSM wiki</a>.",
+    "howToMap": "Add a secondary road by tracing its centerline from beginning to end and selecting \"Secondary Road\" from the \"Select feature type\" menu:",
+    "id": "secondary_road",
+    "name": "Secondary Road",
+    "optionalTags": [
+      "name",
+      "operator",
+      "surface",
+      "width",
+      "maxspeed",
+      "oneway",
+      "lanes",
+      "access"
+    ],
+    "tags": [
+      "highway=secondary"
+    ] 
+  },
+  {
+    "description": "A residential road is a road that accesses residential areas but is not a classified or unclassified highway. Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Tag:highway%3Dresidential\">OSM wiki</a>.",
+    "howToMap": "Add a residential road by tracing its centerline from beginning to end and selecting \"Residential Road\" from the \"Select feature type\" menu:",
+    "id": "residential_road",
+    "name": "Residential Road",
+    "optionalTags": [
+      "name",
+      "operator",
+      "surface",
+      "width",
+      "maxspeed",
+      "oneway",
+      "lanes",
+      "access"
+    ],
+    "tags": [
+      "highway=residential"
+    ] 
+  },
+  {
+    "description": "An unclassified road is a minor public road, typically at the lowest level of the interconnecting network. It is of lower importance than a secondary road and is not a residential street. <em>If a road's classification is unknown, default to the \"Unclassified Road\" preset.</em> Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Tag:highway%3Dunclassified\">OSM wiki</a>.",
+    "howToMap": "Add an unclassified road by tracing its centerline from beginning to end and selecting \"Unclassified Road\" from the \"Select feature type\" menu:",
+    "id": "unclassified_road",
+    "name": "Unclassified Road",
+    "optionalTags": [
+      "name",
+      "operator",
+      "surface",
+      "width",
+      "maxspeed",
+      "oneway",
+      "lanes",
+      "access"
+    ],
+    "tags": [
+      "highway=unclassified"
+    ] 
+  },
+  {
+    "description": "A service road is a road accessing a building, service station, beach, campsite, business park, parking lot, driveway, etc. Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Tag:highway%3Dservice\">OSM wiki</a>.",
+    "howToMap": "Add a service road by tracing its centerline from beginning to end and selecting \"Service Road\" from the \"Select feature type\" menu:",
+    "id": "service_road",
+    "name": "Service Road",
+    "optionalTags": [
+      "name",
+      "operator",
+      "surface",
+      "width",
+      "maxspeed",
+      "oneway",
+      "lanes",
+      "access",
+      "service"
+    ],
+    "tags": [
+      "highway=service"
+    ] 
+  },
+  {
+    "description": "A bridge is a structure used to carry a road, railway, or similar feature over another feature. Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Key:bridge\">OSM wiki</a>.",
+    "howToMap": "Add a bridge by splitting the upper way at each end of the bridge (where it joins solid ground) and selecting \"Bridge\" from the \"Structure\" form in the \"Edit feature\" menu. Remember to maintain the road's existing classification, e.g. \"Primary Road.\"",
+    "id": "bridge",
+    "name": "Bridge",
+    "optionalTags": [
+      "name",
+      "operator",
+      "addr"
+    ],
+    "tags": [
+      "bridge=yes"
+    ] 
+  },
+  {
+    "description": "A tunnel is an underground or underwater passageway enclosed except for its entrance and exit at each end. Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Key:tunnel\">OSM wiki</a>.",
+    "howToMap": "Add a tunnel by splitting the enclosed section of the way and selecting \"Tunnel\" from the \"Structure\" form in the \"Edit feature\" menu. Remember to maintain the road's existing classification, e.g. \"Primary Road.\"",
+    "id": "tunnel",
+    "name": "Tunnel",
+    "optionalTags": [
+      "name",
+      "operator",
+      "addr",
+      "opening_hours"
+    ],
+    "tags": [
+      "tunnel=yes"
+    ] 
+  },
+  {
+    "description": "A sidewalk is a part of a road dedicated for pedestrian use, usually separated from the road by a curb. Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Sidewalks\">OSM wiki</a>.",
+    "howToMap": "Add a sidewalk by tracing its centerline from beginning to end and selecting the \"Sidewalk\" preset from the \"Select feature type\" menu:",
+    "additionalInfo": "If the sidewalk crosses a road, forming a crosswalk, add it by selecting \"Crosswalk\" from the \"Structure\" form in the \"Edit feature\" menu:",
+    "additionalInfoId": "Crosswalk",
+    "additionalInfoTag": [
+      "crossing=yes"
+    ],
+    "id": "sidewalk",
+    "name": "Sidewalk",
+    "optionalTags": [
+      "name",
+      "operator",
+      "surface",
+      "lit",
+      "width",
+      "access"
+    ],
+    "tags": [
+      "highway=footway",
+      "footway=sidewalk"
+    ] 
+  }
+]
 }
 ]

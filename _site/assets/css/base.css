@@ -6,13 +6,16 @@ html {
 .btn-primary {
   margin-bottom: 10px;
 }
-.building-dropdown {
-  margin-bottom: 10px;
-}
 .col-lg-offset-2 {
   margin-top: 53px;
 }
+.dropdown-margin {
+  margin-bottom: 10px;
+}
 .img-id-tool {
+  margin-bottom: 10px;
+}
+.img-preset-margin-b10 {
   margin-bottom: 10px;
 }
 .img-preset {
@@ -47,6 +50,9 @@ html {
 .lead {
   font-size: 18px;
   font-weight: 400;
+}
+.list-top-margin {
+  margin-top: 10px;
 }
 @media(max-width:767px) {
   .col-lg-offset-2 {
