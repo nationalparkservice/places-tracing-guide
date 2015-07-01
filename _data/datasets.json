@@ -507,8 +507,8 @@
     ] 
   },
   {
-    "description": "",
-    "howToMap": "Add a road's surface by selecting the associated way and choosing the appropriate surface type from the \"Surface\" form in the \"Edit feature\" menu:",
+    "description": "Oneway indicates the oneway access restriction on roads. Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Key:oneway\">OSM wiki</a>.",
+    "howToMap": "Add oneway access by selecting the associated way and clicking \"Assumed to be No\" in the \"One Way\" form of the \"Edit feature\" menu, which will change to \"Yes\" after selection. Note that ways have a directionality, so the direction in which you map the way determines its directionality. However, you can change the <code>oneway=yes</code> tag to <code>oneway=-1</code> in the \"All tags\" table of the \"Edit feature\" menu to reverse its existing directionality (appropriate when a way's directionality already governs another attribute such as a bus route).",
     "id": "oneway",
     "name": "One Way",
     "tags": [
@@ -516,8 +516,8 @@
     ] 
   },
   {
-    "description": "",
-    "howToMap": "",
+    "description": "Lanes indicate the number of traffic lanes on a highway that are available to motorized traffic (bicycle lanes are therefore excluded). Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Key:lanes\">OSM wiki</a>.",
+    "howToMap": "Classify the number of lanes a road has by selecting the associated way and entering the appropriate number into the \"Lanes\" form of the \"Edit feature\" menu:",
     "id": "lanes",
     "name": "Lanes",
     "tags": [
@@ -525,8 +525,8 @@
     ] 
   },
   {
-    "description": "",
-    "howToMap": "",
+    "description": "Speed limit indicates the maximum legal speed limit for general traffic on a road. Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Key:maxspeed\">OSM wiki</a>.",
+    "howToMap": "Classify a road's speed limit by selecting the associated way and entering the appropriate number into the \"Speed Limit\" form of the \"Edit feature\" menu, along with the appropriate unit of measure (<code>mph</code> is the default).",
     "id": "maxspeed",
     "name": "Speed Limit",
     "tags": [
