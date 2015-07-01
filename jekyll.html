@@ -166,6 +166,7 @@
               <dt>How to Map</dt>
               <dd>{{ subtype.howToMap }}</dd>
             </dl>
+            {% if subtype.tags %}
             <img class="img-preset img-responsive img-thumbnail" src="assets/img/preset_{{ subtype.id }}.jpg">
             <div class="btn-group" role="group">
               <div class="btn-group" role="group">
@@ -254,7 +255,9 @@
                 </div>
               </div>
             </p>
-            {% endif %} 
+            {% endif %}
+            {% endif %}
+            <!-- ending line 169 if -->
 
           </div>
           <div class="col-lg-6 col-sm-6">
@@ -263,9 +266,11 @@
           </div>
         </div>
         {% endfor %}
+        <!-- ending line 155 for -->
       </div>
     </div>
     {% endfor %}
+    <!-- ending line 115 for -->
 
     <!--
     <div class="banner">

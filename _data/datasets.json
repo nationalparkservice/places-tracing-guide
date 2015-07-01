@@ -487,6 +487,12 @@
       "highway=footway",
       "footway=sidewalk"
     ] 
+  },
+  {
+    "description": "An intersection occurs where two or more roads meet. Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Lanes_and_complex_intersections_visual_approach\">OSM wiki</a>.",
+    "howToMap": "To create a simple intersection between two roads, remember to connect them with a node at the point of intersection.",
+    "id": "intersections",
+    "name": "Intersections"
   }
 ]
 }
