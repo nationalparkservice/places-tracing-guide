@@ -132,7 +132,7 @@
           <div class="col-lg-6 col-sm-6">
             
             <dl>
-              <dt>Feature Types</dt>
+              <dt>POI Types</dt>
               <dd>Places supports a wide variety of POIs, a full list of which can be found in our <a href="https://docs.google.com/a/doi.gov/spreadsheets/d/1sQZRUZDe8vPu8PANxoIc5k0Pv85xNd5ae4uGJ0fwEt0/edit?usp=sharing">data preset wiki</a> <span class="nps-only">(NPS-only)</span>. This guide is intended to serve as a starting point for contributing to Places, so we are only going to review some of the most common/basic points of interest to add to the map. Don't see the feature you're looking for? <a href="https://github.com/nationalparkservice/places-data/issues/new">Open an issue on GitHub</a>.</dd>
             </dl>
             
@@ -174,6 +174,7 @@
               <a class="btn btn-primary btn-sm" href="#boat_launch">Boat Launch</a>
               
               <a class="btn btn-primary btn-sm" href="#park_district">Park District</a>
+              
               
             </p>
           </div>
@@ -1834,6 +1835,9 @@
         </div>
         
         <!-- ending line 155 for -->
+
+        
+
       </div>
     </div>
     
@@ -1866,11 +1870,15 @@
             
             <p>
               
+              
             </p>
           </div>
         </div>
         
         <!-- ending line 155 for -->
+
+        
+
       </div>
     </div>
     
@@ -1896,7 +1904,7 @@
           <div class="col-lg-6 col-sm-6">
             
             <dl>
-              <dt>Feature Types</dt>
+              <dt>Road Types/Attributes</dt>
               <dd>Places supports a variety of road classifications, outlined below. Basic road attributes are also outlined here including surface type, directionality, lanes, and speed limit along with how to handle intersections.</dd>
             </dl>
             
@@ -1920,6 +1928,17 @@
               <a class="btn btn-primary btn-sm" href="#sidewalk">Sidewalk</a>
               
               <a class="btn btn-primary btn-sm" href="#intersections">Intersections</a>
+              
+              
+              
+              <a class="btn btn-primary btn-sm" href="#surface">Surface</a>
+              
+              <a class="btn btn-primary btn-sm" href="#oneway">One Way</a>
+              
+              <a class="btn btn-primary btn-sm" href="#lanes">Lanes</a>
+              
+              <a class="btn btn-primary btn-sm" href="#maxspeed">Speed Limit</a>
+              
               
             </p>
           </div>
@@ -2745,6 +2764,175 @@
         </div>
         
         <!-- ending line 155 for -->
+
+        
+        
+        <a name="surface"></a>
+        <div class="row">
+          <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+          <div class="col-lg-6 col-sm-6">
+            <a href="#surface">
+              <h4>Surface</h4>
+            </a>
+            <dl>
+              <dt>Description</dt>
+              <dd>Surface describes the physical surface of a feature (in this case, a road or trail). Learn more from the <a href="http://wiki.openstreetmap.org/wiki/Key:surface">OSM wiki</a>.</dd>
+              <dt>How to Map</dt>
+              <dd>Add a road's surface by selecting the associated way and choosing the appropriate surface type from the "Surface" form in the "Edit feature" menu:</dd>
+            </dl>
+            <img class="img-preset-margin-b10 img-responsive img-thumbnail" src="assets/img/preset_surface.jpg">
+            <p>
+              <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                  Tag
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                  <li class="dropdown-header" role="presentation">The underlying preset tag(s):</li>
+                  
+                  <li>
+                    <a href="http://wiki.openstreetmap.org/wiki/Key:surface">
+                      <code>surface=*</code>
+                    </a>
+                  </li>
+                  
+                </ul>
+              </div>
+            </p>
+          </div>
+
+          <div class="col-lg-6 col-sm-6">
+            <button class="btn btn-primary gif-collapse">Show Places Editor Preview</button>
+            <div class="collapse" data-gif="assets/img/surface.gif"></div>
+          </div>
+          
+        </div>
+      
+        <a name="oneway"></a>
+        <div class="row">
+          <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+          <div class="col-lg-6 col-sm-6">
+            <a href="#oneway">
+              <h4>One Way</h4>
+            </a>
+            <dl>
+              <dt>Description</dt>
+              <dd></dd>
+              <dt>How to Map</dt>
+              <dd>Add a road's surface by selecting the associated way and choosing the appropriate surface type from the "Surface" form in the "Edit feature" menu:</dd>
+            </dl>
+            <img class="img-preset-margin-b10 img-responsive img-thumbnail" src="assets/img/preset_oneway.jpg">
+            <p>
+              <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                  Tag
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                  <li class="dropdown-header" role="presentation">The underlying preset tag(s):</li>
+                  
+                  <li>
+                    <a href="http://wiki.openstreetmap.org/wiki/Key:oneway">
+                      <code>oneway=*</code>
+                    </a>
+                  </li>
+                  
+                </ul>
+              </div>
+            </p>
+          </div>
+
+          <div class="col-lg-6 col-sm-6">
+            <button class="btn btn-primary gif-collapse">Show Places Editor Preview</button>
+            <div class="collapse" data-gif="assets/img/oneway.gif"></div>
+          </div>
+          
+        </div>
+      
+        <a name="lanes"></a>
+        <div class="row">
+          <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+          <div class="col-lg-6 col-sm-6">
+            <a href="#lanes">
+              <h4>Lanes</h4>
+            </a>
+            <dl>
+              <dt>Description</dt>
+              <dd></dd>
+              <dt>How to Map</dt>
+              <dd></dd>
+            </dl>
+            <img class="img-preset-margin-b10 img-responsive img-thumbnail" src="assets/img/preset_lanes.jpg">
+            <p>
+              <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                  Tag
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                  <li class="dropdown-header" role="presentation">The underlying preset tag(s):</li>
+                  
+                  <li>
+                    <a href="http://wiki.openstreetmap.org/wiki/Key:lanes">
+                      <code>lanes=*</code>
+                    </a>
+                  </li>
+                  
+                </ul>
+              </div>
+            </p>
+          </div>
+
+          <div class="col-lg-6 col-sm-6">
+            <button class="btn btn-primary gif-collapse">Show Places Editor Preview</button>
+            <div class="collapse" data-gif="assets/img/lanes.gif"></div>
+          </div>
+          
+        </div>
+      
+        <a name="maxspeed"></a>
+        <div class="row">
+          <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+          <div class="col-lg-6 col-sm-6">
+            <a href="#maxspeed">
+              <h4>Speed Limit</h4>
+            </a>
+            <dl>
+              <dt>Description</dt>
+              <dd></dd>
+              <dt>How to Map</dt>
+              <dd></dd>
+            </dl>
+            <img class="img-preset-margin-b10 img-responsive img-thumbnail" src="assets/img/preset_maxspeed.jpg">
+            <p>
+              <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                  Tag
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                  <li class="dropdown-header" role="presentation">The underlying preset tag(s):</li>
+                  
+                  <li>
+                    <a href="http://wiki.openstreetmap.org/wiki/Key:maxspeed">
+                      <code>maxspeed=*</code>
+                    </a>
+                  </li>
+                  
+                </ul>
+              </div>
+            </p>
+          </div>
+
+          <div class="col-lg-6 col-sm-6">
+            <button class="btn btn-primary gif-collapse">Show Places Editor Preview</button>
+            <div class="collapse" data-gif="assets/img/maxspeed.gif"></div>
+          </div>
+          
+        </div>
+      
+      
+
       </div>
     </div>
     

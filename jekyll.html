@@ -137,7 +137,7 @@
           <div class="col-lg-6 col-sm-6">
             {% if dataset.featureTypes %}
             <dl>
-              <dt>Feature Types</dt>
+              <dt>{{ dataset.featureTypesId }}</dt>
               <dd>{{ dataset.featureTypes }}</dd>
             </dl>
             {% endif %}
@@ -149,6 +149,11 @@
               {% for subtype in dataset.subtypes %}
               <a class="btn btn-primary btn-sm" href="#{{ subtype.id }}">{{ subtype.name }}</a>
               {% endfor %}
+              {% if dataset.attributes %}
+              {% for attribute in dataset.attributes %}
+              <a class="btn btn-primary btn-sm" href="#{{ attribute.id }}">{{ attribute.name }}</a>
+              {% endfor %}
+              {% endif %}
             </p>
           </div>
         </div>
@@ -267,6 +272,52 @@
         </div>
         {% endfor %}
         <!-- ending line 155 for -->
+
+        {% if dataset.attributes %}
+        {% for attribute in dataset.attributes %}
+        <a name="{{ attribute.id }}"></a>
+        <div class="row">
+          <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+          <div class="col-lg-6 col-sm-6">
+            <a href="#{{ attribute.id }}">
+              <h4>{{ attribute.name }}</h4>
+            </a>
+            <dl>
+              <dt>Description</dt>
+              <dd>{{ attribute.description }}</dd>
+              <dt>How to Map</dt>
+              <dd>{{ attribute.howToMap }}</dd>
+            </dl>
+            <img class="img-preset-margin-b10 img-responsive img-thumbnail" src="assets/img/preset_{{ attribute.id }}.jpg">
+            <p>
+              <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                  Tag
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                  <li class="dropdown-header" role="presentation">The underlying preset tag(s):</li>
+                  {% for tag in attribute.tags %}
+                  <li>
+                    <a href="http://wiki.openstreetmap.org/wiki/Key:{{ tag }}">
+                      <code>{{ tag }}=*</code>
+                    </a>
+                  </li>
+                  {% endfor %}
+                </ul>
+              </div>
+            </p>
+          </div>
+
+          <div class="col-lg-6 col-sm-6">
+            <button class="btn btn-primary gif-collapse">Show Places Editor Preview</button>
+            <div class="collapse" data-gif="assets/img/{{ attribute.id }}.gif"></div>
+          </div>
+          
+        </div>
+      {% endfor %}
+      {% endif %}
+
       </div>
     </div>
     {% endfor %}
