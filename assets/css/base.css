@@ -93,6 +93,9 @@ html {
 .content-section-a {
   background-color: #f8f8f8;
 }
+/*.content-section-b:nth-child(even) {
+  background-color: #f8f8f8;
+}*/
 .content-section-a-head,
 .content-section-b-head {
   padding: 50px 0 0 0 ;
