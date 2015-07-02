@@ -27,7 +27,7 @@
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#npmap-navbar-collapse">
+          <button class="navbar-toggle" data-toggle="collapse" data-target="#npmap-navbar-collapse" type="button">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -37,12 +37,24 @@
         </div>
         <div class="collapse navbar-collapse" id="npmap-navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#about">About</a></li>
-            <li><a href="#poi">Points of Interest</a></li>
-            <li><a href="#buildings">Buildings</a></li>
-            <li><a href="#roads">Roads</a></li>
-            <li><a href="#trails">Trails</a></li>
-            <li><a href="#parking">Parking</a></li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#poi">Points of Interest</a>
+            </li>
+            <li>
+              <a href="#buildings">Buildings</a>
+            </li>
+            <li>
+              <a href="#roads">Roads</a>
+            </li>
+            <li>
+              <a href="#trails">Trails</a>
+            </li>
+            <li>
+              <a href="#parking">Parking</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -68,14 +80,14 @@
               <h2 class="section-heading">About Places</h2>
             </a>
             <p><a href="http://insidemaps.nps.gov/places/">Places</a> is an internal data collection system for the National Park Service's "core" geospatial data. We built Places so that all National Park Service employees, both technical and non-technical, can contribute their knowledge to the map.</p>
-            <p>Data from Places is fed directly into both <a href="http://www.nps.gov/npmap/tools/park-tiles/">Park Tiles</a> and the larger National Park Service structured data initiative, which will be used to drive <a href="http://www.nps.gov/">NPS.gov</a> and a publicly-available application programming interface (API) starting in January of 2016.</p>
-            <p>The Places database currently contains the following datasets (a near real-time copy of each can be downloaded from the <a href="http://www.nps.gov/npmap/tools/places/">Places information page</a>):</p>
+            <p>Data from Places is fed directly into both <a href="http://www.nps.gov/npmap/tools/park-tiles/">Park Tiles</a> and the larger National Park Service structured data initiative, which will be used to drive <a href="http://www.nps.gov/">NPS.gov</a> and a publicly-available application programming interface (API) in 2016.</p>
+            <p>The Places database currently contains the following datasets (a near real-time copy of each can be downloaded from the <a href="http://insidemaps.nps.gov/places/">Places information page</a> <span class="nps-only">(NPS-only)</span>):</p>
             <ul>
               <li>Points of Interest</li>
               <li>Buildings</li>
               <li>Roads</li>
               <li>Trails</li>
-              <li>Parking Lots</li>
+              <li>Parking</li>
             </ul>
             <p>These datasets were initially seeded from existing park, region, and program-level GIS datasets, but now anyone who is connected to the National Park Service network can edit them using the <a href="http://insidemaps.nps.gov/places/view/">Places Editor</a> <span class="nps-only">(NPS-only)</span>. If you have more/better data available and you'd like to get it into Places, <a href="mailto:npmap@nps.gov">send us an email</a> or <a href="https://github.com/nationalparkservice/places-data/issues/new">create an issue on GitHub</a> and we will be happy to assist with the upload.</p>
             <p>
@@ -83,11 +95,11 @@
             </p>
             <p>The Places editor is built on top of OpenStreetMap's <a href="http://wiki.openstreetmap.org/wiki/ID">iD editor</a>. Check out learnOSM's <a href="http://learnosm.org/en/editing/id-editor/">iD editor walkthrough</a> to familiarize yourself with the interface. It is intentionally simple, developed with a non-technical audience in mind.</p>
             <p>
-              <strong>Note: Because Places utilizes the OpenStreetMap tagging scheme internally, you will see many references and links to OpenStreetMap documentation below. Rest assured that edits made in the Places Editor, however, go directly into the internal National Park Service Places database and not into the larger OpenStreetMap database.</strong>
+              <strong>Note: Because Places utilizes the OpenStreetMap tagging scheme internally, you will see references and links to OpenStreetMap documentation below. Rest assured that edits made in the Places Editor, however, go directly into the internal National Park Service Places database and not into the OpenStreetMap database.</strong>
             </p>
             <div>
               <a class="btn btn-lg btn-primary" href="http://insidemaps.nps.gov/places/edit/#background=mapbox-satellite&map=4/-96.02/39.06&overlays=park-tiles-overlay">Start Mapping Now!</a>
-              <p class="nps-only"><small>Must be on the NPS network.</small></p>
+              <p class="nps-only"><small>(NPS-only)</small></p>
             </div>
           </div>
           <div class="col-lg-6 col-sm-6">
@@ -103,7 +115,9 @@
         <div class="row">
           <div class="col-lg-6 col-sm-6">
             <a href="#{{ dataset.id }}"></a>
-            <a href="#{{ dataset.id }}"><h2 class="section-heading">{{ dataset.name }}</h2></a>
+            <a href="#{{ dataset.id }}">
+              <h2 class="section-heading">{{ dataset.name }}</h2>
+            </a>
             <h4>{{ dataset.types }}</h4>
             {% for idToolType in dataset.idToolTypes %}
             <img class="img-id-tool img-thumbnail" src="assets/img/id_{{ idToolType }}.jpg">
@@ -144,7 +158,7 @@
         {% for subtype in dataset.subtypes %}
         <a name="{{ subtype.id }}"></a>
         <div class="row">
-          <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+          <hr>
           <div class="col-lg-6 col-sm-6">
             <a href="#{{ subtype.id }}">
               <h4>{{ subtype.name }}</h4>
@@ -180,7 +194,7 @@
                   <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu" role="menu">
-                  <li role="presentation" class="dropdown-header">Add additional information using these optional fields:</li>
+                  <li role="presentation" class="dropdown-header">(Optionally) add these fields:</li>
                   {% for tag in subtype.optionalTags %}
                   <li>
                     <a href="http://wiki.openstreetmap.org/wiki/Key:{{ tag }}">
@@ -260,7 +274,7 @@
         {% for attribute in dataset.attributes %}
         <a name="{{ attribute.id }}"></a>
         <div class="row">
-          <hr class="col-lg-12 col-sm-12 section-heading-spacer">
+          <hr>
           <div class="col-lg-6 col-sm-6">
             <a href="#{{ attribute.id }}">
               <h4>{{ attribute.name }}</h4>

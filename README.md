@@ -8,7 +8,7 @@ Currently in development.
 
 - [X] Migrate to jekyll
 - [ ] Fix nav bar on mobile
-- [ ] Deploy to [www.nps.gov/npmap/tools/places/](www.nps.gov/npmap/tools/places/)
+- [X] Deploy to [www.nps.gov/npmap/tools/places/](www.nps.gov/npmap/tools/places/)
 
 #### Secondary:
 

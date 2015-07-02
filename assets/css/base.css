@@ -1,8 +1,3 @@
-body,
-html {
-  width: 100%;
-  height: 100%;
-}
 .btn-primary {
   margin-bottom: 10px;
 }
@@ -22,10 +17,9 @@ html {
   margin-bottom: 20px;
 }
 .intro-header {
-  background: url(http://placehold.it/1587x853) no-repeat center center;
   background-size: cover;
   color: #f8f8f8;
-  padding-top: 50px;
+  padding-top: 56px;
   padding-bottom: 50px;
   text-align: center;
 }
@@ -90,11 +84,12 @@ html {
   padding: 50px 0;
   border-bottom: 1px solid #e7e7e7;
 }
-.content-section-a {
-  background-color: #f8f8f8;
-}
+.content-section-a,
 .content-section-b.even {
   background-color: #f8f8f8;
+}
+.content-section-a {
+  padding-top: 30px;
 }
 .section-heading {
   margin-top: 10px;
