@@ -262,7 +262,11 @@
             </p>
             {% endif %}
             {% endif %}
-            <!-- ending line 169 if -->
+            <!-- ending if subtype.tags line ~174 -->
+
+            {% if subtype.furtherDescription %}
+            {{ subtype.furtherDescription }}
+            {% endif %}
 
           </div>
           <div class="col-lg-6 col-sm-6">
@@ -271,7 +275,7 @@
           </div>
         </div>
         {% endfor %}
-        <!-- ending line 155 for -->
+        <!-- ending for subtype in dataset.subtypes line ~160 -->
 
         {% if dataset.attributes %}
         {% for attribute in dataset.attributes %}
@@ -321,7 +325,7 @@
       </div>
     </div>
     {% endfor %}
-    <!-- ending line 115 for -->
+    <!-- ending for dataset in site.data.datasets line 115 -->
 
     <!--
     <div class="banner">
