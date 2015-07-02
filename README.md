@@ -12,6 +12,7 @@ Currently in development.
 
 #### Secondary:
 
+- [ ] Fix [navbar button bug](https://github.com/nationalparkservice/places-tracing-guide/issues/13)
 - [ ] Redo road attribute (surface, oneway, lanes, maxspeed) gifs to use editor form
 - [ ] Change optional field presentation from tag to title as displayed in editor
 - [ ] Consider adding piste and water trail types individually (for better editor info link integration)
