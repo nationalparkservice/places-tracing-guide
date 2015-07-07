@@ -6,9 +6,8 @@ Currently in development.
 
 #### Primary:
 
-- [X] Migrate to jekyll
-- [X] Fix nav bar on mobile
-- [X] Deploy to [www.nps.gov/npmap/tools/places/](www.nps.gov/npmap/tools/places/)
+- [ ] Split `data/datasets.json` into separate `.json` files per feature
+- [ ] Create separate searchable page listing *all* feature types available in Places to replace [data preset spreadsheet](https://docs.google.com/spreadsheets/d/1sQZRUZDe8vPu8PANxoIc5k0Pv85xNd5ae4uGJ0fwEt0/edit#gid=1063193272) - issue [here](https://github.com/nationalparkservice/places-tracing-guide/issues/14)
 
 #### Secondary:
 
