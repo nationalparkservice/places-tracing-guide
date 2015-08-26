@@ -10,6 +10,85 @@
     "point"
   ],
   "subtypes": [{
+    "description": "A visitor center is a building housing information for visitors, typically including some or all of the following: information resources, facilities (e.g. restrooms, drinking water), ranger staff, and exhibits. Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Tag:information%3Doffice\">OSM wiki</a>.",
+    "howToMap": "Add a visitor center by creating a point on top of the associated building and selecting \"Visitor Center\" from the \"Select feature type\" menu. Additionally, trace the building footprint if it has not been added (see the <a href=\"#buildings\">buildings</a> section to learn more about tracing building footprints).",
+    "id": "visitor_center",
+    "name": "Visitor Center",
+    "optionalTags": [
+      "name",
+      "operator",
+      "addr",
+      "opening_hours"
+    ],
+    "tags": [
+      "tourism=information",
+      "information=office"
+    ]
+  },
+  {
+    "description": "A park district or \"locality\" is, generally speaking, a region of a park that has a name. This can come in a variety of forms including an official park administrative unit, a named region of a park, or a city/town neighborhood. Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Tag:place%3Dlocality\">OSM wiki</a>, but keep in mind that the wiki describes the OSM-specific context, while we have our own adoption of this for NPS.",
+    "howToMap": "Add a park district by creating a point in the middle of the associated area and selecting \"Park District\" from the \"Select feature type\" menu:",
+    "id": "park_district",
+    "name": "Park District",
+    "optionalTags": [
+      "name",
+      "population"
+    ],
+    "tags": [
+      "place=locality"
+    ]
+  },
+  {
+    "description": "An entrance station is an official entry point into a park. Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Tag:barrier%3Dentrance\">OSM wiki</a>, but keep in mind that the wiki describes a generalized take while we are targeting official park entrances.",
+    "howToMap": "Add an entrance station by creating a point on top of the entrance and selecting \"Entrance Station\" from the \"Select feature type\" menu:",
+    "id": "entrance_station",
+    "name": "Entrance Station",
+    "optionalTags": [
+      "name",
+      "operator",
+      "addr",
+      "opening_hours"
+    ],
+    "tags": [
+      "barrier=entrance"
+    ]
+  },
+  {
+    "description": "A trailhead is the point at which a trail begins, where the trail is often intended for hiking, biking, skiing, snowshoeing, snowmobiling, horseback riding, or off-road vehicles. It is currently a <a href=\"http://wiki.openstreetmap.org/wiki/Proposed_features/trailhead\">proposed feature</a>, with no official OSM wiki available.",
+    "howToMap": "Add a trailhead by creating a point at the start of the trail and selecting \"Trailhead\" from the \"Select feature type\" menu:",
+    "approvedUsesDescription": "If the trail is intended for specific uses, add the appropriate \"Approved Use\" using the \"Approved Uses\" form in the \"Edit feature\" menu:",
+    "approvedUsesId": "Approved Uses",
+    "approvedUsesTags": [
+      "motor_vehicle",
+      "motorcycle",
+      "foot",
+      "bicycle",
+      "atv",
+      "4wd_only",
+      "snowmobile",
+      "horse"
+    ],
+    "id": "trailhead",
+    "name": "Trailhead",
+    "optionalTags": [
+      "name",
+      "operator",
+      "tracktype",
+      "surface",
+      "width",
+      "incline",
+      "mtb:scale",
+      "mtb:scale:uphill",
+      "mtb:scale:imba",
+      "sac_scale",
+      "trail_visibility",
+      "access"
+    ],
+    "tags": [
+      "highway=trailhead"
+    ]
+  },
+  {
     "description": "A campground is an area, usually divided into a number of pitches (or <a href=\"#campsite\">\"campsites\"</a>), where people can camp overnight using tents or camper vans or caravans. Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Tag:tourism%3Dcamp_site\">OSM wiki</a>.",
     "howToMap": "Add a campground by creating a point in the middle of the area and selecting \"Campground\" from the \"Select feature type\" menu:",
     "id": "campground",
@@ -113,57 +192,6 @@
     ]
   },
   {
-    "description": "A trailhead is the point at which a trail begins, where the trail is often intended for hiking, biking, skiing, snowshoeing, snowmobiling, horseback riding, or off-road vehicles. It is currently a <a href=\"http://wiki.openstreetmap.org/wiki/Proposed_features/trailhead\">proposed feature</a>, with no official OSM wiki available.",
-    "howToMap": "Add a trailhead by creating a point at the start of the trail and selecting \"Trailhead\" from the \"Select feature type\" menu:",
-    "approvedUsesDescription": "If the trail is intended for specific uses, add the appropriate \"Approved Use\" using the \"Approved Uses\" form in the \"Edit feature\" menu:",
-    "approvedUsesId": "Approved Uses",
-    "approvedUsesTags": [
-      "motor_vehicle",
-      "motorcycle",
-      "foot",
-      "bicycle",
-      "atv",
-      "4wd_only",
-      "snowmobile",
-      "horse"
-    ],
-    "id": "trailhead",
-    "name": "Trailhead",
-    "optionalTags": [
-      "name",
-      "operator",
-      "tracktype",
-      "surface",
-      "width",
-      "incline",
-      "mtb:scale",
-      "mtb:scale:uphill",
-      "mtb:scale:imba",
-      "sac_scale",
-      "trail_visibility",
-      "access"
-    ],
-    "tags": [
-      "highway=trailhead"
-    ]
-  },
-  {
-    "description": "A visitor center is a building housing information for visitors, typically including some or all of the following: information resources, facilities (e.g. restrooms, drinking water), ranger staff, and exhibits. Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Tag:information%3Doffice\">OSM wiki</a>.",
-    "howToMap": "Add a visitor center by creating a point on top of the associated building and selecting \"Visitor Center\" from the \"Select feature type\" menu. Additionally, trace the building footprint if it has not been added (see the <a href=\"#buildings\">buildings</a> section to learn more about tracing building footprints).",
-    "id": "visitor_center",
-    "name": "Visitor Center",
-    "optionalTags": [
-      "name",
-      "operator",
-      "addr",
-      "opening_hours"
-    ],
-    "tags": [
-      "tourism=information",
-      "information=office"
-    ]
-  },
-  {
     "description": "Information is an information source for visitors, typically an informational board. This is the default and most basic information-related tag, which can be added in more specific forms such as a <a href=\"#visitor_center\">visitor center</a> or <a href=\"http://wiki.openstreetmap.org/wiki/Tag:information%3Dmap\">information map</a>. Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Tag:tourism%3Dinformation\">OSM wiki</a>.",
     "howToMap": "Add information by creating a point on top of the amenity and selecting \"Information\" from the \"Select feature type\" menu:",
     "id": "information",
@@ -191,21 +219,6 @@
     ],
     "tags": [
       "amenity=ranger_station"
-    ]
-  },
-  {
-    "description": "An entrance station is an official entry point into a park. Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Tag:barrier%3Dentrance\">OSM wiki</a>, but keep in mind that the wiki describes a generalized take while we are targeting official park entrances.",
-    "howToMap": "Add an entrance station by creating a point on top of the entrance and selecting \"Entrance Station\" from the \"Select feature type\" menu:",
-    "id": "entrance_station",
-    "name": "Entrance Station",
-    "optionalTags": [
-      "name",
-      "operator",
-      "addr",
-      "opening_hours"
-    ],
-    "tags": [
-      "barrier=entrance"
     ]
   },
   {
@@ -305,19 +318,6 @@
     "tags": [
       "leisure=slipway"
     ]
-  },
-  {
-    "description": "A park district or \"locality\" is, generally speaking, a region of a park that has a name. This can come in a variety of forms including an official park administrative unit, a named region of a park, or a city/town neighborhood. Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Tag:place%3Dlocality\">OSM wiki</a>, but keep in mind that the wiki describes the OSM-specific context, while we have our own adoption of this for NPS.",
-    "howToMap": "Add a park district by creating a point in the middle of the associated area and selecting \"Park District\" from the \"Select feature type\" menu:",
-    "id": "park_district",
-    "name": "Park District",
-    "optionalTags": [
-      "name",
-      "population"
-    ],
-    "tags": [
-      "place=locality"
-    ]
   }
 ]
 },{
@@ -378,7 +378,7 @@
     ],
     "tags": [
       "highway=secondary"
-    ] 
+    ]
   },
   {
     "description": "A residential road is a road that accesses residential areas but is not a classified or unclassified highway. Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Tag:highway%3Dresidential\">OSM wiki</a>.",
@@ -397,7 +397,7 @@
     ],
     "tags": [
       "highway=residential"
-    ] 
+    ]
   },
   {
     "description": "An unclassified road is a minor public road, typically at the lowest level of the interconnecting network. It is of lower importance than a secondary road and is not a residential street. <em>If a road's classification is unknown, default to the \"Unclassified Road\" preset.</em> Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Tag:highway%3Dunclassified\">OSM wiki</a>.",
@@ -416,7 +416,7 @@
     ],
     "tags": [
       "highway=unclassified"
-    ] 
+    ]
   },
   {
     "description": "A service road is a road accessing a building, service station, beach, campsite, business park, parking lot, driveway, etc. Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Tag:highway%3Dservice\">OSM wiki</a>.",
@@ -436,7 +436,7 @@
     ],
     "tags": [
       "highway=service"
-    ] 
+    ]
   },
   {
     "description": "A bridge is a structure used to carry a road, railway, or similar feature over another feature. Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Key:bridge\">OSM wiki</a>.",
@@ -450,7 +450,7 @@
     ],
     "tags": [
       "bridge=yes"
-    ] 
+    ]
   },
   {
     "description": "A tunnel is an underground or underwater passageway enclosed except for its entrance and exit at each end. Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Key:tunnel\">OSM wiki</a>.",
@@ -465,7 +465,7 @@
     ],
     "tags": [
       "tunnel=yes"
-    ] 
+    ]
   },
   {
     "description": "A sidewalk is a part of a road dedicated for pedestrian use, usually separated from the road by a curb. Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Sidewalks\">OSM wiki</a>.",
@@ -488,7 +488,7 @@
     "tags": [
       "highway=footway",
       "footway=sidewalk"
-    ] 
+    ]
   },
   {
     "description": "An intersection occurs where two or more roads meet. Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Lanes_and_complex_intersections_visual_approach\">OSM wiki</a>.",
@@ -504,7 +504,7 @@
     "name": "Surface",
     "tags": [
       "surface"
-    ] 
+    ]
   },
   {
     "description": "Oneway indicates the oneway access restriction on roads. Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Key:oneway\">OSM wiki</a>.",
@@ -513,7 +513,7 @@
     "name": "One Way",
     "tags": [
       "oneway"
-    ] 
+    ]
   },
   {
     "description": "Lanes indicate the number of traffic lanes on a highway that are available to motorized traffic (bicycle lanes are therefore excluded). Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Key:lanes\">OSM wiki</a>.",
@@ -522,7 +522,7 @@
     "name": "Lanes",
     "tags": [
       "lanes"
-    ] 
+    ]
   },
   {
     "description": "Speed limit indicates the maximum legal speed limit for general traffic on a road. Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Key:maxspeed\">OSM wiki</a>.",
@@ -531,7 +531,7 @@
     "name": "Speed Limit",
     "tags": [
       "maxspeed"
-    ] 
+    ]
   }
 ]
 },{
@@ -574,7 +574,7 @@
     ],
     "tags": [
       "highway=path"
-    ] 
+    ]
   },
   {
     "description": "A motorized track is permissive to motorized traffic, such as all-terrain and four-wheel drive vehicles, motorcycles, and snowmobiles. A motorized track can be permissive to non-motorized traffic as well, but it must be permissive to motorized traffic to warrant this classification.",
@@ -659,7 +659,7 @@
     "tags": [
       "highway=service",
       "service=parking_aisle"
-    ] 
+    ]
   }
   ]
 }
