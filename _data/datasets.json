@@ -536,9 +536,8 @@
 ]
 },{
   "description": "Generally speaking, a trail is intended primarily for recreational use such as walking, hiking, biking, skiing, etc.",
-  "howToMap": "Add a trail by using the \"Line\" tool to trace its centerline from beginning to end and selecting the appropriate preset from the \"Select feature type\" menu. If a trail's classification is unknown, default to the <a href=\"#path\">\"Non-Motorized Trail\"</a> preset. If the classification is unknown but it is known to allow motorized vehicle access, default to the <a href=\"#track\">\"Motorized Trail\"</a> preset.",
-  "furtherDescription": "<p>Note: remember to add a <a href=\"#trailhead\">trailhead</a> to the start of each trail, along with the associated approved uses. If a trail crosses a road, forming a crosswalk, use the \"Structure\" form in the \"Edit feature\" menu to add the associated way as a \"Crosswalk\" (see the <a href=\"#sidewalk\">sidewalk</a> section for more information).",
-  "featureTypes": "The presets for different trail types will vary, classified below.",
+  "howToMap": "Add a trail by using the \"Line\" tool to trace its centerline from beginning to end and selecting the appropriate preset from the \"Select feature type\" menu. <em>If a trail's classification is unknown, default to the <a href=\"#path\">\"Non-Motorized Trail\"</a> preset.</em> Remember to add a <a href=\"#trailhead\">trailhead</a> to the start of each trail, along with the associated approved uses. If a trail crosses a road, forming a crosswalk, use the \"Structure\" form in the \"Edit feature\" menu to add the associated way as a \"Crosswalk\" (see the <a href=\"#sidewalk\">sidewalk</a> section for more information).",
+  "featureTypes": "The presets for different trail types will vary, classified below.<p><em>Trails are a priority feature type for the NPS.gov Centennial redesign and will drive a \"Trails\" page for every park.</em>",
   "featureTypesId": "Trail Types",
   "id": "trails",
   "name": "Trails",
