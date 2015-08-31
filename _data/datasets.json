@@ -1,7 +1,7 @@
 [{
   "description": "A point of interest or \"POI\" is represented by a point or <a href=\"http://wiki.openstreetmap.org/wiki/Node\" target=\"_blank\">\"node\"</a> on the map and has geographic coordinates (latitude and longitude). A POI can be a standalone node or it can be part of a <a href=\"http://wiki.openstreetmap.org/wiki/Way\" target=\"_blank\">\"way\"</a> (an ordered list of nodes representing a linear feature or area).",
   "howToMap": "Add a point of interest using Places Editor's \"Point\" tool to create a point on the map and select the appropriate preset from the \"Select feature type\" menu.",
-  "featureTypes": "Places supports a wide variety of POIs, a full list of which can be found in our <a href=\"https://docs.google.com/spreadsheets/d/1XFqkmIYMEp73q9flgNto9QJim6N5hbacgkUAgdf0rhE/edit?usp=sharing\" target=\"_blank\">preset spreadsheet</a> <span class=\"nps-only\">(NPS-only)</span>. This guide is intended to serve as a \"starter kit\" for contributing to Places and is intentionally not comprehensive, including only the basic and most common POI types. Don't see the feature you're looking for? <a href=\"https://github.com/nationalparkservice/places-data/issues/new\" target=\"_blank\">Open an issue on GitHub</a>.<p><strong>The following are the priority POI types for the NPS.gov Centennial redesign, will drive individual park pages on the new site:</p><ul><li>Visitor Centers</li><li>Entrance Stations</li><li>Trailheads</li><li>Campgrounds</li><li>Park Districts</li></ul></strong>",
+  "featureTypes": "Places supports a wide variety of POIs, a full list of which can be found in our <a href=\"https://docs.google.com/spreadsheets/d/1XFqkmIYMEp73q9flgNto9QJim6N5hbacgkUAgdf0rhE/edit?usp=sharing\" target=\"_blank\">preset spreadsheet</a> <span class=\"nps-only\">(NPS-only)</span>. This guide is intended to serve as a \"starter kit\" for contributing to Places and is intentionally not comprehensive, including only the basic and most common POI types. Don't see the feature you're looking for? <a href=\"https://github.com/nationalparkservice/places-data/issues/new\" target=\"_blank\">Open an issue on GitHub</a>.<p><em>The following are the priority POI types for the NPS.gov Centennial redesign, which will drive individual park pages on the new site:</p><ul><li>Visitor Centers</li><li>Entrance Stations</li><li>Trailheads</li><li>Campgrounds</li><li>Park Districts</li></ul></em>",
   "featureTypesId": "POI Types",
   "id": "poi",
   "name": "Points of Interest",
@@ -332,7 +332,7 @@
   ],
   "gif": "yes"
 },{
-  "description": "Generally speaking, a road is intended primarily for use by motorized vehicles. Sidewalks are also included in this section, which of course are an exception to this rule. Learn more about roads from the <a href=\"http://wiki.openstreetmap.org/wiki/Key:highway\" target=\"_blank\">OSM wiki</a>.",
+  "description": "Generally speaking, a road is intended primarily for use by motorized vehicles. Sidewalks are also included in this section, which of course are an exception to this rule.",
   "howToMap": "Add a road by using the \"Line\" tool to trace its centerline from beginning to end and selecting the appropriate preset from the \"Select feature type\" menu. <em>If a road's classification is unknown, default to the <a href=\"#unclassified_road\">\"Unclassified Road\"</a> preset.</em>",
   "featureTypes": "Places supports a variety of road classifications, outlined below. Basic road attributes are also outlined here including surface type, directionality, lanes, and speed limit along with how to handle intersections.",
   "featureTypesId": "Road Types/Attributes",
@@ -535,7 +535,7 @@
   }
 ]
 },{
-  "description": "Generally speaking, a trail is intended primarily for recreational use such as hiking, biking, skiing, etc. Learn more about trails from the <a href=\"http://wiki.openstreetmap.org/wiki/Trails\" target=\"_blank\">OSM wiki</a>, but keep in mind that not all trail type definitions apply across our NPS tagging schema.",
+  "description": "Generally speaking, a trail is intended primarily for recreational use such as walking, hiking, biking, skiing, etc.",
   "howToMap": "Add a trail by using the \"Line\" tool to trace its centerline from beginning to end and selecting the appropriate preset from the \"Select feature type\" menu. If a trail's classification is unknown, default to the <a href=\"#path\">\"Non-Motorized Trail\"</a> preset. If the classification is unknown but it is known to allow motorized vehicle access, default to the <a href=\"#track\">\"Motorized Trail\"</a> preset.",
   "furtherDescription": "<p>Note: remember to add a <a href=\"#trailhead\">trailhead</a> to the start of each trail, along with the associated approved uses. If a trail crosses a road, forming a crosswalk, use the \"Structure\" form in the \"Edit feature\" menu to add the associated way as a \"Crosswalk\" (see the <a href=\"#sidewalk\">sidewalk</a> section for more information).",
   "featureTypes": "The presets for different trail types will vary, classified below.",
