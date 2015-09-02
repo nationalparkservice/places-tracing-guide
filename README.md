@@ -7,7 +7,6 @@ Currently in development.
 #### Primary:
 
 - [ ] Implement service-wide individual `.json` files
-- [ ] Highlight priority feature types for NPS.gov redesign: visitor centers, park districts, entrance stations, trails, campgrounds (issue [here](https://github.com/nationalparkservice/places-tracing-guide/issues/24))
 - [ ] Remove links to OSM wikis
 
 #### Secondary:
