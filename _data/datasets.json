@@ -10,7 +10,7 @@
     "point"
   ],
   "subtypes": [{
-    "description": "A visitor center is a building housing information for visitors, typically including some or all of the following: information resources, facilities (e.g. restrooms, drinking water), ranger staff, and exhibits. Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Tag:information%3Doffice\" target=\"_blank\">OSM wiki</a>.",
+    "description": "A visitor center is a building housing information for visitors, typically including some or all of the following: information resources, facilities (e.g. restrooms, drinking water), ranger staff, and exhibits.",
     "howToMap": "Add a visitor center by creating a point on top of the associated building and selecting \"Visitor Center\" from the \"Select feature type\" menu. Additionally, trace the building footprint if it has not been added (see the <a href=\"#buildings\">buildings</a> section to learn more about tracing building footprints).",
     "id": "visitor_center",
     "name": "Visitor Center",
@@ -26,7 +26,7 @@
     ]
   },
   {
-    "description": "An entrance station is an official entry point into a park. Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Tag:barrier%3Dentrance\" target=\"_blank\">OSM wiki</a>, but keep in mind that the wiki describes a generalized take while we are targeting official park entrances.",
+    "description": "An entrance station is an official entry point into a park.",
     "howToMap": "Add an entrance station by creating a point on top of the entrance and selecting \"Entrance Station\" from the \"Select feature type\" menu:",
     "id": "entrance_station",
     "name": "Entrance Station",
@@ -41,7 +41,7 @@
     ]
   },
   {
-    "description": "A campground is an area, usually divided into a number of pitches (or <a href=\"#campsite\">\"campsites\"</a>), where people can camp overnight using tents or camper vans or caravans. Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Tag:tourism%3Dcamp_site\" target=\"_blank\">OSM wiki</a>.",
+    "description": "A campground is an area, usually divided into a number of pitches (or <a href=\"#campsite\">\"campsites\"</a>), where people can camp overnight using tents or camper vans or caravans.",
     "howToMap": "Add a campground by creating a point in the middle of the area and selecting \"Campground\" from the \"Select feature type\" menu:",
     "id": "campground",
     "name": "Campground",
@@ -58,7 +58,7 @@
     ]
   },
   {
-    "description": "A park district or \"locality\" is, generally speaking, a region of a park that has a name. This can come in a variety of forms including an official park administrative unit, a named region of a park, or a city/town neighborhood. Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Tag:place%3Dlocality\" target=\"_blank\">OSM wiki</a>, but keep in mind that the wiki describes the OSM-specific context, while we have our own adoption of this for NPS.",
+    "description": "A park district or \"locality\" is, generally speaking, a region of a park that has a name. This can come in a variety of forms including an official park administrative unit, a named region of a park, or a city/town neighborhood.",
     "howToMap": "Add a park district by creating a point in the middle of the associated area and selecting \"Park District\" from the \"Select feature type\" menu:",
     "id": "park_district",
     "name": "Park District",
@@ -71,7 +71,7 @@
     ]
   },
   {
-    "description": "A trailhead is the point at which a trail begins, where the trail is often intended for hiking, biking, skiing, snowshoeing, snowmobiling, horseback riding, or off-road vehicles. It is currently a <a href=\"http://wiki.openstreetmap.org/wiki/Proposed_features/trailhead\" target=\"_blank\">proposed feature</a>, with no official OSM wiki available.",
+    "description": "A trailhead is the point at which a trail begins, where the trail is often intended for hiking, biking, skiing, snowshoeing, snowmobiling, horseback riding, or off-road vehicles.",
     "howToMap": "Add a trailhead by creating a point at the start of the trail and selecting \"Trailhead\" from the \"Select feature type\" menu:",
     "approvedUsesDescription": "If the trail is intended for specific uses, add the appropriate \"Approved Use\" using the \"Approved Uses\" form in the \"Edit feature\" menu:",
     "approvedUsesId": "Approved Uses",
@@ -106,7 +106,7 @@
     ]
   },
   {
-    "description": "A ranger station is a building or facility primarily intended to house park law enforcement and rescue staff, and is typically not open to the public. It can also be as simple as a ranger sitting at a campground kiosk. Ranger stations can be seasonal, and they are commonly confused with visitor centers as both can be located in the same building. Learn more from the  <a href=\"http://wiki.openstreetmap.org/wiki/Tag:amenity%3Dranger_station\" target=\"_blank\">OSM wiki</a>, but keep in mind that definitions can vary between the Park Service and Forest Service, and between parks.",
+    "description": "A ranger station is a building or facility primarily intended to house park law enforcement and rescue staff, and is typically not open to the public. It can also be as simple as a ranger sitting at a campground kiosk. Ranger stations can be seasonal, and they are commonly confused with visitor centers as both can be located in the same building.",
     "howToMap": "Add a ranger station by creating a point on top of the associated building and selecting \"Ranger Station\" from the \"Select feature type\" menu. In the event the station is co-located with a visitor center, the best practice is to create two coincident points - one for the station and another for the VC. Additionally, trace the building footprint if it has not been added (see the <a href=\"#buildings\">buildings</a> section to learn more about tracing building footprints).",
     "id": "ranger_station",
     "name": "Ranger Station",
@@ -121,7 +121,7 @@
     ]
   },
   {
-    "description": "A restroom is a restroom facility or \"toilet\" open to the public. Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Tag:amenity%3Dtoilets\" target=\"_blank\">OSM wiki</a>.",
+    "description": "A restroom is a restroom facility or \"toilet\" open to the public.",
     "howToMap": "Add a restroom by creating a point on top of the associated building and selecting \"Restroom\" from the \"Select feature type\" menu. Additionally, trace the building footprint if it has not been added (see the <a href=\"#buildings\">buildings</a> section to learn more about tracing building footprints).",
     "id": "restroom",
     "name": "Restroom",
@@ -142,7 +142,7 @@
     ]
   },
   {
-    "description": "Information is an information source for visitors, typically an informational board. This is the default and most basic information-related tag, which can be added in more specific forms such as a <a href=\"#visitor_center\">visitor center</a> or <a href=\"http://wiki.openstreetmap.org/wiki/Tag:information%3Dmap\" target=\"_blank\">information map</a>. Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Tag:tourism%3Dinformation\" target=\"_blank\">OSM wiki</a>.",
+    "description": "Information is an information source for visitors, typically an informational board. This is the default and most basic information-related tag, which can be added in more specific forms such as an information map.",
     "howToMap": "Add information by creating a point on top of the amenity and selecting \"Information\" from the \"Select feature type\" menu:",
     "id": "information",
     "name": "Information",
@@ -157,7 +157,7 @@
     ]
   },
   {
-    "description": "A campsite is an individual pitch within a campground where people can camp overnight using tents or camper vans or caravans. Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Tag:tourism%3Dcamp_site\" target=\"_blank\">OSM wiki</a>.",
+    "description": "A campsite is an individual pitch within a campground where people can camp overnight using tents or camper vans or caravans.",
     "howToMap": "Add a campsite by creating a point in the middle of the pitch and selecting \"Campsite\" from the \"Select feature type\" menu:",
     "id": "campsite",
     "name": "Campsite",
@@ -175,7 +175,7 @@
     ]
   },
   {
-    "description": "A picnic area is an area that is suitable for outdoors eating and may have a number of facilities to aid a picnic: tables, benches, restrooms, grills, water taps, covered pavilions, etc. Or, it may just be a grassy area popular for picnics. Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Tag:tourism%3Dpicnic_site\" target=\"_blank\">OSM wiki</a>.",
+    "description": "A picnic area is an area that is suitable for outdoors eating and may have a number of facilities to aid a picnic: tables, benches, restrooms, grills, water taps, covered pavilions, etc. Or, it may just be a grassy area popular for picnics.",
     "howToMap": "Add a picnic area by creating a point in the middle of the area and selecting \"Picnic Area\" from the \"Select feature type\" menu:",
     "id": "picnic_site",
     "name": "Picnic Area",
@@ -191,7 +191,7 @@
     ]
   },
   {
-    "description": "A lodge or \"alpine hut\" is a remote building located in the mountains intended to provide board and lodging. Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Tag:tourism%3Dalpine_hut\" target=\"_blank\">OSM wiki</a>.",
+    "description": "A lodge or \"alpine hut\" is a remote building located in the mountains intended to provide board and lodging.",
     "howToMap": "Add a lodge by creating a point on top of the associated building and selecting \"Lodge\" from the \"Select feature type\" menu. Additionally, trace the building footprint if it has not been added (see the <a href=\"#buildings\">buildings</a> section to learn more about tracing building footprints).",
     "id": "lodge",
     "name": "Lodge",
@@ -206,7 +206,7 @@
     ]
   },
   {
-    "description": "A store is a general store, typically selling things like tools, building supplies, clothes, food, and similar items. Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Tag:shop%3Dgeneral\" target=\"_blank\">OSM wiki</a>.",
+    "description": "A store is a general store, typically selling things like tools, building supplies, clothes, food, and similar items.",
     "howToMap": "Add a store by creating a point on top of the associated building and selecting \"Store\" from the \"Select feature type\" menu. Additionally, trace the building footprint if it has not been added (see the <a href=\"#buildings\">buildings</a> section to learn more about tracing building footprints).",
     "id": "store",
     "name": "Store",
@@ -221,7 +221,7 @@
     ]
   },
   {
-    "description": "Food service is also commonly referred to as a food court. It is typically an indoor area within a facility that houses multiple food vendors and provides a common area for dining. Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Tag:amenity%3Dfood_court\" target=\"_blank\">OSM wiki</a>.",
+    "description": "Food service is also commonly referred to as a food court. It is typically an indoor area within a facility that houses multiple food vendors and provides a common area for dining.",
     "howToMap": "Add food service by creating a point on top of the associated building and selecting \"Food Service\" from the \"Select feature type\" menu. Additionally, trace the building footprint if it has not been added (see the <a href=\"#buildings\">buildings</a> section to learn more about tracing building footprints).",
     "id": "food_service",
     "name": "Food Service",
@@ -236,7 +236,7 @@
     ]
   },
   {
-    "description": "A waste basket is a single small container for depositing garbage that is easily accesible for pedestrians. Similar expressions: rubbish bin, litter bin, trash can, garbage can. Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Tag:amenity%3Dwaste_basket\" target=\"_blank\">OSM wiki</a>.",
+    "description": "A waste basket is a single small container for depositing garbage that is easily accesible for pedestrians. Similar expressions: rubbish bin, litter bin, trash can, garbage can.",
     "howToMap": "Add a waste basket by creating a point on top of the container and selecting \"Waste Basket\" from the \"Select feature type\" menu:",
     "id": "waste_basket",
     "name": "Waste Basket",
@@ -252,7 +252,7 @@
     ]
   },
   {
-    "description": "A telephone is a phone available for public use, typically a pay phone on a stand or wall. It may be indoors or outdoors. Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Tag:amenity%3Dtelephone\" target=\"_blank\">OSM wiki</a>.",
+    "description": "A telephone is a phone available for public use, typically a pay phone on a stand or wall. It may be indoors or outdoors.",
     "howToMap": "Add a telephone by creating a point on top of the telephone and selecting \"Telephone\" from the \"Select feature type\" menu. Where several telephones are arranged side by side, arrange several similar points side by side.",
     "id": "telephone",
     "name": "Telephone",
@@ -267,7 +267,7 @@
     ]
   },
   {
-    "description": "Drinking water is a location at which potable water is available for consumption. Typically this comes in the form of a water fountain. Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Tag:amenity%3Ddrinking_water\" target=\"_blank\">OSM wiki</a>.",
+    "description": "Drinking water is a location at which potable water is available for consumption. Typically this comes in the form of a water fountain.",
     "howToMap": "Add drinking water by creating a point on top of the amenity and selecting \"Drinking Water\" from the \"Select feature type\" menu:",
     "id": "drinking_water",
     "name": "Drinking Water",
@@ -283,7 +283,7 @@
     ]
   },
   {
-    "description": "A gas station is a facility where vehicles can be refueled. Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Tag:amenity%3Dfuel\" target=\"_blank\">OSM wiki</a>.",
+    "description": "A gas station is a facility where vehicles can be refueled.",
     "howToMap": "Add a gas station by creating a point on top of it and selecting \"Gas Station\" from the \"Select feature type\" menu. If the gas station includes a building housing a store, see the <a href=\"#store\">store</a> section above to learn how to add it. Additionally, trace the building footprint if it has not been added (see the <a href=\"#buildings\">buildings</a> section to learn more about tracing building footprints).",
     "id": "gas_station",
     "name": "Gas Station",
@@ -298,7 +298,7 @@
     ]
   },
   {
-    "description": "A boat launch is a ramp into the water used to launch a boat, also referred to as a slipway, boat ramp, or boat landing. Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Tag:leisure%3Dslipway\" target=\"_blank\">OSM wiki</a>.",
+    "description": "A boat launch is a ramp into the water used to launch a boat, also referred to as a slipway, boat ramp, or boat landing.",
     "howToMap": "Add a boat launch by creating a point in the middle of the ramp and selecting \"Boat Launch\" from the \"Select feature type\" menu.",
     "approvedUsesDescription": "If the boat launch is intended for specific uses, add the appropriate \"Approved Use\" using the \"Approved Water Uses\" form in the \"Edit feature\" menu. Use \"Canoe\" for non-motorized watercraft and \"Motorboat\" for motorized watercraft. Learn more about water trails in the trail section <a href=\"#water_trails\">here</a>.",
     "approvedUsesId": "Approved Water Uses",
