@@ -45,6 +45,9 @@
   font-size: 18px;
   font-weight: 400;
 }
+.dropdown-menu li {
+  padding: 3px 20px;
+}
 .list-top-margin {
   margin-top: 10px;
 }

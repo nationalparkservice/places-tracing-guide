@@ -14,11 +14,11 @@
     "howToMap": "Add a visitor center by creating a point on top of the associated building and selecting \"Visitor Center\" from the \"Select feature type\" menu. Additionally, trace the building footprint if it has not been added (see the <a href=\"#buildings\">buildings</a> section to learn more about tracing building footprints).",
     "id": "visitor_center",
     "name": "Visitor Center",
-    "optionalTags": [
-      "name",
-      "operator",
-      "addr",
-      "opening_hours"
+    "optionalFields": [
+      "Name",
+      "Operator",
+      "Address",
+      "Hours"
     ],
     "tags": [
       "tourism=information",
@@ -30,11 +30,11 @@
     "howToMap": "Add an entrance station by creating a point on top of the entrance and selecting \"Entrance Station\" from the \"Select feature type\" menu:",
     "id": "entrance_station",
     "name": "Entrance Station",
-    "optionalTags": [
-      "name",
-      "operator",
-      "addr",
-      "opening_hours"
+    "optionalFields": [
+      "Name",
+      "Operator",
+      "Address",
+      "Hours"
     ],
     "tags": [
       "barrier=entrance"
@@ -45,13 +45,13 @@
     "howToMap": "Add a campground by creating a point in the middle of the area and selecting \"Campground\" from the \"Select feature type\" menu:",
     "id": "campground",
     "name": "Campground",
-    "optionalTags": [
-      "name",
-      "operator",
-      "addr",
-      "opening_hours",
-      "capacity",
-      "fee"
+    "optionalFields": [
+      "Name",
+      "Operator",
+      "Address",
+      "Hours",
+      "Capacity",
+      "Fee"
     ],
     "tags": [
       "tourism=camp_site"
@@ -62,9 +62,9 @@
     "howToMap": "Add a park district by creating a point in the middle of the associated area and selecting \"Park District\" from the \"Select feature type\" menu:",
     "id": "park_district",
     "name": "Park District",
-    "optionalTags": [
-      "name",
-      "population"
+    "optionalFields": [
+      "Name",
+      "Population"
     ],
     "tags": [
       "place=locality"
@@ -75,31 +75,21 @@
     "howToMap": "Add a trailhead by creating a point at the start of the trail and selecting \"Trailhead\" from the \"Select feature type\" menu:",
     "approvedUsesDescription": "If the trail is intended for specific uses, add the appropriate \"Approved Use\" using the \"Approved Uses\" form in the \"Edit feature\" menu:",
     "approvedUsesId": "Approved Uses",
-    "approvedUsesTags": [
-      "motor_vehicle",
-      "motorcycle",
-      "foot",
-      "bicycle",
-      "atv",
-      "4wd_only",
-      "snowmobile",
-      "horse"
-    ],
     "id": "trailhead",
     "name": "Trailhead",
-    "optionalTags": [
-      "name",
-      "operator",
-      "tracktype",
-      "surface",
-      "width",
-      "incline",
-      "mtb:scale",
-      "mtb:scale:uphill",
-      "mtb:scale:imba",
-      "sac_scale",
-      "trail_visibility",
-      "access"
+    "optionalFields": [
+      "Name",
+      "Operator",
+      "Track Type",
+      "Surface",
+      "Width (Meters)",
+      "Incline",
+      "Mountain Biking Difficulty",
+      "Mountain Biking Uphill Difficulty",
+      "IMBA Trail Difficulty",
+      "Hiking Difficulty",
+      "Trail Visibility",
+      "Approved Uses"
     ],
     "tags": [
       "highway=trailhead"
@@ -110,11 +100,11 @@
     "howToMap": "Add a ranger station by creating a point on top of the associated building and selecting \"Ranger Station\" from the \"Select feature type\" menu. In the event the station is co-located with a visitor center, the best practice is to create two coincident points - one for the station and another for the VC. Additionally, trace the building footprint if it has not been added (see the <a href=\"#buildings\">buildings</a> section to learn more about tracing building footprints).",
     "id": "ranger_station",
     "name": "Ranger Station",
-    "optionalTags": [
-      "name",
-      "operator",
-      "addr",
-      "opening_hours"
+    "optionalFields": [
+      "Name",
+      "Operator",
+      "Address",
+      "Hours"
     ],
     "tags": [
       "amenity=ranger_station"
@@ -125,17 +115,14 @@
     "howToMap": "Add a restroom by creating a point on top of the associated building and selecting \"Restroom\" from the \"Select feature type\" menu. Additionally, trace the building footprint if it has not been added (see the <a href=\"#buildings\">buildings</a> section to learn more about tracing building footprints).",
     "id": "restroom",
     "name": "Restroom",
-    "optionalTags": [
-      "name",
-      "operator",
-      "addr",
-      "opening_hours",
-      "toilets:disposal=",
-      "male",
-      "female",
-      "unisex",
-      "indoor",
-      "access"
+    "optionalFields": [
+      "Name",
+      "Operator",
+      "Address",
+      "Hours",
+      "Disposal",
+      "Gender",
+      "Access"
     ],
     "tags": [
       "amenity=toilets"
@@ -146,11 +133,11 @@
     "howToMap": "Add information by creating a point on top of the amenity and selecting \"Information\" from the \"Select feature type\" menu:",
     "id": "information",
     "name": "Information",
-    "optionalTags": [
-      "name",
-      "operator",
-      "addr",
-      "opening_hours"
+    "optionalFields": [
+      "Name",
+      "Operator",
+      "Address",
+      "Hours"
     ],
     "tags": [
       "tourism=information"
@@ -161,13 +148,13 @@
     "howToMap": "Add a campsite by creating a point in the middle of the pitch and selecting \"Campsite\" from the \"Select feature type\" menu:",
     "id": "campsite",
     "name": "Campsite",
-    "optionalTags": [
-      "name",
-      "operator",
-      "addr",
-      "opening_hours",
-      "capacity",
-      "fee"
+    "optionalFields": [
+      "Name",
+      "Operator",
+      "Address",
+      "Hours",
+      "Capacity",
+      "Fee"
     ],
     "tags": [
       "tourism=camp_site",
@@ -179,12 +166,12 @@
     "howToMap": "Add a picnic area by creating a point in the middle of the area and selecting \"Picnic Area\" from the \"Select feature type\" menu:",
     "id": "picnic_site",
     "name": "Picnic Area",
-    "optionalTags": [
-      "name",
-      "operator",
-      "addr",
-      "opening_hours",
-      "fee"
+    "optionalFields": [
+      "Name",
+      "Operator",
+      "Address",
+      "Hours",
+      "Fee"
     ],
     "tags": [
       "tourism=picnic_site"
@@ -195,11 +182,11 @@
     "howToMap": "Add a lodge by creating a point on top of the associated building and selecting \"Lodge\" from the \"Select feature type\" menu. Additionally, trace the building footprint if it has not been added (see the <a href=\"#buildings\">buildings</a> section to learn more about tracing building footprints).",
     "id": "lodge",
     "name": "Lodge",
-    "optionalTags": [
-      "name",
-      "operator",
-      "addr",
-      "opening_hours"
+    "optionalFields": [
+      "Name",
+      "Operator",
+      "Address",
+      "Hours"
     ],
     "tags": [
       "tourism=alpine_hut"
@@ -210,11 +197,11 @@
     "howToMap": "Add a store by creating a point on top of the associated building and selecting \"Store\" from the \"Select feature type\" menu. Additionally, trace the building footprint if it has not been added (see the <a href=\"#buildings\">buildings</a> section to learn more about tracing building footprints).",
     "id": "store",
     "name": "Store",
-    "optionalTags": [
-      "name",
-      "operator",
-      "addr",
-      "opening_hours"
+    "optionalFields": [
+      "Name",
+      "Operator",
+      "Address",
+      "Hours"
     ],
     "tags": [
       "shop=general"
@@ -225,11 +212,11 @@
     "howToMap": "Add food service by creating a point on top of the associated building and selecting \"Food Service\" from the \"Select feature type\" menu. Additionally, trace the building footprint if it has not been added (see the <a href=\"#buildings\">buildings</a> section to learn more about tracing building footprints).",
     "id": "food_service",
     "name": "Food Service",
-    "optionalTags": [
-      "name",
-      "operator",
-      "addr",
-      "opening_hours"
+    "optionalFields": [
+      "Name",
+      "Operator",
+      "Address",
+      "Hours"
     ],
     "tags": [
       "amenity=food_court"
@@ -240,12 +227,10 @@
     "howToMap": "Add a waste basket by creating a point on top of the container and selecting \"Waste Basket\" from the \"Select feature type\" menu:",
     "id": "waste_basket",
     "name": "Waste Basket",
-    "optionalTags": [
-      "name",
-      "operator",
-      "addr",
-      "waste",
-      "bin"
+    "optionalFields": [
+      "Name",
+      "Operator",
+      "Address"
     ],
     "tags": [
       "amenity=waste_basket"
@@ -256,11 +241,10 @@
     "howToMap": "Add a telephone by creating a point on top of the telephone and selecting \"Telephone\" from the \"Select feature type\" menu. Where several telephones are arranged side by side, arrange several similar points side by side.",
     "id": "telephone",
     "name": "Telephone",
-    "optionalTags": [
-      "name",
-      "operator",
-      "addr",
-      "indoor"
+    "optionalFields": [
+      "Name",
+      "Operator",
+      "Address",
     ],
     "tags": [
       "amenity=telephone"
@@ -271,12 +255,11 @@
     "howToMap": "Add drinking water by creating a point on top of the amenity and selecting \"Drinking Water\" from the \"Select feature type\" menu:",
     "id": "drinking_water",
     "name": "Drinking Water",
-    "optionalTags": [
-      "name",
-      "operator",
-      "description",
-      "indoor",
-      "access"
+    "optionalFields": [
+      "Name",
+      "Operator",
+      "Description",
+      "Access"
     ],
     "tags": [
       "amenity=drinking_water"
@@ -287,11 +270,11 @@
     "howToMap": "Add a gas station by creating a point on top of it and selecting \"Gas Station\" from the \"Select feature type\" menu. If the gas station includes a building housing a store, see the <a href=\"#store\">store</a> section above to learn how to add it. Additionally, trace the building footprint if it has not been added (see the <a href=\"#buildings\">buildings</a> section to learn more about tracing building footprints).",
     "id": "gas_station",
     "name": "Gas Station",
-    "optionalTags": [
-      "name",
-      "operator",
-      "addr",
-      "opening_hours"
+    "optionalFields": [
+      "Name",
+      "Operator",
+      "Address",
+      "Hours"
     ],
     "tags": [
       "amenity=fuel"
@@ -308,12 +291,10 @@
     ],
     "id": "boat_launch",
     "name": "Boat Launch",
-    "optionalTags": [
-      "name",
-      "operator",
-      "whitewater",
-      "width",
-      "section_grade"
+    "optionalFields": [
+      "Name",
+      "Operator",
+      "Width (Meters)"
     ],
     "tags": [
       "leisure=slipway"
@@ -323,7 +304,7 @@
 },{
   "description": "Buildings in Places are intentionally simple. We are primarily concerned with building footprints, while any additional building amenities are added as points of interest on top of the footprint (see the <a href=\"#poi\">points of interest</a> section to learn more).",
   "howToMap": "Add a building footprint by using the \"Area\" tool to trace the building footprint and select \"Building\" from the \"Select feature type\" menu:",
-  "furtherDescription": "<img class=\"img-preset img-responsive img-thumbnail\" src=\"assets/img/preset_building.jpg\"><div class=\"btn-group dropdown-margin role=\"group\"><div class=\"btn-group\" role=\"group\"><button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-expanded=\"false\">Tag<span class=\"caret\"></span></button><ul class=\"dropdown-menu\" role=\"menu\"><li class=\"dropdown-header\" role=\"presentation\">The underlying preset tag(s):</li><li><a href=\"http://wiki.openstreetmap.org/wiki/Tag:building=yes\" target=\"_blank\"><code>building=yes</code></a></li></ul></div><div class=\"btn-group\" role=\"group\"><button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-expanded=\"false\">Optional fields<span class=\"caret\"></span></button><ul class=\"dropdown-menu\" role=\"menu\"><li role=\"presentation\" class=\"dropdown-header\">(Optionally) add these fields:</li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:name\" target=\"_blank\"><code>name=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:addr\" target=\"_blank\"><code>addr=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:building:levels\" target=\"_blank\"><code>building:levels=</code></a></li></ul></div></div><p>Additionally, if you know the location of the building's entrance or exit you can add it as a vertex on the building footprint polygon. Add a building entrance/exit by creating a point at the appropriate location and selecting \"Entrance/Exit\" from the \"Select feature type\" menu. Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Tag:building%3Dentrance\" target=\"_blank\">OSM wiki</a>.</p><img class=\"img-preset img-responsive img-thumbnail\" src=\"assets/img/preset_building_entrance.jpg\"><div class=\"btn-group\" role=\"group\"><div class=\"btn-group\" role=\"group\"><button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-expanded=\"false\">Tag<span class=\"caret\"></span></button><ul class=\"dropdown-menu\" role=\"menu\"><li class=\"dropdown-header\" role=\"presentation\">The underlying preset tag(s):</li><li><a href=\"http://wiki.openstreetmap.org/wiki/Tag:building=yes\" target=\"_blank\"><code>building=entrance</code></a></li></ul></div><div class=\"btn-group\" role=\"group\"><button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-expanded=\"false\">Optional fields<span class=\"caret\"></span></button><ul class=\"dropdown-menu\" role=\"menu\"><li role=\"presentation\" class=\"dropdown-header\">(Optionally) add these fields:</li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:name\" target=\"_blank\"><code>name=</code></a></li></ul></div></div>",
+  "furtherDescription": "<img class=\"img-preset img-responsive img-thumbnail\" src=\"assets/img/preset_building.jpg\"><div class=\"btn-group dropdown-margin role=\"group\"><div class=\"btn-group\" role=\"group\"><button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-expanded=\"false\">Optional fields<span class=\"caret\"></span></button><ul class=\"dropdown-menu\" role=\"menu\"><li role=\"presentation\" class=\"dropdown-header\">(Optionally) add these fields:</li><li><strong>Name</strong></li><li><strong>Address</strong></a></li><li><strong>Levels</strong></li></ul></div></div><p>Additionally, if you know the location of the building's entrance or exit you can add it as a vertex on the building footprint polygon. Add a building entrance/exit by creating a point at the appropriate location and selecting \"Entrance/Exit\" from the \"Select feature type\" menu.</p><img class=\"img-preset img-responsive img-thumbnail\" src=\"assets/img/preset_building_entrance.jpg\"><div class=\"btn-group\" role=\"group\"><div class=\"btn-group\" role=\"group\"><button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-expanded=\"false\">Optional fields<span class=\"caret\"></span></button><ul class=\"dropdown-menu\" role=\"menu\"><li role=\"presentation\" class=\"dropdown-header\">(Optionally) add these fields:</li><li><strong>Name</strong></li></ul></div></div>",
   "id": "buildings",
   "name": "Buildings",
   "types": "Area feature",
@@ -343,147 +324,144 @@
     "line"
   ],
   "subtypes": [{
-    "description": "A primary road is a major highway, normally with two lanes. Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Tag:highway%3Dprimary\" target=\"_blank\">OSM wiki</a>.",
+    "description": "A primary road is a major highway, normally with two lanes.",
     "howToMap": "Add a primary road by tracing its centerline from beginning to end and selecting \"Primary Road\" from the \"Select feature type\" menu:",
     "id": "primary_road",
     "name": "Primary Road",
-    "optionalTags": [
-      "name",
-      "operator",
-      "surface",
-      "width",
-      "maxspeed",
-      "oneway",
-      "lanes",
-      "access"
+    "optionalFields": [
+      "Name",
+      "Operator",
+      "Surface",
+      "Width (Meters)",
+      "Speed Limit",
+      "One Way",
+      "Lanes",
+      "Approved Uses"
     ],
     "tags": [
       "highway=primary"
     ]
   },
   {
-    "description": "A secondary road is a highway that is not part of a major route but forms a link in the national route network. It usually has two lanes, separated by a centerline. Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Tag:highway%3Dsecondary\" target=\"_blank\">OSM wiki</a>.",
+    "description": "A secondary road is a highway that is not part of a major route but forms a link in the national route network. It usually has two lanes, separated by a centerline.",
     "howToMap": "Add a secondary road by tracing its centerline from beginning to end and selecting \"Secondary Road\" from the \"Select feature type\" menu:",
     "id": "secondary_road",
     "name": "Secondary Road",
-    "optionalTags": [
-      "name",
-      "operator",
-      "surface",
-      "width",
-      "maxspeed",
-      "oneway",
-      "lanes",
-      "access"
+    "optionalFields": [
+      "Name",
+      "Operator",
+      "Surface",
+      "Width (Meters)",
+      "Speed Limit",
+      "One Way",
+      "Lanes",
+      "Approved Uses"
     ],
     "tags": [
       "highway=secondary"
     ]
   },
   {
-    "description": "A residential road is a road that accesses residential areas but is not a classified or unclassified highway. Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Tag:highway%3Dresidential\" target=\"_blank\">OSM wiki</a>.",
+    "description": "A residential road is a road that accesses residential areas but is not a classified or unclassified highway.",
     "howToMap": "Add a residential road by tracing its centerline from beginning to end and selecting \"Residential Road\" from the \"Select feature type\" menu:",
     "id": "residential_road",
     "name": "Residential Road",
-    "optionalTags": [
-      "name",
-      "operator",
-      "surface",
-      "width",
-      "maxspeed",
-      "oneway",
-      "lanes",
-      "access"
+    "optionalFields": [
+      "Name",
+      "Operator",
+      "Surface",
+      "Width (Meters)",
+      "Speed Limit",
+      "One Way",
+      "Lanes",
+      "Approved Uses"
     ],
     "tags": [
       "highway=residential"
     ]
   },
   {
-    "description": "An unclassified road is a minor public road, typically at the lowest level of the interconnecting network. It is of lower importance than a secondary road and is not a residential street. <em>If a road's classification is unknown, default to the \"Unclassified Road\" preset.</em> Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Tag:highway%3Dunclassified\" target=\"_blank\">OSM wiki</a>.",
+    "description": "An unclassified road is a minor public road, typically at the lowest level of the interconnecting network. It is of lower importance than a secondary road and is not a residential street. <em>If a road's classification is unknown, default to the \"Unclassified Road\" preset.</em>",
     "howToMap": "Add an unclassified road by tracing its centerline from beginning to end and selecting \"Unclassified Road\" from the \"Select feature type\" menu:",
     "id": "unclassified_road",
     "name": "Unclassified Road",
-    "optionalTags": [
-      "name",
-      "operator",
-      "surface",
-      "width",
-      "maxspeed",
-      "oneway",
-      "lanes",
-      "access"
+    "optionalFields": [
+      "Name",
+      "Operator",
+      "Surface",
+      "Width (Meters)",
+      "Speed Limit",
+      "One Way",
+      "Lanes",
+      "Approved Uses"
     ],
     "tags": [
       "highway=unclassified"
     ]
   },
   {
-    "description": "A service road is a road accessing a building, service station, beach, campsite, business park, parking lot, driveway, etc. Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Tag:highway%3Dservice\" target=\"_blank\">OSM wiki</a>.",
+    "description": "A service road is a road accessing a building, service station, beach, campsite, business park, parking lot, driveway, etc.",
     "howToMap": "Add a service road by tracing its centerline from beginning to end and selecting \"Service Road\" from the \"Select feature type\" menu:",
     "id": "service_road",
     "name": "Service Road",
-    "optionalTags": [
-      "name",
-      "operator",
-      "surface",
-      "width",
-      "maxspeed",
-      "oneway",
-      "lanes",
-      "access",
-      "service"
+    "optionalFields": [
+      "Name",
+      "Operator",
+      "Surface",
+      "Width (Meters)",
+      "Speed Limit",
+      "One Way",
+      "Lanes",
+      "Approved Uses",
+      "Type"
     ],
     "tags": [
       "highway=service"
     ]
   },
   {
-    "description": "A bridge is a structure used to carry a road, railway, or similar feature over another feature. Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Key:bridge\" target=\"_blank\">OSM wiki</a>.",
+    "description": "A bridge is a structure used to carry a road, railway, or similar feature over another feature.",
     "howToMap": "Add a bridge by splitting the upper way at each end of the bridge (where it joins solid ground) and selecting \"Bridge\" from the \"Structure\" form in the \"Edit feature\" menu. Remember to maintain the road's existing classification, e.g. \"Primary Road.\"",
     "id": "bridge",
     "name": "Bridge",
-    "optionalTags": [
-      "name",
-      "operator",
-      "addr"
+    "optionalFields": [
+      "Name",
+      "Operator",
+      "Address"
     ],
     "tags": [
       "bridge=yes"
     ]
   },
   {
-    "description": "A tunnel is an underground or underwater passageway enclosed except for its entrance and exit at each end. Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Key:tunnel\" target=\"_blank\">OSM wiki</a>.",
+    "description": "A tunnel is an underground or underwater passageway enclosed except for its entrance and exit at each end.",
     "howToMap": "Add a tunnel by splitting the enclosed section of the way and selecting \"Tunnel\" from the \"Structure\" form in the \"Edit feature\" menu. Remember to maintain the road's existing classification, e.g. \"Primary Road.\"",
     "id": "tunnel",
     "name": "Tunnel",
-    "optionalTags": [
-      "name",
-      "operator",
-      "addr",
-      "opening_hours"
+    "optionalFields": [
+      "Name",
+      "Operator",
+      "Address",
+      "Hours"
     ],
     "tags": [
       "tunnel=yes"
     ]
   },
   {
-    "description": "A sidewalk is a part of a road dedicated for pedestrian use, usually separated from the road by a curb. Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Sidewalks\" target=\"_blank\">OSM wiki</a>.",
+    "description": "A sidewalk is a part of a road dedicated for pedestrian use, usually separated from the road by a curb.",
     "howToMap": "Add a sidewalk by tracing its centerline from beginning to end and selecting the \"Sidewalk\" preset from the \"Select feature type\" menu:",
     "additionalInfo": "If the sidewalk crosses a road, forming a crosswalk, add it by selecting \"Crosswalk\" from the \"Structure\" form in the \"Edit feature\" menu:",
     "additionalInfoId": "Crosswalk",
-    "additionalInfoTag": [
-      "crossing=yes"
-    ],
     "id": "sidewalk",
     "name": "Sidewalk",
-    "optionalTags": [
-      "name",
-      "operator",
-      "surface",
-      "lit",
-      "width",
-      "access"
+    "optionalFields": [
+      "Name",
+      "Operator",
+      "Surface",
+      "Lit",
+      "Width (Meters)",
+      "Approved Uses"
     ],
     "tags": [
       "highway=footway",
@@ -491,24 +469,24 @@
     ]
   },
   {
-    "description": "An intersection occurs where two or more roads meet. Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Lanes_and_complex_intersections_visual_approach\" target=\"_blank\">OSM wiki</a>.",
+    "description": "An intersection occurs where two or more roads meet.",
     "howToMap": "To create a simple intersection between two roads, remember to connect them with a node at the point of intersection.",
     "id": "intersections",
     "name": "Intersections"
   }
 ],
   "attributes": [{
-    "description": "Surface describes the physical surface of a feature (in this case, a road or trail). Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Key:surface\" target=\"_blank\">OSM wiki</a>.",
+    "description": "Surface describes the physical surface of a feature (in this case, a road or trail).",
     "howToMap": "Add a road's surface by selecting the associated way and choosing the appropriate surface type from the \"Surface\" form in the \"Edit feature\" menu:",
-    "id": "surface",
+    "id": "Surface",
     "name": "Surface",
     "tags": [
-      "surface"
+      "Surface"
     ]
   },
   {
-    "description": "Oneway indicates the oneway access restriction on roads. Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Key:oneway\" target=\"_blank\">OSM wiki</a>.",
-    "howToMap": "Add oneway access by selecting the associated way and clicking \"Assumed to be No\" in the \"One Way\" form of the \"Edit feature\" menu, which will change to \"Yes\" after selection. Note that ways have a directionality, so the direction in which you map the way determines its directionality. However, you can change the <code>oneway=yes</code> tag to <code>oneway=-1</code> in the \"All tags\" table of the \"Edit feature\" menu to reverse its existing directionality (appropriate when a way's directionality already governs another attribute such as a bus route).",
+    "description": "One way indicates the one way access restriction on roads.",
+    "howToMap": "Add one way access by selecting the associated way and clicking \"Assumed to be No\" in the \"One Way\" form of the \"Edit feature\" menu, which will change to \"Yes\" after selection. Note that ways have a directionality, so the direction in which you map the way determines its directionality. However, you can change the <code>oneway=yes</code> tag to <code>oneway=-1</code> in the \"All tags\" table of the \"Edit feature\" menu to reverse its existing directionality (appropriate when a way's directionality already governs another attribute such as a bus route).",
     "id": "oneway",
     "name": "One Way",
     "tags": [
@@ -516,16 +494,16 @@
     ]
   },
   {
-    "description": "Lanes indicate the number of traffic lanes on a highway that are available to motorized traffic (bicycle lanes are therefore excluded). Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Key:lanes\" target=\"_blank\">OSM wiki</a>.",
+    "description": "Lanes indicate the number of traffic lanes on a highway that are available to motorized traffic (bicycle lanes are therefore excluded).",
     "howToMap": "Classify the number of lanes a road has by selecting the associated way and entering the appropriate number into the \"Lanes\" form of the \"Edit feature\" menu:",
-    "id": "lanes",
+    "id": "Lanes",
     "name": "Lanes",
     "tags": [
-      "lanes"
+      "Lanes"
     ]
   },
   {
-    "description": "Speed limit indicates the maximum legal speed limit for general traffic on a road. Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Key:maxspeed\" target=\"_blank\">OSM wiki</a>.",
+    "description": "Speed limit indicates the maximum legal speed limit for general traffic on a road.",
     "howToMap": "Classify a road's speed limit by selecting the associated way and entering the appropriate number into the \"Speed Limit\" form of the \"Edit feature\" menu, along with the appropriate unit of measure (<code>mph</code> is the default).",
     "id": "maxspeed",
     "name": "Speed Limit",
@@ -546,7 +524,7 @@
     "line"
   ],
   "subtypes": [{
-    "description": "A non-motorized trail is intended for non-motorized traffic including pedestrian use (\"foot traffic\"), biking, or horseback riding. Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Tag:highway%3Dpath\" target=\"_blank\">OSM wiki</a>.",
+    "description": "A non-motorized trail is intended for non-motorized traffic including pedestrian use (\"foot traffic\"), biking, or horseback riding.",
     "howToMap": "Add a non-motorized trail by tracing its centerline from beginning to end and selecting \"Non-Motorized Trail\" from the \"Select feature type\" menu:",
     "approvedUsesDescription": "If the trail is intended for specific uses, add the appropriate \"Approved Use\" using the \"Approved Uses\" form in the \"Edit feature\" menu:",
     "approvedUsesId": "Approved Uses",
@@ -557,19 +535,19 @@
     ],
     "id": "path",
     "name": "Non-Motorized Trail",
-    "optionalTags": [
-      "name",
-      "operator",
-      "tracktype",
-      "surface",
-      "width",
-      "incline",
-      "mtb:scale",
-      "mtb:scale:uphill",
-      "mtb:scale:imba",
-      "sac_scale",
-      "trail_visibility",
-      "access"
+    "optionalFields": [
+      "Name",
+      "Operator",
+      "Track Type",
+      "Surface",
+      "Width (Meters)",
+      "Incline",
+      "Mountain Biking Difficulty",
+      "Mountain Biking Uphill Difficulty",
+      "IMBA Trail Difficulty",
+      "Hiking Difficulty",
+      "Trail Visibility",
+      "Approved Uses"
     ],
     "tags": [
       "highway=path"
@@ -592,41 +570,41 @@
     ],
     "id": "track",
     "name": "Motorized Track",
-    "optionalTags": [
-      "name",
-      "operator",
-      "tracktype",
-      "surface",
-      "width",
-      "incline",
-      "mtb:scale",
-      "mtb:scale:uphill",
-      "mtb:scale:imba",
-      "sac_scale",
-      "trail_visibility",
-      "access"
+    "optionalFields": [
+      "Name",
+      "Operator",
+      "Track Type",
+      "Surface",
+      "Width (Meters)",
+      "Incline",
+      "Mountain Biking Difficulty",
+      "Mountain Biking Uphill Difficulty",
+      "IMBA Trail Difficulty",
+      "Hiking Difficulty",
+      "Trail Visibility",
+      "Approved Uses"
     ],
     "tags": [
       "highway=track"
     ]
   },
   {
-    "description": "A piste is a trail intended for winter sports such as downhill and cross-country skiing, dog sledding, and snowshoeing. Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Key:piste:type\" target=\"_blank\">OSM wiki</a>.",
+    "description": "A piste is a trail intended for winter sports such as downhill and cross-country skiing, dog sledding, and snowshoeing.",
     "howToMap": "Add a piste by tracing its centerline from beginning to end and selecting the appropriate preset from the \"Select feature type\" menu. Note: the \"Places Editor Preview\" features a downhill ski trail, one of many piste types below.",
-    "furtherDescription": "<img class=\"img-preset img-responsive img-thumbnail\" src=\"assets/img/preset_piste_hike.jpg\"><div class=\"btn-group dropdown-margin\" role=\"group\"><div class=\"btn-group\" role=\"group\"><button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-expanded=\"false\">Tag<span class=\"caret\"></span></button><ul class=\"dropdown-menu\" role=\"menu\"><li class=\"dropdown-header\" role=\"presentation\">The underlying preset tag(s):</li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:piste:type\" target=\"_blank\"><code>piste:type=hike</code></a></li></ul></div><div class=\"btn-group\" role=\"group\"><button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-expanded=\"false\">Optional fields<span class=\"caret\"></span></button><ul class=\"dropdown-menu\" role=\"menu\"><li role=\"presentation\" class=\"dropdown-header\">(Optionally) add these fields:</li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:name\" target=\"_blank\"><code>name=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:piste:difficulty\" target=\"_blank\"><code>piste:difficulty=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:operator\" target=\"_blank\"><code>operator=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:tracktype\" target=\"_blank\"><code>tracktype=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:surface\" target=\"_blank\"><code>surface=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:width\" target=\"_blank\"><code>width=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:incline\" target=\"_blank\"><code>incline=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:mtb:scale\" target=\"_blank\"><code>mtb:scale=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:mtb:scale:uphill\" target=\"_blank\"><code>mtb:scale:uphill=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:mtb:scale:imba\" target=\"_blank\"><code>mtb:scale:imba=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:sac_scale\" target=\"_blank\"><code>sac_scale=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:trail_visibility\" target=\"_blank\"><code>trail_visibility=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:access\" target=\"_blank\"><code>access=</code></a></li></ul></div></div><img class=\"img-preset img-responsive img-thumbnail\" src=\"assets/img/preset_piste_downhill.jpg\"><div class=\"btn-group dropdown-margin\" role=\"group\"><div class=\"btn-group\" role=\"group\"><button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-expanded=\"false\">Tag<span class=\"caret\"></span></button><ul class=\"dropdown-menu\" role=\"menu\"><li class=\"dropdown-header\" role=\"presentation\">The underlying preset tag(s):</li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:piste:type\" target=\"_blank\"><code>piste:type=downhill</code></a></li></ul></div><div class=\"btn-group\" role=\"group\"><button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-expanded=\"false\">Optional fields<span class=\"caret\"></span></button><ul class=\"dropdown-menu\" role=\"menu\"><li role=\"presentation\" class=\"dropdown-header\">(Optionally) add these fields:</li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:name\" target=\"_blank\"><code>name=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:piste:difficulty\" target=\"_blank\"><code>piste:difficulty=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:operator\" target=\"_blank\"><code>operator=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:tracktype\" target=\"_blank\"><code>tracktype=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:surface\" target=\"_blank\"><code>surface=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:width\" target=\"_blank\"><code>width=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:incline\" target=\"_blank\"><code>incline=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:mtb:scale\" target=\"_blank\"><code>mtb:scale=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:mtb:scale:uphill\" target=\"_blank\"><code>mtb:scale:uphill=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:mtb:scale:imba\" target=\"_blank\"><code>mtb:scale:imba=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:sac_scale\" target=\"_blank\"><code>sac_scale=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:trail_visibility\" target=\"_blank\"><code>trail_visibility=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:access\" target=\"_blank\"><code>access=</code></a></li></ul></div></div><img class=\"img-preset img-responsive img-thumbnail\" src=\"assets/img/preset_piste_nordic.jpg\"><div class=\"btn-group dropdown-margin\" role=\"group\"><div class=\"btn-group\" role=\"group\"><button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-expanded=\"false\">Tag<span class=\"caret\"></span></button><ul class=\"dropdown-menu\" role=\"menu\"><li class=\"dropdown-header\" role=\"presentation\">The underlying preset tag(s):</li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:piste:type\" target=\"_blank\"><code>piste:type=nordic</code></a></li></ul></div><div class=\"btn-group\" role=\"group\"><button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-expanded=\"false\">Optional fields<span class=\"caret\"></span></button><ul class=\"dropdown-menu\" role=\"menu\"><li role=\"presentation\" class=\"dropdown-header\">(Optionally) add these fields:</li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:name\" target=\"_blank\"><code>name=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:piste:difficulty\" target=\"_blank\"><code>piste:difficulty=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:operator\" target=\"_blank\"><code>operator=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:tracktype\" target=\"_blank\"><code>tracktype=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:surface\" target=\"_blank\"><code>surface=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:width\" target=\"_blank\"><code>width=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:incline\" target=\"_blank\"><code>incline=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:mtb:scale\" target=\"_blank\"><code>mtb:scale=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:mtb:scale:uphill\" target=\"_blank\"><code>mtb:scale:uphill=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:mtb:scale:imba\" target=\"_blank\"><code>mtb:scale:imba=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:sac_scale\" target=\"_blank\"><code>sac_scale=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:trail_visibility\" target=\"_blank\"><code>trail_visibility=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:access\" target=\"_blank\"><code>access=</code></a></li></ul></div></div><img class=\"img-preset img-responsive img-thumbnail\" src=\"assets/img/preset_piste_skitour.jpg\"><div class=\"btn-group dropdown-margin\" role=\"group\"><div class=\"btn-group\" role=\"group\"><button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-expanded=\"false\">Tag<span class=\"caret\"></span></button><ul class=\"dropdown-menu\" role=\"menu\"><li class=\"dropdown-header\" role=\"presentation\">The underlying preset tag(s):</li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:piste:type\" target=\"_blank\"><code>piste:type=skitour</code></a></li></ul></div><div class=\"btn-group\" role=\"group\"><button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-expanded=\"false\">Optional fields<span class=\"caret\"></span></button><ul class=\"dropdown-menu\" role=\"menu\"><li role=\"presentation\" class=\"dropdown-header\">(Optionally) add these fields:</li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:name\" target=\"_blank\"><code>name=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:piste:difficulty\" target=\"_blank\"><code>piste:difficulty=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:operator\" target=\"_blank\"><code>operator=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:tracktype\" target=\"_blank\"><code>tracktype=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:surface\" target=\"_blank\"><code>surface=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:width\" target=\"_blank\"><code>width=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:incline\" target=\"_blank\"><code>incline=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:mtb:scale\" target=\"_blank\"><code>mtb:scale=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:mtb:scale:uphill\" target=\"_blank\"><code>mtb:scale:uphill=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:mtb:scale:imba\" target=\"_blank\"><code>mtb:scale:imba=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:sac_scale\" target=\"_blank\"><code>sac_scale=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:trail_visibility\" target=\"_blank\"><code>trail_visibility=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:access\" target=\"_blank\"><code>access=</code></a></li></ul></div></div><img class=\"img-preset img-responsive img-thumbnail\" src=\"assets/img/preset_piste_sleigh.jpg\"><div class=\"btn-group dropdown-margin\" role=\"group\"><div class=\"btn-group\" role=\"group\"><button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-expanded=\"false\">Tag<span class=\"caret\"></span></button><ul class=\"dropdown-menu\" role=\"menu\"><li class=\"dropdown-header\" role=\"presentation\">The underlying preset tag(s):</li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:piste:type\" target=\"_blank\"><code>piste:type=sleigh</code></a></li></ul></div><div class=\"btn-group\" role=\"group\"><button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-expanded=\"false\">Optional fields<span class=\"caret\"></span></button><ul class=\"dropdown-menu\" role=\"menu\"><li role=\"presentation\" class=\"dropdown-header\">(Optionally) add these fields:</li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:name\" target=\"_blank\"><code>name=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:piste:difficulty\" target=\"_blank\"><code>piste:difficulty=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:operator\" target=\"_blank\"><code>operator=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:tracktype\" target=\"_blank\"><code>tracktype=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:surface\" target=\"_blank\"><code>surface=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:width\" target=\"_blank\"><code>width=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:incline\" target=\"_blank\"><code>incline=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:mtb:scale\" target=\"_blank\"><code>mtb:scale=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:mtb:scale:uphill\" target=\"_blank\"><code>mtb:scale:uphill=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:mtb:scale:imba\" target=\"_blank\"><code>mtb:scale:imba=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:sac_scale\" target=\"_blank\"><code>sac_scale=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:trail_visibility\" target=\"_blank\"><code>trail_visibility=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:access\" target=\"_blank\"><code>access=</code></a></li></ul></div></div><p>A piste can also be added as a POI, using the \"Point\" tool to create a point and selecting the appropriate preset from the \"Select feature type\" menu.</p>",
+    "furtherDescription": "<img class=\"img-preset img-responsive img-thumbnail\" src=\"assets/img/preset_piste_hike.jpg\"><div class=\"btn-group dropdown-margin\" role=\"group\"><div class=\"btn-group\" role=\"group\"><button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-expanded=\"false\">Optional fields<span class=\"caret\"></span></button><ul class=\"dropdown-menu\" role=\"menu\"><li role=\"presentation\" class=\"dropdown-header\">(Optionally) add these fields:</li><li><strong>Name</strong></li><li><strong>Difficulty=</strong></li><li><strong>Operator=</strong></li><li><strong>Track Type</strong></li><li><strong>Surface</strong></li><li><strong>Width (Meters)</strong></li><li><strong>Incline</strong></li><li><strong>Mountain Biking Difficulty</strong></li><li><strong>Hiking Difficulty</strong></li><li><strong>Trail Visibility</strong></li><li><strong>Approved Uses</strong></li></ul></div></div><img class=\"img-preset img-responsive img-thumbnail\" src=\"assets/img/preset_piste_downhill.jpg\"><div class=\"btn-group dropdown-margin\" role=\"group\"><div class=\"btn-group\" role=\"group\"><button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-expanded=\"false\">Optional fields<span class=\"caret\"></span></button><ul class=\"dropdown-menu\" role=\"menu\"><li role=\"presentation\" class=\"dropdown-header\">(Optionally) add these fields:</li><li><strong>Name</strong></li><li><strong>Difficulty</strong></li><li><strong>Operator</strong></li><li><strong>Track Type</strong></li><li><strong>Surface</strong></li><li><strong>Width (Meters)</strong></li><li><strong>Incline</strong></li><li><strong>Mountain Biking Difficulty</strong></li><li><strong>Mountain Biking Uphill Difficulty</strong></li><li><strong>IMBA Trail Difficulty</strong></li><li><strong>Hiking Difficulty</strong></li><li><strong>Trail Visibility</strong></li><li><strong>Approved Uses</strong></li></ul></div></div><img class=\"img-preset img-responsive img-thumbnail\" src=\"assets/img/preset_piste_nordic.jpg\"><div class=\"btn-group dropdown-margin\" role=\"group\"><div class=\"btn-group\" role=\"group\"><button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-expanded=\"false\">Optional fields<span class=\"caret\"></span></button><ul class=\"dropdown-menu\" role=\"menu\"><li role=\"presentation\" class=\"dropdown-header\">(Optionally) add these fields:</li><li><strong>Name</strong></li><li><strong>Difficulty</strong></li><li><strong>Operator</strong></li><li><strong>Track Type</strong></li><li><strong>Surface</strong></li><li><strong>Width (Meters)</strong></li><li><strong>Incline</strong></li><li><strong>Mountain Biking Difficulty</strong></li><li><strong>Mountain Biking Uphill Difficulty</strong></li><li><strong>IMBA Trail Difficulty</strong></li><li><strong>Hiking Difficulty</strong></li><li><strong>Trail Visibility</strong></li><li><strong>Approved Uses</strong></li></ul></div></div><img class=\"img-preset img-responsive img-thumbnail\" src=\"assets/img/preset_piste_skitour.jpg\"><div class=\"btn-group dropdown-margin\" role=\"group\"><div class=\"btn-group\" role=\"group\"><button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-expanded=\"false\">Optional fields<span class=\"caret\"></span></button><ul class=\"dropdown-menu\" role=\"menu\"><li role=\"presentation\" class=\"dropdown-header\">(Optionally) add these fields:</li><li><strong>Name</strong></li><li><strong>Difficulty</strong></li><li><strong>Operator</strong></li><li><strong>Track Type</strong></li><li><strong>Surface</strong></li><li><strong>Width (Meters)</strong></li><li><strong>Incline</strong></li><li><strong>Mountain Biking Difficulty</strong></li><li><strong>Mountain Biking Uphill Difficulty</strong></li><li><strong>IMBA Trail Difficulty</strong></li><li><strong>Hiking Difficulty</strong></li><li><strong>Trail Visibility</strong></li><li><strong>Approved Uses</strong></li></ul></div></div><img class=\"img-preset img-responsive img-thumbnail\" src=\"assets/img/preset_piste_sleigh.jpg\"><div class=\"btn-group dropdown-margin\" role=\"group\"><div class=\"btn-group\" role=\"group\"><button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-expanded=\"false\">Optional fields<span class=\"caret\"></span></button><ul class=\"dropdown-menu\" role=\"menu\"><li role=\"presentation\" class=\"dropdown-header\">(Optionally) add these fields:</li><li><strong>Name</strong></li><li><strong>Difficulty</strong></li><li><strong>Operator</strong></li><li><strong>Track Type</strong></li><li><strong>Surface</strong></li><li><strong>Width (Meters)</strong></li><li><strong>Incline</strong></li><li><strong>Mountain Biking Difficulty</strong></li><li><strong>Mountain Biking Uphill Difficulty</strong></li><li><strong>IMBA Trail Difficulty</strong></li><li><strong>Hiking Difficulty</strong></li><li><strong>Trail Visibility</strong></li><li><strong>Approved Uses</strong></li></ul></div></div><p>A piste can also be added as a POI, using the \"Point\" tool to create a point and selecting the appropriate preset from the \"Select feature type\" menu.</p>",
     "id": "piste",
     "name": "Piste"
   },
   {
     "description": "A water trail is a trail running through a waterway, intended for canoes, kayaks, motorboats, etc. Places supports two types of water trails: \"Non-Motorized Watercraft Trail,\" for a route accessible to non-motorized watercraft such as a canoe or kayak, and \"Motorized Watercraft Trail,\" for a route accessible to motorized watercraft such as a powerboat or motorized sailboat.",
     "howToMap": "Add a water trail by tracing its centerline from beginning to end and selecting the appropriate preset from the \"Select feature type\" menu. Note: the \"Places Editor Preview\" features a motorized watercraft trail.",
-    "furtherDescription": "<img class=\"img-preset img-responsive img-thumbnail\" src=\"assets/img/preset_water_trail_non_motorized.jpg\"><div class=\"btn-group dropdown-margin\" role=\"group\"><div class=\"btn-group\" role=\"group\"><button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-expanded=\"false\">Tag<span class=\"caret\"></span></button><ul class=\"dropdown-menu\" role=\"menu\"><li class=\"dropdown-header\" role=\"presentation\">The underlying preset tag(s):</li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:waterway\" target=\"_blank\"><code>waterway=yes</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:canoe\" target=\"_blank\"><code>canoe=yes</code></a></li></ul></div><div class=\"btn-group\" role=\"group\"><button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-expanded=\"false\">Optional fields<span class=\"caret\"></span></button><ul class=\"dropdown-menu\" role=\"menu\"><li role=\"presentation\" class=\"dropdown-header\">(Optionally) add these fields:</li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:name\" target=\"_blank\"><code>name=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:operator\" target=\"_blank\"><code>operator=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:whitewater\" target=\"_blank\"><code>whitewater=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:width\" target=\"_blank\"><code>width=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:section_grade\" target=\"_blank\"><code>section_grade=</code></a></li></ul></div></div><img class=\"img-preset img-responsive img-thumbnail\" src=\"assets/img/preset_water_trail_motorized.jpg\"><div class=\"btn-group dropdown-margin\" role=\"group\"><div class=\"btn-group\" role=\"group\"><button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-expanded=\"false\">Tag<span class=\"caret\"></span></button><ul class=\"dropdown-menu\" role=\"menu\"><li class=\"dropdown-header\" role=\"presentation\">The underlying preset tag(s):</li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:waterway\" target=\"_blank\"><code>waterway=yes</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:motorboat\" target=\"_blank\"><code>motorboat=yes</code></a></li></ul></div><div class=\"btn-group\" role=\"group\"><button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-expanded=\"false\">Optional fields<span class=\"caret\"></span></button><ul class=\"dropdown-menu\" role=\"menu\"><li role=\"presentation\" class=\"dropdown-header\">(Optionally) add these fields:</li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:name\" target=\"_blank\"><code>name=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:operator\" target=\"_blank\"><code>operator=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:whitewater\" target=\"_blank\"><code>whitewater=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:width\" target=\"_blank\"><code>width=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:section_grade\" target=\"_blank\"><code>section_grade=</code></a></li></ul></div></div><p>The start and end of a water trail is often a boat launch, which is added as a POI (see the <a href=\"#boat_launch\">boat launch</a> section for more information).</p>",
+    "furtherDescription": "<img class=\"img-preset img-responsive img-thumbnail\" src=\"assets/img/preset_water_trail_non_motorized.jpg\"><div class=\"btn-group dropdown-margin\" role=\"group\"><div class=\"btn-group\" role=\"group\"><button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-expanded=\"false\">Optional fields<span class=\"caret\"></span></button><ul class=\"dropdown-menu\" role=\"menu\"><li role=\"presentation\" class=\"dropdown-header\">(Optionally) add these fields:</li><li><strong>Name</strong></li><li><strong>Operator</strong></li><li><strong>Width (Meters)</strong></li></ul></div></div><img class=\"img-preset img-responsive img-thumbnail\" src=\"assets/img/preset_water_trail_motorized.jpg\"><div class=\"btn-group dropdown-margin\" role=\"group\"><div class=\"btn-group\" role=\"group\"><button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-expanded=\"false\">Optional fields<span class=\"caret\"></span></button><ul class=\"dropdown-menu\" role=\"menu\"><li role=\"presentation\" class=\"dropdown-header\">(Optionally) add these fields:</li><li><strong>Name</strong></li><li><strong>Operator</strong></li><li><strong>Width (Meters)</strong></li></ul></div></div><p>The start and end of a water trail is often a boat launch, which is added as a POI (see the <a href=\"#boat_launch\">boat launch</a> section for more information).</p>",
     "id": "water_trail",
     "name": "Water Trail"
   }
   ]
 },{
-  "description": "Parking takes two primary forms in Places: <a href=\"#parking_amenity\">parking (amenity)</a> (a generic term, indicating parking is available as an amenity, typically in the form of a parking lot or garage) and <a href=\"#parking_aisle\">parking aisles</a>. Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Tag:amenity%3Dparking\" target=\"_blank\">parking</a> and <a href=\"http://wiki.openstreetmap.org/wiki/Tag:service%3Dparking_aisle\" target=\"_blank\">parking aisle</a> OSM wikis.",
+  "description": "Parking takes two primary forms in Places: <a href=\"#parking_lot\">parking lots</a> and <a href=\"#parking_aisle\">parking aisles</a>.",
   "howToMap": "Add parking by using the \"Area,\" \"Point,\" and/or \"Line\" tool, depending on the feature type (described below).",
   "featureTypes": "Places supports the following parking types:",
   "featureTypesId": "Parking Types",
@@ -639,21 +617,21 @@
     "line"
   ],
   "subtypes": [{
-    "description": "Parking is a facility available for use by the public, customers, or other authorized users for the parking of motor vehicles (cars, trucks, motorcycles, etc). This can come in various forms, including a parking lot or garage, among others. Learn more from the <a href=\"http://wiki.openstreetmap.org/wiki/Tag:amenity%3Dparking\" target=\"_blank\">OSM wiki</a>.",
-    "howToMap": "Adding parking is generally a two-step process. If the amenity is a parking lot or garage, add it by tracing the area footprint and selecting \"Parking\" from the \"Select feature type\" menu:",
-    "furtherDescription": "<img class=\"img-preset img-responsive img-thumbnail\" src=\"assets/img/preset_parking_amenity.jpg\"><div class=\"btn-group dropdown-margin role=\"group\"><div class=\"btn-group\" role=\"group\"><button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-expanded=\"false\">Tag<span class=\"caret\"></span></button><ul class=\"dropdown-menu\" role=\"menu\"><li class=\"dropdown-header\" role=\"presentation\">The underlying preset tag(s):</li><li><a href=\"http://wiki.openstreetmap.org/wiki/Tag:amenity=parking\" target=\"_blank\"><code>amenity=parking</code></a></li></ul></div><div class=\"btn-group\" role=\"group\"><button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-expanded=\"false\">Optional fields<span class=\"caret\"></span></button><ul class=\"dropdown-menu\" role=\"menu\"><li role=\"presentation\" class=\"dropdown-header\">(Optionally) add these fields:</li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:name\" target=\"_blank\"><code>name=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:operator\" target=\"_blank\"><code>operator=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:address\" target=\"_blank\"><code>addr=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:capacity\" target=\"_blank\"><code>capacity=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:maxstay\" target=\"_blank\"><code>maxstay=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:fee\" target=\"_blank\"><code>fee=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:access\" target=\"_blank\"><code>access=</code></a></li></ul></div></div><p>Next, create a point in the center of the area and select \"Parking\" from the \"Select feature type\" menu to add it as a POI. If the parking area is undefined simply add the point without defining an area.</p><img class=\"img-preset img-responsive img-thumbnail\" src=\"assets/img/preset_parking_point.jpg\"><div class=\"btn-group\" role=\"group\"><div class=\"btn-group\" role=\"group\"><button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-expanded=\"false\">Tag<span class=\"caret\"></span></button><ul class=\"dropdown-menu\" role=\"menu\"><li class=\"dropdown-header\" role=\"presentation\">The underlying preset tag(s):</li><li><a href=\"http://wiki.openstreetmap.org/wiki/Tag:amenity=parking\" target=\"_blank\"><code>amenity=parking</code></a></li></ul></div><div class=\"btn-group\" role=\"group\"><button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-expanded=\"false\">Optional fields<span class=\"caret\"></span></button><ul class=\"dropdown-menu\" role=\"menu\"><li role=\"presentation\" class=\"dropdown-header\">(Optionally) add these fields:</li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:name\" target=\"_blank\"><code>name=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:operator\" target=\"_blank\"><code>operator=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:address\" target=\"_blank\"><code>addr=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:capacity\" target=\"_blank\"><code>capacity=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:maxstay\" target=\"_blank\"><code>maxstay=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:fee\" target=\"_blank\"><code>fee=</code></a></li><li><a href=\"http://wiki.openstreetmap.org/wiki/Key:access\" target=\"_blank\"><code>access=</code></a></li></ul></div></div>",
-    "id": "parking_amenity",
-    "name": "Parking (amenity)"
+    "description": "A parking lot is a facility available for use by the public, customers, or other authorized users for the parking of motor vehicles (cars, trucks, motorcycles, etc). This can come in various forms, including a standalone parking lot or garage, among others.",
+    "howToMap": "Adding a parking lot is generally a two-step process. First, trace the area footprint and select \"Parking\" from the \"Select feature type\" menu:",
+    "furtherDescription": "<img class=\"img-preset img-responsive img-thumbnail\" src=\"assets/img/preset_parking_lot.jpg\"><div class=\"btn-group dropdown-margin role=\"group\"><div class=\"btn-group\" role=\"group\"><button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-expanded=\"false\">Optional fields<span class=\"caret\"></span></button><ul class=\"dropdown-menu\" role=\"menu\"><li role=\"presentation\" class=\"dropdown-header\">(Optionally) add these fields:</li><li><strong>Name</strong></li><li><strong>Operator</strong></li><li><strong>Address</strong></li><li><strong>Capacity</strong></li><li><strong>Fee</strong></li><li><strong>Approved Uses</strong></li></ul></div></div><p>Next, create a point in the center of the area and select \"Parking\" from the \"Select feature type\" menu to add it as a POI. If electric vehicle parking is available, create another point in the center of the area and select \"Electric Vehicle Parking\" from the \"Select feature type\" menu as another POI. If the parking area is undefined simply add the point(s) without defining an area.</p><img class=\"img-preset img-responsive img-thumbnail\" src=\"assets/img/preset_parking_point.jpg\"><div class=\"btn-group\" role=\"group\"><div class=\"btn-group\" role=\"group\"><button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-expanded=\"false\">Optional fields<span class=\"caret\"></span></button><ul class=\"dropdown-menu\" role=\"menu\"><li role=\"presentation\" class=\"dropdown-header\">(Optionally) add these fields:</li><li><strong>Name</strong></li><li><strong>Operator</strong></li><li><strong>Address</strong></li><li><strong>Capacity</strong></li><li><strong>Fee</strong></li><li><strong>Approved Uses</strong></li></ul></div></div>",
+    "id": "parking_lot",
+    "name": "Parking Lot"
   },{
-    "description": "A parking aisle is a subordinated way in a parking lot between rows of parking spaces that vehicles use to drive into and out of the spaces. Learn more from <a href=\"http://wiki.openstreetmap.org/wiki/Tag:service%3Dparking_aisle\" target=\"_blank\">OSM wiki</a>.",
+    "description": "A parking aisle is a subordinated way in a parking lot between rows of parking spaces that vehicles use to drive into and out of the spaces.",
     "howToMap": "Add a parking aisle by tracing its centerline from beginning to end and selecting \"Parking Aisle\" from the \"Select feature type\" menu. The main way(s) in the parking lot, for entering and connecting multiple parking aisles, should be tagged as <a href=\"#service_road\">service roads</a>.",
     "id": "parking_aisle",
     "name": "Parking Aisle",
-    "optionalTags": [
-      "name",
-      "surface",
-      "oneway",
-      "access"
+    "optionalFields": [
+      "Name",
+      "Surface",
+      "One Way",
+      "Approved Uses"
     ],
     "tags": [
       "highway=service",
