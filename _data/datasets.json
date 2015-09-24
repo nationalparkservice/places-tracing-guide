@@ -1,7 +1,7 @@
 [{
   "description": "A point of interest or \"POI\" is represented by a point or \"node\" on the map and has geographic coordinates (latitude and longitude). A POI can be a standalone node or it can be part of a \"way\" (an ordered list of nodes representing a linear feature or area).",
   "howToMap": "Add a point of interest using Places Editor's \"Point\" tool to create a point on the map and select the appropriate preset from the \"Select feature type\" menu.",
-  "featureTypes": "Places supports a wide variety of POIs, a full list of which can be found in our <a href=\"https://docs.google.com/spreadsheets/d/1XFqkmIYMEp73q9flgNto9QJim6N5hbacgkUAgdf0rhE/edit?usp=sharing\" target=\"_blank\">preset spreadsheet</a> <span class=\"nps-only\">(NPS-only)</span>. This guide is intended to serve as a \"starter kit\" for contributing to Places and is intentionally not comprehensive, including only the basic and most common POI types. Don't see the feature you're looking for? <a href=\"https://github.com/nationalparkservice/places-data/issues/new\" target=\"_blank\">Open an issue on GitHub</a>.<p style=\"margin-top:10px;\"><em>The following are the priority POI types for the NPS.gov Centennial redesign, which will drive individual park pages on the new site:</p><ul><li>Visitor Centers</li><li>Entrance Stations</li><li>Campgrounds</li><li>Park Districts</li><li>Trailheads</li></ul></em>",
+  "featureTypes": "Places supports a wide variety of POIs, a full list of which can be found in our <a href=\"https://docs.google.com/spreadsheets/d/1XFqkmIYMEp73q9flgNto9QJim6N5hbacgkUAgdf0rhE/edit?usp=sharing\" target=\"_blank\">preset spreadsheet</a> <span class=\"nps-only\">(NPS-only)</span>. This guide is intended to serve as a \"starter kit\" for contributing to Places and is intentionally not comprehensive, including only the basic and most common POI types. Don't see the feature you're looking for? <a href=\"npmap@nps.gov\" target=\"_blank\">Send us an email</a> or <a href=\"https://github.com/nationalparkservice/places-data/issues/new\" target=\"_blank\">open an issue on GitHub</a>.<p style=\"margin-top:10px;\"><em>The following are the priority POI types for the NPS.gov Centennial redesign, which will drive individual park pages on the new site:</p><ul><li>Visitor Centers</li><li>Entrance Stations</li><li>Campgrounds</li><li>Park Districts</li><li>Trailheads</li></ul></em>",
   "featureTypesId": "POI Types",
   "id": "poi",
   "name": "Points of Interest",
@@ -122,7 +122,8 @@
       "Hours",
       "Disposal",
       "Gender",
-      "Access"
+      "Fee",
+      "Allowed Access"
     ],
     "tags": [
       "amenity=toilets"
@@ -223,10 +224,10 @@
     ]
   },
   {
-    "description": "A waste basket is a single small container for depositing garbage that is easily accesible for pedestrians. Similar expressions: rubbish bin, litter bin, trash can, garbage can.",
-    "howToMap": "Add a waste basket by creating a point on top of the container and selecting \"Waste Basket\" from the \"Select feature type\" menu:",
-    "id": "waste_basket",
-    "name": "Waste Basket",
+    "description": "A litter receptacle is a single small container for depositing garbage that is easily accesible for pedestrians. Similar expressions: trash can, garbage can, waste basket, rubbish bin, litter bin.",
+    "howToMap": "Add a litter receptacle by creating a point on top of the container and selecting \"Litter Receptacle\" from the \"Select feature type\" menu:",
+    "id": "litter_receptacle",
+    "name": "Litter Receptacle",
     "optionalFields": [
       "Name",
       "Operator",
@@ -251,15 +252,15 @@
     ]
   },
   {
-    "description": "Drinking water is a location at which potable water is available for consumption. Typically this comes in the form of a water fountain.",
-    "howToMap": "Add drinking water by creating a point on top of the amenity and selecting \"Drinking Water\" from the \"Select feature type\" menu:",
-    "id": "drinking_water",
-    "name": "Drinking Water",
+    "description": "Potable water is a location at which potable water is available for consumption. Typically this comes in the form of a water fountain.",
+    "howToMap": "Add potable water by creating a point on top of the amenity and selecting \"Potable Water\" from the \"Select feature type\" menu:",
+    "id": "potable_water",
+    "name": "Potable Water",
     "optionalFields": [
       "Name",
       "Operator",
       "Description",
-      "Access"
+      "Allowed Access"
     ],
     "tags": [
       "amenity=drinking_water"
@@ -294,7 +295,8 @@
     "optionalFields": [
       "Name",
       "Operator",
-      "Width (Meters)"
+      "Width (Meters)",
+      "Approved Water Uses"
     ],
     "tags": [
       "leisure=slipway"
