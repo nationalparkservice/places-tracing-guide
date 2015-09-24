@@ -334,7 +334,7 @@
 },{
   "description": "A road is a way intended primarily for passage of motorized vehicles.",
   "howToMap": "Add a road by using the \"Line\" tool to trace its centerline from beginning to end and selecting the appropriate preset from the \"Select feature type\" menu. <em>If a road's classification is unknown, default to the <a href=\"#unknown_road\">\"Unknown Road\"</a> preset.</em>",
-  "featureTypes": "Places supports a variety of road classifications, outlined below. Basic road structures, attributes, and topology best practices are also outlined here including adding a bridge, a tunnel, surface type, directionality, lanes, speed limit and how to handle intersections.",
+  "featureTypes": "Places supports a variety of road classifications, outlined below. Basic road structures, attributes, and topology best practices are also outlined here.",
   "featureTypesId": "Road Types/Attributes",
   "id": "roads",
   "name": "Roads",
@@ -506,7 +506,7 @@
   },
   {
     "description": "A bridge is a structure used to carry a road, railway, or similar feature over another feature.",
-    "howToMap": "Add a bridge by splitting the upper way at each end of the bridge (where it joins solid ground) and selecting \"Bridge\" from the \"Structure\" form in the \"Edit feature\" menu. Remember to maintain the road's existing classification, e.g. \"Primary Road.\"",
+    "howToMap": "Add a bridge by splitting the upper way at each end of the bridge (where it joins solid ground) and selecting \"Bridge\" from the \"Structure\" form in the \"Edit feature\" menu. Remember to maintain the road or trail's existing classification.",
     "id": "bridge",
     "name": "Bridge",
     "optionalFields": [
@@ -520,7 +520,7 @@
   },
   {
     "description": "A tunnel is an underground or underwater passageway enclosed except for its entrance and exit at each end.",
-    "howToMap": "Add a tunnel by splitting the enclosed section of the way and selecting \"Tunnel\" from the \"Structure\" form in the \"Edit feature\" menu. Remember to maintain the road's existing classification, e.g. \"Primary Road.\"",
+    "howToMap": "Add a tunnel by splitting the enclosed section of the way and selecting \"Tunnel\" from the \"Structure\" form in the \"Edit feature\" menu. Remember to maintain the road or trail's existing classification.",
     "id": "tunnel",
     "name": "Tunnel",
     "optionalFields": [
@@ -531,6 +531,15 @@
     ],
     "tags": [
       "tunnel=yes"
+    ]
+  },
+  {
+    "description": "A crosswalk is a path across an intersection of multiple ways (roads and/or trails) marked off for pedestrian crossing.",
+    "howToMap": "Add a crosswalk by using the \"Structure\" form in the \"Edit feature\" menu to add the associated way as a \"Crosswalk\". Remember to maintain the road or trail's existing classification.",
+    "id": "crosswalk",
+    "name": "Crosswalk",
+    "tags": [
+      "crossing=yes"
     ]
   },
   {
@@ -578,9 +587,9 @@
   }
 ]
 },{
-  "description": "Generally speaking, a trail is intended primarily for recreational use such as walking, hiking, biking, skiing, etc.",
-  "howToMap": "Add a trail by using the \"Line\" tool to trace its centerline from beginning to end and selecting the appropriate preset from the \"Select feature type\" menu. <em>If a trail's classification is unknown, default to the <a href=\"#path\">\"Non-Motorized Trail\"</a> preset.</em> Remember to add a <a href=\"#trailhead\">trailhead</a> to the start of each trail, along with the associated approved uses. If a trail crosses a road, forming a crosswalk, use the \"Structure\" form in the \"Edit feature\" menu to add the associated way as a \"Crosswalk\" (see the <a href=\"#sidewalk\">sidewalk</a> section for more information).",
-  "featureTypes": "The presets for different trail types will vary, classified below.<p><em>Trails are a priority feature type for the NPS.gov Centennial redesign and will drive a \"Trails\" page for every park.</em>",
+  "description": "A trail is a way intended primarily for recreational use such as hiking, biking, horseback riding, skiing, etc.",
+  "howToMap": "Add a trail by using the \"Line\" tool to trace its centerline from beginning to end and selecting the appropriate preset from the \"Select feature type\" menu. <em>If a trail's classification is unknown, default to the <a href=\"#trail\">\"Trail\"</a> preset.</em> Remember to add a <a href=\"#trailhead\">trailhead</a> to the start of each trail, given an official trailhead is present, along with the associated approved uses.",
+  "featureTypes": "Trails generally fall under two \"superclasses\": \"Trail\" and \"Motorized Trail\", while specific uses (e.g. biking, horseback riding, downhill skiing, etc) define more specific presets. Steps are also included here.<p><em>Trails are a priority feature type for the NPS.gov Centennial redesign and will drive a \"Trails\" page for every park.</em>",
   "featureTypesId": "Trail Types",
   "id": "trails",
   "name": "Trails",
@@ -589,17 +598,17 @@
     "line"
   ],
   "subtypes": [{
-    "description": "A non-motorized trail is intended for non-motorized traffic including pedestrian use (\"foot traffic\"), biking, or horseback riding.",
-    "howToMap": "Add a non-motorized trail by tracing its centerline from beginning to end and selecting \"Non-Motorized Trail\" from the \"Select feature type\" menu:",
-    "approvedUsesDescription": "If the trail is intended for specific uses, add the appropriate \"Approved Use\" using the \"Approved Uses\" form in the \"Edit feature\" menu:",
+    "description": "A trail is intended for non-motorized traffic including pedestrian use (\"foot traffic\"), biking, or horseback riding.",
+    "howToMap": "Add a trail by tracing its centerline from beginning to end and selecting \"Trail\" from the \"Select feature type\" menu:",
+    "approvedUsesDescription": "If the trail is intended for specific uses, add them using the \"Approved Uses\" form in the \"Edit feature\" menu:",
     "approvedUsesId": "Approved Uses",
     "approvedUsesTags": [
       "foot",
       "bicycle",
       "horse"
     ],
-    "id": "path",
-    "name": "Non-Motorized Trail",
+    "id": "trail",
+    "name": "Trail",
     "optionalFields": [
       "Name",
       "Operator",
@@ -612,15 +621,16 @@
       "IMBA Trail Difficulty",
       "Hiking Difficulty",
       "Trail Visibility",
-      "Approved Uses"
+      "Approved Uses",
+      "Structure"
     ],
     "tags": [
       "highway=path"
     ]
   },
   {
-    "description": "A motorized track is permissive to motorized traffic, such as all-terrain and four-wheel drive vehicles, motorcycles, and snowmobiles. A motorized track can be permissive to non-motorized traffic as well, but it must be permissive to motorized traffic to warrant this classification.",
-    "howToMap": "Add a motorized track by tracing its centerline from beginning to end and selecting \"Motorized Track\" from the \"Select feature type\" menu:",
+    "description": "A motorized trail is permissive to motorized traffic, such as all-terrain and four-wheel drive vehicles, motorcycles, and snowmobiles. It can be permissive to non-motorized traffic as well, but it must be permissive to motorized traffic to warrant this classification.",
+    "howToMap": "Add a motorized trail by tracing its centerline from beginning to end and selecting \"Motorized Trail\" from the \"Select feature type\" menu:",
     "approvedUsesDescription": "If the trail is intended for specific uses, add the appropriate \"Approved Use\" using the \"Approved Uses\" form in the \"Edit feature\" menu:",
     "approvedUsesId": "Approved Uses",
     "approvedUsesTags": [
@@ -633,8 +643,8 @@
       "snowmobile",
       "horse"
     ],
-    "id": "track",
-    "name": "Motorized Track",
+    "id": "motorized_trail",
+    "name": "Motorized Trail",
     "optionalFields": [
       "Name",
       "Operator",
@@ -647,25 +657,64 @@
       "IMBA Trail Difficulty",
       "Hiking Difficulty",
       "Trail Visibility",
-      "Approved Uses"
+      "Approved Uses",
+      "Structure"
     ],
     "tags": [
       "highway=track"
     ]
   },
   {
-    "description": "A piste is a trail intended for winter sports such as downhill and cross-country skiing, dog sledding, and snowshoeing.",
-    "howToMap": "Add a piste by tracing its centerline from beginning to end and selecting the appropriate preset from the \"Select feature type\" menu. Note: the \"Places Editor Preview\" features a downhill ski trail, one of many piste types below.",
-    "furtherDescription": "<img class=\"img-preset img-responsive img-thumbnail\" src=\"assets/img/preset_piste_hike.jpg\"><div class=\"btn-group dropdown-margin\" role=\"group\"><div class=\"btn-group\" role=\"group\"><button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-expanded=\"false\">Optional fields<span class=\"caret\"></span></button><ul class=\"dropdown-menu\" role=\"menu\"><li role=\"presentation\" class=\"dropdown-header\">(Optionally) add these fields:</li><li><strong>Name</strong></li><li><strong>Difficulty=</strong></li><li><strong>Operator=</strong></li><li><strong>Track Type</strong></li><li><strong>Surface</strong></li><li><strong>Width (Meters)</strong></li><li><strong>Incline</strong></li><li><strong>Mountain Biking Difficulty</strong></li><li><strong>Hiking Difficulty</strong></li><li><strong>Trail Visibility</strong></li><li><strong>Approved Uses</strong></li></ul></div></div><img class=\"img-preset img-responsive img-thumbnail\" src=\"assets/img/preset_piste_downhill.jpg\"><div class=\"btn-group dropdown-margin\" role=\"group\"><div class=\"btn-group\" role=\"group\"><button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-expanded=\"false\">Optional fields<span class=\"caret\"></span></button><ul class=\"dropdown-menu\" role=\"menu\"><li role=\"presentation\" class=\"dropdown-header\">(Optionally) add these fields:</li><li><strong>Name</strong></li><li><strong>Difficulty</strong></li><li><strong>Operator</strong></li><li><strong>Track Type</strong></li><li><strong>Surface</strong></li><li><strong>Width (Meters)</strong></li><li><strong>Incline</strong></li><li><strong>Mountain Biking Difficulty</strong></li><li><strong>Mountain Biking Uphill Difficulty</strong></li><li><strong>IMBA Trail Difficulty</strong></li><li><strong>Hiking Difficulty</strong></li><li><strong>Trail Visibility</strong></li><li><strong>Approved Uses</strong></li></ul></div></div><img class=\"img-preset img-responsive img-thumbnail\" src=\"assets/img/preset_piste_nordic.jpg\"><div class=\"btn-group dropdown-margin\" role=\"group\"><div class=\"btn-group\" role=\"group\"><button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-expanded=\"false\">Optional fields<span class=\"caret\"></span></button><ul class=\"dropdown-menu\" role=\"menu\"><li role=\"presentation\" class=\"dropdown-header\">(Optionally) add these fields:</li><li><strong>Name</strong></li><li><strong>Difficulty</strong></li><li><strong>Operator</strong></li><li><strong>Track Type</strong></li><li><strong>Surface</strong></li><li><strong>Width (Meters)</strong></li><li><strong>Incline</strong></li><li><strong>Mountain Biking Difficulty</strong></li><li><strong>Mountain Biking Uphill Difficulty</strong></li><li><strong>IMBA Trail Difficulty</strong></li><li><strong>Hiking Difficulty</strong></li><li><strong>Trail Visibility</strong></li><li><strong>Approved Uses</strong></li></ul></div></div><img class=\"img-preset img-responsive img-thumbnail\" src=\"assets/img/preset_piste_skitour.jpg\"><div class=\"btn-group dropdown-margin\" role=\"group\"><div class=\"btn-group\" role=\"group\"><button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-expanded=\"false\">Optional fields<span class=\"caret\"></span></button><ul class=\"dropdown-menu\" role=\"menu\"><li role=\"presentation\" class=\"dropdown-header\">(Optionally) add these fields:</li><li><strong>Name</strong></li><li><strong>Difficulty</strong></li><li><strong>Operator</strong></li><li><strong>Track Type</strong></li><li><strong>Surface</strong></li><li><strong>Width (Meters)</strong></li><li><strong>Incline</strong></li><li><strong>Mountain Biking Difficulty</strong></li><li><strong>Mountain Biking Uphill Difficulty</strong></li><li><strong>IMBA Trail Difficulty</strong></li><li><strong>Hiking Difficulty</strong></li><li><strong>Trail Visibility</strong></li><li><strong>Approved Uses</strong></li></ul></div></div><img class=\"img-preset img-responsive img-thumbnail\" src=\"assets/img/preset_piste_sleigh.jpg\"><div class=\"btn-group dropdown-margin\" role=\"group\"><div class=\"btn-group\" role=\"group\"><button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-expanded=\"false\">Optional fields<span class=\"caret\"></span></button><ul class=\"dropdown-menu\" role=\"menu\"><li role=\"presentation\" class=\"dropdown-header\">(Optionally) add these fields:</li><li><strong>Name</strong></li><li><strong>Difficulty</strong></li><li><strong>Operator</strong></li><li><strong>Track Type</strong></li><li><strong>Surface</strong></li><li><strong>Width (Meters)</strong></li><li><strong>Incline</strong></li><li><strong>Mountain Biking Difficulty</strong></li><li><strong>Mountain Biking Uphill Difficulty</strong></li><li><strong>IMBA Trail Difficulty</strong></li><li><strong>Hiking Difficulty</strong></li><li><strong>Trail Visibility</strong></li><li><strong>Approved Uses</strong></li></ul></div></div><p>A piste can also be added as a POI, using the \"Point\" tool to create a point and selecting the appropriate preset from the \"Select feature type\" menu.</p>",
-    "id": "piste",
-    "name": "Piste"
+    "description": "A sidewalk is a part of a road dedicated for pedestrian use, usually separated from the road by a curb.",
+    "howToMap": "Add a sidewalk by tracing its centerline from beginning to end and selecting the \"Sidewalk\" preset from the \"Select feature type\" menu:",
+    "id": "sidewalk",
+    "name": "Sidewalk",
+    "optionalFields": [
+      "Name",
+      "Operator",
+      "Surface",
+      "Lit",
+      "Width (Meters)",
+      "Approved Uses"
+    ],
+    "tags": [
+      "highway=footway",
+      "footway=sidewalk"
+    ]
   },
   {
-    "description": "A water trail is a trail running through a waterway, intended for canoes, kayaks, motorboats, etc. Places supports two types of water trails: \"Non-Motorized Watercraft Trail,\" for a route accessible to non-motorized watercraft such as a canoe or kayak, and \"Motorized Watercraft Trail,\" for a route accessible to motorized watercraft such as a powerboat or motorized sailboat.",
-    "howToMap": "Add a water trail by tracing its centerline from beginning to end and selecting the appropriate preset from the \"Select feature type\" menu. Note: the \"Places Editor Preview\" features a motorized watercraft trail.",
-    "furtherDescription": "<img class=\"img-preset img-responsive img-thumbnail\" src=\"assets/img/preset_water_trail_non_motorized.jpg\"><div class=\"btn-group dropdown-margin\" role=\"group\"><div class=\"btn-group\" role=\"group\"><button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-expanded=\"false\">Optional fields<span class=\"caret\"></span></button><ul class=\"dropdown-menu\" role=\"menu\"><li role=\"presentation\" class=\"dropdown-header\">(Optionally) add these fields:</li><li><strong>Name</strong></li><li><strong>Operator</strong></li><li><strong>Width (Meters)</strong></li></ul></div></div><img class=\"img-preset img-responsive img-thumbnail\" src=\"assets/img/preset_water_trail_motorized.jpg\"><div class=\"btn-group dropdown-margin\" role=\"group\"><div class=\"btn-group\" role=\"group\"><button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-expanded=\"false\">Optional fields<span class=\"caret\"></span></button><ul class=\"dropdown-menu\" role=\"menu\"><li role=\"presentation\" class=\"dropdown-header\">(Optionally) add these fields:</li><li><strong>Name</strong></li><li><strong>Operator</strong></li><li><strong>Width (Meters)</strong></li></ul></div></div><p>The start and end of a water trail is often a boat launch, which is added as a POI (see the <a href=\"#boat_launch\">boat launch</a> section for more information).</p>",
-    "id": "water_trail",
-    "name": "Water Trail"
+    "description": "A pedestrian path is... (include how different from sidewalk or general trail)",
+    "howToMap": "Add a pedestrian path by tracing its centerline from beginning to end and selecting the \"Pedestrian Path\" preset from the \"Select feature type\" menu:",
+    "id": "pedestrian_path",
+    "name": "Pedestrian Path",
+    "optionalFields": [
+      "Name",
+      "Surface",
+      "Lit",
+      "Width (Meters)",
+      "Structure",
+      "Allowed Access"
+    ],
+    "tags": [
+      "highway=footway"
+    ]
+  },
+  {
+    "description": "Steps are...",
+    "howToMap": "Add steps by tracing their centerline from beginning to end and selecting the \"Steps\" preset from the \"Select feature type\" menu:",
+    "id": "steps",
+    "name": "Steps",
+    "optionalFields": [
+      "Name",
+      "Surface",
+      "Lit",
+      "Width (Meters)",
+      "Incline",
+      "Allowed Access"
+    ],
+    "tags": [
+      "highway=steps"
+    ]
   }
   ]
 },{
@@ -696,7 +745,8 @@
       "Name",
       "Surface",
       "One Way",
-      "Approved Uses"
+      "Approved Uses",
+      "Structure"
     ],
     "tags": [
       "highway=service",
