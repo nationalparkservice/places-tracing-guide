@@ -7,7 +7,7 @@ Currently in development.
 #### Primary:
 
 - Content updates/additions based on changes to data schema
-  - [ ] Rename/add new presets
+  - [X] Rename/add new presets
   - [X] Reword road language to be more park-specific
   - [ ] Remove "Optional fields" from Crosswalk
   - [X] Reorganize trails
