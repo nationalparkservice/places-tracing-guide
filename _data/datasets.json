@@ -323,7 +323,7 @@
 },{
   "description": "Buildings in Places are intentionally simple. We are primarily concerned with building footprints, while any additional building amenities are added as points of interest on top of the footprint (see the <a href=\"#poi\">points of interest</a> section to learn more).",
   "howToMap": "Add a building footprint by using the \"Area\" tool to trace the building footprint and select \"Building\" from the \"Select feature type\" menu:",
-  "furtherDescription": "<img class=\"img-preset img-responsive img-thumbnail\" src=\"assets/img/preset_building.jpg\"><div class=\"btn-group dropdown-margin role=\"group\"><div class=\"btn-group\" role=\"group\"><button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-expanded=\"false\">Optional fields<span class=\"caret\"></span></button><ul class=\"dropdown-menu\" role=\"menu\"><li role=\"presentation\" class=\"dropdown-header\">(Optionally) add these fields:</li><li><strong>Name</strong></li><li><strong>Address</strong></a></li><li><strong>Levels</strong></li></ul></div></div><p>Additionally, if you know the location of the building's entrance or exit you can add it as a vertex on the building footprint polygon. Add a building entrance/exit by creating a point at the appropriate location and selecting \"Entrance/Exit\" from the \"Select feature type\" menu.</p><img class=\"img-preset img-responsive img-thumbnail\" src=\"assets/img/preset_building_entrance.jpg\"><div class=\"btn-group\" role=\"group\"><div class=\"btn-group\" role=\"group\"><button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-expanded=\"false\">Optional fields<span class=\"caret\"></span></button><ul class=\"dropdown-menu\" role=\"menu\"><li role=\"presentation\" class=\"dropdown-header\">(Optionally) add these fields:</li><li><strong>Name</strong></li></ul></div></div>",
+  "furtherDescription": "<img class=\"img-preset img-responsive img-thumbnail\" src=\"assets/img/preset_building_footprint.jpg\"><div class=\"btn-group dropdown-margin role=\"group\"><div class=\"btn-group\" role=\"group\"><button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-expanded=\"false\">Optional fields<span class=\"caret\"></span></button><ul class=\"dropdown-menu\" role=\"menu\"><li role=\"presentation\" class=\"dropdown-header\">(Optionally) add these fields:</li><li><strong>Name</strong></li><li><strong>Address</strong></a></li><li><strong>Levels</strong></li></ul></div></div><p>Additionally, if you know the location of the building's entrance or exit you can add it as a vertex on the building footprint polygon. Add a building entrance/exit by creating a point at the appropriate location and selecting \"Entrance/Exit\" from the \"Select feature type\" menu.</p><img class=\"img-preset img-responsive img-thumbnail\" src=\"assets/img/preset_entrance_exit.jpg\"><div class=\"btn-group\" role=\"group\"><div class=\"btn-group\" role=\"group\"><button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-expanded=\"false\">Optional fields<span class=\"caret\"></span></button><ul class=\"dropdown-menu\" role=\"menu\"><li role=\"presentation\" class=\"dropdown-header\">(Optionally) add these fields:</li><li><strong>Name</strong></li></ul></div></div>",
   "id": "buildings",
   "name": "Buildings",
   "types": "Area feature",
@@ -332,9 +332,9 @@
   ],
   "gif": "yes"
 },{
-  "description": "Generally speaking, a road is intended primarily for use by motorized vehicles. Sidewalks are also included in this section, which of course are an exception to this rule.",
-  "howToMap": "Add a road by using the \"Line\" tool to trace its centerline from beginning to end and selecting the appropriate preset from the \"Select feature type\" menu. <em>If a road's classification is unknown, default to the <a href=\"#unclassified_road\">\"Unclassified Road\"</a> preset.</em>",
-  "featureTypes": "Places supports a variety of road classifications, outlined below. Basic road attributes are also outlined here including surface type, directionality, lanes, and speed limit along with how to handle intersections.",
+  "description": "A road is a way intended primarily for passage of motorized vehicles.",
+  "howToMap": "Add a road by using the \"Line\" tool to trace its centerline from beginning to end and selecting the appropriate preset from the \"Select feature type\" menu. <em>If a road's classification is unknown, default to the <a href=\"#unknown_road\">\"Unknown Road\"</a> preset.</em>",
+  "featureTypes": "Places supports a variety of road classifications, outlined below. Basic road structures, attributes, and topology best practices are also outlined here including adding a bridge, a tunnel, surface type, directionality, lanes, speed limit and how to handle intersections.",
   "featureTypesId": "Road Types/Attributes",
   "id": "roads",
   "name": "Roads",
@@ -343,7 +343,47 @@
     "line"
   ],
   "subtypes": [{
-    "description": "A primary road is a major highway, normally with two lanes.",
+    "description": "An unknown road is a road whose classification is unknown. <em>Default to this preset when heads-up-digitizing without the necessary context to determine a road's classification</em>.",
+    "howToMap": "Add an unknown road by tracing its centerline from beginning to end and selecting \"Unknown Road\" from the \"Select feature type\" menu:",
+    "id": "unknown_road",
+    "name": "Unknown Road",
+    "optionalFields": [
+      "Name",
+      "Operator",
+      "Surface",
+      "Width (Meters)",
+      "Speed Limit",
+      "One Way",
+      "Lanes",
+      "Approved Uses",
+      "Structure"
+    ],
+    "tags": [
+      "highway=road"
+    ]
+  },
+  {
+    "description": "A highway is a major highway, typically with at least two lanes separated by a centerline.",
+    "howToMap": "Add a highway by tracing its centerline from beginning to end and selecting \"Highway\" from the \"Select feature type\" menu:",
+    "id": "highway",
+    "name": "Highway",
+    "optionalFields": [
+      "Name",
+      "Operator",
+      "Surface",
+      "Width (Meters)",
+      "Speed Limit",
+      "One Way",
+      "Lanes",
+      "Approved Uses",
+      "Structure"
+    ],
+    "tags": [
+      "highway=motorway"
+    ]
+  },
+  {
+    "description": "A primary road is a major road, typically with at least two lanes separated by a centerline, forming a primary artery of the park and surrounding road network.",
     "howToMap": "Add a primary road by tracing its centerline from beginning to end and selecting \"Primary Road\" from the \"Select feature type\" menu:",
     "id": "primary_road",
     "name": "Primary Road",
@@ -355,14 +395,15 @@
       "Speed Limit",
       "One Way",
       "Lanes",
-      "Approved Uses"
+      "Approved Uses",
+      "Structure"
     ],
     "tags": [
       "highway=primary"
     ]
   },
   {
-    "description": "A secondary road is a highway that is not part of a major route but forms a link in the national route network. It usually has two lanes, separated by a centerline.",
+    "description": "A secondary road is a road that is not a segment of a major route but forms a link in the park and surrounding major road network. It typically has two lanes, separated by a centerline.",
     "howToMap": "Add a secondary road by tracing its centerline from beginning to end and selecting \"Secondary Road\" from the \"Select feature type\" menu:",
     "id": "secondary_road",
     "name": "Secondary Road",
@@ -374,14 +415,35 @@
       "Speed Limit",
       "One Way",
       "Lanes",
-      "Approved Uses"
+      "Approved Uses",
+      "Structure"
     ],
     "tags": [
       "highway=secondary"
     ]
   },
   {
-    "description": "A residential road is a road that accesses residential areas but is not a classified or unclassified highway.",
+    "description": "A minor road is a minor public road, typically at the lowest level of the interconnecting network. It is of lower importance than a secondary road and is not a residential street.",
+    "howToMap": "Add a minor road by tracing its centerline from beginning to end and selecting \"Minor Road\" from the \"Select feature type\" menu:",
+    "id": "minor_road",
+    "name": "Minor Road",
+    "optionalFields": [
+      "Name",
+      "Operator",
+      "Surface",
+      "Width (Meters)",
+      "Speed Limit",
+      "One Way",
+      "Lanes",
+      "Approved Uses",
+      "Structure"
+    ],
+    "tags": [
+      "highway=unclassified"
+    ]
+  },
+  {
+    "description": "A residential road is a road strictly intended for access within a residential area (community or neighborhood).",
     "howToMap": "Add a residential road by tracing its centerline from beginning to end and selecting \"Residential Road\" from the \"Select feature type\" menu:",
     "id": "residential_road",
     "name": "Residential Road",
@@ -393,36 +455,18 @@
       "Speed Limit",
       "One Way",
       "Lanes",
-      "Approved Uses"
+      "Approved Uses",
+      "Structure"
     ],
     "tags": [
       "highway=residential"
     ]
   },
   {
-    "description": "An unclassified road is a minor public road, typically at the lowest level of the interconnecting network. It is of lower importance than a secondary road and is not a residential street. <em>If a road's classification is unknown, default to the \"Unclassified Road\" preset.</em>",
-    "howToMap": "Add an unclassified road by tracing its centerline from beginning to end and selecting \"Unclassified Road\" from the \"Select feature type\" menu:",
-    "id": "unclassified_road",
-    "name": "Unclassified Road",
-    "optionalFields": [
-      "Name",
-      "Operator",
-      "Surface",
-      "Width (Meters)",
-      "Speed Limit",
-      "One Way",
-      "Lanes",
-      "Approved Uses"
-    ],
-    "tags": [
-      "highway=unclassified"
-    ]
-  },
-  {
-    "description": "A service road is a road accessing a building, service station, beach, campsite, business park, parking lot, driveway, etc.",
-    "howToMap": "Add a service road by tracing its centerline from beginning to end and selecting \"Service Road\" from the \"Select feature type\" menu:",
-    "id": "service_road",
-    "name": "Service Road",
+    "description": "An access road is a road accessing a service such as a parking lot, business park, service station, beach, campsite, etc.",
+    "howToMap": "Add an access road by tracing its centerline from beginning to end and selecting \"Access Road\" from the \"Select feature type\" menu:",
+    "id": "access_road",
+    "name": "Access Road",
     "optionalFields": [
       "Name",
       "Operator",
@@ -432,10 +476,32 @@
       "One Way",
       "Lanes",
       "Approved Uses",
-      "Type"
+      "Type",
+      "Structure"
     ],
     "tags": [
       "highway=service"
+    ]
+  },
+  {
+    "description": "A private road is the equivalent to what is commonly referred to as a \"maintenance road\" in the Park Service, with access limited to official NPS personnel and closed to the public.",
+    "howToMap": "Add a private road by tracing its centerline from beginning to end and selecting \"Private Road\" from the \"Select feature type\" menu:",
+    "id": "private_road",
+    "name": "Private Road",
+    "optionalFields": [
+      "Name",
+      "Operator",
+      "Surface",
+      "Width (Meters)",
+      "Speed Limit",
+      "One Way",
+      "Lanes",
+      "Approved Uses",
+      "Structure"
+    ],
+    "tags": [
+      "highway=road",
+      "access=private"
     ]
   },
   {
@@ -468,28 +534,8 @@
     ]
   },
   {
-    "description": "A sidewalk is a part of a road dedicated for pedestrian use, usually separated from the road by a curb.",
-    "howToMap": "Add a sidewalk by tracing its centerline from beginning to end and selecting the \"Sidewalk\" preset from the \"Select feature type\" menu:",
-    "additionalInfo": "If the sidewalk crosses a road, forming a crosswalk, add it by selecting \"Crosswalk\" from the \"Structure\" form in the \"Edit feature\" menu:",
-    "additionalInfoId": "Crosswalk",
-    "id": "sidewalk",
-    "name": "Sidewalk",
-    "optionalFields": [
-      "Name",
-      "Operator",
-      "Surface",
-      "Lit",
-      "Width (Meters)",
-      "Approved Uses"
-    ],
-    "tags": [
-      "highway=footway",
-      "footway=sidewalk"
-    ]
-  },
-  {
-    "description": "An intersection occurs where two or more roads meet.",
-    "howToMap": "To create a simple intersection between two roads, remember to connect them with a node at the point of intersection.",
+    "description": "An intersection occurs where two or more ways (roads or trails) meet.",
+    "howToMap": "To create a simple intersection between two ways, remember to connect them with a node at the point of intersection. If one way is above another without forming a bridge or tunnel, such as a <a href=\"https://en.wikipedia.org/wiki/Interchange_(road)\" target=\"_blank\">road interchange</a>, do not connect the ways.",
     "id": "intersections",
     "name": "Intersections"
   }
@@ -504,8 +550,8 @@
     ]
   },
   {
-    "description": "One way indicates the one way access restriction on roads.",
-    "howToMap": "Add one way access by selecting the associated way and clicking \"Assumed to be No\" in the \"One Way\" form of the \"Edit feature\" menu, which will change to \"Yes\" after selection. Note that ways have a directionality, so the direction in which you map the way determines its directionality. However, you can change the <code>oneway=yes</code> tag to <code>oneway=-1</code> in the \"All tags\" table of the \"Edit feature\" menu to reverse its existing directionality (appropriate when a way's directionality already governs another attribute such as a bus route).",
+    "description": "One way indicates one way access restriction on roads.",
+    "howToMap": "Add one way access by selecting the associated way and clicking \"Assumed to be No\" in the \"One Way\" form of the \"Edit feature\" menu, which will change to \"Yes\" after selection. Note that ways have a directionality, so the direction in which you map the way determines its directionality. However, you can change the <code>{\"oneway\":\"yes\"}</code> tag to <code>{\"oneway\":\"-1\"}</code> in the \"All tags\" table of the \"Edit feature\" menu to reverse its existing directionality (appropriate when a way's directionality already governs another attribute such as a bus route).",
     "id": "oneway",
     "name": "One Way",
     "tags": [
@@ -514,7 +560,7 @@
   },
   {
     "description": "Lanes indicate the number of traffic lanes on a highway that are available to motorized traffic (bicycle lanes are therefore excluded).",
-    "howToMap": "Classify the number of lanes a road has by selecting the associated way and entering the appropriate number into the \"Lanes\" form of the \"Edit feature\" menu:",
+    "howToMap": "Add the number of lanes a road has by selecting the associated way and entering the appropriate number into the \"Lanes\" form of the \"Edit feature\" menu:",
     "id": "Lanes",
     "name": "Lanes",
     "tags": [
@@ -523,7 +569,7 @@
   },
   {
     "description": "Speed limit indicates the maximum legal speed limit for general traffic on a road.",
-    "howToMap": "Classify a road's speed limit by selecting the associated way and entering the appropriate number into the \"Speed Limit\" form of the \"Edit feature\" menu, along with the appropriate unit of measure (<code>mph</code> is the default).",
+    "howToMap": "Add a road's speed limit by selecting the associated way and entering the appropriate number into the \"Speed Limit\" form of the \"Edit feature\" menu, along with the appropriate unit of measure (<code>mph</code> is the default).",
     "id": "maxspeed",
     "name": "Speed Limit",
     "tags": [
