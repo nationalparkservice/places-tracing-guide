@@ -111,6 +111,23 @@
     ]
   },
   {
+    "description": "Headquarters is a park's official headquarters.",
+    "howToMap": "Add park headquarters by creating a point on top of the associated building and selecting \"Headquarters\" from the \"Select feature type\" menu. In the event the office is co-located with a visitor center, create two coincident points - one for the headquarters and another for the VC. Additionally, trace the building footprint if it has not been added (see the <a href=\"#buildings\">buildings</a> section to learn more about tracing building footprints).",
+    "id": "headquarters",
+    "name": "Headquarters",
+    "optionalFields": [
+      "Name",
+      "Operator",
+      "Address",
+      "Hours"
+    ],
+    "tags": [
+      "building=office",
+      "office=government",
+      "function=headquarters"
+    ]
+  },
+  {
     "description": "A restroom is a restroom facility or \"toilet\" open to the public.",
     "howToMap": "Add a restroom by creating a point on top of the associated building and selecting \"Restroom\" from the \"Select feature type\" menu. Additionally, trace the building footprint if it has not been added (see the <a href=\"#buildings\">buildings</a> section to learn more about tracing building footprints).",
     "id": "restroom",
