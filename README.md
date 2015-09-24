@@ -28,6 +28,7 @@ Currently in development.
   - [ ] Trail (formerly non-motorized trail)
   - [ ] Motorized Trail (formerly motorized track)
   - [ ] Pedestrian Path (use Governors Island)
+  - [ ] Parking Lot
 - [ ] Highlight `NPS Unit Code` being lowercase only
 - [ ] Highlight `nps:` tags (coming in from GIS seeds)
 - [ ] Note using POIs for wayfinding/routing (so do not add a point to a restricted parking lot, building, etc)

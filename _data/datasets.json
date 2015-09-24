@@ -738,7 +738,7 @@
     "name": "Parking Lot"
   },{
     "description": "A parking aisle is a subordinated way in a parking lot between rows of parking spaces that vehicles use to drive into and out of the spaces.",
-    "howToMap": "Add a parking aisle by tracing its centerline from beginning to end and selecting \"Parking Aisle\" from the \"Select feature type\" menu. The main way(s) in the parking lot, for entering and connecting multiple parking aisles, should be tagged as <a href=\"#service_road\">service roads</a>.",
+    "howToMap": "Add a parking aisle by tracing its centerline from beginning to end and selecting \"Parking Aisle\" from the \"Select feature type\" menu. The main way(s) in the parking lot, for entering and connecting multiple parking aisles, should be tagged as <a href=\"#access_road\">access roads</a>.",
     "id": "parking_aisle",
     "name": "Parking Aisle",
     "optionalFields": [
