@@ -6,6 +6,7 @@ Currently in development.
 
 #### Primary:
 
+- [ ] Review `index.html` structure (change Liquid rules based on tags)
 - Content updates/additions based on changes to data schema
   - [X] Rename/add new presets
   - [X] Reword road language to be more park-specific

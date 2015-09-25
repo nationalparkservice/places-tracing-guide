@@ -614,7 +614,7 @@
   ],
   "subtypes": [{
     "description": "A trail is intended for non-motorized traffic including pedestrian use (\"foot traffic\"), biking, or horseback riding.",
-    "howToMap": "Add a trail by tracing its centerline from beginning to end and selecting \"Trail\" from the \"Select feature type\" menu:",
+    "howToMap": "Add a trail by tracing its centerline from beginning to end and selecting \"Trail\" from the \"Select feature type\" menu within the \"Trail\" category folder:",
     "approvedUsesDescription": "If the trail is intended for specific uses, add them using the \"Approved Uses\" form in the \"Edit feature\" menu:",
     "approvedUsesId": "Approved Uses",
     "approvedUsesTags": [
@@ -645,7 +645,7 @@
   },
   {
     "description": "A motorized trail is permissive to motorized traffic, such as all-terrain and four-wheel drive vehicles, motorcycles, and snowmobiles. It can be permissive to non-motorized traffic as well, but it must be permissive to motorized traffic to warrant this classification.",
-    "howToMap": "Add a motorized trail by tracing its centerline from beginning to end and selecting \"Motorized Trail\" from the \"Select feature type\" menu:",
+    "howToMap": "Add a motorized trail by tracing its centerline from beginning to end and selecting \"Motorized Trail\" from the \"Select feature type\" menu within the \"Trail\" category folder:",
     "approvedUsesDescription": "If the trail is intended for specific uses, add the appropriate \"Approved Use\" using the \"Approved Uses\" form in the \"Edit feature\" menu:",
     "approvedUsesId": "Approved Uses",
     "approvedUsesTags": [
@@ -680,8 +680,8 @@
     ]
   },
   {
-    "description": "A sidewalk is a part of a road dedicated for pedestrian use, usually separated from the road by a curb.",
-    "howToMap": "Add a sidewalk by tracing its centerline from beginning to end and selecting the \"Sidewalk\" preset from the \"Select feature type\" menu:",
+    "description": "A sidewalk is a way adjacent to a road dedicated for pedestrian use, usually separated from the road by a curb.",
+    "howToMap": "Add a sidewalk by tracing its centerline from beginning to end and selecting the \"Sidewalk\" preset from the \"Select feature type\" menu within the \"Trail\" category folder:",
     "id": "sidewalk",
     "name": "Sidewalk",
     "optionalFields": [
@@ -698,8 +698,8 @@
     ]
   },
   {
-    "description": "A pedestrian path is... (include how different from sidewalk or general trail)",
-    "howToMap": "Add a pedestrian path by tracing its centerline from beginning to end and selecting the \"Pedestrian Path\" preset from the \"Select feature type\" menu:",
+    "description": "A pedestrian path is a walkway intended for pedestrian use (\"foot traffic\"). It is not intended for hiking (like a \"Trail\") nor is it adjacent to a road (like a \"Sidewalk\"). The walkways covering <a href=\"http://insidemaps.nps.gov/places/editor/#background=mapbox-satellite&map=17.71/-74.02108/40.68823&overlays=park-tiles-overlay\">Governors Island</a> are a good example.",
+    "howToMap": "Add a pedestrian path by tracing its centerline from beginning to end and selecting the \"Pedestrian Path\" preset from the \"Select feature type\" menu within the \"Trail\" category folder:",
     "id": "pedestrian_path",
     "name": "Pedestrian Path",
     "optionalFields": [
@@ -715,8 +715,8 @@
     ]
   },
   {
-    "description": "Steps are...",
-    "howToMap": "Add steps by tracing their centerline from beginning to end and selecting the \"Steps\" preset from the \"Select feature type\" menu:",
+    "description": "Steps are a flight of steps along a way intended for pedestrian use.",
+    "howToMap": "Add steps by tracing their centerline from beginning to end and selecting the \"Steps\" preset from the \"Select feature type\" menu within the \"Trail\" category folder:",
     "id": "steps",
     "name": "Steps",
     "optionalFields": [
