@@ -13,20 +13,22 @@ Currently in development.
   - [X] Reorganize trails
   - [ ] Add specific trail types (including "Ferry Route")
 - Redo/add new gifs:
-  - [ ] Litter Receptacle (formerly waste basket)
-  - [ ] Potable Water (formerly drinking water)
+  - [ ] Lodge (gif is currently showing a feature that should be "Lodging")
+  - [ ] Lodging (use same area as currently for "Lodge")
+  - [ ] Litter Receptacle (formerly "Waste Basket")
+  - [ ] Potable Water (formerly "Drinking Water")
   - [ ] Unknown Road
   - [ ] Highway
-  - [ ] Minor Road (formerly unclassified)
-  - [ ] Access Road (formerly service)
+  - [ ] Minor Road (formerly "Unclassified Road")
+  - [ ] Access Road (formerly "Service Road")
   - [ ] Private Road
   - [ ] Bridge (using the "Structure" form)
   - [ ] Crosswalk
   - [ ] One Way (using the "One Way" form)
   - [ ] Lanes (using the "Lanes" form)
   - [ ] Speed limit (using the "Speed Limit" form)
-  - [ ] Trail (formerly non-motorized trail)
-  - [ ] Motorized Trail (formerly motorized track)
+  - [ ] Trail (formerly "Non-Motorized Trail")
+  - [ ] Motorized Trail (formerly "Motorized Track")
   - [ ] Pedestrian Path (use Governors Island)
   - [ ] Parking Lot
 - [ ] Highlight `NPS Unit Code` being lowercase only
@@ -39,7 +41,7 @@ Currently in development.
 
 #### Secondary:
 
-- [ ] Fix anchors (add a hidden anchor before the header anchor and give it a negative top value to make up for the height of the navbar)
+- [X] Fix "About" section anchor
 - [ ] Implement individual Editor `.json` files
 - [ ] Fix [navbar button bug](https://github.com/nationalparkservice/places-tracing-guide/issues/13)
 
