@@ -196,7 +196,7 @@
     ]
   },
   {
-    "description": "A lodge or \"alpine hut\" is a remote building located in the mountains intended to provide seasonal board and lodging.",
+    "description": "A lodge is a remote building intended to provide seasonal shelter, usually for specific uses. Common examples include commercial fishing, hunting, and wilderness lodges.",
     "howToMap": "Add a lodge by creating a point on top of the associated building and selecting \"Lodge\" from the \"Select feature type\" menu within the \"Building\" category folder. Additionally, trace the building footprint if it has not been added (see the <a href=\"#buildings\">buildings</a> section to learn more about tracing building footprints).",
     "id": "lodge",
     "name": "Lodge",
@@ -211,7 +211,7 @@
     ]
   },
   {
-    "description": "Lodging is an establishment providing lodging, typically on a short-term basis, along with other guest services.",
+    "description": "Lodging is an establishment providing overnight room and board, typically on a short-term basis, along with other guest services. Common examples include hotels and public cabins.",
     "howToMap": "Add lodging by creating a point on top of the associated building and selecting \"Lodging\" from the \"Select feature type\" menu within the \"Building\" category folder. Additionally, trace the building footprint if it has not been added (see the <a href=\"#buildings\">buildings</a> section to learn more about tracing building footprints).",
     "id": "lodging",
     "name": "Lodging",
@@ -226,7 +226,7 @@
     ]
   },
   {
-    "description": "A store is a general store, typically selling things like tools, building supplies, clothes, food, and similar items.",
+    "description": "A store is a general store, typically selling food and other general supplies.",
     "howToMap": "Add a store by creating a point on top of the associated building and selecting \"Store\" from the \"Select feature type\" menu within the \"Service\" category folder. Additionally, trace the building footprint if it has not been added (see the <a href=\"#buildings\">buildings</a> section to learn more about tracing building footprints).",
     "id": "store",
     "name": "Store",
@@ -241,7 +241,7 @@
     ]
   },
   {
-    "description": "Food service is also commonly referred to as a food court. It is typically an indoor area within a facility that houses multiple food vendors and provides a common area for dining.",
+    "description": "Food service is typically an indoor area within a facility that houses food vendors and provides dining space. Common examples include food courts and snack bars.",
     "howToMap": "Add food service by creating a point on top of the associated building and selecting \"Food Service\" from the \"Select feature type\" menu within the \"Service\" category folder. Additionally, trace the building footprint if it has not been added (see the <a href=\"#buildings\">buildings</a> section to learn more about tracing building footprints).",
     "id": "food_service",
     "name": "Food Service",
@@ -256,7 +256,7 @@
     ]
   },
   {
-    "description": "A litter receptacle is a single small container for depositing garbage that is easily accesible for pedestrians. Similar expressions: trash can, garbage can, waste basket, rubbish bin, litter bin.",
+    "description": "A litter receptacle is a container for depositing garbage that is accesible to pedestrians. Also known as a trash can, garbage can, waste basket, rubbish bin, or litter bin.",
     "howToMap": "Add a litter receptacle by creating a point on top of the container and selecting \"Litter Receptacle\" from the \"Select feature type\" menu within the \"Service\" category folder:",
     "id": "litter_receptacle",
     "name": "Litter Receptacle",
@@ -284,7 +284,7 @@
     ]
   },
   {
-    "description": "Potable water is a location at which potable water is available for consumption. Typically this comes in the form of a water fountain.",
+    "description": "Potable water is a location at which potable water is available for consumption. Common examples include water fountains and bottle filling stations.",
     "howToMap": "Add potable water by creating a point on top of the amenity and selecting \"Potable Water\" from the \"Select feature type\" menu within the \"Service\" category folder:",
     "id": "potable_water",
     "name": "Potable Water",
