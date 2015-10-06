@@ -21,10 +21,12 @@ Currently in development.
 - [X] Change optional field presentation from tag to title as displayed in editor
 - [X] Update optional fields per preset, in order as displayed in Editor
 - Redo/add new gifs:
+  - [ ] Locale (formerly "Park District")
   - [ ] Lodge (gif is currently showing a feature that should be "Lodging")
   - [ ] Lodging (use same area as currently for "Lodge")
   - [ ] Litter Receptacle (formerly "Waste Basket")
   - [ ] Potable Water (formerly "Drinking Water")
+  - [ ] Populated Place
   - [ ] Unknown Road
   - [ ] Highway
   - [ ] Minor Road (formerly "Unclassified Road")
