@@ -580,7 +580,7 @@
   "attributes": [{
     "description": "Surface describes the physical surface of a feature (in this case, a road or trail).",
     "howToMap": "Add a road's surface by selecting the associated way and choosing the appropriate surface type from the \"Surface\" form in the \"Edit feature\" menu:",
-    "id": "Surface",
+    "id": "surface",
     "name": "Surface",
     "tags": [
       "Surface"
