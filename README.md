@@ -6,13 +6,14 @@ Currently in development.
 
 #### Primary:
 
-- [ ] Review `index.html` structure (change Liquid rules currently based on unused `tags` field)
+- [ ] Review `index.html` Liquid statement structure
+  - [X] Remove unused `tags` field and dependent Liquid statements
 - Content updates/additions based on changes to data schema
   - [X] Rename/add new presets
   - [X] Reword road language to be more park-specific
   - [X] Reorganize trails
   - [ ] Add note re: how trail "approved uses" translate to specific presets
-  - [ ] Remove "Optional fields" from Crosswalk
+  - [X] Remove "Optional fields" from Crosswalk
 - [ ] Highlight `NPS Unit Code` (including being lowercase only)
 - [ ] Highlight `nps:` tags (primary keys coming in from GIS seeds)
 - [ ] Note using POIs for wayfinding/routing (do not add a point to a restricted parking lot, building, etc)
