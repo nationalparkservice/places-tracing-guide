@@ -6,7 +6,7 @@ Currently in development.
 
 #### Primary:
 
-- [ ] Review `index.html` structure (change Liquid rules based on tags)
+- [ ] Review `index.html` structure (change Liquid rules currently based on unused `tags` field)
 - Content updates/additions based on changes to data schema
   - [X] Rename/add new presets
   - [X] Reword road language to be more park-specific
@@ -14,8 +14,8 @@ Currently in development.
   - [ ] Add note re: how trail "approved uses" translate to specific presets
   - [ ] Remove "Optional fields" from Crosswalk
 - [ ] Highlight `NPS Unit Code` (including being lowercase only)
-- [ ] Highlight `nps:` tags (primary key(s) coming in from GIS seeds)
-- [ ] Note using POIs for wayfinding/routing (so do not add a point to a restricted parking lot, building, etc)
+- [ ] Highlight `nps:` tags (primary keys coming in from GIS seeds)
+- [ ] Note using POIs for wayfinding/routing (do not add a point to a restricted parking lot, building, etc)
 - [X] Remove links to OSM wikis
 - [X] Remove underlying tags tabs (to be included in Technical User Documentation)
 - [X] Change optional field presentation from tag to title as displayed in editor
@@ -47,7 +47,3 @@ Currently in development.
 - [X] Fix "About" section anchor
 - [ ] Implement individual Editor `.json` files
 - [ ] Fix [navbar button bug](https://github.com/nationalparkservice/places-tracing-guide/issues/13)
-
-#### For Discussion:
-
-- [ ] Note adding `{"access":"no"}` for restricted features
