@@ -318,10 +318,6 @@
     "howToMap": "Add a boat launch by creating a point in the middle of the ramp and selecting \"Boat Launch\" from the \"Select feature type\" menu within the \"Water Recreation\" category folder.",
     "approvedUsesDescription": "If the boat launch is intended for specific uses, add the appropriate \"Approved Use\" using the \"Approved Water Uses\" form in the \"Edit feature\" menu. Use \"Canoe\" for non-motorized watercraft and \"Motorboat\" for motorized watercraft. Learn more about water trails in the trail section <a href=\"#water_trails\">here</a>.",
     "approvedUsesId": "Approved Water Uses",
-    "approvedUsesTags": [
-      "canoe",
-      "motorboat"
-    ],
     "id": "boat_launch",
     "name": "Boat Launch",
     "optionalFields": [
@@ -617,7 +613,7 @@
 },{
   "description": "A trail is a way intended primarily for recreational use such as hiking, biking, horseback riding, skiing, etc.",
   "howToMap": "Add a trail by using the \"Line\" tool to trace its centerline from beginning to end and selecting the appropriate preset from the \"Select feature type\" menu. <em>If a trail's classification is unknown, default to the <a href=\"#trail\">\"Trail\"</a> preset.</em> Remember to add a <a href=\"#trailhead\">trailhead</a> to the start of each trail, given an official trailhead is present, along with the associated approved uses.",
-  "featureTypes": "Trails generally fall under two \"categories\": \"Trail\" and \"Motorized Trail\", while specific uses (e.g. biking, horseback riding, downhill skiing, etc) define more specific presets. Steps are also included here.<p><em>Trails are a priority feature type for the NPS.gov Centennial redesign and will drive a \"Trails\" page for every park.</em>",
+  "featureTypes": "Trails generally fall under two \"categories\": \"Trail\" and \"Motorized Trail\", while specific uses (e.g. biking, horseback riding, downhill skiing, etc) define more specific presets. \"Steps\" are also included here.<p><em>Trails are a priority feature type for the NPS.gov Centennial redesign and will drive a \"Trails\" page for every park.</em>",
   "featureTypesId": "Trail Types",
   "id": "trails",
   "name": "Trails",
@@ -630,11 +626,6 @@
     "howToMap": "Add a trail by tracing its centerline from beginning to end and selecting \"Trail\" from the \"Select feature type\" menu within the \"Trail\" category folder:",
     "approvedUsesDescription": "If the trail is intended for specific uses, add them using the \"Approved Uses\" form in the \"Edit feature\" menu:",
     "approvedUsesId": "Approved Uses",
-    "approvedUsesTags": [
-      "foot",
-      "bicycle",
-      "horse"
-    ],
     "id": "trail",
     "name": "Trail",
     "optionalFields": [
@@ -661,16 +652,6 @@
     "howToMap": "Add a motorized trail by tracing its centerline from beginning to end and selecting \"Motorized Trail\" from the \"Select feature type\" menu within the \"Trail\" category folder:",
     "approvedUsesDescription": "If the trail is intended for specific uses, add the appropriate \"Approved Use\" using the \"Approved Uses\" form in the \"Edit feature\" menu:",
     "approvedUsesId": "Approved Uses",
-    "approvedUsesTags": [
-      "motor_vehicle",
-      "motorcycle",
-      "foot",
-      "bicycle",
-      "atv",
-      "4wd_only",
-      "snowmobile",
-      "horse"
-    ],
     "id": "motorized_trail",
     "name": "Motorized Trail",
     "optionalFields": [
