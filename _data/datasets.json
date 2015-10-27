@@ -19,10 +19,6 @@
       "Operator",
       "Address",
       "Hours"
-    ],
-    "tags": [
-      "tourism=information",
-      "information=office"
     ]
   },
   {
@@ -35,9 +31,6 @@
       "Operator",
       "Address",
       "Hours"
-    ],
-    "tags": [
-      "barrier=entrance"
     ]
   },
   {
@@ -52,9 +45,6 @@
       "Hours",
       "Capacity",
       "Fee"
-    ],
-    "tags": [
-      "tourism=camp_site"
     ]
   },
   {
@@ -65,9 +55,6 @@
     "optionalFields": [
       "Name",
       "Population"
-    ],
-    "tags": [
-      "place=locality"
     ]
   },
   {
@@ -90,9 +77,6 @@
       "Hiking Difficulty",
       "Trail Visibility",
       "Approved Uses"
-    ],
-    "tags": [
-      "highway=trailhead"
     ]
   },
   {
@@ -105,9 +89,6 @@
       "Operator",
       "Address",
       "Hours"
-    ],
-    "tags": [
-      "amenity=ranger_station"
     ]
   },
   {
@@ -124,9 +105,6 @@
       "Gender",
       "Fee",
       "Allowed Access"
-    ],
-    "tags": [
-      "amenity=toilets"
     ]
   },
   {
@@ -139,11 +117,6 @@
       "Operator",
       "Address",
       "Hours"
-    ],
-    "tags": [
-      "building=office",
-      "office=government",
-      "function=headquarters"
     ]
   },
   {
@@ -156,9 +129,6 @@
       "Operator",
       "Address",
       "Hours"
-    ],
-    "tags": [
-      "tourism=information"
     ]
   },
   {
@@ -173,10 +143,6 @@
       "Hours",
       "Capacity",
       "Fee"
-    ],
-    "tags": [
-      "tourism=camp_site",
-      "camp_site=pitch"
     ]
   },
   {
@@ -190,9 +156,6 @@
       "Address",
       "Hours",
       "Fee"
-    ],
-    "tags": [
-      "tourism=picnic_site"
     ]
   },
   {
@@ -205,9 +168,6 @@
       "Operator",
       "Address",
       "Hours"
-    ],
-    "tags": [
-      "tourism=alpine_hut"
     ]
   },
   {
@@ -220,9 +180,6 @@
       "Address",
       "Levels",
       "Smoking"
-    ],
-    "tags": [
-      "tourism=hotel"
     ]
   },
   {
@@ -235,9 +192,6 @@
       "Operator",
       "Address",
       "Hours"
-    ],
-    "tags": [
-      "shop=general"
     ]
   },
   {
@@ -250,9 +204,6 @@
       "Operator",
       "Address",
       "Hours"
-    ],
-    "tags": [
-      "amenity=food_court"
     ]
   },
   {
@@ -264,9 +215,6 @@
       "Name",
       "Operator",
       "Address"
-    ],
-    "tags": [
-      "amenity=waste_basket"
     ]
   },
   {
@@ -278,9 +226,6 @@
       "Name",
       "Operator",
       "Address",
-    ],
-    "tags": [
-      "amenity=telephone"
     ]
   },
   {
@@ -293,9 +238,6 @@
       "Operator",
       "Description",
       "Allowed Access"
-    ],
-    "tags": [
-      "amenity=drinking_water"
     ]
   },
   {
@@ -308,9 +250,6 @@
       "Operator",
       "Address",
       "Hours"
-    ],
-    "tags": [
-      "amenity=fuel"
     ]
   },
   {
@@ -325,9 +264,6 @@
       "Operator",
       "Width (Meters)",
       "Approved Water Uses"
-    ],
-    "tags": [
-      "leisure=slipway"
     ]
   },
   {
@@ -338,9 +274,6 @@
     "optionalFields": [
       "Name",
       "Population"
-    ],
-    "tags": [
-      "place=hamlet"
     ]
   }
 ]
@@ -381,9 +314,6 @@
       "Lanes",
       "Approved Uses",
       "Structure"
-    ],
-    "tags": [
-      "highway=road"
     ]
   },
   {
@@ -401,9 +331,6 @@
       "Lanes",
       "Approved Uses",
       "Structure"
-    ],
-    "tags": [
-      "highway=motorway"
     ]
   },
   {
@@ -421,9 +348,6 @@
       "Lanes",
       "Approved Uses",
       "Structure"
-    ],
-    "tags": [
-      "highway=primary"
     ]
   },
   {
@@ -441,9 +365,6 @@
       "Lanes",
       "Approved Uses",
       "Structure"
-    ],
-    "tags": [
-      "highway=secondary"
     ]
   },
   {
@@ -461,9 +382,6 @@
       "Lanes",
       "Approved Uses",
       "Structure"
-    ],
-    "tags": [
-      "highway=unclassified"
     ]
   },
   {
@@ -481,9 +399,6 @@
       "Lanes",
       "Approved Uses",
       "Structure"
-    ],
-    "tags": [
-      "highway=residential"
     ]
   },
   {
@@ -502,9 +417,6 @@
       "Approved Uses",
       "Type",
       "Structure"
-    ],
-    "tags": [
-      "highway=service"
     ]
   },
   {
@@ -522,10 +434,6 @@
       "Lanes",
       "Approved Uses",
       "Structure"
-    ],
-    "tags": [
-      "highway=road",
-      "access=private"
     ]
   },
   {
@@ -537,9 +445,6 @@
       "Name",
       "Operator",
       "Address"
-    ],
-    "tags": [
-      "bridge=yes"
     ]
   },
   {
@@ -552,19 +457,13 @@
       "Operator",
       "Address",
       "Hours"
-    ],
-    "tags": [
-      "tunnel=yes"
     ]
   },
   {
     "description": "A crosswalk is a path across an intersection of multiple ways (roads and/or trails) marked off for pedestrian crossing.",
     "howToMap": "Add a crosswalk by using the \"Structure\" form in the \"Edit feature\" menu to add the associated way as a \"Crosswalk\". Remember to maintain the road or trail's existing classification.",
     "id": "crosswalk",
-    "name": "Crosswalk",
-    "tags": [
-      "crossing=yes"
-    ]
+    "name": "Crosswalk"
   },
   {
     "description": "An intersection occurs where two or more ways (roads or trails) meet.",
@@ -577,37 +476,25 @@
     "description": "Surface describes the physical surface of a feature (in this case, a road or trail).",
     "howToMap": "Add a road's surface by selecting the associated way and choosing the appropriate surface type from the \"Surface\" form in the \"Edit feature\" menu:",
     "id": "surface",
-    "name": "Surface",
-    "tags": [
-      "Surface"
-    ]
+    "name": "Surface"
   },
   {
     "description": "One way indicates one way access restriction on roads.",
     "howToMap": "Add one way access by selecting the associated way and clicking \"Assumed to be No\" in the \"One Way\" form of the \"Edit feature\" menu, which will change to \"Yes\" after selection. Note that ways have a directionality, so the direction in which you map the way determines its directionality. However, you can change the <code>{\"oneway\":\"yes\"}</code> tag to <code>{\"oneway\":\"-1\"}</code> in the \"All tags\" table of the \"Edit feature\" menu to reverse its existing directionality (appropriate when a way's directionality already governs another attribute such as a bus route).",
     "id": "oneway",
-    "name": "One Way",
-    "tags": [
-      "oneway"
-    ]
+    "name": "One Way"
   },
   {
     "description": "Lanes indicate the number of traffic lanes on a highway that are available to motorized traffic (bicycle lanes are therefore excluded).",
     "howToMap": "Add the number of lanes a road has by selecting the associated way and entering the appropriate number into the \"Lanes\" form of the \"Edit feature\" menu:",
     "id": "Lanes",
-    "name": "Lanes",
-    "tags": [
-      "Lanes"
-    ]
+    "name": "Lanes"
   },
   {
     "description": "Speed limit indicates the maximum legal speed limit for general traffic on a road.",
     "howToMap": "Add a road's speed limit by selecting the associated way and entering the appropriate number into the \"Speed Limit\" form of the \"Edit feature\" menu, along with the appropriate unit of measure (<code>mph</code> is the default).",
     "id": "maxspeed",
-    "name": "Speed Limit",
-    "tags": [
-      "maxspeed"
-    ]
+    "name": "Speed Limit"
   }
 ]
 },{
@@ -642,9 +529,6 @@
       "Trail Visibility",
       "Approved Uses",
       "Structure"
-    ],
-    "tags": [
-      "highway=path"
     ]
   },
   {
@@ -668,9 +552,6 @@
       "Trail Visibility",
       "Approved Uses",
       "Structure"
-    ],
-    "tags": [
-      "highway=track"
     ]
   },
   {
@@ -685,10 +566,6 @@
       "Lit",
       "Width (Meters)",
       "Approved Uses"
-    ],
-    "tags": [
-      "highway=footway",
-      "footway=sidewalk"
     ]
   },
   {
@@ -703,9 +580,6 @@
       "Width (Meters)",
       "Structure",
       "Allowed Access"
-    ],
-    "tags": [
-      "highway=footway"
     ]
   },
   {
@@ -720,9 +594,6 @@
       "Width (Meters)",
       "Incline",
       "Allowed Access"
-    ],
-    "tags": [
-      "highway=steps"
     ]
   }
   ]
@@ -756,10 +627,6 @@
       "One Way",
       "Approved Uses",
       "Structure"
-    ],
-    "tags": [
-      "highway=service",
-      "service=parking_aisle"
     ]
   }
   ]

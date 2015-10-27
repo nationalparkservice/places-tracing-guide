@@ -173,8 +173,10 @@
               <dt>How to Map</dt>
               <dd>{{ subtype.howToMap }}</dd>
             </dl>
-            {% if subtype.tags %}
+            {% if subtype.id != 'intersections' %}
+            <!--  -->
             <img class="img-preset img-responsive img-thumbnail" src="assets/img/preset_{{ subtype.id }}.jpg">
+            {% if subtype.id != 'crosswalk' %}
             <div class="btn-group" role="group">
               <div class="btn-group" role="group">
                 <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
@@ -183,14 +185,15 @@
                 </button>
                 <ul class="dropdown-menu" role="menu">
                   <li role="presentation" class="dropdown-header">(Optionally) add these fields:</li>
-                  {% for tag in subtype.optionalFields %}
+                  {% for field in subtype.optionalFields %}
                   <li>
-                      <strong>{{ tag }}</strong>
+                      <strong>{{ field }}</strong>
                   </li>
                   {% endfor %}
                 </ul>
               </div>
             </div>
+            {% endif %}
             {% if subtype.approvedUsesDescription %}
             <dl class="list-top-margin">
               <dt>{{ subtype.approvedUsesId }}</dt>
@@ -206,6 +209,7 @@
             <img class="img-preset-margin-b10 img-responsive img-thumbnail" src="assets/img/preset_{{ subtype.id }}_additional_info.jpg">
             {% endif %}
             {% endif %}
+            <!--  -->
             {% if subtype.furtherDescription %}
             {{ subtype.furtherDescription }}
             {% endif %}
